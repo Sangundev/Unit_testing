@@ -1,0 +1,360 @@
+﻿@model Food_Web.Models.Product
+
+@{
+    ViewBag.Title = "Detail";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<!-- Page Introduction Wrapper /- -->
+<!-- Single-Product-Full-Width-Page -->
+<div class="page-detail u-s-p-t-80">
+    <div class="container">
+        <!-- Product-Detail -->
+        <div class="row">
+            <div class="col-lg-6 col-md-6 col-sm-12">
+                <!-- Product-zoom-area -->
+                <div class="zoom-area">
+                    <img id="zoom-pro" class="img-fluid" src="~/Content/products/@Model.image" data-zoom-image="images/product/product@4x.jpg" alt="Zoom Image">
+                    <div id="gallery" class="u-s-m-t-10">
+                        <a class="active" data-image="images/product/product@4x.jpg" data-zoom-image="images/product/product@4x.jpg">
+                            <img src="~/Content/products/@Model.image" alt="Product">
+                        </a>
+                    </div>
+                </div>
+                <!-- Product-zoom-area /- -->
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-12">
+                <!-- Product-details -->
+                <div class="all-information-wrapper">
+                    <div class="section-1-title-breadcrumb-rating">
+                        <div class="product-title">
+                            <h1>
+                                <a href="single-product.html">@Model.Productname</a>
+                            </h1>
+                        </div>
+
+                        <div class="product-rating">
+                            <div class='star' title="4.5 out of 5 - based on 23 Reviews">
+                                <span style='width:67px'></span>
+                            </div>
+                            <span>(23)</span>
+                        </div>
+                    </div>
+                    <div class="section-2-short-description u-s-p-y-14">
+                        <h6 class="information-heading u-s-m-b-8">Description:</h6>
+                        <p>
+                            @Model.discription
+                        </p>
+                    </div>
+                    <div class="section-3-price-original-discount u-s-p-y-14">
+                        @if (Model.DiscountPercent != null)
+                        {
+                            <div class="price">
+                                <h4>$@Model.DiscountedPrice</h4>
+                            </div>
+                            <div class="original-price">
+                                <span>Original Price:</span>
+                                <span>@Model.price</span>
+                            </div>
+                            <div class="discount-price">
+                                <span>Discount:</span>
+                                <span>@Model.DiscountPercent%</span>
+                            </div>
+                        }
+                        else if (Model.DiscountPercent == null)
+                        {
+                            <div class="price">
+                                <h4>$@Model.price</h4>
+                            </div>
+                        }
+
+                    </div>
+
+                    <div class="section-6-social-media-quantity-actions u-s-p-y-14">
+                        <form action="#" class="post-form">
+                            <div class="quick-social-media-wrapper u-s-m-b-22">
+                                <span>Share:</span>
+                                <ul class="social-media-list">
+                                    <li>
+                                        <a href="#">
+                                            <i class="fab fa-facebook-f"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i class="fab fa-twitter"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i class="fab fa-google-plus-g"></i>
+                                        </a>
+                                    </li>
+
+
+                                </ul>
+                            </div>
+                            <div class="quantity-wrapper u-s-m-b-22">
+                                <span>Quantity:</span>
+                                <div class="quantity">
+                                    <input type="text" class="quantity-text-field" value="1">
+                                    <a class="plus-a" data-max="1000">&#43;</a>
+                                    <a class="minus-a" data-min="1">&#45;</a>
+                                </div>
+                            </div>
+                            <div>
+                                <button class="button button-outline-secondary" type="submit" data-id="@Model.Productid">Add to cart</button>
+                                <button class="button button-outline-secondary far fa-heart u-s-m-l-6"></button>
+
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <!-- Product-details /- -->
+            </div>
+        </div>
+        <!-- Product-Detail /- -->
+        <!-- Detail-Tabs -->
+        <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12">
+                <div class="detail-tabs-wrapper u-s-p-t-80">
+                    <div class="detail-nav-wrapper u-s-m-b-30">
+                        <ul class="nav single-product-nav justify-content-center">
+                            <li class="nav-item">
+                                <a class="nav-link active" data-toggle="tab" href="#description">Description</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" data-toggle="tab" href="#specification">Specifications</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" data-toggle="tab" href="#review">Reviews (15)</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="tab-content">
+                        <!-- Description-Tab -->
+                        <div class="tab-pane fade active show" id="description">
+                            <div class="description-whole-container">
+                                <p class="desc-p u-s-m-b-26">
+                                    @Model.discription
+                                </p>
+                                <img class="desc-img img-fluid u-s-m-b-26" src="~/Content/products/@Model.image" alt="Product">
+
+                            </div>
+                        </div>
+                        <!-- Description-Tab /- -->
+                        <!-- Specifications-Tab -->
+                        <div class="tab-pane fade" id="specification">
+                            <div class="specification-whole-container">
+                                <div class="spec-table u-s-m-b-50">
+                                    <h4 class="spec-heading">Product Information</h4>
+
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Specifications-Tab /- -->
+                        <!-- Reviews-Tab -->
+                        <div class="tab-pane fade" id="review">
+                            <div class="review-whole-container">
+                                <div class="row r-1 u-s-m-b-26 u-s-p-b-22">
+                                    <div class="col-lg-6 col-md-6">
+                                        <div class="total-score-wrapper">
+                                            <h6 class="review-h6">Average Rating</h6>
+                                            <div class="circle-wrapper">
+                                                <h1>4.5</h1>
+                                            </div>
+                                            <h6 class="review-h6">Based on 23 Reviews</h6>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 col-md-6">
+                                        <div class="total-star-meter">
+                                            <div class="star-wrapper">
+                                                <span>5 Stars</span>
+                                                <div class="star">
+                                                    <span style='width:0'></span>
+                                                </div>
+                                                <span>(0)</span>
+                                            </div>
+                                            <div class="star-wrapper">
+                                                <span>4 Stars</span>
+                                                <div class="star">
+                                                    <span style='width:67px'></span>
+                                                </div>
+                                                <span>(23)</span>
+                                            </div>
+                                            <div class="star-wrapper">
+                                                <span>3 Stars</span>
+                                                <div class="star">
+                                                    <span style='width:0'></span>
+                                                </div>
+                                                <span>(0)</span>
+                                            </div>
+                                            <div class="star-wrapper">
+                                                <span>2 Stars</span>
+                                                <div class="star">
+                                                    <span style='width:0'></span>
+                                                </div>
+                                                <span>(0)</span>
+                                            </div>
+                                            <div class="star-wrapper">
+                                                <span>1 Star</span>
+                                                <div class="star">
+                                                    <span style='width:0'></span>
+                                                </div>
+                                                <span>(0)</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row r-2 u-s-m-b-26 u-s-p-b-22">
+                                    <form method="post" action="/Product/Create" enctype="multipart/form-data">
+                                        @Html.AntiForgeryToken()
+
+                                        <div class="form-group">
+                                            <label for="content">Comment</label>
+                                            <textarea id="content" name="content" class="form-control" placeholder="Enter your comment"></textarea>
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label for="rating">Rating</label>
+                                            <div class="rating">
+                                                <input type="radio" id="star5" name="rating" value="5" />
+                                                <label for="star5"></label>
+                                                <input type="radio" id="star4" name="rating" value="4" />
+                                                <label for="star4"></label>
+                                                <input type="radio" id="star3" name="rating" value="3" />
+                                                <label for="star3"></label>
+                                                <input type="radio" id="star2" name="rating" value="2" />
+                                                <label for="star2"></label>
+                                                <input type="radio" id="star1" name="rating" value="1" />
+                                                <label for="star1"></label>
+                                            </div>
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label for="image">Upload Image</label>
+                                            <input type="file" id="image" name="image" accept=".png, .jpg, .jpeg" />
+                                        </div>
+
+                                        <div class="form-group" style="display: none;">
+                                            <label for="storeId">Store ID</label>
+                                            <input type="text" id="storeId" name="storeId" class="form-control" value="@ViewBag.userId" />
+                                        </div>
+
+                                        <button type="submit" class="btn btn-primary">Submit Comment</button>
+                                    </form>
+
+                                    @Html.Action("ShowComment", "Stores")
+
+                                </div>
+                                </div>
+                                <!-- Get-Reviews -->
+                                <div class="get-reviews u-s-p-b-22">
+                                    <!-- Review-Options -->
+                                    <div class="review-options u-s-m-b-16">
+                                        <div class="review-option-heading">
+                                            <h6>
+                                                Reviews
+                                                <span> (15) </span>
+                                            </h6>
+                                        </div>
+
+                                    </div>
+                                    <!-- Review-Options /- -->
+                                    <!-- All-Reviews -->
+                                    <div class="reviewers">
+                                        @Html.Action("ShowComment", "Stores")
+                                    </div>
+                                    <!-- All-Reviews /- -->
+                                    <!-- Pagination-Review -->
+                                    <!-- Pagination-Review /- -->
+                                </div>
+                                <!-- Get-Reviews /- -->
+                            </div>
+                        </div>
+                        <!-- Reviews-Tab /- -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Detail-Tabs /- -->
+        <!-- Different-Product-Section -->
+        <div class="detail-different-product-section u-s-p-t-80">
+            <!-- Similar-Products -->
+            <section class="section-maker">
+                <div class="container">
+                    <div class="sec-maker-header text-center">
+                        <h3 class="sec-maker-h3">Các Sản Phẩm Khác </h3>
+                    </div>
+                    <div>@Html.Action("Index", "Home")</div>
+                </div>
+            </section>
+            <!-- Similar-Products /- -->
+
+        </div>
+        <!-- Different-Product-Section /- -->
+    </div>
+</div>
+<style>
+    .rating {
+        display: inline-block;
+        font-size: 0;
+    }
+
+        .rating input {
+            display: none;
+        }
+
+        .rating label {
+            position: relative;
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            margin: 0;
+            padding: 0;
+            cursor: pointer;
+        }
+
+            .rating label:before {
+                content: "\2605";
+                position: absolute;
+                top: 0;
+                left: 0;
+                font-size: 20px;
+                line-height: 20px;
+                color: #ddd;
+            }
+
+            .rating label:hover:before,
+            .rating label:hover ~ label:before,
+            .rating input:checked ~ label:before {
+                color: #ffba00;
+            }
+</style>
+@section scripts{
+    <script>
+        var i = 0;
+        $(document).on('click', '.button-outline-secondary', function () {
+            var ProductID = $(this).data("id");
+            alert(ProductID);
+            $.ajax({
+                url: '/ShoppingCart/AddToCart',
+                type: 'POST',
+                data: { "id": ProductID },
+                success: function (result) {
+                    console.log('main' + i++)
+                    swal({
+                        title: "Good job!",
+                        text: "You clicked the button!",
+                        icon: "success",
+                    });
+                },
+                error: function (err) {
+                    alert(err.statusText);
+                }
+            });
+        });
+
+
+    </script>
+}

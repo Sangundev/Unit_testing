@@ -1,0 +1,43 @@
+﻿@model Food_Web.Models.chef
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>chef</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.image)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.image)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.chitiet)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.chitiet)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.chef_name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.chef_name)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.chef_id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

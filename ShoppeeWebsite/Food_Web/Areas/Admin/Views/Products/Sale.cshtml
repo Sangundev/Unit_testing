@@ -1,0 +1,92 @@
+﻿@model IEnumerable<Food_Web.Models.Product>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_LayoutStore.cshtml";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "CreateDiscount")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Category.Categoryname)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.chef.image)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Productname)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.price)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.image)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.discription)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.sortdiscription)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.status)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.DiscountPercent)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.DiscountedPrice)
+        </th>
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Category.Categoryname)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.chef.image)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Productname)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.price)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.image)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.discription)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.sortdiscription)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.status)
+            </td>
+            <th>
+                @Html.DisplayFor(modelItem => item.DiscountedPrice)
+            </th>
+            <th>
+                @Html.DisplayFor(modelItem => item.DiscountPercent)
+            </th>
+            <td>
+                @Html.ActionLink("Edit", "Edit", new { id = item.Productid }) |
+                @Html.ActionLink("Details", "Details", new { id = item.Productid }) |
+                @Html.ActionLink("Delete", "Delete", new { id = item.Productid })
+            </td>
+        </tr>
+    }
+
+</table>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<script>

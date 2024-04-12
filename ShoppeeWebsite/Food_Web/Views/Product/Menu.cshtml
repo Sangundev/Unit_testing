@@ -1,0 +1,28 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+<section style="background-image: url(assets/images/menu-bg.png);"
+         class="our-menu section bg-light repeat-img" id="menu">
+    <div class="sec-wp">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="sec-title text-center mb-5">
+                        <p class="sec-sub-title mb-3">our menu</p>
+                        <h2 class="h2-title">wake up early, <span>eat fresh & healthy</span></h2>
+                        <div class="sec-title-shape mb-4">
+                            <img src="assets/images/title-shape.svg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            @{Html.RenderAction("GetCategorys", "Product"); }
+
+        </div>
+</section>

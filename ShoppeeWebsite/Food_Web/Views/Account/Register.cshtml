@@ -1,0 +1,209 @@
+﻿@model Food_Web.Models.RegisterViewModel
+@{
+    ViewBag.Title = "Register";
+}
+@using Food_Web.Models
+
+<div id="app">
+    <!-- Header -->
+    <!-- Header /- -->
+    <!-- Page Introduction Wrapper -->
+    <!-- Page Introduction Wrapper /- -->
+    <!-- Account-Page -->
+    <div class="page-account u-s-p-t-80">
+        <div class="container">
+            <div class="backgound">
+                <img src="~/Content/Theme/background.PNG" alt="">
+            </div>
+            <div class="row">
+                @using (Html.BeginForm("Register", "Account", FormMethod.Post, new { @class = "form-horizontal", role = "form" }))
+                {
+                    @Html.AntiForgeryToken()
+                    @Html.ValidationSummary("", new { @class = "text-danger" })
+                    <div class="col-lg-6 white-background">
+                        <div class="reg-wrapper">
+                            <h2 class="account-h2 u-s-m-b-20">Register</h2>
+                            <h6 class="account-h6 u-s-m-b-30">Registering for this site allows you to access your order status and history.</h6>
+                            <div class="u-s-m-b-30">
+                                <label for="user-name">
+                                    Email
+                                    <span class="astk">*</span>
+                                </label>
+                                @Html.TextBoxFor(m => m.Email, new { @class = "form-control", placeholder = "Email", required = "required", id = "Email" })
+                            </div>
+                            <div class="u-s-m-b-30">
+                                <label for="email">
+                                    UserName
+                                    <span class="astk">*</span>
+                                </label>
+                                @Html.TextBoxFor(m => m.UserName, new { @class = "form-control", placeholder = "UserName", required = "required" })
+                            </div>
+                            <div class="u-s-m-b-30">
+                                <label for="password">
+                                    Fullname
+                                    <span class="astk">*</span>
+                                </label>
+                                @Html.TextBoxFor(m => m.Fullname, new { @class = "form-control", placeholder = "FullName", required = "required" })
+                            </div>
+                            <div class="u-s-m-b-30">
+                                <label for="password">
+                                    Phone
+                                    <span class="astk">*</span>
+                                </label>
+                                @Html.TextBoxFor(m => m.PhoneNumber, new { @class = "form-control", placeholder = "Phone", required = "required" })
+                            </div>
+
+                            <div class="u-s-m-b-30">
+                                <label for="user-name-email">
+                                    DC
+                                    <span class="astk">*</span>
+                                </label>
+                                @Html.TextBoxFor(m => m.Adress, new { @class = "form-control", placeholder = "DC", required = "required" })
+                            </div>
+                            <div class="u-s-m-b-30">
+                                <label for="login-password">
+                                    Password
+                                    <span class="astk">*</span>
+                                </label>
+                                @Html.PasswordFor(m => m.Password, new { @class = "form-control", placeholder = "Mật Khẩu", required = "required" })
+                            </div>
+                            <div class="u-s-m-b-30">
+                                <label for="user-name-email">
+                                    ConfirmPassword
+                                    <span class="astk">*</span>
+                                </label>
+                                @Html.PasswordFor(m => m.ConfirmPassword, new { @class = "form-control", placeholder = "Nhập Lại Mật Khẩu", required = "required" })
+                            </div>
+                            <div class="u-s-m-b-30">
+                                <label for="login-password">
+                                    Role
+                                    <span class="astk">*</span>
+                                </label>
+                                @Html.DropDownListFor(m => m.Role, new SelectList(new List<string> { "Member", "User" }), new { @class = "form-control", id = "role-select" })
+                            </div>
+                            <div class="u-s-m-b-30" id="additional-fields" style="display: none;">
+                                <label for="login-password">
+                                    Opentime
+                                    <span class="astk">*</span>
+                                </label>
+                                @Html.LabelFor(m => m.Opentime, new { @class = "control-label" })
+                                @Html.TextBoxFor(m => m.Opentime, new { @class = "form-control", type = "time" })
+                                <label for="login-password">
+                                    Closetime
+                                    <span class="astk">*</span>
+                                </label>
+                                @Html.LabelFor(m => m.Closetime, new { @class = "control-label" })
+                                @Html.TextBoxFor(m => m.Closetime, new { @class = "form-control", type = "time" })
+                            </div>
+                        </div>
+                        <div class="u-s-m-b-30">
+                            <label for="confirmation-code">
+                                Confirmation Code
+                                <span class="astk">*</span>
+                            </label>
+                            @Html.TextBox("ConfirmationCode", null, new { @class = "form-control", placeholder = "Enter Confirmation Code", required = "required" })
+                        </div>
+
+                        <div class="u-s-m-b-45">
+                            <!-- Button to send the confirmation code -->
+                            <button id="sendConfirmationCode" class="button button-secondary w-100">Send Confirmation Code</button>
+                            <button class="button button-primary w-100">Register</button>
+                            @*<button id="openConfirmationPopup" class="button button-primary w-100" onclick="showConfirmationCodeField()">Create Account</button>*@
+
+                        </div>
+                    </div>
+
+                }
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+@section Scripts {
+    <script>
+        $(document).ready(function () {
+            const wrapper = $(".wrapper"),
+                signupHeader = $(".signup header"),
+                loginHeader = $(".login header"),
+                roleSelect = $("#role-select"),
+                additionalFields = $("#additional-fields");
+
+            // Tự động thêm lớp 'active' cho phần 'login' khi trang được tải
+            wrapper.addClass("active");
+
+            signupHeader.on("click", function () {
+                wrapper.removeClass("active");
+            });
+            loginHeader.on("click", function () {
+                wrapper.toggleClass("active");
+            });
+
+            roleSelect.on("change", function () {
+                if (this.value === "User") {
+                    additionalFields.show();
+                } else {
+                    additionalFields.hide();
+                }
+            });
+        });
+
+        $(document).ready(function () {
+            $("#sendConfirmationCode").click(function () {
+                var email = $("#Email").val();
+
+                // Perform an AJAX request to send the confirmation code to the user's email
+                $.ajax({
+                    url: "/Account/SendConfirmationCode",
+                    type: "POST",
+                    data: { email: email },
+                    success: function (response) {
+                        if (response.success) {
+                            alert(response.message);
+                        } else {
+                            alert(response.message);
+                        }
+                    },
+                    error: function () {
+                        alert("Error sending confirmation code.");
+                    }
+                });
+            });
+        });
+
+
+    </script>
+}
+
+
+<style>
+    .white-background {
+        -ms-flex: 0 0 50%;
+        flex: 0 0 50%;
+        max-width: 127%;
+        background-color: white;
+        position: relative;
+        left: 600px;
+    }
+
+
+    .container {
+        position: relative;
+    }
+
+    .backgound {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+    }
+
+        .backgound img {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+        }
+</style>

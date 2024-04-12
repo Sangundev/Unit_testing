@@ -1,0 +1,31 @@
+﻿
+@{
+    ViewBag.Title = "NewDiscounts";
+    Layout = null;
+}
+
+
+@model List<Food_Web.Models.Discount>
+
+<li>
+    <a>
+        Discout
+        <i class="fas fa-chevron-down u-s-m-l-9"></i>
+    </a>
+    <ul class="g-dropdown" style="width:200px">
+        <div>
+            @foreach (var discount in Model)
+            {
+                <div>
+                    <a href="@Url.Action("Index", "Discountss", new { id = discount.Id })">
+                        @discount.Code - @discount.DiscountPercent%
+                    </a>
+                </div>
+            }
+        </div>
+        
+    </ul>
+</li>
+
+
+

@@ -1,0 +1,16 @@
+﻿﻿
+@{
+    ViewBag.Title = "GetOrderDetails";
+    Layout = "~/Views/Shared/_LayoutStore.cshtml";
+}
+
+@model IEnumerable<Food_Web.Models.Order_detail>
+
+@foreach (var orderDetail in Model)
+{
+    <div>
+        <p>Product Name: @orderDetail.Product.Productname</p>
+        <p>Price: @orderDetail.price</p>
+        <hr />
+    </div>
+}

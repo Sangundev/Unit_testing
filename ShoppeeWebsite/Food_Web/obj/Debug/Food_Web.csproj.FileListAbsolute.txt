@@ -1,0 +1,2053 @@
+D:\Food_Web\Food_Web\Food_Web\bin\Food_Web.dll.config
+D:\Food_Web\Food_Web\Food_Web\bin\Food_Web.dll
+D:\Food_Web\Food_Web\Food_Web\bin\Food_Web.pdb
+D:\Food_Web\Food_Web\Food_Web\bin\roslyn\csc.exe
+D:\Food_Web\Food_Web\Food_Web\bin\roslyn\csc.exe.config
+D:\Food_Web\Food_Web\Food_Web\bin\roslyn\csc.rsp
+D:\Food_Web\Food_Web\Food_Web\bin\roslyn\csi.exe
+D:\Food_Web\Food_Web\Food_Web\bin\roslyn\csi.exe.config
+D:\Food_Web\Food_Web\Food_Web\bin\roslyn\csi.rsp
+D:\Food_Web\Food_Web\Food_Web\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\Food_Web\Food_Web\Food_Web\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\Food_Web\Food_Web\Food_Web\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\Food_Web\Food_Web\Food_Web\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\Food_Web\Food_Web\Food_Web\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\Food_Web\Food_Web\Food_Web\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\Food_Web\Food_Web\Food_Web\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\Food_Web\Food_Web\Food_Web\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\Food_Web\Food_Web\Food_Web\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\Food_Web\Food_Web\Food_Web\bin\roslyn\Microsoft.Managed.Core.targets
+D:\Food_Web\Food_Web\Food_Web\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\Food_Web\Food_Web\Food_Web\bin\roslyn\Microsoft.Win32.Primitives.dll
+D:\Food_Web\Food_Web\Food_Web\bin\roslyn\System.AppContext.dll
+D:\Food_Web\Food_Web\Food_Web\bin\roslyn\System.Collections.Immutable.dll
+D:\Food_Web\Food_Web\Food_Web\bin\roslyn\System.Console.dll
+D:\Food_Web\Food_Web\Food_Web\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+D:\Food_Web\Food_Web\Food_Web\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+D:\Food_Web\Food_Web\Food_Web\bin\roslyn\System.Diagnostics.StackTrace.dll
+D:\Food_Web\Food_Web\Food_Web\bin\roslyn\System.Globalization.Calendars.dll
+D:\Food_Web\Food_Web\Food_Web\bin\roslyn\System.IO.Compression.dll
+D:\Food_Web\Food_Web\Food_Web\bin\roslyn\System.IO.Compression.ZipFile.dll
+D:\Food_Web\Food_Web\Food_Web\bin\roslyn\System.IO.FileSystem.dll
+D:\Food_Web\Food_Web\Food_Web\bin\roslyn\System.IO.FileSystem.Primitives.dll
+D:\Food_Web\Food_Web\Food_Web\bin\roslyn\System.Net.Http.dll
+D:\Food_Web\Food_Web\Food_Web\bin\roslyn\System.Net.Sockets.dll
+D:\Food_Web\Food_Web\Food_Web\bin\roslyn\System.Reflection.Metadata.dll
+D:\Food_Web\Food_Web\Food_Web\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+D:\Food_Web\Food_Web\Food_Web\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+D:\Food_Web\Food_Web\Food_Web\bin\roslyn\System.Security.Cryptography.Encoding.dll
+D:\Food_Web\Food_Web\Food_Web\bin\roslyn\System.Security.Cryptography.Primitives.dll
+D:\Food_Web\Food_Web\Food_Web\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+D:\Food_Web\Food_Web\Food_Web\bin\roslyn\System.Text.Encoding.CodePages.dll
+D:\Food_Web\Food_Web\Food_Web\bin\roslyn\System.Threading.Tasks.Extensions.dll
+D:\Food_Web\Food_Web\Food_Web\bin\roslyn\System.ValueTuple.dll
+D:\Food_Web\Food_Web\Food_Web\bin\roslyn\System.Xml.ReaderWriter.dll
+D:\Food_Web\Food_Web\Food_Web\bin\roslyn\System.Xml.XmlDocument.dll
+D:\Food_Web\Food_Web\Food_Web\bin\roslyn\System.Xml.XPath.dll
+D:\Food_Web\Food_Web\Food_Web\bin\roslyn\System.Xml.XPath.XDocument.dll
+D:\Food_Web\Food_Web\Food_Web\bin\roslyn\vbc.exe
+D:\Food_Web\Food_Web\Food_Web\bin\roslyn\vbc.exe.config
+D:\Food_Web\Food_Web\Food_Web\bin\roslyn\vbc.rsp
+D:\Food_Web\Food_Web\Food_Web\bin\roslyn\VBCSCompiler.exe
+D:\Food_Web\Food_Web\Food_Web\bin\roslyn\VBCSCompiler.exe.config
+D:\Food_Web\Food_Web\Food_Web\bin\Antlr3.Runtime.dll
+D:\Food_Web\Food_Web\Food_Web\bin\EntityFramework.dll
+D:\Food_Web\Food_Web\Food_Web\bin\EntityFramework.SqlServer.dll
+D:\Food_Web\Food_Web\Food_Web\bin\Microsoft.AspNet.Identity.Core.dll
+D:\Food_Web\Food_Web\Food_Web\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+D:\Food_Web\Food_Web\Food_Web\bin\Microsoft.AspNet.Identity.Owin.dll
+D:\Food_Web\Food_Web\Food_Web\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\Food_Web\Food_Web\Food_Web\bin\Microsoft.Owin.dll
+D:\Food_Web\Food_Web\Food_Web\bin\Microsoft.Owin.Host.SystemWeb.dll
+D:\Food_Web\Food_Web\Food_Web\bin\Microsoft.Owin.Security.Cookies.dll
+D:\Food_Web\Food_Web\Food_Web\bin\Microsoft.Owin.Security.dll
+D:\Food_Web\Food_Web\Food_Web\bin\Microsoft.Owin.Security.Facebook.dll
+D:\Food_Web\Food_Web\Food_Web\bin\Microsoft.Owin.Security.Google.dll
+D:\Food_Web\Food_Web\Food_Web\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+D:\Food_Web\Food_Web\Food_Web\bin\Microsoft.Owin.Security.OAuth.dll
+D:\Food_Web\Food_Web\Food_Web\bin\Microsoft.Owin.Security.Twitter.dll
+D:\Food_Web\Food_Web\Food_Web\bin\Microsoft.Web.Infrastructure.dll
+D:\Food_Web\Food_Web\Food_Web\bin\Newtonsoft.Json.dll
+D:\Food_Web\Food_Web\Food_Web\bin\Owin.dll
+D:\Food_Web\Food_Web\Food_Web\bin\System.Web.Helpers.dll
+D:\Food_Web\Food_Web\Food_Web\bin\System.Web.Mvc.dll
+D:\Food_Web\Food_Web\Food_Web\bin\System.Web.Optimization.dll
+D:\Food_Web\Food_Web\Food_Web\bin\System.Web.Razor.dll
+D:\Food_Web\Food_Web\Food_Web\bin\System.Web.WebPages.Deployment.dll
+D:\Food_Web\Food_Web\Food_Web\bin\System.Web.WebPages.dll
+D:\Food_Web\Food_Web\Food_Web\bin\System.Web.WebPages.Razor.dll
+D:\Food_Web\Food_Web\Food_Web\bin\WebGrease.dll
+D:\Food_Web\Food_Web\Food_Web\bin\System.Web.Helpers.xml
+D:\Food_Web\Food_Web\Food_Web\bin\System.Web.Mvc.xml
+D:\Food_Web\Food_Web\Food_Web\bin\System.Web.Optimization.xml
+D:\Food_Web\Food_Web\Food_Web\bin\System.Web.Razor.xml
+D:\Food_Web\Food_Web\Food_Web\bin\System.Web.WebPages.xml
+D:\Food_Web\Food_Web\Food_Web\bin\System.Web.WebPages.Deployment.xml
+D:\Food_Web\Food_Web\Food_Web\bin\System.Web.WebPages.Razor.xml
+D:\Food_Web\Food_Web\Food_Web\bin\Newtonsoft.Json.xml
+D:\Food_Web\Food_Web\Food_Web\bin\Antlr3.Runtime.pdb
+D:\Food_Web\Food_Web\Food_Web\bin\EntityFramework.xml
+D:\Food_Web\Food_Web\Food_Web\bin\EntityFramework.SqlServer.xml
+D:\Food_Web\Food_Web\Food_Web\bin\Microsoft.AspNet.Identity.Core.xml
+D:\Food_Web\Food_Web\Food_Web\bin\Microsoft.AspNet.Identity.Owin.xml
+D:\Food_Web\Food_Web\Food_Web\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+D:\Food_Web\Food_Web\Food_Web\bin\Microsoft.Owin.xml
+D:\Food_Web\Food_Web\Food_Web\bin\Microsoft.Owin.Host.SystemWeb.xml
+D:\Food_Web\Food_Web\Food_Web\bin\Microsoft.Owin.Security.xml
+D:\Food_Web\Food_Web\Food_Web\bin\Microsoft.Owin.Security.Facebook.xml
+D:\Food_Web\Food_Web\Food_Web\bin\Microsoft.Owin.Security.Cookies.xml
+D:\Food_Web\Food_Web\Food_Web\bin\Microsoft.Owin.Security.Google.xml
+D:\Food_Web\Food_Web\Food_Web\bin\Microsoft.Owin.Security.Twitter.xml
+D:\Food_Web\Food_Web\Food_Web\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+D:\Food_Web\Food_Web\Food_Web\bin\Microsoft.Owin.Security.OAuth.xml
+D:\Food_Web\Food_Web\Food_Web\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\Food_Web\Food_Web\Food_Web\obj\Debug\Food_Web.csproj.AssemblyReference.cache
+D:\Food_Web\Food_Web\Food_Web\obj\Debug\Food_Web.csproj.CoreCompileInputs.cache
+D:\Food_Web\Food_Web\Food_Web\obj\Debug\Food_Web.csproj.CopyComplete
+D:\Food_Web\Food_Web\Food_Web\obj\Debug\Food_Web.dll
+D:\Food_Web\Food_Web\Food_Web\obj\Debug\Food_Web.pdb
+D:\Food_Web\Food_Web\Food_Web\bin\vi-VN\Food_Web.resources.dll
+D:\Food_Web\Food_Web\Food_Web\obj\Debug\Food_Web.csproj.GenerateResource.cache
+D:\Food_Web\Food_Web\Food_Web\obj\Debug\vi-VN\Food_Web.resources.dll
+D:\Food_Web\Food_Web\Food_Web\bin\ja-jp\Food_Web.resources.dll
+D:\Food_Web\Food_Web\Food_Web\obj\Debug\ja-jp\Food_Web.resources.dll
+D:\Food_Web\Food_Web\Food_Web\obj\Debug\Food_Web.Resources.resources
+D:\Food_Web\Food_Web\Food_Web\obj\Debug\Food_Web.Resources.ja-jp.resources
+D:\Food_Web\Food_Web\Food_Web\obj\Debug\Food_Web.Resources.vi-VN.resources
+D:\Food_Web\Food_Web\Food_Web\bin\PagedList.dll
+D:\Food_Web\Food_Web\Food_Web\bin\PagedList.Mvc.dll
+D:\Food_Web\Food_Web\Food_Web\bin\PagedList.xml
+D:\Food_Web\Food_Web\Food_Web\bin\PagedList.Mvc.xml
+C:\Users\admin\OneDrive\Máy tính\Food_Web\Food_Web\bin\Food_Web.dll.config
+C:\Users\admin\OneDrive\Máy tính\Food_Web\Food_Web\bin\Food_Web.dll
+C:\Users\admin\OneDrive\Máy tính\Food_Web\Food_Web\bin\Food_Web.pdb
+C:\Users\admin\OneDrive\Máy tính\Food_Web\Food_Web\bin\ja-JP\Food_Web.resources.dll
+C:\Users\admin\OneDrive\Máy tính\Food_Web\Food_Web\bin\vi-VN\Food_Web.resources.dll
+C:\Users\admin\OneDrive\Máy tính\Food_Web\Food_Web\bin\roslyn\csc.exe
+C:\Users\admin\OneDrive\Máy tính\Food_Web\Food_Web\bin\roslyn\csc.exe.config
+C:\Users\admin\OneDrive\Máy tính\Food_Web\Food_Web\bin\roslyn\csc.rsp
+C:\Users\admin\OneDrive\Máy tính\Food_Web\Food_Web\bin\roslyn\csi.exe
+C:\Users\admin\OneDrive\Máy tính\Food_Web\Food_Web\bin\roslyn\csi.exe.config
+C:\Users\admin\OneDrive\Máy tính\Food_Web\Food_Web\bin\roslyn\csi.rsp
+C:\Users\admin\OneDrive\Máy tính\Food_Web\Food_Web\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\admin\OneDrive\Máy tính\Food_Web\Food_Web\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\admin\OneDrive\Máy tính\Food_Web\Food_Web\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\admin\OneDrive\Máy tính\Food_Web\Food_Web\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\admin\OneDrive\Máy tính\Food_Web\Food_Web\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\admin\OneDrive\Máy tính\Food_Web\Food_Web\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\admin\OneDrive\Máy tính\Food_Web\Food_Web\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\admin\OneDrive\Máy tính\Food_Web\Food_Web\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\admin\OneDrive\Máy tính\Food_Web\Food_Web\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\admin\OneDrive\Máy tính\Food_Web\Food_Web\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\admin\OneDrive\Máy tính\Food_Web\Food_Web\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\admin\OneDrive\Máy tính\Food_Web\Food_Web\bin\roslyn\Microsoft.Win32.Primitives.dll
+C:\Users\admin\OneDrive\Máy tính\Food_Web\Food_Web\bin\roslyn\System.AppContext.dll
+C:\Users\admin\OneDrive\Máy tính\Food_Web\Food_Web\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\admin\OneDrive\Máy tính\Food_Web\Food_Web\bin\roslyn\System.Console.dll
+C:\Users\admin\OneDrive\Máy tính\Food_Web\Food_Web\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+C:\Users\admin\OneDrive\Máy tính\Food_Web\Food_Web\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\admin\OneDrive\Máy tính\Food_Web\Food_Web\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\admin\OneDrive\Máy tính\Food_Web\Food_Web\bin\roslyn\System.Globalization.Calendars.dll
+C:\Users\admin\OneDrive\Máy tính\Food_Web\Food_Web\bin\roslyn\System.IO.Compression.dll
+C:\Users\admin\OneDrive\Máy tính\Food_Web\Food_Web\bin\roslyn\System.IO.Compression.ZipFile.dll
+C:\Users\admin\OneDrive\Máy tính\Food_Web\Food_Web\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\admin\OneDrive\Máy tính\Food_Web\Food_Web\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\admin\OneDrive\Máy tính\Food_Web\Food_Web\bin\roslyn\System.Net.Http.dll
+C:\Users\admin\OneDrive\Máy tính\Food_Web\Food_Web\bin\roslyn\System.Net.Sockets.dll
+C:\Users\admin\OneDrive\Máy tính\Food_Web\Food_Web\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\admin\OneDrive\Máy tính\Food_Web\Food_Web\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\Users\admin\OneDrive\Máy tính\Food_Web\Food_Web\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\admin\OneDrive\Máy tính\Food_Web\Food_Web\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\admin\OneDrive\Máy tính\Food_Web\Food_Web\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\admin\OneDrive\Máy tính\Food_Web\Food_Web\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\admin\OneDrive\Máy tính\Food_Web\Food_Web\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\admin\OneDrive\Máy tính\Food_Web\Food_Web\bin\roslyn\System.Threading.Tasks.Extensions.dll
+C:\Users\admin\OneDrive\Máy tính\Food_Web\Food_Web\bin\roslyn\System.ValueTuple.dll
+C:\Users\admin\OneDrive\Máy tính\Food_Web\Food_Web\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\admin\OneDrive\Máy tính\Food_Web\Food_Web\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\admin\OneDrive\Máy tính\Food_Web\Food_Web\bin\roslyn\System.Xml.XPath.dll
+C:\Users\admin\OneDrive\Máy tính\Food_Web\Food_Web\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\admin\OneDrive\Máy tính\Food_Web\Food_Web\bin\roslyn\vbc.exe
+C:\Users\admin\OneDrive\Máy tính\Food_Web\Food_Web\bin\roslyn\vbc.exe.config
+C:\Users\admin\OneDrive\Máy tính\Food_Web\Food_Web\bin\roslyn\vbc.rsp
+C:\Users\admin\OneDrive\Máy tính\Food_Web\Food_Web\bin\roslyn\VBCSCompiler.exe
+C:\Users\admin\OneDrive\Máy tính\Food_Web\Food_Web\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\admin\OneDrive\Máy tính\Food_Web\Food_Web\bin\Antlr3.Runtime.dll
+C:\Users\admin\OneDrive\Máy tính\Food_Web\Food_Web\bin\EntityFramework.dll
+C:\Users\admin\OneDrive\Máy tính\Food_Web\Food_Web\bin\EntityFramework.SqlServer.dll
+C:\Users\admin\OneDrive\Máy tính\Food_Web\Food_Web\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Users\admin\OneDrive\Máy tính\Food_Web\Food_Web\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\admin\OneDrive\Máy tính\Food_Web\Food_Web\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\admin\OneDrive\Máy tính\Food_Web\Food_Web\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\admin\OneDrive\Máy tính\Food_Web\Food_Web\bin\Microsoft.Owin.dll
+C:\Users\admin\OneDrive\Máy tính\Food_Web\Food_Web\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\admin\OneDrive\Máy tính\Food_Web\Food_Web\bin\Microsoft.Owin.Security.Cookies.dll
+C:\Users\admin\OneDrive\Máy tính\Food_Web\Food_Web\bin\Microsoft.Owin.Security.dll
+C:\Users\admin\OneDrive\Máy tính\Food_Web\Food_Web\bin\Microsoft.Owin.Security.Facebook.dll
+C:\Users\admin\OneDrive\Máy tính\Food_Web\Food_Web\bin\Microsoft.Owin.Security.Google.dll
+C:\Users\admin\OneDrive\Máy tính\Food_Web\Food_Web\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+C:\Users\admin\OneDrive\Máy tính\Food_Web\Food_Web\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Users\admin\OneDrive\Máy tính\Food_Web\Food_Web\bin\Microsoft.Owin.Security.Twitter.dll
+C:\Users\admin\OneDrive\Máy tính\Food_Web\Food_Web\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\admin\OneDrive\Máy tính\Food_Web\Food_Web\bin\Newtonsoft.Json.dll
+C:\Users\admin\OneDrive\Máy tính\Food_Web\Food_Web\bin\Owin.dll
+C:\Users\admin\OneDrive\Máy tính\Food_Web\Food_Web\bin\PagedList.dll
+C:\Users\admin\OneDrive\Máy tính\Food_Web\Food_Web\bin\PagedList.Mvc.dll
+C:\Users\admin\OneDrive\Máy tính\Food_Web\Food_Web\bin\System.Web.Helpers.dll
+C:\Users\admin\OneDrive\Máy tính\Food_Web\Food_Web\bin\System.Web.Mvc.dll
+C:\Users\admin\OneDrive\Máy tính\Food_Web\Food_Web\bin\System.Web.Optimization.dll
+C:\Users\admin\OneDrive\Máy tính\Food_Web\Food_Web\bin\System.Web.Razor.dll
+C:\Users\admin\OneDrive\Máy tính\Food_Web\Food_Web\bin\System.Web.WebPages.Deployment.dll
+C:\Users\admin\OneDrive\Máy tính\Food_Web\Food_Web\bin\System.Web.WebPages.dll
+C:\Users\admin\OneDrive\Máy tính\Food_Web\Food_Web\bin\System.Web.WebPages.Razor.dll
+C:\Users\admin\OneDrive\Máy tính\Food_Web\Food_Web\bin\WebGrease.dll
+C:\Users\admin\OneDrive\Máy tính\Food_Web\Food_Web\bin\PagedList.xml
+C:\Users\admin\OneDrive\Máy tính\Food_Web\Food_Web\bin\PagedList.Mvc.xml
+C:\Users\admin\OneDrive\Máy tính\Food_Web\Food_Web\bin\System.Web.Helpers.xml
+C:\Users\admin\OneDrive\Máy tính\Food_Web\Food_Web\bin\System.Web.Mvc.xml
+C:\Users\admin\OneDrive\Máy tính\Food_Web\Food_Web\bin\System.Web.Optimization.xml
+C:\Users\admin\OneDrive\Máy tính\Food_Web\Food_Web\bin\System.Web.Razor.xml
+C:\Users\admin\OneDrive\Máy tính\Food_Web\Food_Web\bin\System.Web.WebPages.xml
+C:\Users\admin\OneDrive\Máy tính\Food_Web\Food_Web\bin\System.Web.WebPages.Deployment.xml
+C:\Users\admin\OneDrive\Máy tính\Food_Web\Food_Web\bin\System.Web.WebPages.Razor.xml
+C:\Users\admin\OneDrive\Máy tính\Food_Web\Food_Web\bin\Newtonsoft.Json.xml
+C:\Users\admin\OneDrive\Máy tính\Food_Web\Food_Web\bin\Antlr3.Runtime.pdb
+C:\Users\admin\OneDrive\Máy tính\Food_Web\Food_Web\bin\EntityFramework.xml
+C:\Users\admin\OneDrive\Máy tính\Food_Web\Food_Web\bin\EntityFramework.SqlServer.xml
+C:\Users\admin\OneDrive\Máy tính\Food_Web\Food_Web\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Users\admin\OneDrive\Máy tính\Food_Web\Food_Web\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\admin\OneDrive\Máy tính\Food_Web\Food_Web\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\admin\OneDrive\Máy tính\Food_Web\Food_Web\bin\Microsoft.Owin.xml
+C:\Users\admin\OneDrive\Máy tính\Food_Web\Food_Web\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\admin\OneDrive\Máy tính\Food_Web\Food_Web\bin\Microsoft.Owin.Security.xml
+C:\Users\admin\OneDrive\Máy tính\Food_Web\Food_Web\bin\Microsoft.Owin.Security.Facebook.xml
+C:\Users\admin\OneDrive\Máy tính\Food_Web\Food_Web\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Users\admin\OneDrive\Máy tính\Food_Web\Food_Web\bin\Microsoft.Owin.Security.Google.xml
+C:\Users\admin\OneDrive\Máy tính\Food_Web\Food_Web\bin\Microsoft.Owin.Security.Twitter.xml
+C:\Users\admin\OneDrive\Máy tính\Food_Web\Food_Web\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\Users\admin\OneDrive\Máy tính\Food_Web\Food_Web\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Users\admin\OneDrive\Máy tính\Food_Web\Food_Web\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\admin\OneDrive\Máy tính\Food_Web\Food_Web\obj\Debug\Food_Web.csproj.AssemblyReference.cache
+C:\Users\admin\OneDrive\Máy tính\Food_Web\Food_Web\obj\Debug\Food_Web.Resources.resources
+C:\Users\admin\OneDrive\Máy tính\Food_Web\Food_Web\obj\Debug\Food_Web.Resources.ja-JP.resources
+C:\Users\admin\OneDrive\Máy tính\Food_Web\Food_Web\obj\Debug\Food_Web.Resources.vi-VN.resources
+C:\Users\admin\OneDrive\Máy tính\Food_Web\Food_Web\obj\Debug\Food_Web.csproj.GenerateResource.cache
+C:\Users\admin\OneDrive\Máy tính\Food_Web\Food_Web\obj\Debug\Food_Web.csproj.CoreCompileInputs.cache
+C:\Users\admin\OneDrive\Máy tính\Food_Web\Food_Web\obj\Debug\ja-JP\Food_Web.resources.dll
+C:\Users\admin\OneDrive\Máy tính\Food_Web\Food_Web\obj\Debug\vi-VN\Food_Web.resources.dll
+C:\Users\admin\OneDrive\Máy tính\Food_Web\Food_Web\obj\Debug\Food_Web.csproj.CopyComplete
+C:\Users\admin\OneDrive\Máy tính\Food_Web\Food_Web\obj\Debug\Food_Web.dll
+C:\Users\admin\OneDrive\Máy tính\Food_Web\Food_Web\obj\Debug\Food_Web.pdb
+D:\NsN\Food_Web\Food_Web\bin\Food_Web.dll.config
+D:\NsN\Food_Web\Food_Web\bin\Food_Web.dll
+D:\NsN\Food_Web\Food_Web\bin\Food_Web.pdb
+D:\NsN\Food_Web\Food_Web\bin\ja-JP\Food_Web.resources.dll
+D:\NsN\Food_Web\Food_Web\bin\vi-VN\Food_Web.resources.dll
+D:\NsN\Food_Web\Food_Web\bin\roslyn\csc.exe
+D:\NsN\Food_Web\Food_Web\bin\roslyn\csc.exe.config
+D:\NsN\Food_Web\Food_Web\bin\roslyn\csc.rsp
+D:\NsN\Food_Web\Food_Web\bin\roslyn\csi.exe
+D:\NsN\Food_Web\Food_Web\bin\roslyn\csi.exe.config
+D:\NsN\Food_Web\Food_Web\bin\roslyn\csi.rsp
+D:\NsN\Food_Web\Food_Web\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\NsN\Food_Web\Food_Web\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\NsN\Food_Web\Food_Web\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\NsN\Food_Web\Food_Web\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\NsN\Food_Web\Food_Web\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\NsN\Food_Web\Food_Web\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\NsN\Food_Web\Food_Web\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\NsN\Food_Web\Food_Web\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\NsN\Food_Web\Food_Web\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\NsN\Food_Web\Food_Web\bin\roslyn\Microsoft.Managed.Core.targets
+D:\NsN\Food_Web\Food_Web\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\NsN\Food_Web\Food_Web\bin\roslyn\Microsoft.Win32.Primitives.dll
+D:\NsN\Food_Web\Food_Web\bin\roslyn\System.AppContext.dll
+D:\NsN\Food_Web\Food_Web\bin\roslyn\System.Collections.Immutable.dll
+D:\NsN\Food_Web\Food_Web\bin\roslyn\System.Console.dll
+D:\NsN\Food_Web\Food_Web\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+D:\NsN\Food_Web\Food_Web\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+D:\NsN\Food_Web\Food_Web\bin\roslyn\System.Diagnostics.StackTrace.dll
+D:\NsN\Food_Web\Food_Web\bin\roslyn\System.Globalization.Calendars.dll
+D:\NsN\Food_Web\Food_Web\bin\roslyn\System.IO.Compression.dll
+D:\NsN\Food_Web\Food_Web\bin\roslyn\System.IO.Compression.ZipFile.dll
+D:\NsN\Food_Web\Food_Web\bin\roslyn\System.IO.FileSystem.dll
+D:\NsN\Food_Web\Food_Web\bin\roslyn\System.IO.FileSystem.Primitives.dll
+D:\NsN\Food_Web\Food_Web\bin\roslyn\System.Net.Http.dll
+D:\NsN\Food_Web\Food_Web\bin\roslyn\System.Net.Sockets.dll
+D:\NsN\Food_Web\Food_Web\bin\roslyn\System.Reflection.Metadata.dll
+D:\NsN\Food_Web\Food_Web\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+D:\NsN\Food_Web\Food_Web\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+D:\NsN\Food_Web\Food_Web\bin\roslyn\System.Security.Cryptography.Encoding.dll
+D:\NsN\Food_Web\Food_Web\bin\roslyn\System.Security.Cryptography.Primitives.dll
+D:\NsN\Food_Web\Food_Web\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+D:\NsN\Food_Web\Food_Web\bin\roslyn\System.Text.Encoding.CodePages.dll
+D:\NsN\Food_Web\Food_Web\bin\roslyn\System.Threading.Tasks.Extensions.dll
+D:\NsN\Food_Web\Food_Web\bin\roslyn\System.ValueTuple.dll
+D:\NsN\Food_Web\Food_Web\bin\roslyn\System.Xml.ReaderWriter.dll
+D:\NsN\Food_Web\Food_Web\bin\roslyn\System.Xml.XmlDocument.dll
+D:\NsN\Food_Web\Food_Web\bin\roslyn\System.Xml.XPath.dll
+D:\NsN\Food_Web\Food_Web\bin\roslyn\System.Xml.XPath.XDocument.dll
+D:\NsN\Food_Web\Food_Web\bin\roslyn\vbc.exe
+D:\NsN\Food_Web\Food_Web\bin\roslyn\vbc.exe.config
+D:\NsN\Food_Web\Food_Web\bin\roslyn\vbc.rsp
+D:\NsN\Food_Web\Food_Web\bin\roslyn\VBCSCompiler.exe
+D:\NsN\Food_Web\Food_Web\bin\roslyn\VBCSCompiler.exe.config
+D:\NsN\Food_Web\Food_Web\bin\Antlr3.Runtime.dll
+D:\NsN\Food_Web\Food_Web\bin\EntityFramework.dll
+D:\NsN\Food_Web\Food_Web\bin\EntityFramework.SqlServer.dll
+D:\NsN\Food_Web\Food_Web\bin\Microsoft.AspNet.Identity.Core.dll
+D:\NsN\Food_Web\Food_Web\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+D:\NsN\Food_Web\Food_Web\bin\Microsoft.AspNet.Identity.Owin.dll
+D:\NsN\Food_Web\Food_Web\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\NsN\Food_Web\Food_Web\bin\Microsoft.Owin.dll
+D:\NsN\Food_Web\Food_Web\bin\Microsoft.Owin.Host.SystemWeb.dll
+D:\NsN\Food_Web\Food_Web\bin\Microsoft.Owin.Security.Cookies.dll
+D:\NsN\Food_Web\Food_Web\bin\Microsoft.Owin.Security.dll
+D:\NsN\Food_Web\Food_Web\bin\Microsoft.Owin.Security.Facebook.dll
+D:\NsN\Food_Web\Food_Web\bin\Microsoft.Owin.Security.Google.dll
+D:\NsN\Food_Web\Food_Web\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+D:\NsN\Food_Web\Food_Web\bin\Microsoft.Owin.Security.OAuth.dll
+D:\NsN\Food_Web\Food_Web\bin\Microsoft.Owin.Security.Twitter.dll
+D:\NsN\Food_Web\Food_Web\bin\Microsoft.Web.Infrastructure.dll
+D:\NsN\Food_Web\Food_Web\bin\Newtonsoft.Json.dll
+D:\NsN\Food_Web\Food_Web\bin\Owin.dll
+D:\NsN\Food_Web\Food_Web\bin\PagedList.dll
+D:\NsN\Food_Web\Food_Web\bin\PagedList.Mvc.dll
+D:\NsN\Food_Web\Food_Web\bin\System.Web.Helpers.dll
+D:\NsN\Food_Web\Food_Web\bin\System.Web.Mvc.dll
+D:\NsN\Food_Web\Food_Web\bin\System.Web.Optimization.dll
+D:\NsN\Food_Web\Food_Web\bin\System.Web.Razor.dll
+D:\NsN\Food_Web\Food_Web\bin\System.Web.WebPages.Deployment.dll
+D:\NsN\Food_Web\Food_Web\bin\System.Web.WebPages.dll
+D:\NsN\Food_Web\Food_Web\bin\System.Web.WebPages.Razor.dll
+D:\NsN\Food_Web\Food_Web\bin\WebGrease.dll
+D:\NsN\Food_Web\Food_Web\bin\PagedList.xml
+D:\NsN\Food_Web\Food_Web\bin\PagedList.Mvc.xml
+D:\NsN\Food_Web\Food_Web\bin\System.Web.Helpers.xml
+D:\NsN\Food_Web\Food_Web\bin\System.Web.Mvc.xml
+D:\NsN\Food_Web\Food_Web\bin\System.Web.Optimization.xml
+D:\NsN\Food_Web\Food_Web\bin\System.Web.Razor.xml
+D:\NsN\Food_Web\Food_Web\bin\System.Web.WebPages.xml
+D:\NsN\Food_Web\Food_Web\bin\System.Web.WebPages.Deployment.xml
+D:\NsN\Food_Web\Food_Web\bin\System.Web.WebPages.Razor.xml
+D:\NsN\Food_Web\Food_Web\bin\Newtonsoft.Json.xml
+D:\NsN\Food_Web\Food_Web\bin\Antlr3.Runtime.pdb
+D:\NsN\Food_Web\Food_Web\bin\EntityFramework.xml
+D:\NsN\Food_Web\Food_Web\bin\EntityFramework.SqlServer.xml
+D:\NsN\Food_Web\Food_Web\bin\Microsoft.AspNet.Identity.Core.xml
+D:\NsN\Food_Web\Food_Web\bin\Microsoft.AspNet.Identity.Owin.xml
+D:\NsN\Food_Web\Food_Web\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+D:\NsN\Food_Web\Food_Web\bin\Microsoft.Owin.xml
+D:\NsN\Food_Web\Food_Web\bin\Microsoft.Owin.Host.SystemWeb.xml
+D:\NsN\Food_Web\Food_Web\bin\Microsoft.Owin.Security.xml
+D:\NsN\Food_Web\Food_Web\bin\Microsoft.Owin.Security.Facebook.xml
+D:\NsN\Food_Web\Food_Web\bin\Microsoft.Owin.Security.Cookies.xml
+D:\NsN\Food_Web\Food_Web\bin\Microsoft.Owin.Security.Google.xml
+D:\NsN\Food_Web\Food_Web\bin\Microsoft.Owin.Security.Twitter.xml
+D:\NsN\Food_Web\Food_Web\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+D:\NsN\Food_Web\Food_Web\bin\Microsoft.Owin.Security.OAuth.xml
+D:\NsN\Food_Web\Food_Web\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\NsN\Food_Web\Food_Web\obj\Debug\Food_Web.csproj.AssemblyReference.cache
+D:\NsN\Food_Web\Food_Web\obj\Debug\Food_Web.Resources.resources
+D:\NsN\Food_Web\Food_Web\obj\Debug\Food_Web.Resources.ja-JP.resources
+D:\NsN\Food_Web\Food_Web\obj\Debug\Food_Web.Resources.vi-VN.resources
+D:\NsN\Food_Web\Food_Web\obj\Debug\Food_Web.csproj.GenerateResource.cache
+D:\NsN\Food_Web\Food_Web\obj\Debug\Food_Web.csproj.CoreCompileInputs.cache
+D:\NsN\Food_Web\Food_Web\obj\Debug\ja-JP\Food_Web.resources.dll
+D:\NsN\Food_Web\Food_Web\obj\Debug\vi-VN\Food_Web.resources.dll
+D:\NsN\Food_Web\Food_Web\obj\Debug\Food_Web.csproj.CopyComplete
+D:\NsN\Food_Web\Food_Web\obj\Debug\Food_Web.dll
+D:\NsN\Food_Web\Food_Web\obj\Debug\Food_Web.pdb
+D:\NsN\Food_Web\Food_Web\bin\Microsoft.AspNet.SignalR.Core.dll
+D:\NsN\Food_Web\Food_Web\bin\Microsoft.AspNet.SignalR.SystemWeb.dll
+D:\NsN\Food_Web\Food_Web\bin\Microsoft.AspNetCore.Authentication.Abstractions.dll
+D:\NsN\Food_Web\Food_Web\bin\Microsoft.AspNetCore.Authorization.dll
+D:\NsN\Food_Web\Food_Web\bin\Microsoft.AspNetCore.Authorization.Policy.dll
+D:\NsN\Food_Web\Food_Web\bin\Microsoft.AspNetCore.Connections.Abstractions.dll
+D:\NsN\Food_Web\Food_Web\bin\Microsoft.AspNetCore.Hosting.Abstractions.dll
+D:\NsN\Food_Web\Food_Web\bin\Microsoft.AspNetCore.Hosting.Server.Abstractions.dll
+D:\NsN\Food_Web\Food_Web\bin\Microsoft.AspNetCore.Http.Abstractions.dll
+D:\NsN\Food_Web\Food_Web\bin\Microsoft.AspNetCore.Http.Connections.Common.dll
+D:\NsN\Food_Web\Food_Web\bin\Microsoft.AspNetCore.Http.Connections.dll
+D:\NsN\Food_Web\Food_Web\bin\Microsoft.AspNetCore.Http.dll
+D:\NsN\Food_Web\Food_Web\bin\Microsoft.AspNetCore.Http.Extensions.dll
+D:\NsN\Food_Web\Food_Web\bin\Microsoft.AspNetCore.Http.Features.dll
+D:\NsN\Food_Web\Food_Web\bin\Microsoft.AspNetCore.Routing.Abstractions.dll
+D:\NsN\Food_Web\Food_Web\bin\Microsoft.AspNetCore.Routing.dll
+D:\NsN\Food_Web\Food_Web\bin\Microsoft.AspNetCore.SignalR.Common.dll
+D:\NsN\Food_Web\Food_Web\bin\Microsoft.AspNetCore.SignalR.Core.dll
+D:\NsN\Food_Web\Food_Web\bin\Microsoft.AspNetCore.SignalR.dll
+D:\NsN\Food_Web\Food_Web\bin\Microsoft.AspNetCore.SignalR.Protocols.Json.dll
+D:\NsN\Food_Web\Food_Web\bin\Microsoft.AspNetCore.WebSockets.dll
+D:\NsN\Food_Web\Food_Web\bin\Microsoft.AspNetCore.WebUtilities.dll
+D:\NsN\Food_Web\Food_Web\bin\Microsoft.Extensions.Configuration.Abstractions.dll
+D:\NsN\Food_Web\Food_Web\bin\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+D:\NsN\Food_Web\Food_Web\bin\Microsoft.Extensions.FileProviders.Abstractions.dll
+D:\NsN\Food_Web\Food_Web\bin\Microsoft.Extensions.Hosting.Abstractions.dll
+D:\NsN\Food_Web\Food_Web\bin\Microsoft.Extensions.Logging.Abstractions.dll
+D:\NsN\Food_Web\Food_Web\bin\Microsoft.Extensions.ObjectPool.dll
+D:\NsN\Food_Web\Food_Web\bin\Microsoft.Extensions.Options.dll
+D:\NsN\Food_Web\Food_Web\bin\Microsoft.Extensions.Primitives.dll
+D:\NsN\Food_Web\Food_Web\bin\Microsoft.Net.Http.Headers.dll
+D:\NsN\Food_Web\Food_Web\bin\System.Buffers.dll
+D:\NsN\Food_Web\Food_Web\bin\System.ComponentModel.Annotations.dll
+D:\NsN\Food_Web\Food_Web\bin\System.IO.Pipelines.dll
+D:\NsN\Food_Web\Food_Web\bin\System.Memory.dll
+D:\NsN\Food_Web\Food_Web\bin\System.Net.WebSockets.WebSocketProtocol.dll
+D:\NsN\Food_Web\Food_Web\bin\System.Numerics.Vectors.dll
+D:\NsN\Food_Web\Food_Web\bin\System.Runtime.CompilerServices.Unsafe.dll
+D:\NsN\Food_Web\Food_Web\bin\System.Security.Principal.Windows.dll
+D:\NsN\Food_Web\Food_Web\bin\System.Text.Encodings.Web.dll
+D:\NsN\Food_Web\Food_Web\bin\System.Threading.Channels.dll
+D:\NsN\Food_Web\Food_Web\bin\System.Threading.Tasks.Extensions.dll
+D:\NsN\Food_Web\Food_Web\bin\Microsoft.AspNet.SignalR.Core.xml
+D:\NsN\Food_Web\Food_Web\bin\Microsoft.AspNet.SignalR.SystemWeb.xml
+D:\NsN\Food_Web\Food_Web\bin\Microsoft.AspNetCore.Authentication.Abstractions.xml
+D:\NsN\Food_Web\Food_Web\bin\Microsoft.AspNetCore.Authorization.xml
+D:\NsN\Food_Web\Food_Web\bin\Microsoft.AspNetCore.Authorization.Policy.xml
+D:\NsN\Food_Web\Food_Web\bin\Microsoft.AspNetCore.Connections.Abstractions.xml
+D:\NsN\Food_Web\Food_Web\bin\Microsoft.AspNetCore.Hosting.Abstractions.xml
+D:\NsN\Food_Web\Food_Web\bin\Microsoft.AspNetCore.Hosting.Server.Abstractions.xml
+D:\NsN\Food_Web\Food_Web\bin\Microsoft.AspNetCore.Http.xml
+D:\NsN\Food_Web\Food_Web\bin\Microsoft.AspNetCore.Http.Abstractions.xml
+D:\NsN\Food_Web\Food_Web\bin\Microsoft.AspNetCore.Http.Connections.xml
+D:\NsN\Food_Web\Food_Web\bin\Microsoft.AspNetCore.Http.Connections.Common.xml
+D:\NsN\Food_Web\Food_Web\bin\Microsoft.AspNetCore.Http.Extensions.xml
+D:\NsN\Food_Web\Food_Web\bin\Microsoft.AspNetCore.Http.Features.xml
+D:\NsN\Food_Web\Food_Web\bin\Microsoft.AspNetCore.Routing.xml
+D:\NsN\Food_Web\Food_Web\bin\Microsoft.AspNetCore.Routing.Abstractions.xml
+D:\NsN\Food_Web\Food_Web\bin\Microsoft.AspNetCore.SignalR.xml
+D:\NsN\Food_Web\Food_Web\bin\Microsoft.AspNetCore.SignalR.Common.xml
+D:\NsN\Food_Web\Food_Web\bin\Microsoft.AspNetCore.SignalR.Core.xml
+D:\NsN\Food_Web\Food_Web\bin\Microsoft.AspNetCore.SignalR.Protocols.Json.xml
+D:\NsN\Food_Web\Food_Web\bin\Microsoft.AspNetCore.WebSockets.xml
+D:\NsN\Food_Web\Food_Web\bin\Microsoft.AspNetCore.WebUtilities.xml
+D:\NsN\Food_Web\Food_Web\bin\Microsoft.Extensions.Configuration.Abstractions.xml
+D:\NsN\Food_Web\Food_Web\bin\Microsoft.Extensions.DependencyInjection.Abstractions.xml
+D:\NsN\Food_Web\Food_Web\bin\Microsoft.Extensions.FileProviders.Abstractions.xml
+D:\NsN\Food_Web\Food_Web\bin\Microsoft.Extensions.Hosting.Abstractions.xml
+D:\NsN\Food_Web\Food_Web\bin\Microsoft.Extensions.Logging.Abstractions.xml
+D:\NsN\Food_Web\Food_Web\bin\Microsoft.Extensions.ObjectPool.xml
+D:\NsN\Food_Web\Food_Web\bin\Microsoft.Extensions.Options.xml
+D:\NsN\Food_Web\Food_Web\bin\Microsoft.Extensions.Primitives.xml
+D:\NsN\Food_Web\Food_Web\bin\Microsoft.Net.Http.Headers.xml
+D:\NsN\Food_Web\Food_Web\bin\System.Buffers.xml
+D:\NsN\Food_Web\Food_Web\bin\System.IO.Pipelines.xml
+D:\NsN\Food_Web\Food_Web\bin\System.Memory.xml
+D:\NsN\Food_Web\Food_Web\bin\System.Numerics.Vectors.xml
+D:\NsN\Food_Web\Food_Web\bin\System.Runtime.CompilerServices.Unsafe.xml
+D:\NsN\Food_Web\Food_Web\bin\System.Text.Encodings.Web.xml
+D:\NsN\Food_Web\Food_Web\bin\System.Threading.Channels.xml
+D:\NsN\Food_Web\Food_Web\bin\System.Threading.Tasks.Extensions.xml
+D:\NsN\Food_Web\Food_Web\bin\System.Net.Mail.Abstractions.dll
+D:\NsN\Food_Web\Food_Web\bin\BouncyCastle.Cryptography.dll
+D:\NsN\Food_Web\Food_Web\bin\MailKit.dll
+D:\NsN\Food_Web\Food_Web\bin\MimeKit.dll
+D:\NsN\Food_Web\Food_Web\bin\BouncyCastle.Cryptography.xml
+D:\NsN\Food_Web\Food_Web\bin\MailKit.pdb
+D:\NsN\Food_Web\Food_Web\bin\MailKit.xml
+D:\NsN\Food_Web\Food_Web\bin\MailKit.dll.config
+D:\NsN\Food_Web\Food_Web\bin\MimeKit.pdb
+D:\NsN\Food_Web\Food_Web\bin\MimeKit.xml
+D:\NsN\Food_Web\Food_Web\bin\MimeKit.dll.config
+D:\NsN\Food_Web\Food_Web\bin\SendGrid.dll
+D:\NsN\Food_Web\Food_Web\bin\StarkbankEcdsa.dll
+D:\NsN\Food_Web\Food_Web\bin\SendGrid.pdb
+D:\NsN\Food_Web\Food_Web\bin\SendGrid.xml
+D:\NsN\Web1\Food_Web\Food_Web\bin\Food_Web.dll.config
+D:\NsN\Web1\Food_Web\Food_Web\bin\Food_Web.dll
+D:\NsN\Web1\Food_Web\Food_Web\bin\Food_Web.pdb
+D:\NsN\Web1\Food_Web\Food_Web\bin\ja-JP\Food_Web.resources.dll
+D:\NsN\Web1\Food_Web\Food_Web\bin\vi-VN\Food_Web.resources.dll
+D:\NsN\Web1\Food_Web\Food_Web\bin\roslyn\csc.exe
+D:\NsN\Web1\Food_Web\Food_Web\bin\roslyn\csc.exe.config
+D:\NsN\Web1\Food_Web\Food_Web\bin\roslyn\csc.rsp
+D:\NsN\Web1\Food_Web\Food_Web\bin\roslyn\csi.exe
+D:\NsN\Web1\Food_Web\Food_Web\bin\roslyn\csi.exe.config
+D:\NsN\Web1\Food_Web\Food_Web\bin\roslyn\csi.rsp
+D:\NsN\Web1\Food_Web\Food_Web\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\NsN\Web1\Food_Web\Food_Web\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\NsN\Web1\Food_Web\Food_Web\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\NsN\Web1\Food_Web\Food_Web\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\NsN\Web1\Food_Web\Food_Web\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\NsN\Web1\Food_Web\Food_Web\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\NsN\Web1\Food_Web\Food_Web\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\NsN\Web1\Food_Web\Food_Web\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\NsN\Web1\Food_Web\Food_Web\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\NsN\Web1\Food_Web\Food_Web\bin\roslyn\Microsoft.Managed.Core.targets
+D:\NsN\Web1\Food_Web\Food_Web\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\NsN\Web1\Food_Web\Food_Web\bin\roslyn\Microsoft.Win32.Primitives.dll
+D:\NsN\Web1\Food_Web\Food_Web\bin\roslyn\System.AppContext.dll
+D:\NsN\Web1\Food_Web\Food_Web\bin\roslyn\System.Collections.Immutable.dll
+D:\NsN\Web1\Food_Web\Food_Web\bin\roslyn\System.Console.dll
+D:\NsN\Web1\Food_Web\Food_Web\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+D:\NsN\Web1\Food_Web\Food_Web\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+D:\NsN\Web1\Food_Web\Food_Web\bin\roslyn\System.Diagnostics.StackTrace.dll
+D:\NsN\Web1\Food_Web\Food_Web\bin\roslyn\System.Globalization.Calendars.dll
+D:\NsN\Web1\Food_Web\Food_Web\bin\roslyn\System.IO.Compression.dll
+D:\NsN\Web1\Food_Web\Food_Web\bin\roslyn\System.IO.Compression.ZipFile.dll
+D:\NsN\Web1\Food_Web\Food_Web\bin\roslyn\System.IO.FileSystem.dll
+D:\NsN\Web1\Food_Web\Food_Web\bin\roslyn\System.IO.FileSystem.Primitives.dll
+D:\NsN\Web1\Food_Web\Food_Web\bin\roslyn\System.Net.Http.dll
+D:\NsN\Web1\Food_Web\Food_Web\bin\roslyn\System.Net.Sockets.dll
+D:\NsN\Web1\Food_Web\Food_Web\bin\roslyn\System.Reflection.Metadata.dll
+D:\NsN\Web1\Food_Web\Food_Web\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+D:\NsN\Web1\Food_Web\Food_Web\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+D:\NsN\Web1\Food_Web\Food_Web\bin\roslyn\System.Security.Cryptography.Encoding.dll
+D:\NsN\Web1\Food_Web\Food_Web\bin\roslyn\System.Security.Cryptography.Primitives.dll
+D:\NsN\Web1\Food_Web\Food_Web\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+D:\NsN\Web1\Food_Web\Food_Web\bin\roslyn\System.Text.Encoding.CodePages.dll
+D:\NsN\Web1\Food_Web\Food_Web\bin\roslyn\System.Threading.Tasks.Extensions.dll
+D:\NsN\Web1\Food_Web\Food_Web\bin\roslyn\System.ValueTuple.dll
+D:\NsN\Web1\Food_Web\Food_Web\bin\roslyn\System.Xml.ReaderWriter.dll
+D:\NsN\Web1\Food_Web\Food_Web\bin\roslyn\System.Xml.XmlDocument.dll
+D:\NsN\Web1\Food_Web\Food_Web\bin\roslyn\System.Xml.XPath.dll
+D:\NsN\Web1\Food_Web\Food_Web\bin\roslyn\System.Xml.XPath.XDocument.dll
+D:\NsN\Web1\Food_Web\Food_Web\bin\roslyn\vbc.exe
+D:\NsN\Web1\Food_Web\Food_Web\bin\roslyn\vbc.exe.config
+D:\NsN\Web1\Food_Web\Food_Web\bin\roslyn\vbc.rsp
+D:\NsN\Web1\Food_Web\Food_Web\bin\roslyn\VBCSCompiler.exe
+D:\NsN\Web1\Food_Web\Food_Web\bin\roslyn\VBCSCompiler.exe.config
+D:\NsN\Web1\Food_Web\Food_Web\bin\Antlr3.Runtime.dll
+D:\NsN\Web1\Food_Web\Food_Web\bin\BouncyCastle.Cryptography.dll
+D:\NsN\Web1\Food_Web\Food_Web\bin\EntityFramework.dll
+D:\NsN\Web1\Food_Web\Food_Web\bin\EntityFramework.SqlServer.dll
+D:\NsN\Web1\Food_Web\Food_Web\bin\MailKit.dll
+D:\NsN\Web1\Food_Web\Food_Web\bin\Microsoft.AspNet.Identity.Core.dll
+D:\NsN\Web1\Food_Web\Food_Web\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+D:\NsN\Web1\Food_Web\Food_Web\bin\Microsoft.AspNet.Identity.Owin.dll
+D:\NsN\Web1\Food_Web\Food_Web\bin\Microsoft.AspNet.SignalR.Core.dll
+D:\NsN\Web1\Food_Web\Food_Web\bin\Microsoft.AspNet.SignalR.SystemWeb.dll
+D:\NsN\Web1\Food_Web\Food_Web\bin\Microsoft.AspNetCore.Authentication.Abstractions.dll
+D:\NsN\Web1\Food_Web\Food_Web\bin\Microsoft.AspNetCore.Authorization.dll
+D:\NsN\Web1\Food_Web\Food_Web\bin\Microsoft.AspNetCore.Authorization.Policy.dll
+D:\NsN\Web1\Food_Web\Food_Web\bin\Microsoft.AspNetCore.Connections.Abstractions.dll
+D:\NsN\Web1\Food_Web\Food_Web\bin\Microsoft.AspNetCore.Hosting.Abstractions.dll
+D:\NsN\Web1\Food_Web\Food_Web\bin\Microsoft.AspNetCore.Hosting.Server.Abstractions.dll
+D:\NsN\Web1\Food_Web\Food_Web\bin\Microsoft.AspNetCore.Http.Abstractions.dll
+D:\NsN\Web1\Food_Web\Food_Web\bin\Microsoft.AspNetCore.Http.Connections.Common.dll
+D:\NsN\Web1\Food_Web\Food_Web\bin\Microsoft.AspNetCore.Http.Connections.dll
+D:\NsN\Web1\Food_Web\Food_Web\bin\Microsoft.AspNetCore.Http.dll
+D:\NsN\Web1\Food_Web\Food_Web\bin\Microsoft.AspNetCore.Http.Extensions.dll
+D:\NsN\Web1\Food_Web\Food_Web\bin\Microsoft.AspNetCore.Http.Features.dll
+D:\NsN\Web1\Food_Web\Food_Web\bin\Microsoft.AspNetCore.Routing.Abstractions.dll
+D:\NsN\Web1\Food_Web\Food_Web\bin\Microsoft.AspNetCore.Routing.dll
+D:\NsN\Web1\Food_Web\Food_Web\bin\Microsoft.AspNetCore.SignalR.Common.dll
+D:\NsN\Web1\Food_Web\Food_Web\bin\Microsoft.AspNetCore.SignalR.Core.dll
+D:\NsN\Web1\Food_Web\Food_Web\bin\Microsoft.AspNetCore.SignalR.dll
+D:\NsN\Web1\Food_Web\Food_Web\bin\Microsoft.AspNetCore.SignalR.Protocols.Json.dll
+D:\NsN\Web1\Food_Web\Food_Web\bin\Microsoft.AspNetCore.WebSockets.dll
+D:\NsN\Web1\Food_Web\Food_Web\bin\Microsoft.AspNetCore.WebUtilities.dll
+D:\NsN\Web1\Food_Web\Food_Web\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\NsN\Web1\Food_Web\Food_Web\bin\Microsoft.Extensions.Configuration.Abstractions.dll
+D:\NsN\Web1\Food_Web\Food_Web\bin\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+D:\NsN\Web1\Food_Web\Food_Web\bin\Microsoft.Extensions.FileProviders.Abstractions.dll
+D:\NsN\Web1\Food_Web\Food_Web\bin\Microsoft.Extensions.Hosting.Abstractions.dll
+D:\NsN\Web1\Food_Web\Food_Web\bin\Microsoft.Extensions.Logging.Abstractions.dll
+D:\NsN\Web1\Food_Web\Food_Web\bin\Microsoft.Extensions.ObjectPool.dll
+D:\NsN\Web1\Food_Web\Food_Web\bin\Microsoft.Extensions.Options.dll
+D:\NsN\Web1\Food_Web\Food_Web\bin\Microsoft.Extensions.Primitives.dll
+D:\NsN\Web1\Food_Web\Food_Web\bin\Microsoft.Net.Http.Headers.dll
+D:\NsN\Web1\Food_Web\Food_Web\bin\Microsoft.Owin.dll
+D:\NsN\Web1\Food_Web\Food_Web\bin\Microsoft.Owin.Host.SystemWeb.dll
+D:\NsN\Web1\Food_Web\Food_Web\bin\Microsoft.Owin.Security.Cookies.dll
+D:\NsN\Web1\Food_Web\Food_Web\bin\Microsoft.Owin.Security.dll
+D:\NsN\Web1\Food_Web\Food_Web\bin\Microsoft.Owin.Security.Facebook.dll
+D:\NsN\Web1\Food_Web\Food_Web\bin\Microsoft.Owin.Security.Google.dll
+D:\NsN\Web1\Food_Web\Food_Web\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+D:\NsN\Web1\Food_Web\Food_Web\bin\Microsoft.Owin.Security.OAuth.dll
+D:\NsN\Web1\Food_Web\Food_Web\bin\Microsoft.Owin.Security.Twitter.dll
+D:\NsN\Web1\Food_Web\Food_Web\bin\Microsoft.Web.Infrastructure.dll
+D:\NsN\Web1\Food_Web\Food_Web\bin\MimeKit.dll
+D:\NsN\Web1\Food_Web\Food_Web\bin\Newtonsoft.Json.dll
+D:\NsN\Web1\Food_Web\Food_Web\bin\Owin.dll
+D:\NsN\Web1\Food_Web\Food_Web\bin\PagedList.dll
+D:\NsN\Web1\Food_Web\Food_Web\bin\PagedList.Mvc.dll
+D:\NsN\Web1\Food_Web\Food_Web\bin\SendGrid.dll
+D:\NsN\Web1\Food_Web\Food_Web\bin\StarkbankEcdsa.dll
+D:\NsN\Web1\Food_Web\Food_Web\bin\System.Buffers.dll
+D:\NsN\Web1\Food_Web\Food_Web\bin\System.ComponentModel.Annotations.dll
+D:\NsN\Web1\Food_Web\Food_Web\bin\System.IO.Pipelines.dll
+D:\NsN\Web1\Food_Web\Food_Web\bin\System.Memory.dll
+D:\NsN\Web1\Food_Web\Food_Web\bin\System.Net.Mail.Abstractions.dll
+D:\NsN\Web1\Food_Web\Food_Web\bin\System.Net.WebSockets.WebSocketProtocol.dll
+D:\NsN\Web1\Food_Web\Food_Web\bin\System.Numerics.Vectors.dll
+D:\NsN\Web1\Food_Web\Food_Web\bin\System.Runtime.CompilerServices.Unsafe.dll
+D:\NsN\Web1\Food_Web\Food_Web\bin\System.Security.Principal.Windows.dll
+D:\NsN\Web1\Food_Web\Food_Web\bin\System.Text.Encodings.Web.dll
+D:\NsN\Web1\Food_Web\Food_Web\bin\System.Threading.Channels.dll
+D:\NsN\Web1\Food_Web\Food_Web\bin\System.Threading.Tasks.Extensions.dll
+D:\NsN\Web1\Food_Web\Food_Web\bin\System.Web.Helpers.dll
+D:\NsN\Web1\Food_Web\Food_Web\bin\System.Web.Mvc.dll
+D:\NsN\Web1\Food_Web\Food_Web\bin\System.Web.Optimization.dll
+D:\NsN\Web1\Food_Web\Food_Web\bin\System.Web.Razor.dll
+D:\NsN\Web1\Food_Web\Food_Web\bin\System.Web.WebPages.Deployment.dll
+D:\NsN\Web1\Food_Web\Food_Web\bin\System.Web.WebPages.dll
+D:\NsN\Web1\Food_Web\Food_Web\bin\System.Web.WebPages.Razor.dll
+D:\NsN\Web1\Food_Web\Food_Web\bin\WebGrease.dll
+D:\NsN\Web1\Food_Web\Food_Web\bin\BouncyCastle.Cryptography.xml
+D:\NsN\Web1\Food_Web\Food_Web\bin\MailKit.pdb
+D:\NsN\Web1\Food_Web\Food_Web\bin\MailKit.xml
+D:\NsN\Web1\Food_Web\Food_Web\bin\MailKit.dll.config
+D:\NsN\Web1\Food_Web\Food_Web\bin\Microsoft.AspNet.SignalR.Core.xml
+D:\NsN\Web1\Food_Web\Food_Web\bin\Microsoft.AspNet.SignalR.SystemWeb.xml
+D:\NsN\Web1\Food_Web\Food_Web\bin\Microsoft.AspNetCore.Authentication.Abstractions.xml
+D:\NsN\Web1\Food_Web\Food_Web\bin\Microsoft.AspNetCore.Authorization.xml
+D:\NsN\Web1\Food_Web\Food_Web\bin\Microsoft.AspNetCore.Authorization.Policy.xml
+D:\NsN\Web1\Food_Web\Food_Web\bin\Microsoft.AspNetCore.Connections.Abstractions.xml
+D:\NsN\Web1\Food_Web\Food_Web\bin\Microsoft.AspNetCore.Hosting.Abstractions.xml
+D:\NsN\Web1\Food_Web\Food_Web\bin\Microsoft.AspNetCore.Hosting.Server.Abstractions.xml
+D:\NsN\Web1\Food_Web\Food_Web\bin\Microsoft.AspNetCore.Http.xml
+D:\NsN\Web1\Food_Web\Food_Web\bin\Microsoft.AspNetCore.Http.Abstractions.xml
+D:\NsN\Web1\Food_Web\Food_Web\bin\Microsoft.AspNetCore.Http.Connections.xml
+D:\NsN\Web1\Food_Web\Food_Web\bin\Microsoft.AspNetCore.Http.Connections.Common.xml
+D:\NsN\Web1\Food_Web\Food_Web\bin\Microsoft.AspNetCore.Http.Extensions.xml
+D:\NsN\Web1\Food_Web\Food_Web\bin\Microsoft.AspNetCore.Http.Features.xml
+D:\NsN\Web1\Food_Web\Food_Web\bin\Microsoft.AspNetCore.Routing.xml
+D:\NsN\Web1\Food_Web\Food_Web\bin\Microsoft.AspNetCore.Routing.Abstractions.xml
+D:\NsN\Web1\Food_Web\Food_Web\bin\Microsoft.AspNetCore.SignalR.xml
+D:\NsN\Web1\Food_Web\Food_Web\bin\Microsoft.AspNetCore.SignalR.Common.xml
+D:\NsN\Web1\Food_Web\Food_Web\bin\Microsoft.AspNetCore.SignalR.Core.xml
+D:\NsN\Web1\Food_Web\Food_Web\bin\Microsoft.AspNetCore.SignalR.Protocols.Json.xml
+D:\NsN\Web1\Food_Web\Food_Web\bin\Microsoft.AspNetCore.WebSockets.xml
+D:\NsN\Web1\Food_Web\Food_Web\bin\Microsoft.AspNetCore.WebUtilities.xml
+D:\NsN\Web1\Food_Web\Food_Web\bin\Microsoft.Extensions.Configuration.Abstractions.xml
+D:\NsN\Web1\Food_Web\Food_Web\bin\Microsoft.Extensions.DependencyInjection.Abstractions.xml
+D:\NsN\Web1\Food_Web\Food_Web\bin\Microsoft.Extensions.FileProviders.Abstractions.xml
+D:\NsN\Web1\Food_Web\Food_Web\bin\Microsoft.Extensions.Hosting.Abstractions.xml
+D:\NsN\Web1\Food_Web\Food_Web\bin\Microsoft.Extensions.Logging.Abstractions.xml
+D:\NsN\Web1\Food_Web\Food_Web\bin\Microsoft.Extensions.ObjectPool.xml
+D:\NsN\Web1\Food_Web\Food_Web\bin\Microsoft.Extensions.Options.xml
+D:\NsN\Web1\Food_Web\Food_Web\bin\Microsoft.Extensions.Primitives.xml
+D:\NsN\Web1\Food_Web\Food_Web\bin\Microsoft.Net.Http.Headers.xml
+D:\NsN\Web1\Food_Web\Food_Web\bin\MimeKit.pdb
+D:\NsN\Web1\Food_Web\Food_Web\bin\MimeKit.xml
+D:\NsN\Web1\Food_Web\Food_Web\bin\MimeKit.dll.config
+D:\NsN\Web1\Food_Web\Food_Web\bin\Newtonsoft.Json.xml
+D:\NsN\Web1\Food_Web\Food_Web\bin\PagedList.xml
+D:\NsN\Web1\Food_Web\Food_Web\bin\PagedList.Mvc.xml
+D:\NsN\Web1\Food_Web\Food_Web\bin\SendGrid.pdb
+D:\NsN\Web1\Food_Web\Food_Web\bin\SendGrid.xml
+D:\NsN\Web1\Food_Web\Food_Web\bin\System.Buffers.xml
+D:\NsN\Web1\Food_Web\Food_Web\bin\System.IO.Pipelines.xml
+D:\NsN\Web1\Food_Web\Food_Web\bin\System.Memory.xml
+D:\NsN\Web1\Food_Web\Food_Web\bin\System.Numerics.Vectors.xml
+D:\NsN\Web1\Food_Web\Food_Web\bin\System.Runtime.CompilerServices.Unsafe.xml
+D:\NsN\Web1\Food_Web\Food_Web\bin\System.Text.Encodings.Web.xml
+D:\NsN\Web1\Food_Web\Food_Web\bin\System.Threading.Channels.xml
+D:\NsN\Web1\Food_Web\Food_Web\bin\System.Threading.Tasks.Extensions.xml
+D:\NsN\Web1\Food_Web\Food_Web\bin\System.Web.Helpers.xml
+D:\NsN\Web1\Food_Web\Food_Web\bin\System.Web.Mvc.xml
+D:\NsN\Web1\Food_Web\Food_Web\bin\System.Web.Optimization.xml
+D:\NsN\Web1\Food_Web\Food_Web\bin\System.Web.Razor.xml
+D:\NsN\Web1\Food_Web\Food_Web\bin\System.Web.WebPages.xml
+D:\NsN\Web1\Food_Web\Food_Web\bin\System.Web.WebPages.Deployment.xml
+D:\NsN\Web1\Food_Web\Food_Web\bin\System.Web.WebPages.Razor.xml
+D:\NsN\Web1\Food_Web\Food_Web\bin\Antlr3.Runtime.pdb
+D:\NsN\Web1\Food_Web\Food_Web\bin\EntityFramework.xml
+D:\NsN\Web1\Food_Web\Food_Web\bin\EntityFramework.SqlServer.xml
+D:\NsN\Web1\Food_Web\Food_Web\bin\Microsoft.AspNet.Identity.Core.xml
+D:\NsN\Web1\Food_Web\Food_Web\bin\Microsoft.AspNet.Identity.Owin.xml
+D:\NsN\Web1\Food_Web\Food_Web\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+D:\NsN\Web1\Food_Web\Food_Web\bin\Microsoft.Owin.xml
+D:\NsN\Web1\Food_Web\Food_Web\bin\Microsoft.Owin.Host.SystemWeb.xml
+D:\NsN\Web1\Food_Web\Food_Web\bin\Microsoft.Owin.Security.xml
+D:\NsN\Web1\Food_Web\Food_Web\bin\Microsoft.Owin.Security.Facebook.xml
+D:\NsN\Web1\Food_Web\Food_Web\bin\Microsoft.Owin.Security.Cookies.xml
+D:\NsN\Web1\Food_Web\Food_Web\bin\Microsoft.Owin.Security.Google.xml
+D:\NsN\Web1\Food_Web\Food_Web\bin\Microsoft.Owin.Security.Twitter.xml
+D:\NsN\Web1\Food_Web\Food_Web\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+D:\NsN\Web1\Food_Web\Food_Web\bin\Microsoft.Owin.Security.OAuth.xml
+D:\NsN\Web1\Food_Web\Food_Web\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\NsN\Web1\Food_Web\Food_Web\obj\Debug\Food_Web.csproj.AssemblyReference.cache
+D:\NsN\Web1\Food_Web\Food_Web\obj\Debug\Food_Web.Resources.resources
+D:\NsN\Web1\Food_Web\Food_Web\obj\Debug\Food_Web.Resources.ja-JP.resources
+D:\NsN\Web1\Food_Web\Food_Web\obj\Debug\Food_Web.Resources.vi-VN.resources
+D:\NsN\Web1\Food_Web\Food_Web\obj\Debug\Food_Web.csproj.GenerateResource.cache
+D:\NsN\Web1\Food_Web\Food_Web\obj\Debug\Food_Web.csproj.CoreCompileInputs.cache
+D:\NsN\Web1\Food_Web\Food_Web\obj\Debug\ja-JP\Food_Web.resources.dll
+D:\NsN\Web1\Food_Web\Food_Web\obj\Debug\vi-VN\Food_Web.resources.dll
+D:\NsN\Web1\Food_Web\Food_Web\obj\Debug\Food_Web.csproj.CopyComplete
+D:\NsN\Web1\Food_Web\Food_Web\obj\Debug\Food_Web.dll
+D:\NsN\Web1\Food_Web\Food_Web\obj\Debug\Food_Web.pdb
+D:\NsN\Web1\Food_Web\Food_Web\bin\EPPlus.dll
+D:\NsN\Web1\Food_Web\Food_Web\bin\OfficeOpenXml.Extends.dll
+D:\NsN\Web1\Food_Web\Food_Web\bin\EPPlus.xml
+D:\NsN\Web1\Food_Web\Food_Web\bin\DocumentFormat.OpenXml.dll
+D:\NsN\Web1\Food_Web\Food_Web\bin\DocumentFormat.OpenXml.xml
+D:\NsN\Web1\Food_Web\Food_Web\bin\libHarfBuzzSharp.dylib
+D:\NsN\Web1\Food_Web\Food_Web\bin\x86\libHarfBuzzSharp.dll
+D:\NsN\Web1\Food_Web\Food_Web\bin\x64\libHarfBuzzSharp.dll
+D:\NsN\Web1\Food_Web\Food_Web\bin\arm64\libHarfBuzzSharp.dll
+D:\NsN\Web1\Food_Web\Food_Web\bin\libSkiaSharp.dylib
+D:\NsN\Web1\Food_Web\Food_Web\bin\x86\libSkiaSharp.dll
+D:\NsN\Web1\Food_Web\Food_Web\bin\x64\libSkiaSharp.dll
+D:\NsN\Web1\Food_Web\Food_Web\bin\arm64\libSkiaSharp.dll
+D:\NsN\Web1\Food_Web\Food_Web\bin\Aspose.Words.dll
+D:\NsN\Web1\Food_Web\Food_Web\bin\Aspose.Words.Pdf2Word.dll
+D:\NsN\Web1\Food_Web\Food_Web\bin\BouncyCastle.Crypto.dll
+D:\NsN\Web1\Food_Web\Food_Web\bin\GemBox.Document.dll
+D:\NsN\Web1\Food_Web\Food_Web\bin\HarfBuzzSharp.dll
+D:\NsN\Web1\Food_Web\Food_Web\bin\SkiaSharp.dll
+D:\NsN\Web1\Food_Web\Food_Web\bin\System.ValueTuple.dll
+D:\NsN\Web1\Food_Web\Food_Web\bin\Aspose.Words.xml
+D:\NsN\Web1\Food_Web\Food_Web\bin\GemBox.Document.xml
+D:\NsN\Web1\Food_Web\Food_Web\bin\HarfBuzzSharp.pdb
+D:\NsN\Web1\Food_Web\Food_Web\bin\HarfBuzzSharp.xml
+D:\NsN\Web1\Food_Web\Food_Web\bin\SkiaSharp.pdb
+D:\NsN\Web1\Food_Web\Food_Web\bin\SkiaSharp.xml
+D:\NsN\Web1\Food_Web\Food_Web\bin\System.ValueTuple.xml
+D:\NsN\Web1\Food_Web\Food_Web\bin\DevExpress.Data.v23.1.dll
+D:\NsN\Web1\Food_Web\Food_Web\bin\DevExpress.Xpo.v23.1.dll
+D:\NsN\Web1\Food_Web\Food_Web\bin\DevExpress.Data.v23.1.xml
+D:\NsN\Web1\Food_Web\Food_Web\bin\DevExpress.Xpo.v23.1.xml
+D:\NsN\Web1\Food_Web\Food_Web\bin\DevExpress.Drawing.v23.1.dll
+D:\NsN\Web1\Food_Web\Food_Web\bin\DevExpress.Printing.v23.1.Core.dll
+D:\NsN\Web1\Food_Web\Food_Web\bin\DevExpress.Utils.v23.1.dll
+D:\NsN\Web1\Food_Web\Food_Web\bin\DevExpress.XtraReports.v23.1.dll
+D:\NsN\Web1\Food_Web\Food_Web\bin\DevExpress.XtraReports.v23.1.Web.dll
+D:\NsN\Web1\Food_Web\Food_Web\bin\DevExpress.Pdf.v23.1.Core.dll
+D:\NsN\Web1\Food_Web\Food_Web\bin\DevExpress.Pdf.v23.1.Drawing.dll
+D:\NsN\Web1\Food_Web\Food_Web\bin\DevExpress.Data.Desktop.v23.1.dll
+D:\NsN\Web1\Food_Web\Food_Web\bin\DevExpress.XtraCharts.v23.1.dll
+D:\NsN\Web1\Food_Web\Food_Web\bin\DevExpress.DataAccess.v23.1.dll
+D:\NsN\Web1\Food_Web\Food_Web\bin\DevExpress.Sparkline.v23.1.Core.dll
+D:\NsN\Web1\Food_Web\Food_Web\bin\DevExpress.Charts.v23.1.Core.dll
+D:\NsN\Web1\Food_Web\Food_Web\bin\DevExpress.PivotGrid.v23.1.Core.dll
+D:\NsN\Web1\Food_Web\Food_Web\bin\DevExpress.XtraGauges.v23.1.Core.dll
+D:\NsN\Web1\Food_Web\Food_Web\bin\DevExpress.RichEdit.v23.1.Core.dll
+D:\NsN\Web1\Food_Web\Food_Web\bin\DevExpress.Office.v23.1.Core.dll
+D:\NsN\Web1\Food_Web\Food_Web\bin\DevExpress.CodeParser.v23.1.dll
+D:\NsN\Web1\Food_Web\Food_Web\bin\DevExpress.DataVisualization.v23.1.Core.dll
+D:\NsN\Web1\Food_Web\Food_Web\bin\DevExpress.Drawing.v23.1.xml
+D:\NsN\Web1\Food_Web\Food_Web\bin\DevExpress.Printing.v23.1.Core.xml
+D:\NsN\Web1\Food_Web\Food_Web\bin\DevExpress.Utils.v23.1.xml
+D:\NsN\Web1\Food_Web\Food_Web\bin\DevExpress.XtraReports.v23.1.xml
+D:\NsN\Web1\Food_Web\Food_Web\bin\DevExpress.XtraReports.v23.1.Web.xml
+D:\NsN\Web1\Food_Web\Food_Web\bin\DevExpress.Pdf.v23.1.Core.xml
+D:\NsN\Web1\Food_Web\Food_Web\bin\DevExpress.Pdf.v23.1.Drawing.xml
+D:\NsN\Web1\Food_Web\Food_Web\bin\DevExpress.Data.Desktop.v23.1.xml
+D:\NsN\Web1\Food_Web\Food_Web\bin\DevExpress.XtraCharts.v23.1.xml
+D:\NsN\Web1\Food_Web\Food_Web\bin\DevExpress.DataAccess.v23.1.xml
+D:\NsN\Web1\Food_Web\Food_Web\bin\DevExpress.Sparkline.v23.1.Core.xml
+D:\NsN\Web1\Food_Web\Food_Web\bin\DevExpress.Charts.v23.1.Core.xml
+D:\NsN\Web1\Food_Web\Food_Web\bin\DevExpress.PivotGrid.v23.1.Core.xml
+D:\NsN\Web1\Food_Web\Food_Web\bin\DevExpress.XtraGauges.v23.1.Core.xml
+D:\NsN\Web1\Food_Web\Food_Web\bin\DevExpress.RichEdit.v23.1.Core.xml
+D:\NsN\Web1\Food_Web\Food_Web\bin\DevExpress.Office.v23.1.Core.xml
+D:\NsN\Web1\Food_Web\Food_Web\bin\itext.barcodes.dll
+D:\NsN\Web1\Food_Web\Food_Web\bin\itext.bouncy-castle-connector.dll
+D:\NsN\Web1\Food_Web\Food_Web\bin\itext.commons.dll
+D:\NsN\Web1\Food_Web\Food_Web\bin\itext.forms.dll
+D:\NsN\Web1\Food_Web\Food_Web\bin\itext.html2pdf.dll
+D:\NsN\Web1\Food_Web\Food_Web\bin\itext.io.dll
+D:\NsN\Web1\Food_Web\Food_Web\bin\itext.kernel.dll
+D:\NsN\Web1\Food_Web\Food_Web\bin\itext.layout.dll
+D:\NsN\Web1\Food_Web\Food_Web\bin\itext.pdfa.dll
+D:\NsN\Web1\Food_Web\Food_Web\bin\itext.sign.dll
+D:\NsN\Web1\Food_Web\Food_Web\bin\itext.styledxmlparser.dll
+D:\NsN\Web1\Food_Web\Food_Web\bin\itext.svg.dll
+D:\NsN\Web1\Food_Web\Food_Web\bin\Microsoft.Bcl.AsyncInterfaces.dll
+D:\NsN\Web1\Food_Web\Food_Web\bin\Microsoft.Extensions.DependencyInjection.dll
+D:\NsN\Web1\Food_Web\Food_Web\bin\Microsoft.Extensions.Logging.dll
+D:\NsN\Web1\Food_Web\Food_Web\bin\System.Diagnostics.DiagnosticSource.dll
+D:\NsN\Web1\Food_Web\Food_Web\bin\itext.barcodes.xml
+D:\NsN\Web1\Food_Web\Food_Web\bin\itext.bouncy-castle-connector.xml
+D:\NsN\Web1\Food_Web\Food_Web\bin\itext.commons.xml
+D:\NsN\Web1\Food_Web\Food_Web\bin\itext.forms.xml
+D:\NsN\Web1\Food_Web\Food_Web\bin\itext.html2pdf.xml
+D:\NsN\Web1\Food_Web\Food_Web\bin\itext.io.xml
+D:\NsN\Web1\Food_Web\Food_Web\bin\itext.kernel.xml
+D:\NsN\Web1\Food_Web\Food_Web\bin\itext.layout.xml
+D:\NsN\Web1\Food_Web\Food_Web\bin\itext.pdfa.xml
+D:\NsN\Web1\Food_Web\Food_Web\bin\itext.sign.xml
+D:\NsN\Web1\Food_Web\Food_Web\bin\itext.styledxmlparser.xml
+D:\NsN\Web1\Food_Web\Food_Web\bin\itext.svg.xml
+D:\NsN\Web1\Food_Web\Food_Web\bin\Microsoft.Bcl.AsyncInterfaces.xml
+D:\NsN\Web1\Food_Web\Food_Web\bin\Microsoft.Extensions.DependencyInjection.xml
+D:\NsN\Web1\Food_Web\Food_Web\bin\Microsoft.Extensions.Logging.xml
+D:\NsN\Web1\Food_Web\Food_Web\bin\System.Diagnostics.DiagnosticSource.xml
+D:\NsN\Web1\Food_Web\Food_Web\bin\Rotativa.dll
+D:\NsN\Web1\Food_Web\Food_Web\bin\itextsharp.dll
+D:\NsN\Web1\Food_Web\Food_Web\bin\itextsharp.xml
+D:\NsN\Web1\Food_Web\Food_Web\bin\itextsharp.xmlworker.dll
+D:\NsN\Web1\Food_Web\Food_Web\bin\AntiXssLibrary.dll
+D:\NsN\Web1\Food_Web\Food_Web\bin\HtmlSanitizationLibrary.dll
+D:\NsN\Web1\Food_Web\Food_Web\bin\AntiXssLibrary.xml
+D:\NsN\Web1\Food_Web\Food_Web\bin\HtmlSanitizationLibrary.xml
+D:\NsN\HihiApp\Web1\Food_Web\Food_Web\obj\Debug\Food_Web.csproj.AssemblyReference.cache
+D:\NsN\HihiApp\Web1\Food_Web\Food_Web\obj\Debug\Food_Web.Resources.resources
+D:\NsN\HihiApp\Web1\Food_Web\Food_Web\obj\Debug\Food_Web.Resources.ja-JP.resources
+D:\NsN\HihiApp\Web1\Food_Web\Food_Web\obj\Debug\Food_Web.Resources.vi-VN.resources
+D:\NsN\HihiApp\Web1\Food_Web\Food_Web\obj\Debug\Food_Web.csproj.GenerateResource.cache
+D:\NsN\HihiApp\Web1\Food_Web\Food_Web\obj\Debug\Food_Web.csproj.CoreCompileInputs.cache
+D:\NsN\HihiApp\Web1\Food_Web\Food_Web\obj\Debug\Food_Web.dll
+D:\NsN\HihiApp\Web1\Food_Web\Food_Web\obj\Debug\Food_Web.pdb
+D:\NsN\HihiApp\Web1\Food_Web\Food_Web\bin\libHarfBuzzSharp.dylib
+D:\NsN\HihiApp\Web1\Food_Web\Food_Web\bin\x86\libHarfBuzzSharp.dll
+D:\NsN\HihiApp\Web1\Food_Web\Food_Web\bin\x64\libHarfBuzzSharp.dll
+D:\NsN\HihiApp\Web1\Food_Web\Food_Web\bin\arm64\libHarfBuzzSharp.dll
+D:\NsN\HihiApp\Web1\Food_Web\Food_Web\bin\libSkiaSharp.dylib
+D:\NsN\HihiApp\Web1\Food_Web\Food_Web\bin\x86\libSkiaSharp.dll
+D:\NsN\HihiApp\Web1\Food_Web\Food_Web\bin\x64\libSkiaSharp.dll
+D:\NsN\HihiApp\Web1\Food_Web\Food_Web\bin\arm64\libSkiaSharp.dll
+D:\NsN\HihiApp\Web1\Food_Web\Food_Web\bin\Food_Web.dll.config
+D:\NsN\HihiApp\Web1\Food_Web\Food_Web\bin\Food_Web.dll
+D:\NsN\HihiApp\Web1\Food_Web\Food_Web\bin\Food_Web.pdb
+D:\NsN\HihiApp\Web1\Food_Web\Food_Web\bin\ja-JP\Food_Web.resources.dll
+D:\NsN\HihiApp\Web1\Food_Web\Food_Web\bin\vi-VN\Food_Web.resources.dll
+D:\NsN\HihiApp\Web1\Food_Web\Food_Web\bin\roslyn\csc.exe
+D:\NsN\HihiApp\Web1\Food_Web\Food_Web\bin\roslyn\csc.exe.config
+D:\NsN\HihiApp\Web1\Food_Web\Food_Web\bin\roslyn\csc.rsp
+D:\NsN\HihiApp\Web1\Food_Web\Food_Web\bin\roslyn\csi.exe
+D:\NsN\HihiApp\Web1\Food_Web\Food_Web\bin\roslyn\csi.exe.config
+D:\NsN\HihiApp\Web1\Food_Web\Food_Web\bin\roslyn\csi.rsp
+D:\NsN\HihiApp\Web1\Food_Web\Food_Web\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\NsN\HihiApp\Web1\Food_Web\Food_Web\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\NsN\HihiApp\Web1\Food_Web\Food_Web\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\NsN\HihiApp\Web1\Food_Web\Food_Web\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\NsN\HihiApp\Web1\Food_Web\Food_Web\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\NsN\HihiApp\Web1\Food_Web\Food_Web\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\NsN\HihiApp\Web1\Food_Web\Food_Web\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\NsN\HihiApp\Web1\Food_Web\Food_Web\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\NsN\HihiApp\Web1\Food_Web\Food_Web\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\NsN\HihiApp\Web1\Food_Web\Food_Web\bin\roslyn\Microsoft.Managed.Core.targets
+D:\NsN\HihiApp\Web1\Food_Web\Food_Web\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\NsN\HihiApp\Web1\Food_Web\Food_Web\bin\roslyn\Microsoft.Win32.Primitives.dll
+D:\NsN\HihiApp\Web1\Food_Web\Food_Web\bin\roslyn\System.AppContext.dll
+D:\NsN\HihiApp\Web1\Food_Web\Food_Web\bin\roslyn\System.Collections.Immutable.dll
+D:\NsN\HihiApp\Web1\Food_Web\Food_Web\bin\roslyn\System.Console.dll
+D:\NsN\HihiApp\Web1\Food_Web\Food_Web\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+D:\NsN\HihiApp\Web1\Food_Web\Food_Web\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+D:\NsN\HihiApp\Web1\Food_Web\Food_Web\bin\roslyn\System.Diagnostics.StackTrace.dll
+D:\NsN\HihiApp\Web1\Food_Web\Food_Web\bin\roslyn\System.Globalization.Calendars.dll
+D:\NsN\HihiApp\Web1\Food_Web\Food_Web\bin\roslyn\System.IO.Compression.dll
+D:\NsN\HihiApp\Web1\Food_Web\Food_Web\bin\roslyn\System.IO.Compression.ZipFile.dll
+D:\NsN\HihiApp\Web1\Food_Web\Food_Web\bin\roslyn\System.IO.FileSystem.dll
+D:\NsN\HihiApp\Web1\Food_Web\Food_Web\bin\roslyn\System.IO.FileSystem.Primitives.dll
+D:\NsN\HihiApp\Web1\Food_Web\Food_Web\bin\roslyn\System.Net.Http.dll
+D:\NsN\HihiApp\Web1\Food_Web\Food_Web\bin\roslyn\System.Net.Sockets.dll
+D:\NsN\HihiApp\Web1\Food_Web\Food_Web\bin\roslyn\System.Reflection.Metadata.dll
+D:\NsN\HihiApp\Web1\Food_Web\Food_Web\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+D:\NsN\HihiApp\Web1\Food_Web\Food_Web\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+D:\NsN\HihiApp\Web1\Food_Web\Food_Web\bin\roslyn\System.Security.Cryptography.Encoding.dll
+D:\NsN\HihiApp\Web1\Food_Web\Food_Web\bin\roslyn\System.Security.Cryptography.Primitives.dll
+D:\NsN\HihiApp\Web1\Food_Web\Food_Web\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+D:\NsN\HihiApp\Web1\Food_Web\Food_Web\bin\roslyn\System.Text.Encoding.CodePages.dll
+D:\NsN\HihiApp\Web1\Food_Web\Food_Web\bin\roslyn\System.Threading.Tasks.Extensions.dll
+D:\NsN\HihiApp\Web1\Food_Web\Food_Web\bin\roslyn\System.ValueTuple.dll
+D:\NsN\HihiApp\Web1\Food_Web\Food_Web\bin\roslyn\System.Xml.ReaderWriter.dll
+D:\NsN\HihiApp\Web1\Food_Web\Food_Web\bin\roslyn\System.Xml.XmlDocument.dll
+D:\NsN\HihiApp\Web1\Food_Web\Food_Web\bin\roslyn\System.Xml.XPath.dll
+D:\NsN\HihiApp\Web1\Food_Web\Food_Web\bin\roslyn\System.Xml.XPath.XDocument.dll
+D:\NsN\HihiApp\Web1\Food_Web\Food_Web\bin\roslyn\vbc.exe
+D:\NsN\HihiApp\Web1\Food_Web\Food_Web\bin\roslyn\vbc.exe.config
+D:\NsN\HihiApp\Web1\Food_Web\Food_Web\bin\roslyn\vbc.rsp
+D:\NsN\HihiApp\Web1\Food_Web\Food_Web\bin\roslyn\VBCSCompiler.exe
+D:\NsN\HihiApp\Web1\Food_Web\Food_Web\bin\roslyn\VBCSCompiler.exe.config
+D:\NsN\HihiApp\Web1\Food_Web\Food_Web\bin\AntiXssLibrary.dll
+D:\NsN\HihiApp\Web1\Food_Web\Food_Web\bin\Antlr3.Runtime.dll
+D:\NsN\HihiApp\Web1\Food_Web\Food_Web\bin\Aspose.Words.dll
+D:\NsN\HihiApp\Web1\Food_Web\Food_Web\bin\Aspose.Words.Pdf2Word.dll
+D:\NsN\HihiApp\Web1\Food_Web\Food_Web\bin\BouncyCastle.Crypto.dll
+D:\NsN\HihiApp\Web1\Food_Web\Food_Web\bin\BouncyCastle.Cryptography.dll
+D:\NsN\HihiApp\Web1\Food_Web\Food_Web\bin\DevExpress.Data.v23.1.dll
+D:\NsN\HihiApp\Web1\Food_Web\Food_Web\bin\DevExpress.Drawing.v23.1.dll
+D:\NsN\HihiApp\Web1\Food_Web\Food_Web\bin\DevExpress.Printing.v23.1.Core.dll
+D:\NsN\HihiApp\Web1\Food_Web\Food_Web\bin\DevExpress.Utils.v23.1.dll
+D:\NsN\HihiApp\Web1\Food_Web\Food_Web\bin\DevExpress.Xpo.v23.1.dll
+D:\NsN\HihiApp\Web1\Food_Web\Food_Web\bin\DevExpress.XtraReports.v23.1.dll
+D:\NsN\HihiApp\Web1\Food_Web\Food_Web\bin\DevExpress.XtraReports.v23.1.Web.dll
+D:\NsN\HihiApp\Web1\Food_Web\Food_Web\bin\DocumentFormat.OpenXml.dll
+D:\NsN\HihiApp\Web1\Food_Web\Food_Web\bin\EntityFramework.dll
+D:\NsN\HihiApp\Web1\Food_Web\Food_Web\bin\EntityFramework.SqlServer.dll
+D:\NsN\HihiApp\Web1\Food_Web\Food_Web\bin\EPPlus.dll
+D:\NsN\HihiApp\Web1\Food_Web\Food_Web\bin\GemBox.Document.dll
+D:\NsN\HihiApp\Web1\Food_Web\Food_Web\bin\HarfBuzzSharp.dll
+D:\NsN\HihiApp\Web1\Food_Web\Food_Web\bin\HtmlSanitizationLibrary.dll
+D:\NsN\HihiApp\Web1\Food_Web\Food_Web\bin\itext.barcodes.dll
+D:\NsN\HihiApp\Web1\Food_Web\Food_Web\bin\itext.bouncy-castle-connector.dll
+D:\NsN\HihiApp\Web1\Food_Web\Food_Web\bin\itext.commons.dll
+D:\NsN\HihiApp\Web1\Food_Web\Food_Web\bin\itext.forms.dll
+D:\NsN\HihiApp\Web1\Food_Web\Food_Web\bin\itext.html2pdf.dll
+D:\NsN\HihiApp\Web1\Food_Web\Food_Web\bin\itext.io.dll
+D:\NsN\HihiApp\Web1\Food_Web\Food_Web\bin\itext.kernel.dll
+D:\NsN\HihiApp\Web1\Food_Web\Food_Web\bin\itext.layout.dll
+D:\NsN\HihiApp\Web1\Food_Web\Food_Web\bin\itext.pdfa.dll
+D:\NsN\HihiApp\Web1\Food_Web\Food_Web\bin\itext.sign.dll
+D:\NsN\HihiApp\Web1\Food_Web\Food_Web\bin\itext.styledxmlparser.dll
+D:\NsN\HihiApp\Web1\Food_Web\Food_Web\bin\itext.svg.dll
+D:\NsN\HihiApp\Web1\Food_Web\Food_Web\bin\itextsharp.dll
+D:\NsN\HihiApp\Web1\Food_Web\Food_Web\bin\itextsharp.xmlworker.dll
+D:\NsN\HihiApp\Web1\Food_Web\Food_Web\bin\MailKit.dll
+D:\NsN\HihiApp\Web1\Food_Web\Food_Web\bin\Microsoft.AspNet.Identity.Core.dll
+D:\NsN\HihiApp\Web1\Food_Web\Food_Web\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+D:\NsN\HihiApp\Web1\Food_Web\Food_Web\bin\Microsoft.AspNet.Identity.Owin.dll
+D:\NsN\HihiApp\Web1\Food_Web\Food_Web\bin\Microsoft.AspNet.SignalR.Core.dll
+D:\NsN\HihiApp\Web1\Food_Web\Food_Web\bin\Microsoft.AspNet.SignalR.SystemWeb.dll
+D:\NsN\HihiApp\Web1\Food_Web\Food_Web\bin\Microsoft.AspNetCore.Authentication.Abstractions.dll
+D:\NsN\HihiApp\Web1\Food_Web\Food_Web\bin\Microsoft.AspNetCore.Authorization.dll
+D:\NsN\HihiApp\Web1\Food_Web\Food_Web\bin\Microsoft.AspNetCore.Authorization.Policy.dll
+D:\NsN\HihiApp\Web1\Food_Web\Food_Web\bin\Microsoft.AspNetCore.Connections.Abstractions.dll
+D:\NsN\HihiApp\Web1\Food_Web\Food_Web\bin\Microsoft.AspNetCore.Hosting.Abstractions.dll
+D:\NsN\HihiApp\Web1\Food_Web\Food_Web\bin\Microsoft.AspNetCore.Hosting.Server.Abstractions.dll
+D:\NsN\HihiApp\Web1\Food_Web\Food_Web\bin\Microsoft.AspNetCore.Http.Abstractions.dll
+D:\NsN\HihiApp\Web1\Food_Web\Food_Web\bin\Microsoft.AspNetCore.Http.Connections.Common.dll
+D:\NsN\HihiApp\Web1\Food_Web\Food_Web\bin\Microsoft.AspNetCore.Http.Connections.dll
+D:\NsN\HihiApp\Web1\Food_Web\Food_Web\bin\Microsoft.AspNetCore.Http.dll
+D:\NsN\HihiApp\Web1\Food_Web\Food_Web\bin\Microsoft.AspNetCore.Http.Extensions.dll
+D:\NsN\HihiApp\Web1\Food_Web\Food_Web\bin\Microsoft.AspNetCore.Http.Features.dll
+D:\NsN\HihiApp\Web1\Food_Web\Food_Web\bin\Microsoft.AspNetCore.Routing.Abstractions.dll
+D:\NsN\HihiApp\Web1\Food_Web\Food_Web\bin\Microsoft.AspNetCore.Routing.dll
+D:\NsN\HihiApp\Web1\Food_Web\Food_Web\bin\Microsoft.AspNetCore.SignalR.Common.dll
+D:\NsN\HihiApp\Web1\Food_Web\Food_Web\bin\Microsoft.AspNetCore.SignalR.Core.dll
+D:\NsN\HihiApp\Web1\Food_Web\Food_Web\bin\Microsoft.AspNetCore.SignalR.dll
+D:\NsN\HihiApp\Web1\Food_Web\Food_Web\bin\Microsoft.AspNetCore.SignalR.Protocols.Json.dll
+D:\NsN\HihiApp\Web1\Food_Web\Food_Web\bin\Microsoft.AspNetCore.WebSockets.dll
+D:\NsN\HihiApp\Web1\Food_Web\Food_Web\bin\Microsoft.AspNetCore.WebUtilities.dll
+D:\NsN\HihiApp\Web1\Food_Web\Food_Web\bin\Microsoft.Bcl.AsyncInterfaces.dll
+D:\NsN\HihiApp\Web1\Food_Web\Food_Web\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\NsN\HihiApp\Web1\Food_Web\Food_Web\bin\Microsoft.Extensions.Configuration.Abstractions.dll
+D:\NsN\HihiApp\Web1\Food_Web\Food_Web\bin\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+D:\NsN\HihiApp\Web1\Food_Web\Food_Web\bin\Microsoft.Extensions.DependencyInjection.dll
+D:\NsN\HihiApp\Web1\Food_Web\Food_Web\bin\Microsoft.Extensions.FileProviders.Abstractions.dll
+D:\NsN\HihiApp\Web1\Food_Web\Food_Web\bin\Microsoft.Extensions.Hosting.Abstractions.dll
+D:\NsN\HihiApp\Web1\Food_Web\Food_Web\bin\Microsoft.Extensions.Logging.Abstractions.dll
+D:\NsN\HihiApp\Web1\Food_Web\Food_Web\bin\Microsoft.Extensions.Logging.dll
+D:\NsN\HihiApp\Web1\Food_Web\Food_Web\bin\Microsoft.Extensions.ObjectPool.dll
+D:\NsN\HihiApp\Web1\Food_Web\Food_Web\bin\Microsoft.Extensions.Options.dll
+D:\NsN\HihiApp\Web1\Food_Web\Food_Web\bin\Microsoft.Extensions.Primitives.dll
+D:\NsN\HihiApp\Web1\Food_Web\Food_Web\bin\Microsoft.Net.Http.Headers.dll
+D:\NsN\HihiApp\Web1\Food_Web\Food_Web\bin\Microsoft.Owin.dll
+D:\NsN\HihiApp\Web1\Food_Web\Food_Web\bin\Microsoft.Owin.Host.SystemWeb.dll
+D:\NsN\HihiApp\Web1\Food_Web\Food_Web\bin\Microsoft.Owin.Security.Cookies.dll
+D:\NsN\HihiApp\Web1\Food_Web\Food_Web\bin\Microsoft.Owin.Security.dll
+D:\NsN\HihiApp\Web1\Food_Web\Food_Web\bin\Microsoft.Owin.Security.Facebook.dll
+D:\NsN\HihiApp\Web1\Food_Web\Food_Web\bin\Microsoft.Owin.Security.Google.dll
+D:\NsN\HihiApp\Web1\Food_Web\Food_Web\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+D:\NsN\HihiApp\Web1\Food_Web\Food_Web\bin\Microsoft.Owin.Security.OAuth.dll
+D:\NsN\HihiApp\Web1\Food_Web\Food_Web\bin\Microsoft.Owin.Security.Twitter.dll
+D:\NsN\HihiApp\Web1\Food_Web\Food_Web\bin\Microsoft.Web.Infrastructure.dll
+D:\NsN\HihiApp\Web1\Food_Web\Food_Web\bin\MimeKit.dll
+D:\NsN\HihiApp\Web1\Food_Web\Food_Web\bin\Newtonsoft.Json.dll
+D:\NsN\HihiApp\Web1\Food_Web\Food_Web\bin\OfficeOpenXml.Extends.dll
+D:\NsN\HihiApp\Web1\Food_Web\Food_Web\bin\Owin.dll
+D:\NsN\HihiApp\Web1\Food_Web\Food_Web\bin\PagedList.dll
+D:\NsN\HihiApp\Web1\Food_Web\Food_Web\bin\PagedList.Mvc.dll
+D:\NsN\HihiApp\Web1\Food_Web\Food_Web\bin\Rotativa.dll
+D:\NsN\HihiApp\Web1\Food_Web\Food_Web\bin\SendGrid.dll
+D:\NsN\HihiApp\Web1\Food_Web\Food_Web\bin\SkiaSharp.dll
+D:\NsN\HihiApp\Web1\Food_Web\Food_Web\bin\StarkbankEcdsa.dll
+D:\NsN\HihiApp\Web1\Food_Web\Food_Web\bin\System.Buffers.dll
+D:\NsN\HihiApp\Web1\Food_Web\Food_Web\bin\System.ComponentModel.Annotations.dll
+D:\NsN\HihiApp\Web1\Food_Web\Food_Web\bin\System.Diagnostics.DiagnosticSource.dll
+D:\NsN\HihiApp\Web1\Food_Web\Food_Web\bin\System.IO.Pipelines.dll
+D:\NsN\HihiApp\Web1\Food_Web\Food_Web\bin\System.Memory.dll
+D:\NsN\HihiApp\Web1\Food_Web\Food_Web\bin\System.Net.Mail.Abstractions.dll
+D:\NsN\HihiApp\Web1\Food_Web\Food_Web\bin\System.Net.WebSockets.WebSocketProtocol.dll
+D:\NsN\HihiApp\Web1\Food_Web\Food_Web\bin\System.Numerics.Vectors.dll
+D:\NsN\HihiApp\Web1\Food_Web\Food_Web\bin\System.Runtime.CompilerServices.Unsafe.dll
+D:\NsN\HihiApp\Web1\Food_Web\Food_Web\bin\System.Security.Principal.Windows.dll
+D:\NsN\HihiApp\Web1\Food_Web\Food_Web\bin\System.Text.Encodings.Web.dll
+D:\NsN\HihiApp\Web1\Food_Web\Food_Web\bin\System.Threading.Channels.dll
+D:\NsN\HihiApp\Web1\Food_Web\Food_Web\bin\System.Threading.Tasks.Extensions.dll
+D:\NsN\HihiApp\Web1\Food_Web\Food_Web\bin\System.ValueTuple.dll
+D:\NsN\HihiApp\Web1\Food_Web\Food_Web\bin\System.Web.Helpers.dll
+D:\NsN\HihiApp\Web1\Food_Web\Food_Web\bin\System.Web.Mvc.dll
+D:\NsN\HihiApp\Web1\Food_Web\Food_Web\bin\System.Web.Optimization.dll
+D:\NsN\HihiApp\Web1\Food_Web\Food_Web\bin\System.Web.Razor.dll
+D:\NsN\HihiApp\Web1\Food_Web\Food_Web\bin\System.Web.WebPages.Deployment.dll
+D:\NsN\HihiApp\Web1\Food_Web\Food_Web\bin\System.Web.WebPages.dll
+D:\NsN\HihiApp\Web1\Food_Web\Food_Web\bin\System.Web.WebPages.Razor.dll
+D:\NsN\HihiApp\Web1\Food_Web\Food_Web\bin\WebGrease.dll
+D:\NsN\HihiApp\Web1\Food_Web\Food_Web\bin\DevExpress.Pdf.v23.1.Core.dll
+D:\NsN\HihiApp\Web1\Food_Web\Food_Web\bin\DevExpress.Pdf.v23.1.Drawing.dll
+D:\NsN\HihiApp\Web1\Food_Web\Food_Web\bin\DevExpress.Data.Desktop.v23.1.dll
+D:\NsN\HihiApp\Web1\Food_Web\Food_Web\bin\DevExpress.XtraCharts.v23.1.dll
+D:\NsN\HihiApp\Web1\Food_Web\Food_Web\bin\DevExpress.DataAccess.v23.1.dll
+D:\NsN\HihiApp\Web1\Food_Web\Food_Web\bin\DevExpress.Sparkline.v23.1.Core.dll
+D:\NsN\HihiApp\Web1\Food_Web\Food_Web\bin\DevExpress.Charts.v23.1.Core.dll
+D:\NsN\HihiApp\Web1\Food_Web\Food_Web\bin\DevExpress.PivotGrid.v23.1.Core.dll
+D:\NsN\HihiApp\Web1\Food_Web\Food_Web\bin\DevExpress.XtraGauges.v23.1.Core.dll
+D:\NsN\HihiApp\Web1\Food_Web\Food_Web\bin\DevExpress.RichEdit.v23.1.Core.dll
+D:\NsN\HihiApp\Web1\Food_Web\Food_Web\bin\DevExpress.Office.v23.1.Core.dll
+D:\NsN\HihiApp\Web1\Food_Web\Food_Web\bin\DevExpress.CodeParser.v23.1.dll
+D:\NsN\HihiApp\Web1\Food_Web\Food_Web\bin\DevExpress.DataVisualization.v23.1.Core.dll
+D:\NsN\HihiApp\Web1\Food_Web\Food_Web\bin\AntiXssLibrary.xml
+D:\NsN\HihiApp\Web1\Food_Web\Food_Web\bin\Aspose.Words.xml
+D:\NsN\HihiApp\Web1\Food_Web\Food_Web\bin\BouncyCastle.Cryptography.xml
+D:\NsN\HihiApp\Web1\Food_Web\Food_Web\bin\DevExpress.Data.v23.1.xml
+D:\NsN\HihiApp\Web1\Food_Web\Food_Web\bin\DevExpress.Drawing.v23.1.xml
+D:\NsN\HihiApp\Web1\Food_Web\Food_Web\bin\DevExpress.Printing.v23.1.Core.xml
+D:\NsN\HihiApp\Web1\Food_Web\Food_Web\bin\DevExpress.Utils.v23.1.xml
+D:\NsN\HihiApp\Web1\Food_Web\Food_Web\bin\DevExpress.Xpo.v23.1.xml
+D:\NsN\HihiApp\Web1\Food_Web\Food_Web\bin\DevExpress.XtraReports.v23.1.xml
+D:\NsN\HihiApp\Web1\Food_Web\Food_Web\bin\DevExpress.XtraReports.v23.1.Web.xml
+D:\NsN\HihiApp\Web1\Food_Web\Food_Web\bin\DocumentFormat.OpenXml.xml
+D:\NsN\HihiApp\Web1\Food_Web\Food_Web\bin\EPPlus.xml
+D:\NsN\HihiApp\Web1\Food_Web\Food_Web\bin\GemBox.Document.xml
+D:\NsN\HihiApp\Web1\Food_Web\Food_Web\bin\HarfBuzzSharp.pdb
+D:\NsN\HihiApp\Web1\Food_Web\Food_Web\bin\HarfBuzzSharp.xml
+D:\NsN\HihiApp\Web1\Food_Web\Food_Web\bin\HtmlSanitizationLibrary.xml
+D:\NsN\HihiApp\Web1\Food_Web\Food_Web\bin\itext.barcodes.xml
+D:\NsN\HihiApp\Web1\Food_Web\Food_Web\bin\itext.bouncy-castle-connector.xml
+D:\NsN\HihiApp\Web1\Food_Web\Food_Web\bin\itext.commons.xml
+D:\NsN\HihiApp\Web1\Food_Web\Food_Web\bin\itext.forms.xml
+D:\NsN\HihiApp\Web1\Food_Web\Food_Web\bin\itext.html2pdf.xml
+D:\NsN\HihiApp\Web1\Food_Web\Food_Web\bin\itext.io.xml
+D:\NsN\HihiApp\Web1\Food_Web\Food_Web\bin\itext.kernel.xml
+D:\NsN\HihiApp\Web1\Food_Web\Food_Web\bin\itext.layout.xml
+D:\NsN\HihiApp\Web1\Food_Web\Food_Web\bin\itext.pdfa.xml
+D:\NsN\HihiApp\Web1\Food_Web\Food_Web\bin\itext.sign.xml
+D:\NsN\HihiApp\Web1\Food_Web\Food_Web\bin\itext.styledxmlparser.xml
+D:\NsN\HihiApp\Web1\Food_Web\Food_Web\bin\itext.svg.xml
+D:\NsN\HihiApp\Web1\Food_Web\Food_Web\bin\itextsharp.xml
+D:\NsN\HihiApp\Web1\Food_Web\Food_Web\bin\MailKit.pdb
+D:\NsN\HihiApp\Web1\Food_Web\Food_Web\bin\MailKit.xml
+D:\NsN\HihiApp\Web1\Food_Web\Food_Web\bin\MailKit.dll.config
+D:\NsN\HihiApp\Web1\Food_Web\Food_Web\bin\Microsoft.AspNet.SignalR.Core.xml
+D:\NsN\HihiApp\Web1\Food_Web\Food_Web\bin\Microsoft.AspNet.SignalR.SystemWeb.xml
+D:\NsN\HihiApp\Web1\Food_Web\Food_Web\bin\Microsoft.AspNetCore.Authentication.Abstractions.xml
+D:\NsN\HihiApp\Web1\Food_Web\Food_Web\bin\Microsoft.AspNetCore.Authorization.xml
+D:\NsN\HihiApp\Web1\Food_Web\Food_Web\bin\Microsoft.AspNetCore.Authorization.Policy.xml
+D:\NsN\HihiApp\Web1\Food_Web\Food_Web\bin\Microsoft.AspNetCore.Connections.Abstractions.xml
+D:\NsN\HihiApp\Web1\Food_Web\Food_Web\bin\Microsoft.AspNetCore.Hosting.Abstractions.xml
+D:\NsN\HihiApp\Web1\Food_Web\Food_Web\bin\Microsoft.AspNetCore.Hosting.Server.Abstractions.xml
+D:\NsN\HihiApp\Web1\Food_Web\Food_Web\bin\Microsoft.AspNetCore.Http.xml
+D:\NsN\HihiApp\Web1\Food_Web\Food_Web\bin\Microsoft.AspNetCore.Http.Abstractions.xml
+D:\NsN\HihiApp\Web1\Food_Web\Food_Web\bin\Microsoft.AspNetCore.Http.Connections.xml
+D:\NsN\HihiApp\Web1\Food_Web\Food_Web\bin\Microsoft.AspNetCore.Http.Connections.Common.xml
+D:\NsN\HihiApp\Web1\Food_Web\Food_Web\bin\Microsoft.AspNetCore.Http.Extensions.xml
+D:\NsN\HihiApp\Web1\Food_Web\Food_Web\bin\Microsoft.AspNetCore.Http.Features.xml
+D:\NsN\HihiApp\Web1\Food_Web\Food_Web\bin\Microsoft.AspNetCore.Routing.xml
+D:\NsN\HihiApp\Web1\Food_Web\Food_Web\bin\Microsoft.AspNetCore.Routing.Abstractions.xml
+D:\NsN\HihiApp\Web1\Food_Web\Food_Web\bin\Microsoft.AspNetCore.SignalR.xml
+D:\NsN\HihiApp\Web1\Food_Web\Food_Web\bin\Microsoft.AspNetCore.SignalR.Common.xml
+D:\NsN\HihiApp\Web1\Food_Web\Food_Web\bin\Microsoft.AspNetCore.SignalR.Core.xml
+D:\NsN\HihiApp\Web1\Food_Web\Food_Web\bin\Microsoft.AspNetCore.SignalR.Protocols.Json.xml
+D:\NsN\HihiApp\Web1\Food_Web\Food_Web\bin\Microsoft.AspNetCore.WebSockets.xml
+D:\NsN\HihiApp\Web1\Food_Web\Food_Web\bin\Microsoft.AspNetCore.WebUtilities.xml
+D:\NsN\HihiApp\Web1\Food_Web\Food_Web\bin\Microsoft.Bcl.AsyncInterfaces.xml
+D:\NsN\HihiApp\Web1\Food_Web\Food_Web\bin\Microsoft.Extensions.Configuration.Abstractions.xml
+D:\NsN\HihiApp\Web1\Food_Web\Food_Web\bin\Microsoft.Extensions.DependencyInjection.xml
+D:\NsN\HihiApp\Web1\Food_Web\Food_Web\bin\Microsoft.Extensions.DependencyInjection.Abstractions.xml
+D:\NsN\HihiApp\Web1\Food_Web\Food_Web\bin\Microsoft.Extensions.FileProviders.Abstractions.xml
+D:\NsN\HihiApp\Web1\Food_Web\Food_Web\bin\Microsoft.Extensions.Hosting.Abstractions.xml
+D:\NsN\HihiApp\Web1\Food_Web\Food_Web\bin\Microsoft.Extensions.Logging.xml
+D:\NsN\HihiApp\Web1\Food_Web\Food_Web\bin\Microsoft.Extensions.Logging.Abstractions.xml
+D:\NsN\HihiApp\Web1\Food_Web\Food_Web\bin\Microsoft.Extensions.ObjectPool.xml
+D:\NsN\HihiApp\Web1\Food_Web\Food_Web\bin\Microsoft.Extensions.Options.xml
+D:\NsN\HihiApp\Web1\Food_Web\Food_Web\bin\Microsoft.Extensions.Primitives.xml
+D:\NsN\HihiApp\Web1\Food_Web\Food_Web\bin\Microsoft.Net.Http.Headers.xml
+D:\NsN\HihiApp\Web1\Food_Web\Food_Web\bin\MimeKit.pdb
+D:\NsN\HihiApp\Web1\Food_Web\Food_Web\bin\MimeKit.xml
+D:\NsN\HihiApp\Web1\Food_Web\Food_Web\bin\MimeKit.dll.config
+D:\NsN\HihiApp\Web1\Food_Web\Food_Web\bin\Newtonsoft.Json.xml
+D:\NsN\HihiApp\Web1\Food_Web\Food_Web\bin\PagedList.xml
+D:\NsN\HihiApp\Web1\Food_Web\Food_Web\bin\PagedList.Mvc.xml
+D:\NsN\HihiApp\Web1\Food_Web\Food_Web\bin\SendGrid.pdb
+D:\NsN\HihiApp\Web1\Food_Web\Food_Web\bin\SendGrid.xml
+D:\NsN\HihiApp\Web1\Food_Web\Food_Web\bin\SkiaSharp.pdb
+D:\NsN\HihiApp\Web1\Food_Web\Food_Web\bin\SkiaSharp.xml
+D:\NsN\HihiApp\Web1\Food_Web\Food_Web\bin\System.Buffers.xml
+D:\NsN\HihiApp\Web1\Food_Web\Food_Web\bin\System.Diagnostics.DiagnosticSource.xml
+D:\NsN\HihiApp\Web1\Food_Web\Food_Web\bin\System.IO.Pipelines.xml
+D:\NsN\HihiApp\Web1\Food_Web\Food_Web\bin\System.Memory.xml
+D:\NsN\HihiApp\Web1\Food_Web\Food_Web\bin\System.Numerics.Vectors.xml
+D:\NsN\HihiApp\Web1\Food_Web\Food_Web\bin\System.Runtime.CompilerServices.Unsafe.xml
+D:\NsN\HihiApp\Web1\Food_Web\Food_Web\bin\System.Text.Encodings.Web.xml
+D:\NsN\HihiApp\Web1\Food_Web\Food_Web\bin\System.Threading.Channels.xml
+D:\NsN\HihiApp\Web1\Food_Web\Food_Web\bin\System.Threading.Tasks.Extensions.xml
+D:\NsN\HihiApp\Web1\Food_Web\Food_Web\bin\System.ValueTuple.xml
+D:\NsN\HihiApp\Web1\Food_Web\Food_Web\bin\System.Web.Helpers.xml
+D:\NsN\HihiApp\Web1\Food_Web\Food_Web\bin\System.Web.Mvc.xml
+D:\NsN\HihiApp\Web1\Food_Web\Food_Web\bin\System.Web.Optimization.xml
+D:\NsN\HihiApp\Web1\Food_Web\Food_Web\bin\System.Web.Razor.xml
+D:\NsN\HihiApp\Web1\Food_Web\Food_Web\bin\System.Web.WebPages.xml
+D:\NsN\HihiApp\Web1\Food_Web\Food_Web\bin\System.Web.WebPages.Deployment.xml
+D:\NsN\HihiApp\Web1\Food_Web\Food_Web\bin\System.Web.WebPages.Razor.xml
+D:\NsN\HihiApp\Web1\Food_Web\Food_Web\bin\Antlr3.Runtime.pdb
+D:\NsN\HihiApp\Web1\Food_Web\Food_Web\bin\EntityFramework.xml
+D:\NsN\HihiApp\Web1\Food_Web\Food_Web\bin\EntityFramework.SqlServer.xml
+D:\NsN\HihiApp\Web1\Food_Web\Food_Web\bin\Microsoft.AspNet.Identity.Core.xml
+D:\NsN\HihiApp\Web1\Food_Web\Food_Web\bin\Microsoft.AspNet.Identity.Owin.xml
+D:\NsN\HihiApp\Web1\Food_Web\Food_Web\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+D:\NsN\HihiApp\Web1\Food_Web\Food_Web\bin\Microsoft.Owin.xml
+D:\NsN\HihiApp\Web1\Food_Web\Food_Web\bin\Microsoft.Owin.Host.SystemWeb.xml
+D:\NsN\HihiApp\Web1\Food_Web\Food_Web\bin\Microsoft.Owin.Security.xml
+D:\NsN\HihiApp\Web1\Food_Web\Food_Web\bin\Microsoft.Owin.Security.Facebook.xml
+D:\NsN\HihiApp\Web1\Food_Web\Food_Web\bin\Microsoft.Owin.Security.Cookies.xml
+D:\NsN\HihiApp\Web1\Food_Web\Food_Web\bin\Microsoft.Owin.Security.Google.xml
+D:\NsN\HihiApp\Web1\Food_Web\Food_Web\bin\Microsoft.Owin.Security.Twitter.xml
+D:\NsN\HihiApp\Web1\Food_Web\Food_Web\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+D:\NsN\HihiApp\Web1\Food_Web\Food_Web\bin\Microsoft.Owin.Security.OAuth.xml
+D:\NsN\HihiApp\Web1\Food_Web\Food_Web\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\NsN\HihiApp\Web1\Food_Web\Food_Web\bin\DevExpress.Pdf.v23.1.Core.xml
+D:\NsN\HihiApp\Web1\Food_Web\Food_Web\bin\DevExpress.Pdf.v23.1.Drawing.xml
+D:\NsN\HihiApp\Web1\Food_Web\Food_Web\bin\DevExpress.Data.Desktop.v23.1.xml
+D:\NsN\HihiApp\Web1\Food_Web\Food_Web\bin\DevExpress.XtraCharts.v23.1.xml
+D:\NsN\HihiApp\Web1\Food_Web\Food_Web\bin\DevExpress.DataAccess.v23.1.xml
+D:\NsN\HihiApp\Web1\Food_Web\Food_Web\bin\DevExpress.Sparkline.v23.1.Core.xml
+D:\NsN\HihiApp\Web1\Food_Web\Food_Web\bin\DevExpress.Charts.v23.1.Core.xml
+D:\NsN\HihiApp\Web1\Food_Web\Food_Web\bin\DevExpress.PivotGrid.v23.1.Core.xml
+D:\NsN\HihiApp\Web1\Food_Web\Food_Web\bin\DevExpress.XtraGauges.v23.1.Core.xml
+D:\NsN\HihiApp\Web1\Food_Web\Food_Web\bin\DevExpress.RichEdit.v23.1.Core.xml
+D:\NsN\HihiApp\Web1\Food_Web\Food_Web\bin\DevExpress.Office.v23.1.Core.xml
+D:\NsN\HihiApp\Web1\Food_Web\Food_Web\obj\Debug\ja-JP\Food_Web.resources.dll
+D:\NsN\HihiApp\Web1\Food_Web\Food_Web\obj\Debug\vi-VN\Food_Web.resources.dll
+D:\NsN\HihiApp\Web1\Food_Web\Food_Web\obj\Debug\Food_Web.csproj.CopyComplete
+C:\Users\phann\OneDrive\Máy tính\New folder\DACS-master\Food_Web\bin\libHarfBuzzSharp.dylib
+C:\Users\phann\OneDrive\Máy tính\New folder\DACS-master\Food_Web\bin\x86\libHarfBuzzSharp.dll
+C:\Users\phann\OneDrive\Máy tính\New folder\DACS-master\Food_Web\bin\x64\libHarfBuzzSharp.dll
+C:\Users\phann\OneDrive\Máy tính\New folder\DACS-master\Food_Web\bin\arm64\libHarfBuzzSharp.dll
+C:\Users\phann\OneDrive\Máy tính\New folder\DACS-master\Food_Web\bin\libSkiaSharp.dylib
+C:\Users\phann\OneDrive\Máy tính\New folder\DACS-master\Food_Web\bin\x86\libSkiaSharp.dll
+C:\Users\phann\OneDrive\Máy tính\New folder\DACS-master\Food_Web\bin\x64\libSkiaSharp.dll
+C:\Users\phann\OneDrive\Máy tính\New folder\DACS-master\Food_Web\bin\arm64\libSkiaSharp.dll
+C:\Users\phann\OneDrive\Máy tính\New folder\DACS-master\Food_Web\bin\Food_Web.dll.config
+C:\Users\phann\OneDrive\Máy tính\New folder\DACS-master\Food_Web\bin\Food_Web.dll
+C:\Users\phann\OneDrive\Máy tính\New folder\DACS-master\Food_Web\bin\Food_Web.pdb
+C:\Users\phann\OneDrive\Máy tính\New folder\DACS-master\Food_Web\bin\ja-JP\Food_Web.resources.dll
+C:\Users\phann\OneDrive\Máy tính\New folder\DACS-master\Food_Web\bin\vi-VN\Food_Web.resources.dll
+C:\Users\phann\OneDrive\Máy tính\New folder\DACS-master\Food_Web\bin\roslyn\csc.exe
+C:\Users\phann\OneDrive\Máy tính\New folder\DACS-master\Food_Web\bin\roslyn\csc.exe.config
+C:\Users\phann\OneDrive\Máy tính\New folder\DACS-master\Food_Web\bin\roslyn\csc.rsp
+C:\Users\phann\OneDrive\Máy tính\New folder\DACS-master\Food_Web\bin\roslyn\csi.exe
+C:\Users\phann\OneDrive\Máy tính\New folder\DACS-master\Food_Web\bin\roslyn\csi.exe.config
+C:\Users\phann\OneDrive\Máy tính\New folder\DACS-master\Food_Web\bin\roslyn\csi.rsp
+C:\Users\phann\OneDrive\Máy tính\New folder\DACS-master\Food_Web\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\phann\OneDrive\Máy tính\New folder\DACS-master\Food_Web\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\phann\OneDrive\Máy tính\New folder\DACS-master\Food_Web\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\phann\OneDrive\Máy tính\New folder\DACS-master\Food_Web\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\phann\OneDrive\Máy tính\New folder\DACS-master\Food_Web\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\phann\OneDrive\Máy tính\New folder\DACS-master\Food_Web\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\phann\OneDrive\Máy tính\New folder\DACS-master\Food_Web\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\phann\OneDrive\Máy tính\New folder\DACS-master\Food_Web\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\phann\OneDrive\Máy tính\New folder\DACS-master\Food_Web\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\phann\OneDrive\Máy tính\New folder\DACS-master\Food_Web\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\phann\OneDrive\Máy tính\New folder\DACS-master\Food_Web\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\phann\OneDrive\Máy tính\New folder\DACS-master\Food_Web\bin\roslyn\Microsoft.Win32.Primitives.dll
+C:\Users\phann\OneDrive\Máy tính\New folder\DACS-master\Food_Web\bin\roslyn\System.AppContext.dll
+C:\Users\phann\OneDrive\Máy tính\New folder\DACS-master\Food_Web\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\phann\OneDrive\Máy tính\New folder\DACS-master\Food_Web\bin\roslyn\System.Console.dll
+C:\Users\phann\OneDrive\Máy tính\New folder\DACS-master\Food_Web\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+C:\Users\phann\OneDrive\Máy tính\New folder\DACS-master\Food_Web\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\phann\OneDrive\Máy tính\New folder\DACS-master\Food_Web\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\phann\OneDrive\Máy tính\New folder\DACS-master\Food_Web\bin\roslyn\System.Globalization.Calendars.dll
+C:\Users\phann\OneDrive\Máy tính\New folder\DACS-master\Food_Web\bin\roslyn\System.IO.Compression.dll
+C:\Users\phann\OneDrive\Máy tính\New folder\DACS-master\Food_Web\bin\roslyn\System.IO.Compression.ZipFile.dll
+C:\Users\phann\OneDrive\Máy tính\New folder\DACS-master\Food_Web\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\phann\OneDrive\Máy tính\New folder\DACS-master\Food_Web\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\phann\OneDrive\Máy tính\New folder\DACS-master\Food_Web\bin\roslyn\System.Net.Http.dll
+C:\Users\phann\OneDrive\Máy tính\New folder\DACS-master\Food_Web\bin\roslyn\System.Net.Sockets.dll
+C:\Users\phann\OneDrive\Máy tính\New folder\DACS-master\Food_Web\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\phann\OneDrive\Máy tính\New folder\DACS-master\Food_Web\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\Users\phann\OneDrive\Máy tính\New folder\DACS-master\Food_Web\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\phann\OneDrive\Máy tính\New folder\DACS-master\Food_Web\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\phann\OneDrive\Máy tính\New folder\DACS-master\Food_Web\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\phann\OneDrive\Máy tính\New folder\DACS-master\Food_Web\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\phann\OneDrive\Máy tính\New folder\DACS-master\Food_Web\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\phann\OneDrive\Máy tính\New folder\DACS-master\Food_Web\bin\roslyn\System.Threading.Tasks.Extensions.dll
+C:\Users\phann\OneDrive\Máy tính\New folder\DACS-master\Food_Web\bin\roslyn\System.ValueTuple.dll
+C:\Users\phann\OneDrive\Máy tính\New folder\DACS-master\Food_Web\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\phann\OneDrive\Máy tính\New folder\DACS-master\Food_Web\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\phann\OneDrive\Máy tính\New folder\DACS-master\Food_Web\bin\roslyn\System.Xml.XPath.dll
+C:\Users\phann\OneDrive\Máy tính\New folder\DACS-master\Food_Web\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\phann\OneDrive\Máy tính\New folder\DACS-master\Food_Web\bin\roslyn\vbc.exe
+C:\Users\phann\OneDrive\Máy tính\New folder\DACS-master\Food_Web\bin\roslyn\vbc.exe.config
+C:\Users\phann\OneDrive\Máy tính\New folder\DACS-master\Food_Web\bin\roslyn\vbc.rsp
+C:\Users\phann\OneDrive\Máy tính\New folder\DACS-master\Food_Web\bin\roslyn\VBCSCompiler.exe
+C:\Users\phann\OneDrive\Máy tính\New folder\DACS-master\Food_Web\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\phann\OneDrive\Máy tính\New folder\DACS-master\Food_Web\bin\AntiXssLibrary.dll
+C:\Users\phann\OneDrive\Máy tính\New folder\DACS-master\Food_Web\bin\Antlr3.Runtime.dll
+C:\Users\phann\OneDrive\Máy tính\New folder\DACS-master\Food_Web\bin\Aspose.Words.dll
+C:\Users\phann\OneDrive\Máy tính\New folder\DACS-master\Food_Web\bin\Aspose.Words.Pdf2Word.dll
+C:\Users\phann\OneDrive\Máy tính\New folder\DACS-master\Food_Web\bin\BouncyCastle.Crypto.dll
+C:\Users\phann\OneDrive\Máy tính\New folder\DACS-master\Food_Web\bin\BouncyCastle.Cryptography.dll
+C:\Users\phann\OneDrive\Máy tính\New folder\DACS-master\Food_Web\bin\DevExpress.Data.v23.1.dll
+C:\Users\phann\OneDrive\Máy tính\New folder\DACS-master\Food_Web\bin\DevExpress.Drawing.v23.1.dll
+C:\Users\phann\OneDrive\Máy tính\New folder\DACS-master\Food_Web\bin\DevExpress.Printing.v23.1.Core.dll
+C:\Users\phann\OneDrive\Máy tính\New folder\DACS-master\Food_Web\bin\DevExpress.Utils.v23.1.dll
+C:\Users\phann\OneDrive\Máy tính\New folder\DACS-master\Food_Web\bin\DevExpress.Xpo.v23.1.dll
+C:\Users\phann\OneDrive\Máy tính\New folder\DACS-master\Food_Web\bin\DevExpress.XtraReports.v23.1.dll
+C:\Users\phann\OneDrive\Máy tính\New folder\DACS-master\Food_Web\bin\DevExpress.XtraReports.v23.1.Web.dll
+C:\Users\phann\OneDrive\Máy tính\New folder\DACS-master\Food_Web\bin\DocumentFormat.OpenXml.dll
+C:\Users\phann\OneDrive\Máy tính\New folder\DACS-master\Food_Web\bin\EntityFramework.dll
+C:\Users\phann\OneDrive\Máy tính\New folder\DACS-master\Food_Web\bin\EntityFramework.SqlServer.dll
+C:\Users\phann\OneDrive\Máy tính\New folder\DACS-master\Food_Web\bin\EPPlus.dll
+C:\Users\phann\OneDrive\Máy tính\New folder\DACS-master\Food_Web\bin\GemBox.Document.dll
+C:\Users\phann\OneDrive\Máy tính\New folder\DACS-master\Food_Web\bin\HarfBuzzSharp.dll
+C:\Users\phann\OneDrive\Máy tính\New folder\DACS-master\Food_Web\bin\HtmlSanitizationLibrary.dll
+C:\Users\phann\OneDrive\Máy tính\New folder\DACS-master\Food_Web\bin\itext.barcodes.dll
+C:\Users\phann\OneDrive\Máy tính\New folder\DACS-master\Food_Web\bin\itext.bouncy-castle-connector.dll
+C:\Users\phann\OneDrive\Máy tính\New folder\DACS-master\Food_Web\bin\itext.commons.dll
+C:\Users\phann\OneDrive\Máy tính\New folder\DACS-master\Food_Web\bin\itext.forms.dll
+C:\Users\phann\OneDrive\Máy tính\New folder\DACS-master\Food_Web\bin\itext.html2pdf.dll
+C:\Users\phann\OneDrive\Máy tính\New folder\DACS-master\Food_Web\bin\itext.io.dll
+C:\Users\phann\OneDrive\Máy tính\New folder\DACS-master\Food_Web\bin\itext.kernel.dll
+C:\Users\phann\OneDrive\Máy tính\New folder\DACS-master\Food_Web\bin\itext.layout.dll
+C:\Users\phann\OneDrive\Máy tính\New folder\DACS-master\Food_Web\bin\itext.pdfa.dll
+C:\Users\phann\OneDrive\Máy tính\New folder\DACS-master\Food_Web\bin\itext.sign.dll
+C:\Users\phann\OneDrive\Máy tính\New folder\DACS-master\Food_Web\bin\itext.styledxmlparser.dll
+C:\Users\phann\OneDrive\Máy tính\New folder\DACS-master\Food_Web\bin\itext.svg.dll
+C:\Users\phann\OneDrive\Máy tính\New folder\DACS-master\Food_Web\bin\itextsharp.dll
+C:\Users\phann\OneDrive\Máy tính\New folder\DACS-master\Food_Web\bin\itextsharp.xmlworker.dll
+C:\Users\phann\OneDrive\Máy tính\New folder\DACS-master\Food_Web\bin\MailKit.dll
+C:\Users\phann\OneDrive\Máy tính\New folder\DACS-master\Food_Web\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Users\phann\OneDrive\Máy tính\New folder\DACS-master\Food_Web\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\phann\OneDrive\Máy tính\New folder\DACS-master\Food_Web\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\phann\OneDrive\Máy tính\New folder\DACS-master\Food_Web\bin\Microsoft.AspNet.SignalR.Core.dll
+C:\Users\phann\OneDrive\Máy tính\New folder\DACS-master\Food_Web\bin\Microsoft.AspNet.SignalR.SystemWeb.dll
+C:\Users\phann\OneDrive\Máy tính\New folder\DACS-master\Food_Web\bin\Microsoft.AspNetCore.Authentication.Abstractions.dll
+C:\Users\phann\OneDrive\Máy tính\New folder\DACS-master\Food_Web\bin\Microsoft.AspNetCore.Authorization.dll
+C:\Users\phann\OneDrive\Máy tính\New folder\DACS-master\Food_Web\bin\Microsoft.AspNetCore.Authorization.Policy.dll
+C:\Users\phann\OneDrive\Máy tính\New folder\DACS-master\Food_Web\bin\Microsoft.AspNetCore.Connections.Abstractions.dll
+C:\Users\phann\OneDrive\Máy tính\New folder\DACS-master\Food_Web\bin\Microsoft.AspNetCore.Hosting.Abstractions.dll
+C:\Users\phann\OneDrive\Máy tính\New folder\DACS-master\Food_Web\bin\Microsoft.AspNetCore.Hosting.Server.Abstractions.dll
+C:\Users\phann\OneDrive\Máy tính\New folder\DACS-master\Food_Web\bin\Microsoft.AspNetCore.Http.Abstractions.dll
+C:\Users\phann\OneDrive\Máy tính\New folder\DACS-master\Food_Web\bin\Microsoft.AspNetCore.Http.Connections.Common.dll
+C:\Users\phann\OneDrive\Máy tính\New folder\DACS-master\Food_Web\bin\Microsoft.AspNetCore.Http.Connections.dll
+C:\Users\phann\OneDrive\Máy tính\New folder\DACS-master\Food_Web\bin\Microsoft.AspNetCore.Http.dll
+C:\Users\phann\OneDrive\Máy tính\New folder\DACS-master\Food_Web\bin\Microsoft.AspNetCore.Http.Extensions.dll
+C:\Users\phann\OneDrive\Máy tính\New folder\DACS-master\Food_Web\bin\Microsoft.AspNetCore.Http.Features.dll
+C:\Users\phann\OneDrive\Máy tính\New folder\DACS-master\Food_Web\bin\Microsoft.AspNetCore.Routing.Abstractions.dll
+C:\Users\phann\OneDrive\Máy tính\New folder\DACS-master\Food_Web\bin\Microsoft.AspNetCore.Routing.dll
+C:\Users\phann\OneDrive\Máy tính\New folder\DACS-master\Food_Web\bin\Microsoft.AspNetCore.SignalR.Common.dll
+C:\Users\phann\OneDrive\Máy tính\New folder\DACS-master\Food_Web\bin\Microsoft.AspNetCore.SignalR.Core.dll
+C:\Users\phann\OneDrive\Máy tính\New folder\DACS-master\Food_Web\bin\Microsoft.AspNetCore.SignalR.dll
+C:\Users\phann\OneDrive\Máy tính\New folder\DACS-master\Food_Web\bin\Microsoft.AspNetCore.SignalR.Protocols.Json.dll
+C:\Users\phann\OneDrive\Máy tính\New folder\DACS-master\Food_Web\bin\Microsoft.AspNetCore.WebSockets.dll
+C:\Users\phann\OneDrive\Máy tính\New folder\DACS-master\Food_Web\bin\Microsoft.AspNetCore.WebUtilities.dll
+C:\Users\phann\OneDrive\Máy tính\New folder\DACS-master\Food_Web\bin\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\phann\OneDrive\Máy tính\New folder\DACS-master\Food_Web\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\phann\OneDrive\Máy tính\New folder\DACS-master\Food_Web\bin\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\Users\phann\OneDrive\Máy tính\New folder\DACS-master\Food_Web\bin\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\phann\OneDrive\Máy tính\New folder\DACS-master\Food_Web\bin\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\phann\OneDrive\Máy tính\New folder\DACS-master\Food_Web\bin\Microsoft.Extensions.FileProviders.Abstractions.dll
+C:\Users\phann\OneDrive\Máy tính\New folder\DACS-master\Food_Web\bin\Microsoft.Extensions.Hosting.Abstractions.dll
+C:\Users\phann\OneDrive\Máy tính\New folder\DACS-master\Food_Web\bin\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\phann\OneDrive\Máy tính\New folder\DACS-master\Food_Web\bin\Microsoft.Extensions.Logging.dll
+C:\Users\phann\OneDrive\Máy tính\New folder\DACS-master\Food_Web\bin\Microsoft.Extensions.ObjectPool.dll
+C:\Users\phann\OneDrive\Máy tính\New folder\DACS-master\Food_Web\bin\Microsoft.Extensions.Options.dll
+C:\Users\phann\OneDrive\Máy tính\New folder\DACS-master\Food_Web\bin\Microsoft.Extensions.Primitives.dll
+C:\Users\phann\OneDrive\Máy tính\New folder\DACS-master\Food_Web\bin\Microsoft.Net.Http.Headers.dll
+C:\Users\phann\OneDrive\Máy tính\New folder\DACS-master\Food_Web\bin\Microsoft.Owin.dll
+C:\Users\phann\OneDrive\Máy tính\New folder\DACS-master\Food_Web\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\phann\OneDrive\Máy tính\New folder\DACS-master\Food_Web\bin\Microsoft.Owin.Security.Cookies.dll
+C:\Users\phann\OneDrive\Máy tính\New folder\DACS-master\Food_Web\bin\Microsoft.Owin.Security.dll
+C:\Users\phann\OneDrive\Máy tính\New folder\DACS-master\Food_Web\bin\Microsoft.Owin.Security.Facebook.dll
+C:\Users\phann\OneDrive\Máy tính\New folder\DACS-master\Food_Web\bin\Microsoft.Owin.Security.Google.dll
+C:\Users\phann\OneDrive\Máy tính\New folder\DACS-master\Food_Web\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+C:\Users\phann\OneDrive\Máy tính\New folder\DACS-master\Food_Web\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Users\phann\OneDrive\Máy tính\New folder\DACS-master\Food_Web\bin\Microsoft.Owin.Security.Twitter.dll
+C:\Users\phann\OneDrive\Máy tính\New folder\DACS-master\Food_Web\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\phann\OneDrive\Máy tính\New folder\DACS-master\Food_Web\bin\MimeKit.dll
+C:\Users\phann\OneDrive\Máy tính\New folder\DACS-master\Food_Web\bin\Newtonsoft.Json.dll
+C:\Users\phann\OneDrive\Máy tính\New folder\DACS-master\Food_Web\bin\OfficeOpenXml.Extends.dll
+C:\Users\phann\OneDrive\Máy tính\New folder\DACS-master\Food_Web\bin\Owin.dll
+C:\Users\phann\OneDrive\Máy tính\New folder\DACS-master\Food_Web\bin\PagedList.dll
+C:\Users\phann\OneDrive\Máy tính\New folder\DACS-master\Food_Web\bin\PagedList.Mvc.dll
+C:\Users\phann\OneDrive\Máy tính\New folder\DACS-master\Food_Web\bin\Rotativa.dll
+C:\Users\phann\OneDrive\Máy tính\New folder\DACS-master\Food_Web\bin\SendGrid.dll
+C:\Users\phann\OneDrive\Máy tính\New folder\DACS-master\Food_Web\bin\SkiaSharp.dll
+C:\Users\phann\OneDrive\Máy tính\New folder\DACS-master\Food_Web\bin\StarkbankEcdsa.dll
+C:\Users\phann\OneDrive\Máy tính\New folder\DACS-master\Food_Web\bin\System.Buffers.dll
+C:\Users\phann\OneDrive\Máy tính\New folder\DACS-master\Food_Web\bin\System.ComponentModel.Annotations.dll
+C:\Users\phann\OneDrive\Máy tính\New folder\DACS-master\Food_Web\bin\System.Diagnostics.DiagnosticSource.dll
+C:\Users\phann\OneDrive\Máy tính\New folder\DACS-master\Food_Web\bin\System.IO.Pipelines.dll
+C:\Users\phann\OneDrive\Máy tính\New folder\DACS-master\Food_Web\bin\System.Memory.dll
+C:\Users\phann\OneDrive\Máy tính\New folder\DACS-master\Food_Web\bin\System.Net.Mail.Abstractions.dll
+C:\Users\phann\OneDrive\Máy tính\New folder\DACS-master\Food_Web\bin\System.Net.WebSockets.WebSocketProtocol.dll
+C:\Users\phann\OneDrive\Máy tính\New folder\DACS-master\Food_Web\bin\System.Numerics.Vectors.dll
+C:\Users\phann\OneDrive\Máy tính\New folder\DACS-master\Food_Web\bin\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\phann\OneDrive\Máy tính\New folder\DACS-master\Food_Web\bin\System.Security.Principal.Windows.dll
+C:\Users\phann\OneDrive\Máy tính\New folder\DACS-master\Food_Web\bin\System.Text.Encodings.Web.dll
+C:\Users\phann\OneDrive\Máy tính\New folder\DACS-master\Food_Web\bin\System.Threading.Channels.dll
+C:\Users\phann\OneDrive\Máy tính\New folder\DACS-master\Food_Web\bin\System.Threading.Tasks.Extensions.dll
+C:\Users\phann\OneDrive\Máy tính\New folder\DACS-master\Food_Web\bin\System.ValueTuple.dll
+C:\Users\phann\OneDrive\Máy tính\New folder\DACS-master\Food_Web\bin\System.Web.Helpers.dll
+C:\Users\phann\OneDrive\Máy tính\New folder\DACS-master\Food_Web\bin\System.Web.Mvc.dll
+C:\Users\phann\OneDrive\Máy tính\New folder\DACS-master\Food_Web\bin\System.Web.Optimization.dll
+C:\Users\phann\OneDrive\Máy tính\New folder\DACS-master\Food_Web\bin\System.Web.Razor.dll
+C:\Users\phann\OneDrive\Máy tính\New folder\DACS-master\Food_Web\bin\System.Web.WebPages.Deployment.dll
+C:\Users\phann\OneDrive\Máy tính\New folder\DACS-master\Food_Web\bin\System.Web.WebPages.dll
+C:\Users\phann\OneDrive\Máy tính\New folder\DACS-master\Food_Web\bin\System.Web.WebPages.Razor.dll
+C:\Users\phann\OneDrive\Máy tính\New folder\DACS-master\Food_Web\bin\WebGrease.dll
+C:\Users\phann\OneDrive\Máy tính\New folder\DACS-master\Food_Web\bin\DevExpress.Pdf.v23.1.Core.dll
+C:\Users\phann\OneDrive\Máy tính\New folder\DACS-master\Food_Web\bin\DevExpress.Pdf.v23.1.Drawing.dll
+C:\Users\phann\OneDrive\Máy tính\New folder\DACS-master\Food_Web\bin\DevExpress.Data.Desktop.v23.1.dll
+C:\Users\phann\OneDrive\Máy tính\New folder\DACS-master\Food_Web\bin\DevExpress.XtraCharts.v23.1.dll
+C:\Users\phann\OneDrive\Máy tính\New folder\DACS-master\Food_Web\bin\DevExpress.DataAccess.v23.1.dll
+C:\Users\phann\OneDrive\Máy tính\New folder\DACS-master\Food_Web\bin\DevExpress.Sparkline.v23.1.Core.dll
+C:\Users\phann\OneDrive\Máy tính\New folder\DACS-master\Food_Web\bin\DevExpress.Charts.v23.1.Core.dll
+C:\Users\phann\OneDrive\Máy tính\New folder\DACS-master\Food_Web\bin\DevExpress.PivotGrid.v23.1.Core.dll
+C:\Users\phann\OneDrive\Máy tính\New folder\DACS-master\Food_Web\bin\DevExpress.XtraGauges.v23.1.Core.dll
+C:\Users\phann\OneDrive\Máy tính\New folder\DACS-master\Food_Web\bin\DevExpress.RichEdit.v23.1.Core.dll
+C:\Users\phann\OneDrive\Máy tính\New folder\DACS-master\Food_Web\bin\DevExpress.Office.v23.1.Core.dll
+C:\Users\phann\OneDrive\Máy tính\New folder\DACS-master\Food_Web\bin\DevExpress.CodeParser.v23.1.dll
+C:\Users\phann\OneDrive\Máy tính\New folder\DACS-master\Food_Web\bin\DevExpress.DataVisualization.v23.1.Core.dll
+C:\Users\phann\OneDrive\Máy tính\New folder\DACS-master\Food_Web\bin\AntiXssLibrary.xml
+C:\Users\phann\OneDrive\Máy tính\New folder\DACS-master\Food_Web\bin\Aspose.Words.xml
+C:\Users\phann\OneDrive\Máy tính\New folder\DACS-master\Food_Web\bin\BouncyCastle.Cryptography.xml
+C:\Users\phann\OneDrive\Máy tính\New folder\DACS-master\Food_Web\bin\DevExpress.Data.v23.1.xml
+C:\Users\phann\OneDrive\Máy tính\New folder\DACS-master\Food_Web\bin\DevExpress.Drawing.v23.1.xml
+C:\Users\phann\OneDrive\Máy tính\New folder\DACS-master\Food_Web\bin\DevExpress.Printing.v23.1.Core.xml
+C:\Users\phann\OneDrive\Máy tính\New folder\DACS-master\Food_Web\bin\DevExpress.Utils.v23.1.xml
+C:\Users\phann\OneDrive\Máy tính\New folder\DACS-master\Food_Web\bin\DevExpress.Xpo.v23.1.xml
+C:\Users\phann\OneDrive\Máy tính\New folder\DACS-master\Food_Web\bin\DevExpress.XtraReports.v23.1.xml
+C:\Users\phann\OneDrive\Máy tính\New folder\DACS-master\Food_Web\bin\DevExpress.XtraReports.v23.1.Web.xml
+C:\Users\phann\OneDrive\Máy tính\New folder\DACS-master\Food_Web\bin\DocumentFormat.OpenXml.xml
+C:\Users\phann\OneDrive\Máy tính\New folder\DACS-master\Food_Web\bin\EPPlus.xml
+C:\Users\phann\OneDrive\Máy tính\New folder\DACS-master\Food_Web\bin\GemBox.Document.xml
+C:\Users\phann\OneDrive\Máy tính\New folder\DACS-master\Food_Web\bin\HarfBuzzSharp.pdb
+C:\Users\phann\OneDrive\Máy tính\New folder\DACS-master\Food_Web\bin\HarfBuzzSharp.xml
+C:\Users\phann\OneDrive\Máy tính\New folder\DACS-master\Food_Web\bin\HtmlSanitizationLibrary.xml
+C:\Users\phann\OneDrive\Máy tính\New folder\DACS-master\Food_Web\bin\itext.barcodes.xml
+C:\Users\phann\OneDrive\Máy tính\New folder\DACS-master\Food_Web\bin\itext.bouncy-castle-connector.xml
+C:\Users\phann\OneDrive\Máy tính\New folder\DACS-master\Food_Web\bin\itext.commons.xml
+C:\Users\phann\OneDrive\Máy tính\New folder\DACS-master\Food_Web\bin\itext.forms.xml
+C:\Users\phann\OneDrive\Máy tính\New folder\DACS-master\Food_Web\bin\itext.html2pdf.xml
+C:\Users\phann\OneDrive\Máy tính\New folder\DACS-master\Food_Web\bin\itext.io.xml
+C:\Users\phann\OneDrive\Máy tính\New folder\DACS-master\Food_Web\bin\itext.kernel.xml
+C:\Users\phann\OneDrive\Máy tính\New folder\DACS-master\Food_Web\bin\itext.layout.xml
+C:\Users\phann\OneDrive\Máy tính\New folder\DACS-master\Food_Web\bin\itext.pdfa.xml
+C:\Users\phann\OneDrive\Máy tính\New folder\DACS-master\Food_Web\bin\itext.sign.xml
+C:\Users\phann\OneDrive\Máy tính\New folder\DACS-master\Food_Web\bin\itext.styledxmlparser.xml
+C:\Users\phann\OneDrive\Máy tính\New folder\DACS-master\Food_Web\bin\itext.svg.xml
+C:\Users\phann\OneDrive\Máy tính\New folder\DACS-master\Food_Web\bin\itextsharp.xml
+C:\Users\phann\OneDrive\Máy tính\New folder\DACS-master\Food_Web\bin\MailKit.pdb
+C:\Users\phann\OneDrive\Máy tính\New folder\DACS-master\Food_Web\bin\MailKit.xml
+C:\Users\phann\OneDrive\Máy tính\New folder\DACS-master\Food_Web\bin\MailKit.dll.config
+C:\Users\phann\OneDrive\Máy tính\New folder\DACS-master\Food_Web\bin\Microsoft.AspNet.SignalR.Core.xml
+C:\Users\phann\OneDrive\Máy tính\New folder\DACS-master\Food_Web\bin\Microsoft.AspNet.SignalR.SystemWeb.xml
+C:\Users\phann\OneDrive\Máy tính\New folder\DACS-master\Food_Web\bin\Microsoft.AspNetCore.Authentication.Abstractions.xml
+C:\Users\phann\OneDrive\Máy tính\New folder\DACS-master\Food_Web\bin\Microsoft.AspNetCore.Authorization.xml
+C:\Users\phann\OneDrive\Máy tính\New folder\DACS-master\Food_Web\bin\Microsoft.AspNetCore.Authorization.Policy.xml
+C:\Users\phann\OneDrive\Máy tính\New folder\DACS-master\Food_Web\bin\Microsoft.AspNetCore.Connections.Abstractions.xml
+C:\Users\phann\OneDrive\Máy tính\New folder\DACS-master\Food_Web\bin\Microsoft.AspNetCore.Hosting.Abstractions.xml
+C:\Users\phann\OneDrive\Máy tính\New folder\DACS-master\Food_Web\bin\Microsoft.AspNetCore.Hosting.Server.Abstractions.xml
+C:\Users\phann\OneDrive\Máy tính\New folder\DACS-master\Food_Web\bin\Microsoft.AspNetCore.Http.xml
+C:\Users\phann\OneDrive\Máy tính\New folder\DACS-master\Food_Web\bin\Microsoft.AspNetCore.Http.Abstractions.xml
+C:\Users\phann\OneDrive\Máy tính\New folder\DACS-master\Food_Web\bin\Microsoft.AspNetCore.Http.Connections.xml
+C:\Users\phann\OneDrive\Máy tính\New folder\DACS-master\Food_Web\bin\Microsoft.AspNetCore.Http.Connections.Common.xml
+C:\Users\phann\OneDrive\Máy tính\New folder\DACS-master\Food_Web\bin\Microsoft.AspNetCore.Http.Extensions.xml
+C:\Users\phann\OneDrive\Máy tính\New folder\DACS-master\Food_Web\bin\Microsoft.AspNetCore.Http.Features.xml
+C:\Users\phann\OneDrive\Máy tính\New folder\DACS-master\Food_Web\bin\Microsoft.AspNetCore.Routing.xml
+C:\Users\phann\OneDrive\Máy tính\New folder\DACS-master\Food_Web\bin\Microsoft.AspNetCore.Routing.Abstractions.xml
+C:\Users\phann\OneDrive\Máy tính\New folder\DACS-master\Food_Web\bin\Microsoft.AspNetCore.SignalR.xml
+C:\Users\phann\OneDrive\Máy tính\New folder\DACS-master\Food_Web\bin\Microsoft.AspNetCore.SignalR.Common.xml
+C:\Users\phann\OneDrive\Máy tính\New folder\DACS-master\Food_Web\bin\Microsoft.AspNetCore.SignalR.Core.xml
+C:\Users\phann\OneDrive\Máy tính\New folder\DACS-master\Food_Web\bin\Microsoft.AspNetCore.SignalR.Protocols.Json.xml
+C:\Users\phann\OneDrive\Máy tính\New folder\DACS-master\Food_Web\bin\Microsoft.AspNetCore.WebSockets.xml
+C:\Users\phann\OneDrive\Máy tính\New folder\DACS-master\Food_Web\bin\Microsoft.AspNetCore.WebUtilities.xml
+C:\Users\phann\OneDrive\Máy tính\New folder\DACS-master\Food_Web\bin\Microsoft.Bcl.AsyncInterfaces.xml
+C:\Users\phann\OneDrive\Máy tính\New folder\DACS-master\Food_Web\bin\Microsoft.Extensions.Configuration.Abstractions.xml
+C:\Users\phann\OneDrive\Máy tính\New folder\DACS-master\Food_Web\bin\Microsoft.Extensions.DependencyInjection.xml
+C:\Users\phann\OneDrive\Máy tính\New folder\DACS-master\Food_Web\bin\Microsoft.Extensions.DependencyInjection.Abstractions.xml
+C:\Users\phann\OneDrive\Máy tính\New folder\DACS-master\Food_Web\bin\Microsoft.Extensions.FileProviders.Abstractions.xml
+C:\Users\phann\OneDrive\Máy tính\New folder\DACS-master\Food_Web\bin\Microsoft.Extensions.Hosting.Abstractions.xml
+C:\Users\phann\OneDrive\Máy tính\New folder\DACS-master\Food_Web\bin\Microsoft.Extensions.Logging.xml
+C:\Users\phann\OneDrive\Máy tính\New folder\DACS-master\Food_Web\bin\Microsoft.Extensions.Logging.Abstractions.xml
+C:\Users\phann\OneDrive\Máy tính\New folder\DACS-master\Food_Web\bin\Microsoft.Extensions.ObjectPool.xml
+C:\Users\phann\OneDrive\Máy tính\New folder\DACS-master\Food_Web\bin\Microsoft.Extensions.Options.xml
+C:\Users\phann\OneDrive\Máy tính\New folder\DACS-master\Food_Web\bin\Microsoft.Extensions.Primitives.xml
+C:\Users\phann\OneDrive\Máy tính\New folder\DACS-master\Food_Web\bin\Microsoft.Net.Http.Headers.xml
+C:\Users\phann\OneDrive\Máy tính\New folder\DACS-master\Food_Web\bin\MimeKit.pdb
+C:\Users\phann\OneDrive\Máy tính\New folder\DACS-master\Food_Web\bin\MimeKit.xml
+C:\Users\phann\OneDrive\Máy tính\New folder\DACS-master\Food_Web\bin\MimeKit.dll.config
+C:\Users\phann\OneDrive\Máy tính\New folder\DACS-master\Food_Web\bin\Newtonsoft.Json.xml
+C:\Users\phann\OneDrive\Máy tính\New folder\DACS-master\Food_Web\bin\PagedList.xml
+C:\Users\phann\OneDrive\Máy tính\New folder\DACS-master\Food_Web\bin\PagedList.Mvc.xml
+C:\Users\phann\OneDrive\Máy tính\New folder\DACS-master\Food_Web\bin\SendGrid.pdb
+C:\Users\phann\OneDrive\Máy tính\New folder\DACS-master\Food_Web\bin\SendGrid.xml
+C:\Users\phann\OneDrive\Máy tính\New folder\DACS-master\Food_Web\bin\SkiaSharp.pdb
+C:\Users\phann\OneDrive\Máy tính\New folder\DACS-master\Food_Web\bin\SkiaSharp.xml
+C:\Users\phann\OneDrive\Máy tính\New folder\DACS-master\Food_Web\bin\System.Buffers.xml
+C:\Users\phann\OneDrive\Máy tính\New folder\DACS-master\Food_Web\bin\System.Diagnostics.DiagnosticSource.xml
+C:\Users\phann\OneDrive\Máy tính\New folder\DACS-master\Food_Web\bin\System.IO.Pipelines.xml
+C:\Users\phann\OneDrive\Máy tính\New folder\DACS-master\Food_Web\bin\System.Memory.xml
+C:\Users\phann\OneDrive\Máy tính\New folder\DACS-master\Food_Web\bin\System.Numerics.Vectors.xml
+C:\Users\phann\OneDrive\Máy tính\New folder\DACS-master\Food_Web\bin\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\phann\OneDrive\Máy tính\New folder\DACS-master\Food_Web\bin\System.Text.Encodings.Web.xml
+C:\Users\phann\OneDrive\Máy tính\New folder\DACS-master\Food_Web\bin\System.Threading.Channels.xml
+C:\Users\phann\OneDrive\Máy tính\New folder\DACS-master\Food_Web\bin\System.Threading.Tasks.Extensions.xml
+C:\Users\phann\OneDrive\Máy tính\New folder\DACS-master\Food_Web\bin\System.ValueTuple.xml
+C:\Users\phann\OneDrive\Máy tính\New folder\DACS-master\Food_Web\bin\System.Web.Helpers.xml
+C:\Users\phann\OneDrive\Máy tính\New folder\DACS-master\Food_Web\bin\System.Web.Mvc.xml
+C:\Users\phann\OneDrive\Máy tính\New folder\DACS-master\Food_Web\bin\System.Web.Optimization.xml
+C:\Users\phann\OneDrive\Máy tính\New folder\DACS-master\Food_Web\bin\System.Web.Razor.xml
+C:\Users\phann\OneDrive\Máy tính\New folder\DACS-master\Food_Web\bin\System.Web.WebPages.xml
+C:\Users\phann\OneDrive\Máy tính\New folder\DACS-master\Food_Web\bin\System.Web.WebPages.Deployment.xml
+C:\Users\phann\OneDrive\Máy tính\New folder\DACS-master\Food_Web\bin\System.Web.WebPages.Razor.xml
+C:\Users\phann\OneDrive\Máy tính\New folder\DACS-master\Food_Web\bin\Antlr3.Runtime.pdb
+C:\Users\phann\OneDrive\Máy tính\New folder\DACS-master\Food_Web\bin\EntityFramework.xml
+C:\Users\phann\OneDrive\Máy tính\New folder\DACS-master\Food_Web\bin\EntityFramework.SqlServer.xml
+C:\Users\phann\OneDrive\Máy tính\New folder\DACS-master\Food_Web\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Users\phann\OneDrive\Máy tính\New folder\DACS-master\Food_Web\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\phann\OneDrive\Máy tính\New folder\DACS-master\Food_Web\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\phann\OneDrive\Máy tính\New folder\DACS-master\Food_Web\bin\Microsoft.Owin.xml
+C:\Users\phann\OneDrive\Máy tính\New folder\DACS-master\Food_Web\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\phann\OneDrive\Máy tính\New folder\DACS-master\Food_Web\bin\Microsoft.Owin.Security.xml
+C:\Users\phann\OneDrive\Máy tính\New folder\DACS-master\Food_Web\bin\Microsoft.Owin.Security.Facebook.xml
+C:\Users\phann\OneDrive\Máy tính\New folder\DACS-master\Food_Web\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Users\phann\OneDrive\Máy tính\New folder\DACS-master\Food_Web\bin\Microsoft.Owin.Security.Google.xml
+C:\Users\phann\OneDrive\Máy tính\New folder\DACS-master\Food_Web\bin\Microsoft.Owin.Security.Twitter.xml
+C:\Users\phann\OneDrive\Máy tính\New folder\DACS-master\Food_Web\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\Users\phann\OneDrive\Máy tính\New folder\DACS-master\Food_Web\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Users\phann\OneDrive\Máy tính\New folder\DACS-master\Food_Web\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\phann\OneDrive\Máy tính\New folder\DACS-master\Food_Web\bin\DevExpress.Pdf.v23.1.Core.xml
+C:\Users\phann\OneDrive\Máy tính\New folder\DACS-master\Food_Web\bin\DevExpress.Pdf.v23.1.Drawing.xml
+C:\Users\phann\OneDrive\Máy tính\New folder\DACS-master\Food_Web\bin\DevExpress.Data.Desktop.v23.1.xml
+C:\Users\phann\OneDrive\Máy tính\New folder\DACS-master\Food_Web\bin\DevExpress.XtraCharts.v23.1.xml
+C:\Users\phann\OneDrive\Máy tính\New folder\DACS-master\Food_Web\bin\DevExpress.DataAccess.v23.1.xml
+C:\Users\phann\OneDrive\Máy tính\New folder\DACS-master\Food_Web\bin\DevExpress.Sparkline.v23.1.Core.xml
+C:\Users\phann\OneDrive\Máy tính\New folder\DACS-master\Food_Web\bin\DevExpress.Charts.v23.1.Core.xml
+C:\Users\phann\OneDrive\Máy tính\New folder\DACS-master\Food_Web\bin\DevExpress.PivotGrid.v23.1.Core.xml
+C:\Users\phann\OneDrive\Máy tính\New folder\DACS-master\Food_Web\bin\DevExpress.XtraGauges.v23.1.Core.xml
+C:\Users\phann\OneDrive\Máy tính\New folder\DACS-master\Food_Web\bin\DevExpress.RichEdit.v23.1.Core.xml
+C:\Users\phann\OneDrive\Máy tính\New folder\DACS-master\Food_Web\bin\DevExpress.Office.v23.1.Core.xml
+C:\Users\phann\OneDrive\Máy tính\New folder\DACS-master\Food_Web\obj\Debug\Food_Web.csproj.AssemblyReference.cache
+C:\Users\phann\OneDrive\Máy tính\New folder\DACS-master\Food_Web\obj\Debug\Food_Web.Resources.resources
+C:\Users\phann\OneDrive\Máy tính\New folder\DACS-master\Food_Web\obj\Debug\Food_Web.Resources.ja-JP.resources
+C:\Users\phann\OneDrive\Máy tính\New folder\DACS-master\Food_Web\obj\Debug\Food_Web.Resources.vi-VN.resources
+C:\Users\phann\OneDrive\Máy tính\New folder\DACS-master\Food_Web\obj\Debug\Food_Web.csproj.GenerateResource.cache
+C:\Users\phann\OneDrive\Máy tính\New folder\DACS-master\Food_Web\obj\Debug\Food_Web.csproj.CoreCompileInputs.cache
+C:\Users\phann\OneDrive\Máy tính\New folder\DACS-master\Food_Web\obj\Debug\ja-JP\Food_Web.resources.dll
+C:\Users\phann\OneDrive\Máy tính\New folder\DACS-master\Food_Web\obj\Debug\vi-VN\Food_Web.resources.dll
+C:\Users\phann\OneDrive\Máy tính\New folder\DACS-master\Food_Web\obj\Debug\Food_Web.csproj.CopyComplete
+C:\Users\phann\OneDrive\Máy tính\New folder\DACS-master\Food_Web\obj\Debug\Food_Web.dll
+C:\Users\phann\OneDrive\Máy tính\New folder\DACS-master\Food_Web\obj\Debug\Food_Web.pdb
+D:\DACS-master\Food_Web\bin\libHarfBuzzSharp.dylib
+D:\DACS-master\Food_Web\bin\x86\libHarfBuzzSharp.dll
+D:\DACS-master\Food_Web\bin\x64\libHarfBuzzSharp.dll
+D:\DACS-master\Food_Web\bin\arm64\libHarfBuzzSharp.dll
+D:\DACS-master\Food_Web\bin\libSkiaSharp.dylib
+D:\DACS-master\Food_Web\bin\x86\libSkiaSharp.dll
+D:\DACS-master\Food_Web\bin\x64\libSkiaSharp.dll
+D:\DACS-master\Food_Web\bin\arm64\libSkiaSharp.dll
+D:\DACS-master\Food_Web\bin\Food_Web.dll.config
+D:\DACS-master\Food_Web\bin\Food_Web.dll
+D:\DACS-master\Food_Web\bin\Food_Web.pdb
+D:\DACS-master\Food_Web\bin\ja-JP\Food_Web.resources.dll
+D:\DACS-master\Food_Web\bin\vi-VN\Food_Web.resources.dll
+D:\DACS-master\Food_Web\bin\roslyn\csc.exe
+D:\DACS-master\Food_Web\bin\roslyn\csc.exe.config
+D:\DACS-master\Food_Web\bin\roslyn\csc.rsp
+D:\DACS-master\Food_Web\bin\roslyn\csi.exe
+D:\DACS-master\Food_Web\bin\roslyn\csi.exe.config
+D:\DACS-master\Food_Web\bin\roslyn\csi.rsp
+D:\DACS-master\Food_Web\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\DACS-master\Food_Web\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\DACS-master\Food_Web\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\DACS-master\Food_Web\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\DACS-master\Food_Web\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\DACS-master\Food_Web\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\DACS-master\Food_Web\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\DACS-master\Food_Web\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\DACS-master\Food_Web\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\DACS-master\Food_Web\bin\roslyn\Microsoft.Managed.Core.targets
+D:\DACS-master\Food_Web\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\DACS-master\Food_Web\bin\roslyn\Microsoft.Win32.Primitives.dll
+D:\DACS-master\Food_Web\bin\roslyn\System.AppContext.dll
+D:\DACS-master\Food_Web\bin\roslyn\System.Collections.Immutable.dll
+D:\DACS-master\Food_Web\bin\roslyn\System.Console.dll
+D:\DACS-master\Food_Web\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+D:\DACS-master\Food_Web\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+D:\DACS-master\Food_Web\bin\roslyn\System.Diagnostics.StackTrace.dll
+D:\DACS-master\Food_Web\bin\roslyn\System.Globalization.Calendars.dll
+D:\DACS-master\Food_Web\bin\roslyn\System.IO.Compression.dll
+D:\DACS-master\Food_Web\bin\roslyn\System.IO.Compression.ZipFile.dll
+D:\DACS-master\Food_Web\bin\roslyn\System.IO.FileSystem.dll
+D:\DACS-master\Food_Web\bin\roslyn\System.IO.FileSystem.Primitives.dll
+D:\DACS-master\Food_Web\bin\roslyn\System.Net.Http.dll
+D:\DACS-master\Food_Web\bin\roslyn\System.Net.Sockets.dll
+D:\DACS-master\Food_Web\bin\roslyn\System.Reflection.Metadata.dll
+D:\DACS-master\Food_Web\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+D:\DACS-master\Food_Web\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+D:\DACS-master\Food_Web\bin\roslyn\System.Security.Cryptography.Encoding.dll
+D:\DACS-master\Food_Web\bin\roslyn\System.Security.Cryptography.Primitives.dll
+D:\DACS-master\Food_Web\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+D:\DACS-master\Food_Web\bin\roslyn\System.Text.Encoding.CodePages.dll
+D:\DACS-master\Food_Web\bin\roslyn\System.Threading.Tasks.Extensions.dll
+D:\DACS-master\Food_Web\bin\roslyn\System.ValueTuple.dll
+D:\DACS-master\Food_Web\bin\roslyn\System.Xml.ReaderWriter.dll
+D:\DACS-master\Food_Web\bin\roslyn\System.Xml.XmlDocument.dll
+D:\DACS-master\Food_Web\bin\roslyn\System.Xml.XPath.dll
+D:\DACS-master\Food_Web\bin\roslyn\System.Xml.XPath.XDocument.dll
+D:\DACS-master\Food_Web\bin\roslyn\vbc.exe
+D:\DACS-master\Food_Web\bin\roslyn\vbc.exe.config
+D:\DACS-master\Food_Web\bin\roslyn\vbc.rsp
+D:\DACS-master\Food_Web\bin\roslyn\VBCSCompiler.exe
+D:\DACS-master\Food_Web\bin\roslyn\VBCSCompiler.exe.config
+D:\DACS-master\Food_Web\bin\AntiXssLibrary.dll
+D:\DACS-master\Food_Web\bin\Antlr3.Runtime.dll
+D:\DACS-master\Food_Web\bin\Aspose.Words.dll
+D:\DACS-master\Food_Web\bin\Aspose.Words.Pdf2Word.dll
+D:\DACS-master\Food_Web\bin\BouncyCastle.Crypto.dll
+D:\DACS-master\Food_Web\bin\BouncyCastle.Cryptography.dll
+D:\DACS-master\Food_Web\bin\DocumentFormat.OpenXml.dll
+D:\DACS-master\Food_Web\bin\EntityFramework.dll
+D:\DACS-master\Food_Web\bin\EntityFramework.SqlServer.dll
+D:\DACS-master\Food_Web\bin\EPPlus.dll
+D:\DACS-master\Food_Web\bin\GemBox.Document.dll
+D:\DACS-master\Food_Web\bin\HarfBuzzSharp.dll
+D:\DACS-master\Food_Web\bin\HtmlSanitizationLibrary.dll
+D:\DACS-master\Food_Web\bin\itext.barcodes.dll
+D:\DACS-master\Food_Web\bin\itext.bouncy-castle-connector.dll
+D:\DACS-master\Food_Web\bin\itext.commons.dll
+D:\DACS-master\Food_Web\bin\itext.forms.dll
+D:\DACS-master\Food_Web\bin\itext.html2pdf.dll
+D:\DACS-master\Food_Web\bin\itext.io.dll
+D:\DACS-master\Food_Web\bin\itext.kernel.dll
+D:\DACS-master\Food_Web\bin\itext.layout.dll
+D:\DACS-master\Food_Web\bin\itext.pdfa.dll
+D:\DACS-master\Food_Web\bin\itext.sign.dll
+D:\DACS-master\Food_Web\bin\itext.styledxmlparser.dll
+D:\DACS-master\Food_Web\bin\itext.svg.dll
+D:\DACS-master\Food_Web\bin\itextsharp.dll
+D:\DACS-master\Food_Web\bin\itextsharp.xmlworker.dll
+D:\DACS-master\Food_Web\bin\MailKit.dll
+D:\DACS-master\Food_Web\bin\Microsoft.AspNet.Identity.Core.dll
+D:\DACS-master\Food_Web\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+D:\DACS-master\Food_Web\bin\Microsoft.AspNet.Identity.Owin.dll
+D:\DACS-master\Food_Web\bin\Microsoft.AspNet.SignalR.Core.dll
+D:\DACS-master\Food_Web\bin\Microsoft.AspNet.SignalR.SystemWeb.dll
+D:\DACS-master\Food_Web\bin\Microsoft.AspNetCore.Authentication.Abstractions.dll
+D:\DACS-master\Food_Web\bin\Microsoft.AspNetCore.Authorization.dll
+D:\DACS-master\Food_Web\bin\Microsoft.AspNetCore.Authorization.Policy.dll
+D:\DACS-master\Food_Web\bin\Microsoft.AspNetCore.Connections.Abstractions.dll
+D:\DACS-master\Food_Web\bin\Microsoft.AspNetCore.Hosting.Abstractions.dll
+D:\DACS-master\Food_Web\bin\Microsoft.AspNetCore.Hosting.Server.Abstractions.dll
+D:\DACS-master\Food_Web\bin\Microsoft.AspNetCore.Http.Abstractions.dll
+D:\DACS-master\Food_Web\bin\Microsoft.AspNetCore.Http.Connections.Common.dll
+D:\DACS-master\Food_Web\bin\Microsoft.AspNetCore.Http.Connections.dll
+D:\DACS-master\Food_Web\bin\Microsoft.AspNetCore.Http.dll
+D:\DACS-master\Food_Web\bin\Microsoft.AspNetCore.Http.Extensions.dll
+D:\DACS-master\Food_Web\bin\Microsoft.AspNetCore.Http.Features.dll
+D:\DACS-master\Food_Web\bin\Microsoft.AspNetCore.Routing.Abstractions.dll
+D:\DACS-master\Food_Web\bin\Microsoft.AspNetCore.Routing.dll
+D:\DACS-master\Food_Web\bin\Microsoft.AspNetCore.SignalR.Common.dll
+D:\DACS-master\Food_Web\bin\Microsoft.AspNetCore.SignalR.Core.dll
+D:\DACS-master\Food_Web\bin\Microsoft.AspNetCore.SignalR.dll
+D:\DACS-master\Food_Web\bin\Microsoft.AspNetCore.SignalR.Protocols.Json.dll
+D:\DACS-master\Food_Web\bin\Microsoft.AspNetCore.WebSockets.dll
+D:\DACS-master\Food_Web\bin\Microsoft.AspNetCore.WebUtilities.dll
+D:\DACS-master\Food_Web\bin\Microsoft.Bcl.AsyncInterfaces.dll
+D:\DACS-master\Food_Web\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\DACS-master\Food_Web\bin\Microsoft.Extensions.Configuration.Abstractions.dll
+D:\DACS-master\Food_Web\bin\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+D:\DACS-master\Food_Web\bin\Microsoft.Extensions.DependencyInjection.dll
+D:\DACS-master\Food_Web\bin\Microsoft.Extensions.FileProviders.Abstractions.dll
+D:\DACS-master\Food_Web\bin\Microsoft.Extensions.Hosting.Abstractions.dll
+D:\DACS-master\Food_Web\bin\Microsoft.Extensions.Logging.Abstractions.dll
+D:\DACS-master\Food_Web\bin\Microsoft.Extensions.Logging.dll
+D:\DACS-master\Food_Web\bin\Microsoft.Extensions.ObjectPool.dll
+D:\DACS-master\Food_Web\bin\Microsoft.Extensions.Options.dll
+D:\DACS-master\Food_Web\bin\Microsoft.Extensions.Primitives.dll
+D:\DACS-master\Food_Web\bin\Microsoft.Net.Http.Headers.dll
+D:\DACS-master\Food_Web\bin\Microsoft.Owin.dll
+D:\DACS-master\Food_Web\bin\Microsoft.Owin.Host.SystemWeb.dll
+D:\DACS-master\Food_Web\bin\Microsoft.Owin.Security.Cookies.dll
+D:\DACS-master\Food_Web\bin\Microsoft.Owin.Security.dll
+D:\DACS-master\Food_Web\bin\Microsoft.Owin.Security.Facebook.dll
+D:\DACS-master\Food_Web\bin\Microsoft.Owin.Security.Google.dll
+D:\DACS-master\Food_Web\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+D:\DACS-master\Food_Web\bin\Microsoft.Owin.Security.OAuth.dll
+D:\DACS-master\Food_Web\bin\Microsoft.Owin.Security.Twitter.dll
+D:\DACS-master\Food_Web\bin\Microsoft.Web.Infrastructure.dll
+D:\DACS-master\Food_Web\bin\MimeKit.dll
+D:\DACS-master\Food_Web\bin\Newtonsoft.Json.dll
+D:\DACS-master\Food_Web\bin\OfficeOpenXml.Extends.dll
+D:\DACS-master\Food_Web\bin\Owin.dll
+D:\DACS-master\Food_Web\bin\PagedList.dll
+D:\DACS-master\Food_Web\bin\PagedList.Mvc.dll
+D:\DACS-master\Food_Web\bin\Rotativa.dll
+D:\DACS-master\Food_Web\bin\SendGrid.dll
+D:\DACS-master\Food_Web\bin\SkiaSharp.dll
+D:\DACS-master\Food_Web\bin\StarkbankEcdsa.dll
+D:\DACS-master\Food_Web\bin\System.Buffers.dll
+D:\DACS-master\Food_Web\bin\System.ComponentModel.Annotations.dll
+D:\DACS-master\Food_Web\bin\System.Diagnostics.DiagnosticSource.dll
+D:\DACS-master\Food_Web\bin\System.IO.Pipelines.dll
+D:\DACS-master\Food_Web\bin\System.Memory.dll
+D:\DACS-master\Food_Web\bin\System.Net.Mail.Abstractions.dll
+D:\DACS-master\Food_Web\bin\System.Net.WebSockets.WebSocketProtocol.dll
+D:\DACS-master\Food_Web\bin\System.Numerics.Vectors.dll
+D:\DACS-master\Food_Web\bin\System.Runtime.CompilerServices.Unsafe.dll
+D:\DACS-master\Food_Web\bin\System.Security.Principal.Windows.dll
+D:\DACS-master\Food_Web\bin\System.Text.Encodings.Web.dll
+D:\DACS-master\Food_Web\bin\System.Threading.Channels.dll
+D:\DACS-master\Food_Web\bin\System.Threading.Tasks.Extensions.dll
+D:\DACS-master\Food_Web\bin\System.ValueTuple.dll
+D:\DACS-master\Food_Web\bin\System.Web.Helpers.dll
+D:\DACS-master\Food_Web\bin\System.Web.Mvc.dll
+D:\DACS-master\Food_Web\bin\System.Web.Optimization.dll
+D:\DACS-master\Food_Web\bin\System.Web.Razor.dll
+D:\DACS-master\Food_Web\bin\System.Web.WebPages.Deployment.dll
+D:\DACS-master\Food_Web\bin\System.Web.WebPages.dll
+D:\DACS-master\Food_Web\bin\System.Web.WebPages.Razor.dll
+D:\DACS-master\Food_Web\bin\WebGrease.dll
+D:\DACS-master\Food_Web\bin\DevExpress.Pdf.v23.1.Core.dll
+D:\DACS-master\Food_Web\bin\DevExpress.Pdf.v23.1.Drawing.dll
+D:\DACS-master\Food_Web\bin\DevExpress.Data.Desktop.v23.1.dll
+D:\DACS-master\Food_Web\bin\DevExpress.XtraCharts.v23.1.dll
+D:\DACS-master\Food_Web\bin\DevExpress.DataAccess.v23.1.dll
+D:\DACS-master\Food_Web\bin\DevExpress.Sparkline.v23.1.Core.dll
+D:\DACS-master\Food_Web\bin\DevExpress.Charts.v23.1.Core.dll
+D:\DACS-master\Food_Web\bin\DevExpress.PivotGrid.v23.1.Core.dll
+D:\DACS-master\Food_Web\bin\DevExpress.XtraGauges.v23.1.Core.dll
+D:\DACS-master\Food_Web\bin\DevExpress.RichEdit.v23.1.Core.dll
+D:\DACS-master\Food_Web\bin\DevExpress.Office.v23.1.Core.dll
+D:\DACS-master\Food_Web\bin\DevExpress.CodeParser.v23.1.dll
+D:\DACS-master\Food_Web\bin\DevExpress.DataVisualization.v23.1.Core.dll
+D:\DACS-master\Food_Web\bin\AntiXssLibrary.xml
+D:\DACS-master\Food_Web\bin\Aspose.Words.xml
+D:\DACS-master\Food_Web\bin\BouncyCastle.Cryptography.xml
+D:\DACS-master\Food_Web\bin\DevExpress.Data.v23.1.xml
+D:\DACS-master\Food_Web\bin\DevExpress.Drawing.v23.1.xml
+D:\DACS-master\Food_Web\bin\DevExpress.Printing.v23.1.Core.xml
+D:\DACS-master\Food_Web\bin\DevExpress.Utils.v23.1.xml
+D:\DACS-master\Food_Web\bin\DevExpress.Xpo.v23.1.xml
+D:\DACS-master\Food_Web\bin\DevExpress.XtraReports.v23.1.xml
+D:\DACS-master\Food_Web\bin\DevExpress.XtraReports.v23.1.Web.xml
+D:\DACS-master\Food_Web\bin\DocumentFormat.OpenXml.xml
+D:\DACS-master\Food_Web\bin\EPPlus.xml
+D:\DACS-master\Food_Web\bin\GemBox.Document.xml
+D:\DACS-master\Food_Web\bin\HarfBuzzSharp.pdb
+D:\DACS-master\Food_Web\bin\HarfBuzzSharp.xml
+D:\DACS-master\Food_Web\bin\HtmlSanitizationLibrary.xml
+D:\DACS-master\Food_Web\bin\itext.barcodes.xml
+D:\DACS-master\Food_Web\bin\itext.bouncy-castle-connector.xml
+D:\DACS-master\Food_Web\bin\itext.commons.xml
+D:\DACS-master\Food_Web\bin\itext.forms.xml
+D:\DACS-master\Food_Web\bin\itext.html2pdf.xml
+D:\DACS-master\Food_Web\bin\itext.io.xml
+D:\DACS-master\Food_Web\bin\itext.kernel.xml
+D:\DACS-master\Food_Web\bin\itext.layout.xml
+D:\DACS-master\Food_Web\bin\itext.pdfa.xml
+D:\DACS-master\Food_Web\bin\itext.sign.xml
+D:\DACS-master\Food_Web\bin\itext.styledxmlparser.xml
+D:\DACS-master\Food_Web\bin\itext.svg.xml
+D:\DACS-master\Food_Web\bin\itextsharp.xml
+D:\DACS-master\Food_Web\bin\MailKit.pdb
+D:\DACS-master\Food_Web\bin\MailKit.xml
+D:\DACS-master\Food_Web\bin\MailKit.dll.config
+D:\DACS-master\Food_Web\bin\Microsoft.AspNet.SignalR.Core.xml
+D:\DACS-master\Food_Web\bin\Microsoft.AspNet.SignalR.SystemWeb.xml
+D:\DACS-master\Food_Web\bin\Microsoft.AspNetCore.Authentication.Abstractions.xml
+D:\DACS-master\Food_Web\bin\Microsoft.AspNetCore.Authorization.xml
+D:\DACS-master\Food_Web\bin\Microsoft.AspNetCore.Authorization.Policy.xml
+D:\DACS-master\Food_Web\bin\Microsoft.AspNetCore.Connections.Abstractions.xml
+D:\DACS-master\Food_Web\bin\Microsoft.AspNetCore.Hosting.Abstractions.xml
+D:\DACS-master\Food_Web\bin\Microsoft.AspNetCore.Hosting.Server.Abstractions.xml
+D:\DACS-master\Food_Web\bin\Microsoft.AspNetCore.Http.xml
+D:\DACS-master\Food_Web\bin\Microsoft.AspNetCore.Http.Abstractions.xml
+D:\DACS-master\Food_Web\bin\Microsoft.AspNetCore.Http.Connections.xml
+D:\DACS-master\Food_Web\bin\Microsoft.AspNetCore.Http.Connections.Common.xml
+D:\DACS-master\Food_Web\bin\Microsoft.AspNetCore.Http.Extensions.xml
+D:\DACS-master\Food_Web\bin\Microsoft.AspNetCore.Http.Features.xml
+D:\DACS-master\Food_Web\bin\Microsoft.AspNetCore.Routing.xml
+D:\DACS-master\Food_Web\bin\Microsoft.AspNetCore.Routing.Abstractions.xml
+D:\DACS-master\Food_Web\bin\Microsoft.AspNetCore.SignalR.xml
+D:\DACS-master\Food_Web\bin\Microsoft.AspNetCore.SignalR.Common.xml
+D:\DACS-master\Food_Web\bin\Microsoft.AspNetCore.SignalR.Core.xml
+D:\DACS-master\Food_Web\bin\Microsoft.AspNetCore.SignalR.Protocols.Json.xml
+D:\DACS-master\Food_Web\bin\Microsoft.AspNetCore.WebSockets.xml
+D:\DACS-master\Food_Web\bin\Microsoft.AspNetCore.WebUtilities.xml
+D:\DACS-master\Food_Web\bin\Microsoft.Bcl.AsyncInterfaces.xml
+D:\DACS-master\Food_Web\bin\Microsoft.Extensions.Configuration.Abstractions.xml
+D:\DACS-master\Food_Web\bin\Microsoft.Extensions.DependencyInjection.xml
+D:\DACS-master\Food_Web\bin\Microsoft.Extensions.DependencyInjection.Abstractions.xml
+D:\DACS-master\Food_Web\bin\Microsoft.Extensions.FileProviders.Abstractions.xml
+D:\DACS-master\Food_Web\bin\Microsoft.Extensions.Hosting.Abstractions.xml
+D:\DACS-master\Food_Web\bin\Microsoft.Extensions.Logging.xml
+D:\DACS-master\Food_Web\bin\Microsoft.Extensions.Logging.Abstractions.xml
+D:\DACS-master\Food_Web\bin\Microsoft.Extensions.ObjectPool.xml
+D:\DACS-master\Food_Web\bin\Microsoft.Extensions.Options.xml
+D:\DACS-master\Food_Web\bin\Microsoft.Extensions.Primitives.xml
+D:\DACS-master\Food_Web\bin\Microsoft.Net.Http.Headers.xml
+D:\DACS-master\Food_Web\bin\MimeKit.pdb
+D:\DACS-master\Food_Web\bin\MimeKit.xml
+D:\DACS-master\Food_Web\bin\MimeKit.dll.config
+D:\DACS-master\Food_Web\bin\Newtonsoft.Json.xml
+D:\DACS-master\Food_Web\bin\PagedList.xml
+D:\DACS-master\Food_Web\bin\PagedList.Mvc.xml
+D:\DACS-master\Food_Web\bin\SendGrid.pdb
+D:\DACS-master\Food_Web\bin\SendGrid.xml
+D:\DACS-master\Food_Web\bin\SkiaSharp.pdb
+D:\DACS-master\Food_Web\bin\SkiaSharp.xml
+D:\DACS-master\Food_Web\bin\System.Buffers.xml
+D:\DACS-master\Food_Web\bin\System.Diagnostics.DiagnosticSource.xml
+D:\DACS-master\Food_Web\bin\System.IO.Pipelines.xml
+D:\DACS-master\Food_Web\bin\System.Memory.xml
+D:\DACS-master\Food_Web\bin\System.Numerics.Vectors.xml
+D:\DACS-master\Food_Web\bin\System.Runtime.CompilerServices.Unsafe.xml
+D:\DACS-master\Food_Web\bin\System.Text.Encodings.Web.xml
+D:\DACS-master\Food_Web\bin\System.Threading.Channels.xml
+D:\DACS-master\Food_Web\bin\System.Threading.Tasks.Extensions.xml
+D:\DACS-master\Food_Web\bin\System.ValueTuple.xml
+D:\DACS-master\Food_Web\bin\System.Web.Helpers.xml
+D:\DACS-master\Food_Web\bin\System.Web.Mvc.xml
+D:\DACS-master\Food_Web\bin\System.Web.Optimization.xml
+D:\DACS-master\Food_Web\bin\System.Web.Razor.xml
+D:\DACS-master\Food_Web\bin\System.Web.WebPages.xml
+D:\DACS-master\Food_Web\bin\System.Web.WebPages.Deployment.xml
+D:\DACS-master\Food_Web\bin\System.Web.WebPages.Razor.xml
+D:\DACS-master\Food_Web\bin\Antlr3.Runtime.pdb
+D:\DACS-master\Food_Web\bin\EntityFramework.xml
+D:\DACS-master\Food_Web\bin\EntityFramework.SqlServer.xml
+D:\DACS-master\Food_Web\bin\Microsoft.AspNet.Identity.Core.xml
+D:\DACS-master\Food_Web\bin\Microsoft.AspNet.Identity.Owin.xml
+D:\DACS-master\Food_Web\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+D:\DACS-master\Food_Web\bin\Microsoft.Owin.xml
+D:\DACS-master\Food_Web\bin\Microsoft.Owin.Host.SystemWeb.xml
+D:\DACS-master\Food_Web\bin\Microsoft.Owin.Security.xml
+D:\DACS-master\Food_Web\bin\Microsoft.Owin.Security.Facebook.xml
+D:\DACS-master\Food_Web\bin\Microsoft.Owin.Security.Cookies.xml
+D:\DACS-master\Food_Web\bin\Microsoft.Owin.Security.Google.xml
+D:\DACS-master\Food_Web\bin\Microsoft.Owin.Security.Twitter.xml
+D:\DACS-master\Food_Web\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+D:\DACS-master\Food_Web\bin\Microsoft.Owin.Security.OAuth.xml
+D:\DACS-master\Food_Web\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\DACS-master\Food_Web\bin\DevExpress.Pdf.v23.1.Core.xml
+D:\DACS-master\Food_Web\bin\DevExpress.Pdf.v23.1.Drawing.xml
+D:\DACS-master\Food_Web\bin\DevExpress.Data.Desktop.v23.1.xml
+D:\DACS-master\Food_Web\bin\DevExpress.XtraCharts.v23.1.xml
+D:\DACS-master\Food_Web\bin\DevExpress.DataAccess.v23.1.xml
+D:\DACS-master\Food_Web\bin\DevExpress.Sparkline.v23.1.Core.xml
+D:\DACS-master\Food_Web\bin\DevExpress.Charts.v23.1.Core.xml
+D:\DACS-master\Food_Web\bin\DevExpress.PivotGrid.v23.1.Core.xml
+D:\DACS-master\Food_Web\bin\DevExpress.XtraGauges.v23.1.Core.xml
+D:\DACS-master\Food_Web\bin\DevExpress.RichEdit.v23.1.Core.xml
+D:\DACS-master\Food_Web\bin\DevExpress.Office.v23.1.Core.xml
+D:\DACS-master\Food_Web\obj\Debug\Food_Web.csproj.AssemblyReference.cache
+D:\DACS-master\Food_Web\obj\Debug\Food_Web.Resources.resources
+D:\DACS-master\Food_Web\obj\Debug\Food_Web.Resources.ja-JP.resources
+D:\DACS-master\Food_Web\obj\Debug\Food_Web.Resources.vi-VN.resources
+D:\DACS-master\Food_Web\obj\Debug\Food_Web.csproj.GenerateResource.cache
+D:\DACS-master\Food_Web\obj\Debug\Food_Web.csproj.CoreCompileInputs.cache
+D:\DACS-master\Food_Web\obj\Debug\ja-JP\Food_Web.resources.dll
+D:\DACS-master\Food_Web\obj\Debug\vi-VN\Food_Web.resources.dll
+D:\DACS-master\Food_Web\obj\Debug\Food_Web.csproj.CopyComplete
+D:\DACS-master\Food_Web\obj\Debug\Food_Web.dll
+D:\DACS-master\Food_Web\obj\Debug\Food_Web.pdb
+D:\8714_NGUYENNGOCSANG_Website_App_winfrom SanThuongMai\ShoppeeWebsite\Food_Web\bin\libHarfBuzzSharp.dylib
+D:\8714_NGUYENNGOCSANG_Website_App_winfrom SanThuongMai\ShoppeeWebsite\Food_Web\bin\x86\libHarfBuzzSharp.dll
+D:\8714_NGUYENNGOCSANG_Website_App_winfrom SanThuongMai\ShoppeeWebsite\Food_Web\bin\x64\libHarfBuzzSharp.dll
+D:\8714_NGUYENNGOCSANG_Website_App_winfrom SanThuongMai\ShoppeeWebsite\Food_Web\bin\arm64\libHarfBuzzSharp.dll
+D:\8714_NGUYENNGOCSANG_Website_App_winfrom SanThuongMai\ShoppeeWebsite\Food_Web\bin\libSkiaSharp.dylib
+D:\8714_NGUYENNGOCSANG_Website_App_winfrom SanThuongMai\ShoppeeWebsite\Food_Web\bin\x86\libSkiaSharp.dll
+D:\8714_NGUYENNGOCSANG_Website_App_winfrom SanThuongMai\ShoppeeWebsite\Food_Web\bin\x64\libSkiaSharp.dll
+D:\8714_NGUYENNGOCSANG_Website_App_winfrom SanThuongMai\ShoppeeWebsite\Food_Web\bin\arm64\libSkiaSharp.dll
+D:\8714_NGUYENNGOCSANG_Website_App_winfrom SanThuongMai\ShoppeeWebsite\Food_Web\bin\Food_Web.dll.config
+D:\8714_NGUYENNGOCSANG_Website_App_winfrom SanThuongMai\ShoppeeWebsite\Food_Web\bin\Food_Web.dll
+D:\8714_NGUYENNGOCSANG_Website_App_winfrom SanThuongMai\ShoppeeWebsite\Food_Web\bin\Food_Web.pdb
+D:\8714_NGUYENNGOCSANG_Website_App_winfrom SanThuongMai\ShoppeeWebsite\Food_Web\bin\ja-JP\Food_Web.resources.dll
+D:\8714_NGUYENNGOCSANG_Website_App_winfrom SanThuongMai\ShoppeeWebsite\Food_Web\bin\vi-VN\Food_Web.resources.dll
+D:\8714_NGUYENNGOCSANG_Website_App_winfrom SanThuongMai\ShoppeeWebsite\Food_Web\bin\roslyn\csc.exe
+D:\8714_NGUYENNGOCSANG_Website_App_winfrom SanThuongMai\ShoppeeWebsite\Food_Web\bin\roslyn\csc.exe.config
+D:\8714_NGUYENNGOCSANG_Website_App_winfrom SanThuongMai\ShoppeeWebsite\Food_Web\bin\roslyn\csc.rsp
+D:\8714_NGUYENNGOCSANG_Website_App_winfrom SanThuongMai\ShoppeeWebsite\Food_Web\bin\roslyn\csi.exe
+D:\8714_NGUYENNGOCSANG_Website_App_winfrom SanThuongMai\ShoppeeWebsite\Food_Web\bin\roslyn\csi.exe.config
+D:\8714_NGUYENNGOCSANG_Website_App_winfrom SanThuongMai\ShoppeeWebsite\Food_Web\bin\roslyn\csi.rsp
+D:\8714_NGUYENNGOCSANG_Website_App_winfrom SanThuongMai\ShoppeeWebsite\Food_Web\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\8714_NGUYENNGOCSANG_Website_App_winfrom SanThuongMai\ShoppeeWebsite\Food_Web\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\8714_NGUYENNGOCSANG_Website_App_winfrom SanThuongMai\ShoppeeWebsite\Food_Web\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\8714_NGUYENNGOCSANG_Website_App_winfrom SanThuongMai\ShoppeeWebsite\Food_Web\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\8714_NGUYENNGOCSANG_Website_App_winfrom SanThuongMai\ShoppeeWebsite\Food_Web\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\8714_NGUYENNGOCSANG_Website_App_winfrom SanThuongMai\ShoppeeWebsite\Food_Web\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\8714_NGUYENNGOCSANG_Website_App_winfrom SanThuongMai\ShoppeeWebsite\Food_Web\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\8714_NGUYENNGOCSANG_Website_App_winfrom SanThuongMai\ShoppeeWebsite\Food_Web\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\8714_NGUYENNGOCSANG_Website_App_winfrom SanThuongMai\ShoppeeWebsite\Food_Web\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\8714_NGUYENNGOCSANG_Website_App_winfrom SanThuongMai\ShoppeeWebsite\Food_Web\bin\roslyn\Microsoft.Managed.Core.targets
+D:\8714_NGUYENNGOCSANG_Website_App_winfrom SanThuongMai\ShoppeeWebsite\Food_Web\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\8714_NGUYENNGOCSANG_Website_App_winfrom SanThuongMai\ShoppeeWebsite\Food_Web\bin\roslyn\Microsoft.Win32.Primitives.dll
+D:\8714_NGUYENNGOCSANG_Website_App_winfrom SanThuongMai\ShoppeeWebsite\Food_Web\bin\roslyn\System.AppContext.dll
+D:\8714_NGUYENNGOCSANG_Website_App_winfrom SanThuongMai\ShoppeeWebsite\Food_Web\bin\roslyn\System.Collections.Immutable.dll
+D:\8714_NGUYENNGOCSANG_Website_App_winfrom SanThuongMai\ShoppeeWebsite\Food_Web\bin\roslyn\System.Console.dll
+D:\8714_NGUYENNGOCSANG_Website_App_winfrom SanThuongMai\ShoppeeWebsite\Food_Web\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+D:\8714_NGUYENNGOCSANG_Website_App_winfrom SanThuongMai\ShoppeeWebsite\Food_Web\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+D:\8714_NGUYENNGOCSANG_Website_App_winfrom SanThuongMai\ShoppeeWebsite\Food_Web\bin\roslyn\System.Diagnostics.StackTrace.dll
+D:\8714_NGUYENNGOCSANG_Website_App_winfrom SanThuongMai\ShoppeeWebsite\Food_Web\bin\roslyn\System.Globalization.Calendars.dll
+D:\8714_NGUYENNGOCSANG_Website_App_winfrom SanThuongMai\ShoppeeWebsite\Food_Web\bin\roslyn\System.IO.Compression.dll
+D:\8714_NGUYENNGOCSANG_Website_App_winfrom SanThuongMai\ShoppeeWebsite\Food_Web\bin\roslyn\System.IO.Compression.ZipFile.dll
+D:\8714_NGUYENNGOCSANG_Website_App_winfrom SanThuongMai\ShoppeeWebsite\Food_Web\bin\roslyn\System.IO.FileSystem.dll
+D:\8714_NGUYENNGOCSANG_Website_App_winfrom SanThuongMai\ShoppeeWebsite\Food_Web\bin\roslyn\System.IO.FileSystem.Primitives.dll
+D:\8714_NGUYENNGOCSANG_Website_App_winfrom SanThuongMai\ShoppeeWebsite\Food_Web\bin\roslyn\System.Net.Http.dll
+D:\8714_NGUYENNGOCSANG_Website_App_winfrom SanThuongMai\ShoppeeWebsite\Food_Web\bin\roslyn\System.Net.Sockets.dll
+D:\8714_NGUYENNGOCSANG_Website_App_winfrom SanThuongMai\ShoppeeWebsite\Food_Web\bin\roslyn\System.Reflection.Metadata.dll
+D:\8714_NGUYENNGOCSANG_Website_App_winfrom SanThuongMai\ShoppeeWebsite\Food_Web\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+D:\8714_NGUYENNGOCSANG_Website_App_winfrom SanThuongMai\ShoppeeWebsite\Food_Web\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+D:\8714_NGUYENNGOCSANG_Website_App_winfrom SanThuongMai\ShoppeeWebsite\Food_Web\bin\roslyn\System.Security.Cryptography.Encoding.dll
+D:\8714_NGUYENNGOCSANG_Website_App_winfrom SanThuongMai\ShoppeeWebsite\Food_Web\bin\roslyn\System.Security.Cryptography.Primitives.dll
+D:\8714_NGUYENNGOCSANG_Website_App_winfrom SanThuongMai\ShoppeeWebsite\Food_Web\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+D:\8714_NGUYENNGOCSANG_Website_App_winfrom SanThuongMai\ShoppeeWebsite\Food_Web\bin\roslyn\System.Text.Encoding.CodePages.dll
+D:\8714_NGUYENNGOCSANG_Website_App_winfrom SanThuongMai\ShoppeeWebsite\Food_Web\bin\roslyn\System.Threading.Tasks.Extensions.dll
+D:\8714_NGUYENNGOCSANG_Website_App_winfrom SanThuongMai\ShoppeeWebsite\Food_Web\bin\roslyn\System.ValueTuple.dll
+D:\8714_NGUYENNGOCSANG_Website_App_winfrom SanThuongMai\ShoppeeWebsite\Food_Web\bin\roslyn\System.Xml.ReaderWriter.dll
+D:\8714_NGUYENNGOCSANG_Website_App_winfrom SanThuongMai\ShoppeeWebsite\Food_Web\bin\roslyn\System.Xml.XmlDocument.dll
+D:\8714_NGUYENNGOCSANG_Website_App_winfrom SanThuongMai\ShoppeeWebsite\Food_Web\bin\roslyn\System.Xml.XPath.dll
+D:\8714_NGUYENNGOCSANG_Website_App_winfrom SanThuongMai\ShoppeeWebsite\Food_Web\bin\roslyn\System.Xml.XPath.XDocument.dll
+D:\8714_NGUYENNGOCSANG_Website_App_winfrom SanThuongMai\ShoppeeWebsite\Food_Web\bin\roslyn\vbc.exe
+D:\8714_NGUYENNGOCSANG_Website_App_winfrom SanThuongMai\ShoppeeWebsite\Food_Web\bin\roslyn\vbc.exe.config
+D:\8714_NGUYENNGOCSANG_Website_App_winfrom SanThuongMai\ShoppeeWebsite\Food_Web\bin\roslyn\vbc.rsp
+D:\8714_NGUYENNGOCSANG_Website_App_winfrom SanThuongMai\ShoppeeWebsite\Food_Web\bin\roslyn\VBCSCompiler.exe
+D:\8714_NGUYENNGOCSANG_Website_App_winfrom SanThuongMai\ShoppeeWebsite\Food_Web\bin\roslyn\VBCSCompiler.exe.config
+D:\8714_NGUYENNGOCSANG_Website_App_winfrom SanThuongMai\ShoppeeWebsite\Food_Web\bin\AntiXssLibrary.dll
+D:\8714_NGUYENNGOCSANG_Website_App_winfrom SanThuongMai\ShoppeeWebsite\Food_Web\bin\Antlr3.Runtime.dll
+D:\8714_NGUYENNGOCSANG_Website_App_winfrom SanThuongMai\ShoppeeWebsite\Food_Web\bin\Aspose.Words.dll
+D:\8714_NGUYENNGOCSANG_Website_App_winfrom SanThuongMai\ShoppeeWebsite\Food_Web\bin\Aspose.Words.Pdf2Word.dll
+D:\8714_NGUYENNGOCSANG_Website_App_winfrom SanThuongMai\ShoppeeWebsite\Food_Web\bin\BouncyCastle.Crypto.dll
+D:\8714_NGUYENNGOCSANG_Website_App_winfrom SanThuongMai\ShoppeeWebsite\Food_Web\bin\BouncyCastle.Cryptography.dll
+D:\8714_NGUYENNGOCSANG_Website_App_winfrom SanThuongMai\ShoppeeWebsite\Food_Web\bin\Castle.Core.dll
+D:\8714_NGUYENNGOCSANG_Website_App_winfrom SanThuongMai\ShoppeeWebsite\Food_Web\bin\DocumentFormat.OpenXml.dll
+D:\8714_NGUYENNGOCSANG_Website_App_winfrom SanThuongMai\ShoppeeWebsite\Food_Web\bin\EntityFramework.dll
+D:\8714_NGUYENNGOCSANG_Website_App_winfrom SanThuongMai\ShoppeeWebsite\Food_Web\bin\EntityFramework.SqlServer.dll
+D:\8714_NGUYENNGOCSANG_Website_App_winfrom SanThuongMai\ShoppeeWebsite\Food_Web\bin\EPPlus.dll
+D:\8714_NGUYENNGOCSANG_Website_App_winfrom SanThuongMai\ShoppeeWebsite\Food_Web\bin\FluentAssertions.dll
+D:\8714_NGUYENNGOCSANG_Website_App_winfrom SanThuongMai\ShoppeeWebsite\Food_Web\bin\GemBox.Document.dll
+D:\8714_NGUYENNGOCSANG_Website_App_winfrom SanThuongMai\ShoppeeWebsite\Food_Web\bin\HarfBuzzSharp.dll
+D:\8714_NGUYENNGOCSANG_Website_App_winfrom SanThuongMai\ShoppeeWebsite\Food_Web\bin\HtmlSanitizationLibrary.dll
+D:\8714_NGUYENNGOCSANG_Website_App_winfrom SanThuongMai\ShoppeeWebsite\Food_Web\bin\itext.barcodes.dll
+D:\8714_NGUYENNGOCSANG_Website_App_winfrom SanThuongMai\ShoppeeWebsite\Food_Web\bin\itext.bouncy-castle-connector.dll
+D:\8714_NGUYENNGOCSANG_Website_App_winfrom SanThuongMai\ShoppeeWebsite\Food_Web\bin\itext.commons.dll
+D:\8714_NGUYENNGOCSANG_Website_App_winfrom SanThuongMai\ShoppeeWebsite\Food_Web\bin\itext.forms.dll
+D:\8714_NGUYENNGOCSANG_Website_App_winfrom SanThuongMai\ShoppeeWebsite\Food_Web\bin\itext.html2pdf.dll
+D:\8714_NGUYENNGOCSANG_Website_App_winfrom SanThuongMai\ShoppeeWebsite\Food_Web\bin\itext.io.dll
+D:\8714_NGUYENNGOCSANG_Website_App_winfrom SanThuongMai\ShoppeeWebsite\Food_Web\bin\itext.kernel.dll
+D:\8714_NGUYENNGOCSANG_Website_App_winfrom SanThuongMai\ShoppeeWebsite\Food_Web\bin\itext.layout.dll
+D:\8714_NGUYENNGOCSANG_Website_App_winfrom SanThuongMai\ShoppeeWebsite\Food_Web\bin\itext.pdfa.dll
+D:\8714_NGUYENNGOCSANG_Website_App_winfrom SanThuongMai\ShoppeeWebsite\Food_Web\bin\itext.sign.dll
+D:\8714_NGUYENNGOCSANG_Website_App_winfrom SanThuongMai\ShoppeeWebsite\Food_Web\bin\itext.styledxmlparser.dll
+D:\8714_NGUYENNGOCSANG_Website_App_winfrom SanThuongMai\ShoppeeWebsite\Food_Web\bin\itext.svg.dll
+D:\8714_NGUYENNGOCSANG_Website_App_winfrom SanThuongMai\ShoppeeWebsite\Food_Web\bin\itextsharp.dll
+D:\8714_NGUYENNGOCSANG_Website_App_winfrom SanThuongMai\ShoppeeWebsite\Food_Web\bin\itextsharp.xmlworker.dll
+D:\8714_NGUYENNGOCSANG_Website_App_winfrom SanThuongMai\ShoppeeWebsite\Food_Web\bin\MailKit.dll
+D:\8714_NGUYENNGOCSANG_Website_App_winfrom SanThuongMai\ShoppeeWebsite\Food_Web\bin\Microsoft.AspNet.Identity.Core.dll
+D:\8714_NGUYENNGOCSANG_Website_App_winfrom SanThuongMai\ShoppeeWebsite\Food_Web\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+D:\8714_NGUYENNGOCSANG_Website_App_winfrom SanThuongMai\ShoppeeWebsite\Food_Web\bin\Microsoft.AspNet.Identity.Owin.dll
+D:\8714_NGUYENNGOCSANG_Website_App_winfrom SanThuongMai\ShoppeeWebsite\Food_Web\bin\Microsoft.AspNet.SignalR.Core.dll
+D:\8714_NGUYENNGOCSANG_Website_App_winfrom SanThuongMai\ShoppeeWebsite\Food_Web\bin\Microsoft.AspNet.SignalR.SystemWeb.dll
+D:\8714_NGUYENNGOCSANG_Website_App_winfrom SanThuongMai\ShoppeeWebsite\Food_Web\bin\Microsoft.AspNetCore.Authentication.Abstractions.dll
+D:\8714_NGUYENNGOCSANG_Website_App_winfrom SanThuongMai\ShoppeeWebsite\Food_Web\bin\Microsoft.AspNetCore.Authorization.dll
+D:\8714_NGUYENNGOCSANG_Website_App_winfrom SanThuongMai\ShoppeeWebsite\Food_Web\bin\Microsoft.AspNetCore.Authorization.Policy.dll
+D:\8714_NGUYENNGOCSANG_Website_App_winfrom SanThuongMai\ShoppeeWebsite\Food_Web\bin\Microsoft.AspNetCore.Connections.Abstractions.dll
+D:\8714_NGUYENNGOCSANG_Website_App_winfrom SanThuongMai\ShoppeeWebsite\Food_Web\bin\Microsoft.AspNetCore.Hosting.Abstractions.dll
+D:\8714_NGUYENNGOCSANG_Website_App_winfrom SanThuongMai\ShoppeeWebsite\Food_Web\bin\Microsoft.AspNetCore.Hosting.Server.Abstractions.dll
+D:\8714_NGUYENNGOCSANG_Website_App_winfrom SanThuongMai\ShoppeeWebsite\Food_Web\bin\Microsoft.AspNetCore.Http.Abstractions.dll
+D:\8714_NGUYENNGOCSANG_Website_App_winfrom SanThuongMai\ShoppeeWebsite\Food_Web\bin\Microsoft.AspNetCore.Http.Connections.Common.dll
+D:\8714_NGUYENNGOCSANG_Website_App_winfrom SanThuongMai\ShoppeeWebsite\Food_Web\bin\Microsoft.AspNetCore.Http.Connections.dll
+D:\8714_NGUYENNGOCSANG_Website_App_winfrom SanThuongMai\ShoppeeWebsite\Food_Web\bin\Microsoft.AspNetCore.Http.dll
+D:\8714_NGUYENNGOCSANG_Website_App_winfrom SanThuongMai\ShoppeeWebsite\Food_Web\bin\Microsoft.AspNetCore.Http.Extensions.dll
+D:\8714_NGUYENNGOCSANG_Website_App_winfrom SanThuongMai\ShoppeeWebsite\Food_Web\bin\Microsoft.AspNetCore.Http.Features.dll
+D:\8714_NGUYENNGOCSANG_Website_App_winfrom SanThuongMai\ShoppeeWebsite\Food_Web\bin\Microsoft.AspNetCore.Routing.Abstractions.dll
+D:\8714_NGUYENNGOCSANG_Website_App_winfrom SanThuongMai\ShoppeeWebsite\Food_Web\bin\Microsoft.AspNetCore.Routing.dll
+D:\8714_NGUYENNGOCSANG_Website_App_winfrom SanThuongMai\ShoppeeWebsite\Food_Web\bin\Microsoft.AspNetCore.SignalR.Common.dll
+D:\8714_NGUYENNGOCSANG_Website_App_winfrom SanThuongMai\ShoppeeWebsite\Food_Web\bin\Microsoft.AspNetCore.SignalR.Core.dll
+D:\8714_NGUYENNGOCSANG_Website_App_winfrom SanThuongMai\ShoppeeWebsite\Food_Web\bin\Microsoft.AspNetCore.SignalR.dll
+D:\8714_NGUYENNGOCSANG_Website_App_winfrom SanThuongMai\ShoppeeWebsite\Food_Web\bin\Microsoft.AspNetCore.SignalR.Protocols.Json.dll
+D:\8714_NGUYENNGOCSANG_Website_App_winfrom SanThuongMai\ShoppeeWebsite\Food_Web\bin\Microsoft.AspNetCore.WebSockets.dll
+D:\8714_NGUYENNGOCSANG_Website_App_winfrom SanThuongMai\ShoppeeWebsite\Food_Web\bin\Microsoft.AspNetCore.WebUtilities.dll
+D:\8714_NGUYENNGOCSANG_Website_App_winfrom SanThuongMai\ShoppeeWebsite\Food_Web\bin\Microsoft.Bcl.AsyncInterfaces.dll
+D:\8714_NGUYENNGOCSANG_Website_App_winfrom SanThuongMai\ShoppeeWebsite\Food_Web\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\8714_NGUYENNGOCSANG_Website_App_winfrom SanThuongMai\ShoppeeWebsite\Food_Web\bin\Microsoft.Extensions.Configuration.Abstractions.dll
+D:\8714_NGUYENNGOCSANG_Website_App_winfrom SanThuongMai\ShoppeeWebsite\Food_Web\bin\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+D:\8714_NGUYENNGOCSANG_Website_App_winfrom SanThuongMai\ShoppeeWebsite\Food_Web\bin\Microsoft.Extensions.DependencyInjection.dll
+D:\8714_NGUYENNGOCSANG_Website_App_winfrom SanThuongMai\ShoppeeWebsite\Food_Web\bin\Microsoft.Extensions.FileProviders.Abstractions.dll
+D:\8714_NGUYENNGOCSANG_Website_App_winfrom SanThuongMai\ShoppeeWebsite\Food_Web\bin\Microsoft.Extensions.Hosting.Abstractions.dll
+D:\8714_NGUYENNGOCSANG_Website_App_winfrom SanThuongMai\ShoppeeWebsite\Food_Web\bin\Microsoft.Extensions.Logging.Abstractions.dll
+D:\8714_NGUYENNGOCSANG_Website_App_winfrom SanThuongMai\ShoppeeWebsite\Food_Web\bin\Microsoft.Extensions.Logging.dll
+D:\8714_NGUYENNGOCSANG_Website_App_winfrom SanThuongMai\ShoppeeWebsite\Food_Web\bin\Microsoft.Extensions.ObjectPool.dll
+D:\8714_NGUYENNGOCSANG_Website_App_winfrom SanThuongMai\ShoppeeWebsite\Food_Web\bin\Microsoft.Extensions.Options.dll
+D:\8714_NGUYENNGOCSANG_Website_App_winfrom SanThuongMai\ShoppeeWebsite\Food_Web\bin\Microsoft.Extensions.Primitives.dll
+D:\8714_NGUYENNGOCSANG_Website_App_winfrom SanThuongMai\ShoppeeWebsite\Food_Web\bin\Microsoft.Net.Http.Headers.dll
+D:\8714_NGUYENNGOCSANG_Website_App_winfrom SanThuongMai\ShoppeeWebsite\Food_Web\bin\Microsoft.Owin.dll
+D:\8714_NGUYENNGOCSANG_Website_App_winfrom SanThuongMai\ShoppeeWebsite\Food_Web\bin\Microsoft.Owin.Host.SystemWeb.dll
+D:\8714_NGUYENNGOCSANG_Website_App_winfrom SanThuongMai\ShoppeeWebsite\Food_Web\bin\Microsoft.Owin.Security.Cookies.dll
+D:\8714_NGUYENNGOCSANG_Website_App_winfrom SanThuongMai\ShoppeeWebsite\Food_Web\bin\Microsoft.Owin.Security.dll
+D:\8714_NGUYENNGOCSANG_Website_App_winfrom SanThuongMai\ShoppeeWebsite\Food_Web\bin\Microsoft.Owin.Security.Facebook.dll
+D:\8714_NGUYENNGOCSANG_Website_App_winfrom SanThuongMai\ShoppeeWebsite\Food_Web\bin\Microsoft.Owin.Security.Google.dll
+D:\8714_NGUYENNGOCSANG_Website_App_winfrom SanThuongMai\ShoppeeWebsite\Food_Web\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+D:\8714_NGUYENNGOCSANG_Website_App_winfrom SanThuongMai\ShoppeeWebsite\Food_Web\bin\Microsoft.Owin.Security.OAuth.dll
+D:\8714_NGUYENNGOCSANG_Website_App_winfrom SanThuongMai\ShoppeeWebsite\Food_Web\bin\Microsoft.Owin.Security.Twitter.dll
+D:\8714_NGUYENNGOCSANG_Website_App_winfrom SanThuongMai\ShoppeeWebsite\Food_Web\bin\Microsoft.VisualStudio.TestPlatform.TestFramework.dll
+D:\8714_NGUYENNGOCSANG_Website_App_winfrom SanThuongMai\ShoppeeWebsite\Food_Web\bin\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.dll
+D:\8714_NGUYENNGOCSANG_Website_App_winfrom SanThuongMai\ShoppeeWebsite\Food_Web\bin\Microsoft.Web.Infrastructure.dll
+D:\8714_NGUYENNGOCSANG_Website_App_winfrom SanThuongMai\ShoppeeWebsite\Food_Web\bin\MimeKit.dll
+D:\8714_NGUYENNGOCSANG_Website_App_winfrom SanThuongMai\ShoppeeWebsite\Food_Web\bin\Moq.dll
+D:\8714_NGUYENNGOCSANG_Website_App_winfrom SanThuongMai\ShoppeeWebsite\Food_Web\bin\Newtonsoft.Json.dll
+D:\8714_NGUYENNGOCSANG_Website_App_winfrom SanThuongMai\ShoppeeWebsite\Food_Web\bin\nunit.framework.dll
+D:\8714_NGUYENNGOCSANG_Website_App_winfrom SanThuongMai\ShoppeeWebsite\Food_Web\bin\nunit.framework.legacy.dll
+D:\8714_NGUYENNGOCSANG_Website_App_winfrom SanThuongMai\ShoppeeWebsite\Food_Web\bin\OfficeOpenXml.Extends.dll
+D:\8714_NGUYENNGOCSANG_Website_App_winfrom SanThuongMai\ShoppeeWebsite\Food_Web\bin\Owin.dll
+D:\8714_NGUYENNGOCSANG_Website_App_winfrom SanThuongMai\ShoppeeWebsite\Food_Web\bin\PagedList.dll
+D:\8714_NGUYENNGOCSANG_Website_App_winfrom SanThuongMai\ShoppeeWebsite\Food_Web\bin\PagedList.Mvc.dll
+D:\8714_NGUYENNGOCSANG_Website_App_winfrom SanThuongMai\ShoppeeWebsite\Food_Web\bin\Rotativa.dll
+D:\8714_NGUYENNGOCSANG_Website_App_winfrom SanThuongMai\ShoppeeWebsite\Food_Web\bin\SendGrid.dll
+D:\8714_NGUYENNGOCSANG_Website_App_winfrom SanThuongMai\ShoppeeWebsite\Food_Web\bin\SkiaSharp.dll
+D:\8714_NGUYENNGOCSANG_Website_App_winfrom SanThuongMai\ShoppeeWebsite\Food_Web\bin\StarkbankEcdsa.dll
+D:\8714_NGUYENNGOCSANG_Website_App_winfrom SanThuongMai\ShoppeeWebsite\Food_Web\bin\System.Buffers.dll
+D:\8714_NGUYENNGOCSANG_Website_App_winfrom SanThuongMai\ShoppeeWebsite\Food_Web\bin\System.ComponentModel.Annotations.dll
+D:\8714_NGUYENNGOCSANG_Website_App_winfrom SanThuongMai\ShoppeeWebsite\Food_Web\bin\System.Diagnostics.DiagnosticSource.dll
+D:\8714_NGUYENNGOCSANG_Website_App_winfrom SanThuongMai\ShoppeeWebsite\Food_Web\bin\System.IO.Pipelines.dll
+D:\8714_NGUYENNGOCSANG_Website_App_winfrom SanThuongMai\ShoppeeWebsite\Food_Web\bin\System.Memory.dll
+D:\8714_NGUYENNGOCSANG_Website_App_winfrom SanThuongMai\ShoppeeWebsite\Food_Web\bin\System.Net.Mail.Abstractions.dll
+D:\8714_NGUYENNGOCSANG_Website_App_winfrom SanThuongMai\ShoppeeWebsite\Food_Web\bin\System.Net.WebSockets.WebSocketProtocol.dll
+D:\8714_NGUYENNGOCSANG_Website_App_winfrom SanThuongMai\ShoppeeWebsite\Food_Web\bin\System.Numerics.Vectors.dll
+D:\8714_NGUYENNGOCSANG_Website_App_winfrom SanThuongMai\ShoppeeWebsite\Food_Web\bin\System.Runtime.CompilerServices.Unsafe.dll
+D:\8714_NGUYENNGOCSANG_Website_App_winfrom SanThuongMai\ShoppeeWebsite\Food_Web\bin\System.Security.Principal.Windows.dll
+D:\8714_NGUYENNGOCSANG_Website_App_winfrom SanThuongMai\ShoppeeWebsite\Food_Web\bin\System.Text.Encodings.Web.dll
+D:\8714_NGUYENNGOCSANG_Website_App_winfrom SanThuongMai\ShoppeeWebsite\Food_Web\bin\System.Threading.Channels.dll
+D:\8714_NGUYENNGOCSANG_Website_App_winfrom SanThuongMai\ShoppeeWebsite\Food_Web\bin\System.Threading.Tasks.Extensions.dll
+D:\8714_NGUYENNGOCSANG_Website_App_winfrom SanThuongMai\ShoppeeWebsite\Food_Web\bin\System.ValueTuple.dll
+D:\8714_NGUYENNGOCSANG_Website_App_winfrom SanThuongMai\ShoppeeWebsite\Food_Web\bin\System.Web.Helpers.dll
+D:\8714_NGUYENNGOCSANG_Website_App_winfrom SanThuongMai\ShoppeeWebsite\Food_Web\bin\System.Web.Mvc.dll
+D:\8714_NGUYENNGOCSANG_Website_App_winfrom SanThuongMai\ShoppeeWebsite\Food_Web\bin\System.Web.Optimization.dll
+D:\8714_NGUYENNGOCSANG_Website_App_winfrom SanThuongMai\ShoppeeWebsite\Food_Web\bin\System.Web.Razor.dll
+D:\8714_NGUYENNGOCSANG_Website_App_winfrom SanThuongMai\ShoppeeWebsite\Food_Web\bin\System.Web.WebPages.Deployment.dll
+D:\8714_NGUYENNGOCSANG_Website_App_winfrom SanThuongMai\ShoppeeWebsite\Food_Web\bin\System.Web.WebPages.dll
+D:\8714_NGUYENNGOCSANG_Website_App_winfrom SanThuongMai\ShoppeeWebsite\Food_Web\bin\System.Web.WebPages.Razor.dll
+D:\8714_NGUYENNGOCSANG_Website_App_winfrom SanThuongMai\ShoppeeWebsite\Food_Web\bin\WebGrease.dll
+D:\8714_NGUYENNGOCSANG_Website_App_winfrom SanThuongMai\ShoppeeWebsite\Food_Web\bin\xunit.abstractions.dll
+D:\8714_NGUYENNGOCSANG_Website_App_winfrom SanThuongMai\ShoppeeWebsite\Food_Web\bin\xunit.assert.dll
+D:\8714_NGUYENNGOCSANG_Website_App_winfrom SanThuongMai\ShoppeeWebsite\Food_Web\bin\xunit.core.dll
+D:\8714_NGUYENNGOCSANG_Website_App_winfrom SanThuongMai\ShoppeeWebsite\Food_Web\bin\xunit.execution.desktop.dll
+D:\8714_NGUYENNGOCSANG_Website_App_winfrom SanThuongMai\ShoppeeWebsite\Food_Web\bin\AntiXssLibrary.xml
+D:\8714_NGUYENNGOCSANG_Website_App_winfrom SanThuongMai\ShoppeeWebsite\Food_Web\bin\Aspose.Words.xml
+D:\8714_NGUYENNGOCSANG_Website_App_winfrom SanThuongMai\ShoppeeWebsite\Food_Web\bin\BouncyCastle.Cryptography.xml
+D:\8714_NGUYENNGOCSANG_Website_App_winfrom SanThuongMai\ShoppeeWebsite\Food_Web\bin\Castle.Core.xml
+D:\8714_NGUYENNGOCSANG_Website_App_winfrom SanThuongMai\ShoppeeWebsite\Food_Web\bin\DocumentFormat.OpenXml.xml
+D:\8714_NGUYENNGOCSANG_Website_App_winfrom SanThuongMai\ShoppeeWebsite\Food_Web\bin\EPPlus.xml
+D:\8714_NGUYENNGOCSANG_Website_App_winfrom SanThuongMai\ShoppeeWebsite\Food_Web\bin\FluentAssertions.pdb
+D:\8714_NGUYENNGOCSANG_Website_App_winfrom SanThuongMai\ShoppeeWebsite\Food_Web\bin\FluentAssertions.xml
+D:\8714_NGUYENNGOCSANG_Website_App_winfrom SanThuongMai\ShoppeeWebsite\Food_Web\bin\GemBox.Document.xml
+D:\8714_NGUYENNGOCSANG_Website_App_winfrom SanThuongMai\ShoppeeWebsite\Food_Web\bin\HarfBuzzSharp.pdb
+D:\8714_NGUYENNGOCSANG_Website_App_winfrom SanThuongMai\ShoppeeWebsite\Food_Web\bin\HarfBuzzSharp.xml
+D:\8714_NGUYENNGOCSANG_Website_App_winfrom SanThuongMai\ShoppeeWebsite\Food_Web\bin\HtmlSanitizationLibrary.xml
+D:\8714_NGUYENNGOCSANG_Website_App_winfrom SanThuongMai\ShoppeeWebsite\Food_Web\bin\itext.barcodes.xml
+D:\8714_NGUYENNGOCSANG_Website_App_winfrom SanThuongMai\ShoppeeWebsite\Food_Web\bin\itext.bouncy-castle-connector.xml
+D:\8714_NGUYENNGOCSANG_Website_App_winfrom SanThuongMai\ShoppeeWebsite\Food_Web\bin\itext.commons.xml
+D:\8714_NGUYENNGOCSANG_Website_App_winfrom SanThuongMai\ShoppeeWebsite\Food_Web\bin\itext.forms.xml
+D:\8714_NGUYENNGOCSANG_Website_App_winfrom SanThuongMai\ShoppeeWebsite\Food_Web\bin\itext.html2pdf.xml
+D:\8714_NGUYENNGOCSANG_Website_App_winfrom SanThuongMai\ShoppeeWebsite\Food_Web\bin\itext.io.xml
+D:\8714_NGUYENNGOCSANG_Website_App_winfrom SanThuongMai\ShoppeeWebsite\Food_Web\bin\itext.kernel.xml
+D:\8714_NGUYENNGOCSANG_Website_App_winfrom SanThuongMai\ShoppeeWebsite\Food_Web\bin\itext.layout.xml
+D:\8714_NGUYENNGOCSANG_Website_App_winfrom SanThuongMai\ShoppeeWebsite\Food_Web\bin\itext.pdfa.xml
+D:\8714_NGUYENNGOCSANG_Website_App_winfrom SanThuongMai\ShoppeeWebsite\Food_Web\bin\itext.sign.xml
+D:\8714_NGUYENNGOCSANG_Website_App_winfrom SanThuongMai\ShoppeeWebsite\Food_Web\bin\itext.styledxmlparser.xml
+D:\8714_NGUYENNGOCSANG_Website_App_winfrom SanThuongMai\ShoppeeWebsite\Food_Web\bin\itext.svg.xml
+D:\8714_NGUYENNGOCSANG_Website_App_winfrom SanThuongMai\ShoppeeWebsite\Food_Web\bin\itextsharp.xml
+D:\8714_NGUYENNGOCSANG_Website_App_winfrom SanThuongMai\ShoppeeWebsite\Food_Web\bin\MailKit.pdb
+D:\8714_NGUYENNGOCSANG_Website_App_winfrom SanThuongMai\ShoppeeWebsite\Food_Web\bin\MailKit.xml
+D:\8714_NGUYENNGOCSANG_Website_App_winfrom SanThuongMai\ShoppeeWebsite\Food_Web\bin\MailKit.dll.config
+D:\8714_NGUYENNGOCSANG_Website_App_winfrom SanThuongMai\ShoppeeWebsite\Food_Web\bin\Microsoft.AspNet.SignalR.Core.xml
+D:\8714_NGUYENNGOCSANG_Website_App_winfrom SanThuongMai\ShoppeeWebsite\Food_Web\bin\Microsoft.AspNet.SignalR.SystemWeb.xml
+D:\8714_NGUYENNGOCSANG_Website_App_winfrom SanThuongMai\ShoppeeWebsite\Food_Web\bin\Microsoft.AspNetCore.Authentication.Abstractions.xml
+D:\8714_NGUYENNGOCSANG_Website_App_winfrom SanThuongMai\ShoppeeWebsite\Food_Web\bin\Microsoft.AspNetCore.Authorization.xml
+D:\8714_NGUYENNGOCSANG_Website_App_winfrom SanThuongMai\ShoppeeWebsite\Food_Web\bin\Microsoft.AspNetCore.Authorization.Policy.xml
+D:\8714_NGUYENNGOCSANG_Website_App_winfrom SanThuongMai\ShoppeeWebsite\Food_Web\bin\Microsoft.AspNetCore.Connections.Abstractions.xml
+D:\8714_NGUYENNGOCSANG_Website_App_winfrom SanThuongMai\ShoppeeWebsite\Food_Web\bin\Microsoft.AspNetCore.Hosting.Abstractions.xml
+D:\8714_NGUYENNGOCSANG_Website_App_winfrom SanThuongMai\ShoppeeWebsite\Food_Web\bin\Microsoft.AspNetCore.Hosting.Server.Abstractions.xml
+D:\8714_NGUYENNGOCSANG_Website_App_winfrom SanThuongMai\ShoppeeWebsite\Food_Web\bin\Microsoft.AspNetCore.Http.xml
+D:\8714_NGUYENNGOCSANG_Website_App_winfrom SanThuongMai\ShoppeeWebsite\Food_Web\bin\Microsoft.AspNetCore.Http.Abstractions.xml
+D:\8714_NGUYENNGOCSANG_Website_App_winfrom SanThuongMai\ShoppeeWebsite\Food_Web\bin\Microsoft.AspNetCore.Http.Connections.xml
+D:\8714_NGUYENNGOCSANG_Website_App_winfrom SanThuongMai\ShoppeeWebsite\Food_Web\bin\Microsoft.AspNetCore.Http.Connections.Common.xml
+D:\8714_NGUYENNGOCSANG_Website_App_winfrom SanThuongMai\ShoppeeWebsite\Food_Web\bin\Microsoft.AspNetCore.Http.Extensions.xml
+D:\8714_NGUYENNGOCSANG_Website_App_winfrom SanThuongMai\ShoppeeWebsite\Food_Web\bin\Microsoft.AspNetCore.Http.Features.xml
+D:\8714_NGUYENNGOCSANG_Website_App_winfrom SanThuongMai\ShoppeeWebsite\Food_Web\bin\Microsoft.AspNetCore.Routing.xml
+D:\8714_NGUYENNGOCSANG_Website_App_winfrom SanThuongMai\ShoppeeWebsite\Food_Web\bin\Microsoft.AspNetCore.Routing.Abstractions.xml
+D:\8714_NGUYENNGOCSANG_Website_App_winfrom SanThuongMai\ShoppeeWebsite\Food_Web\bin\Microsoft.AspNetCore.SignalR.xml
+D:\8714_NGUYENNGOCSANG_Website_App_winfrom SanThuongMai\ShoppeeWebsite\Food_Web\bin\Microsoft.AspNetCore.SignalR.Common.xml
+D:\8714_NGUYENNGOCSANG_Website_App_winfrom SanThuongMai\ShoppeeWebsite\Food_Web\bin\Microsoft.AspNetCore.SignalR.Core.xml
+D:\8714_NGUYENNGOCSANG_Website_App_winfrom SanThuongMai\ShoppeeWebsite\Food_Web\bin\Microsoft.AspNetCore.SignalR.Protocols.Json.xml
+D:\8714_NGUYENNGOCSANG_Website_App_winfrom SanThuongMai\ShoppeeWebsite\Food_Web\bin\Microsoft.AspNetCore.WebSockets.xml
+D:\8714_NGUYENNGOCSANG_Website_App_winfrom SanThuongMai\ShoppeeWebsite\Food_Web\bin\Microsoft.AspNetCore.WebUtilities.xml
+D:\8714_NGUYENNGOCSANG_Website_App_winfrom SanThuongMai\ShoppeeWebsite\Food_Web\bin\Microsoft.Bcl.AsyncInterfaces.xml
+D:\8714_NGUYENNGOCSANG_Website_App_winfrom SanThuongMai\ShoppeeWebsite\Food_Web\bin\Microsoft.Extensions.Configuration.Abstractions.xml
+D:\8714_NGUYENNGOCSANG_Website_App_winfrom SanThuongMai\ShoppeeWebsite\Food_Web\bin\Microsoft.Extensions.DependencyInjection.xml
+D:\8714_NGUYENNGOCSANG_Website_App_winfrom SanThuongMai\ShoppeeWebsite\Food_Web\bin\Microsoft.Extensions.DependencyInjection.Abstractions.xml
+D:\8714_NGUYENNGOCSANG_Website_App_winfrom SanThuongMai\ShoppeeWebsite\Food_Web\bin\Microsoft.Extensions.FileProviders.Abstractions.xml
+D:\8714_NGUYENNGOCSANG_Website_App_winfrom SanThuongMai\ShoppeeWebsite\Food_Web\bin\Microsoft.Extensions.Hosting.Abstractions.xml
+D:\8714_NGUYENNGOCSANG_Website_App_winfrom SanThuongMai\ShoppeeWebsite\Food_Web\bin\Microsoft.Extensions.Logging.xml
+D:\8714_NGUYENNGOCSANG_Website_App_winfrom SanThuongMai\ShoppeeWebsite\Food_Web\bin\Microsoft.Extensions.Logging.Abstractions.xml
+D:\8714_NGUYENNGOCSANG_Website_App_winfrom SanThuongMai\ShoppeeWebsite\Food_Web\bin\Microsoft.Extensions.ObjectPool.xml
+D:\8714_NGUYENNGOCSANG_Website_App_winfrom SanThuongMai\ShoppeeWebsite\Food_Web\bin\Microsoft.Extensions.Options.xml
+D:\8714_NGUYENNGOCSANG_Website_App_winfrom SanThuongMai\ShoppeeWebsite\Food_Web\bin\Microsoft.Extensions.Primitives.xml
+D:\8714_NGUYENNGOCSANG_Website_App_winfrom SanThuongMai\ShoppeeWebsite\Food_Web\bin\Microsoft.Net.Http.Headers.xml
+D:\8714_NGUYENNGOCSANG_Website_App_winfrom SanThuongMai\ShoppeeWebsite\Food_Web\bin\Microsoft.VisualStudio.TestPlatform.TestFramework.xml
+D:\8714_NGUYENNGOCSANG_Website_App_winfrom SanThuongMai\ShoppeeWebsite\Food_Web\bin\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml
+D:\8714_NGUYENNGOCSANG_Website_App_winfrom SanThuongMai\ShoppeeWebsite\Food_Web\bin\MimeKit.pdb
+D:\8714_NGUYENNGOCSANG_Website_App_winfrom SanThuongMai\ShoppeeWebsite\Food_Web\bin\MimeKit.xml
+D:\8714_NGUYENNGOCSANG_Website_App_winfrom SanThuongMai\ShoppeeWebsite\Food_Web\bin\MimeKit.dll.config
+D:\8714_NGUYENNGOCSANG_Website_App_winfrom SanThuongMai\ShoppeeWebsite\Food_Web\bin\Moq.xml
+D:\8714_NGUYENNGOCSANG_Website_App_winfrom SanThuongMai\ShoppeeWebsite\Food_Web\bin\Newtonsoft.Json.xml
+D:\8714_NGUYENNGOCSANG_Website_App_winfrom SanThuongMai\ShoppeeWebsite\Food_Web\bin\nunit.framework.xml
+D:\8714_NGUYENNGOCSANG_Website_App_winfrom SanThuongMai\ShoppeeWebsite\Food_Web\bin\nunit.framework.legacy.xml
+D:\8714_NGUYENNGOCSANG_Website_App_winfrom SanThuongMai\ShoppeeWebsite\Food_Web\bin\PagedList.xml
+D:\8714_NGUYENNGOCSANG_Website_App_winfrom SanThuongMai\ShoppeeWebsite\Food_Web\bin\PagedList.Mvc.xml
+D:\8714_NGUYENNGOCSANG_Website_App_winfrom SanThuongMai\ShoppeeWebsite\Food_Web\bin\SendGrid.pdb
+D:\8714_NGUYENNGOCSANG_Website_App_winfrom SanThuongMai\ShoppeeWebsite\Food_Web\bin\SendGrid.xml
+D:\8714_NGUYENNGOCSANG_Website_App_winfrom SanThuongMai\ShoppeeWebsite\Food_Web\bin\SkiaSharp.pdb
+D:\8714_NGUYENNGOCSANG_Website_App_winfrom SanThuongMai\ShoppeeWebsite\Food_Web\bin\SkiaSharp.xml
+D:\8714_NGUYENNGOCSANG_Website_App_winfrom SanThuongMai\ShoppeeWebsite\Food_Web\bin\System.Buffers.xml
+D:\8714_NGUYENNGOCSANG_Website_App_winfrom SanThuongMai\ShoppeeWebsite\Food_Web\bin\System.Diagnostics.DiagnosticSource.xml
+D:\8714_NGUYENNGOCSANG_Website_App_winfrom SanThuongMai\ShoppeeWebsite\Food_Web\bin\System.IO.Pipelines.xml
+D:\8714_NGUYENNGOCSANG_Website_App_winfrom SanThuongMai\ShoppeeWebsite\Food_Web\bin\System.Memory.xml
+D:\8714_NGUYENNGOCSANG_Website_App_winfrom SanThuongMai\ShoppeeWebsite\Food_Web\bin\System.Numerics.Vectors.xml
+D:\8714_NGUYENNGOCSANG_Website_App_winfrom SanThuongMai\ShoppeeWebsite\Food_Web\bin\System.Runtime.CompilerServices.Unsafe.xml
+D:\8714_NGUYENNGOCSANG_Website_App_winfrom SanThuongMai\ShoppeeWebsite\Food_Web\bin\System.Text.Encodings.Web.xml
+D:\8714_NGUYENNGOCSANG_Website_App_winfrom SanThuongMai\ShoppeeWebsite\Food_Web\bin\System.Threading.Channels.xml
+D:\8714_NGUYENNGOCSANG_Website_App_winfrom SanThuongMai\ShoppeeWebsite\Food_Web\bin\System.Threading.Tasks.Extensions.xml
+D:\8714_NGUYENNGOCSANG_Website_App_winfrom SanThuongMai\ShoppeeWebsite\Food_Web\bin\System.ValueTuple.xml
+D:\8714_NGUYENNGOCSANG_Website_App_winfrom SanThuongMai\ShoppeeWebsite\Food_Web\bin\System.Web.Helpers.xml
+D:\8714_NGUYENNGOCSANG_Website_App_winfrom SanThuongMai\ShoppeeWebsite\Food_Web\bin\System.Web.Mvc.xml
+D:\8714_NGUYENNGOCSANG_Website_App_winfrom SanThuongMai\ShoppeeWebsite\Food_Web\bin\System.Web.Optimization.xml
+D:\8714_NGUYENNGOCSANG_Website_App_winfrom SanThuongMai\ShoppeeWebsite\Food_Web\bin\System.Web.Razor.xml
+D:\8714_NGUYENNGOCSANG_Website_App_winfrom SanThuongMai\ShoppeeWebsite\Food_Web\bin\System.Web.WebPages.xml
+D:\8714_NGUYENNGOCSANG_Website_App_winfrom SanThuongMai\ShoppeeWebsite\Food_Web\bin\System.Web.WebPages.Deployment.xml
+D:\8714_NGUYENNGOCSANG_Website_App_winfrom SanThuongMai\ShoppeeWebsite\Food_Web\bin\System.Web.WebPages.Razor.xml
+D:\8714_NGUYENNGOCSANG_Website_App_winfrom SanThuongMai\ShoppeeWebsite\Food_Web\bin\Antlr3.Runtime.pdb
+D:\8714_NGUYENNGOCSANG_Website_App_winfrom SanThuongMai\ShoppeeWebsite\Food_Web\bin\xunit.abstractions.xml
+D:\8714_NGUYENNGOCSANG_Website_App_winfrom SanThuongMai\ShoppeeWebsite\Food_Web\bin\xunit.assert.xml
+D:\8714_NGUYENNGOCSANG_Website_App_winfrom SanThuongMai\ShoppeeWebsite\Food_Web\bin\xunit.core.xml
+D:\8714_NGUYENNGOCSANG_Website_App_winfrom SanThuongMai\ShoppeeWebsite\Food_Web\bin\xunit.execution.desktop.xml
+D:\8714_NGUYENNGOCSANG_Website_App_winfrom SanThuongMai\ShoppeeWebsite\Food_Web\bin\EntityFramework.xml
+D:\8714_NGUYENNGOCSANG_Website_App_winfrom SanThuongMai\ShoppeeWebsite\Food_Web\bin\EntityFramework.SqlServer.xml
+D:\8714_NGUYENNGOCSANG_Website_App_winfrom SanThuongMai\ShoppeeWebsite\Food_Web\bin\Microsoft.AspNet.Identity.Core.xml
+D:\8714_NGUYENNGOCSANG_Website_App_winfrom SanThuongMai\ShoppeeWebsite\Food_Web\bin\Microsoft.AspNet.Identity.Owin.xml
+D:\8714_NGUYENNGOCSANG_Website_App_winfrom SanThuongMai\ShoppeeWebsite\Food_Web\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+D:\8714_NGUYENNGOCSANG_Website_App_winfrom SanThuongMai\ShoppeeWebsite\Food_Web\bin\Microsoft.Owin.xml
+D:\8714_NGUYENNGOCSANG_Website_App_winfrom SanThuongMai\ShoppeeWebsite\Food_Web\bin\Microsoft.Owin.Host.SystemWeb.xml
+D:\8714_NGUYENNGOCSANG_Website_App_winfrom SanThuongMai\ShoppeeWebsite\Food_Web\bin\Microsoft.Owin.Security.xml
+D:\8714_NGUYENNGOCSANG_Website_App_winfrom SanThuongMai\ShoppeeWebsite\Food_Web\bin\Microsoft.Owin.Security.Facebook.xml
+D:\8714_NGUYENNGOCSANG_Website_App_winfrom SanThuongMai\ShoppeeWebsite\Food_Web\bin\Microsoft.Owin.Security.Cookies.xml
+D:\8714_NGUYENNGOCSANG_Website_App_winfrom SanThuongMai\ShoppeeWebsite\Food_Web\bin\Microsoft.Owin.Security.Google.xml
+D:\8714_NGUYENNGOCSANG_Website_App_winfrom SanThuongMai\ShoppeeWebsite\Food_Web\bin\Microsoft.Owin.Security.Twitter.xml
+D:\8714_NGUYENNGOCSANG_Website_App_winfrom SanThuongMai\ShoppeeWebsite\Food_Web\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+D:\8714_NGUYENNGOCSANG_Website_App_winfrom SanThuongMai\ShoppeeWebsite\Food_Web\bin\Microsoft.Owin.Security.OAuth.xml
+D:\8714_NGUYENNGOCSANG_Website_App_winfrom SanThuongMai\ShoppeeWebsite\Food_Web\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\8714_NGUYENNGOCSANG_Website_App_winfrom SanThuongMai\ShoppeeWebsite\Food_Web\bin\cs\Microsoft.VisualStudio.TestPlatform.TestFramework.resources.dll
+D:\8714_NGUYENNGOCSANG_Website_App_winfrom SanThuongMai\ShoppeeWebsite\Food_Web\bin\de\Microsoft.VisualStudio.TestPlatform.TestFramework.resources.dll
+D:\8714_NGUYENNGOCSANG_Website_App_winfrom SanThuongMai\ShoppeeWebsite\Food_Web\bin\es\Microsoft.VisualStudio.TestPlatform.TestFramework.resources.dll
+D:\8714_NGUYENNGOCSANG_Website_App_winfrom SanThuongMai\ShoppeeWebsite\Food_Web\bin\fr\Microsoft.VisualStudio.TestPlatform.TestFramework.resources.dll
+D:\8714_NGUYENNGOCSANG_Website_App_winfrom SanThuongMai\ShoppeeWebsite\Food_Web\bin\it\Microsoft.VisualStudio.TestPlatform.TestFramework.resources.dll
+D:\8714_NGUYENNGOCSANG_Website_App_winfrom SanThuongMai\ShoppeeWebsite\Food_Web\bin\ja\Microsoft.VisualStudio.TestPlatform.TestFramework.resources.dll
+D:\8714_NGUYENNGOCSANG_Website_App_winfrom SanThuongMai\ShoppeeWebsite\Food_Web\bin\ko\Microsoft.VisualStudio.TestPlatform.TestFramework.resources.dll
+D:\8714_NGUYENNGOCSANG_Website_App_winfrom SanThuongMai\ShoppeeWebsite\Food_Web\bin\pl\Microsoft.VisualStudio.TestPlatform.TestFramework.resources.dll
+D:\8714_NGUYENNGOCSANG_Website_App_winfrom SanThuongMai\ShoppeeWebsite\Food_Web\bin\pt-BR\Microsoft.VisualStudio.TestPlatform.TestFramework.resources.dll
+D:\8714_NGUYENNGOCSANG_Website_App_winfrom SanThuongMai\ShoppeeWebsite\Food_Web\bin\ru\Microsoft.VisualStudio.TestPlatform.TestFramework.resources.dll
+D:\8714_NGUYENNGOCSANG_Website_App_winfrom SanThuongMai\ShoppeeWebsite\Food_Web\bin\tr\Microsoft.VisualStudio.TestPlatform.TestFramework.resources.dll
+D:\8714_NGUYENNGOCSANG_Website_App_winfrom SanThuongMai\ShoppeeWebsite\Food_Web\bin\zh-Hans\Microsoft.VisualStudio.TestPlatform.TestFramework.resources.dll
+D:\8714_NGUYENNGOCSANG_Website_App_winfrom SanThuongMai\ShoppeeWebsite\Food_Web\bin\zh-Hant\Microsoft.VisualStudio.TestPlatform.TestFramework.resources.dll
+D:\8714_NGUYENNGOCSANG_Website_App_winfrom SanThuongMai\ShoppeeWebsite\Food_Web\obj\Debug\Food_Web.csproj.AssemblyReference.cache
+D:\8714_NGUYENNGOCSANG_Website_App_winfrom SanThuongMai\ShoppeeWebsite\Food_Web\obj\Debug\Food_Web.csproj.SuggestedBindingRedirects.cache
+D:\8714_NGUYENNGOCSANG_Website_App_winfrom SanThuongMai\ShoppeeWebsite\Food_Web\obj\Debug\Food_Web.Resources.resources
+D:\8714_NGUYENNGOCSANG_Website_App_winfrom SanThuongMai\ShoppeeWebsite\Food_Web\obj\Debug\Food_Web.Resources.ja-JP.resources
+D:\8714_NGUYENNGOCSANG_Website_App_winfrom SanThuongMai\ShoppeeWebsite\Food_Web\obj\Debug\Food_Web.Resources.vi-VN.resources
+D:\8714_NGUYENNGOCSANG_Website_App_winfrom SanThuongMai\ShoppeeWebsite\Food_Web\obj\Debug\Food_Web.csproj.GenerateResource.cache
+D:\8714_NGUYENNGOCSANG_Website_App_winfrom SanThuongMai\ShoppeeWebsite\Food_Web\obj\Debug\Food_Web.csproj.CoreCompileInputs.cache
+D:\8714_NGUYENNGOCSANG_Website_App_winfrom SanThuongMai\ShoppeeWebsite\Food_Web\obj\Debug\ja-JP\Food_Web.resources.dll
+D:\8714_NGUYENNGOCSANG_Website_App_winfrom SanThuongMai\ShoppeeWebsite\Food_Web\obj\Debug\vi-VN\Food_Web.resources.dll
+D:\8714_NGUYENNGOCSANG_Website_App_winfrom SanThuongMai\ShoppeeWebsite\Food_Web\obj\Debug\Food_Web.csproj.CopyComplete
+D:\8714_NGUYENNGOCSANG_Website_App_winfrom SanThuongMai\ShoppeeWebsite\Food_Web\obj\Debug\Food_Web.dll
+D:\8714_NGUYENNGOCSANG_Website_App_winfrom SanThuongMai\ShoppeeWebsite\Food_Web\obj\Debug\Food_Web.pdb

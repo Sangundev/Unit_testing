@@ -1,0 +1,369 @@
+﻿
+@model IEnumerable<Food_Web.Models.Product>
+@{
+    ViewBag.Title = "Seach";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+
+<!-- app -->
+<div id="app">
+
+    <!-- Page Introduction Wrapper /- -->
+    <!-- Shop-Page -->
+    <div class="page-shop u-s-p-t-80">
+        <div class="container">
+            <!-- Shop-Intro -->
+            <!-- Shop-Intro /- -->
+            <div class="row">
+                <!-- Shop-Left-Side-Bar-Wrapper -->
+                <div class="col-lg-3 col-md-3 col-sm-12">
+
+                    <div class="facet-filter-by-price">
+                        @*<form method="post" action="/Product/Filter">
+                            <div class="amount-result clearfix">
+                                <div name="priceFrom" id="priceFrom" class="price-from">0</div>
+                                <div name="priceTo" id="priceTo" class="price-to">30000</div>
+                            </div>
+                            <div class="price-filter"></div>
+                            <div class="price-slider-range" data-min="0" data-max="1000000" data-default-low="0" data-default-high="300" data-currency="$"></div>
+                            <button type="submit" class="button button-primary" id="loc">Filter</button>
+                        </form>*@
+                        <div id="priceSlider"></div>
+                        <div id="priceRange">
+                            Price Range: <span id="priceFrom">0</span> - <span id="priceTo">3000000000</span>
+                        </div>
+
+                        <button type="button" id="searchButton">Search</button>
+
+                        @*<form method="post" action="/Product/Filter">
+                            <div>
+                                <label for="priceFrom">Price From:</label>
+                                <input type="text" name="priceFrom" id="priceFrom" />
+                            </div>
+                            <div>
+                                <label for="priceTo">Price To:</label>
+                                <input type="text" name="priceTo" id="priceTo" />
+                            </div>
+                            <button type="submit" class="button button-primary" id="loc">Filter</button>*@
+                        @*</form>*@
+                    </div>
+
+
+                    <!-- Filter-Price /- -->
+                    <!-- Filter-Free-Shipping -->
+                    <div class="facet-filter-by-shipping">
+                        <h3 class="title-name">Shipping</h3>
+                        <form class="facet-form" action="#" method="post">
+                            <input type="checkbox" class="check-box" id="cb-free-ship">
+                            <label class="label-text" for="cb-free-ship">Free Shipping</label>
+                        </form>
+                    </div>
+                    <!-- Filter-Free-Shipping /- -->
+                    <!-- Filter-Rating -->
+                    <div class="facet-filter-by-rating">
+                        <h3 class="title-name">Rating</h3>
+                        <div class="facet-form">
+                            <!-- 5 Stars -->
+                            <div class="facet-link">
+                                <div class="item-stars">
+                                    <div class='star'>
+                                        <span style='width:76px'></span>
+                                    </div>
+                                </div>
+                                <span class="total-fetch-items">(0)</span>
+                            </div>
+                            <!-- 5 Stars /- -->
+                            <!-- 4 & Up Stars -->
+                            <div class="facet-link">
+                                <div class="item-stars">
+                                    <div class='star'>
+                                        <span style='width:60px'></span>
+                                    </div>
+                                </div>
+                                <span class="total-fetch-items">& Up (5)</span>
+                            </div>
+                            <!-- 4 & Up Stars /- -->
+                            <!-- 3 & Up Stars -->
+                            <div class="facet-link">
+                                <div class="item-stars">
+                                    <div class='star'>
+                                        <span style='width:45px'></span>
+                                    </div>
+                                </div>
+                                <span class="total-fetch-items">& Up (0)</span>
+                            </div>
+                            <!-- 3 & Up Stars /- -->
+                            <!-- 2 & Up Stars -->
+                            <div class="facet-link">
+                                <div class="item-stars">
+                                    <div class='star'>
+                                        <span style='width:30px'></span>
+                                    </div>
+                                </div>
+                                <span class="total-fetch-items">& Up (0)</span>
+                            </div>
+                            <!-- 2 & Up Stars /- -->
+                            <!-- 1 & Up Stars -->
+                            <div class="facet-link">
+                                <div class="item-stars">
+                                    <div class='star'>
+                                        <span style='width:15px'></span>
+                                    </div>
+                                </div>
+                                <span class="total-fetch-items">& Up (0)</span>
+                            </div>
+                            <!-- 1 & Up Stars /- -->
+                        </div>
+                    </div>
+                    <!-- Filter-Rating -->
+                    <!-- Filters /- -->
+                </div>
+                <!-- Shop-Left-Side-Bar-Wrapper /- -->
+                <!-- Shop-Right-Wrapper -->
+                <div class="col-lg-9 col-md-9 col-sm-12">
+                    <!-- Page-Bar -->
+                    <div class="page-bar clearfix">
+                        <div class="shop-settings">
+                            <a id="list-anchor" class="active">
+                                <i class="fas fa-th-list"></i>
+                            </a>
+                            <a id="grid-anchor">
+                                <i class="fas fa-th"></i>
+                            </a>
+                        </div>
+                        <!-- Toolbar Sorter 1  -->
+                        <div class="toolbar-sorter">
+                            <div class="select-box-wrapper">
+                                <label class="sr-only" for="sort-by">Sort By</label>
+                                <select class="select-box" id="sort-by">
+                                    <option selected="selected" value="">Sort By: Best Selling</option>
+                                    <option value="">Sort By: Latest</option>
+                                    <option value="">Sort By: Lowest Price</option>
+                                    <option value="">Sort By: Highest Price</option>
+                                    <option value="">Sort By: Best Rating</option>
+                                </select>
+                            </div>
+                        </div>
+                        <!-- //end Toolbar Sorter 1  -->
+                        <!-- Toolbar Sorter 2  -->
+                        <div class="toolbar-sorter-2">
+                            <div class="select-box-wrapper">
+                                <label class="sr-only" for="show-records">Show Records Per Page</label>
+                                <select class="select-box" id="show-records">
+                                    <option selected="selected" value="">Show: 8</option>
+                                    <option value="">Show: 16</option>
+                                    <option value="">Show: 28</option>
+                                </select>
+                            </div>
+                        </div>
+                        <!-- //end Toolbar Sorter 2  -->
+                    </div>
+
+                    <div class="row product-container list-style">
+                        @foreach (var item in Model)
+                        {
+                            <div class="product-item col-lg-4 col-md-6 col-sm-6">
+                                <div class="item">
+                                    <div class="image-container">
+                                        <a class="item-img-wrapper-link" href="@Url.Action("Detail", "Home", new { id = item.Productid })">
+                                            <img class="img-fluid" src="~/Content/products/@item.image" alt="Product">
+                                        </a>
+                                        <div class="item-action-behaviors">
+                                            <a class="item-quick-look" data-toggle="modal" href="#quick-view">Quick Look</a>
+                                            <a class="item-mail" href="javascript:void(0)">Mail</a>
+                                            <a class="item-addwishlist" href="javascript:void(0)">Add to Wishlist</a>
+                                            <a class="item-addCart" href="javascript:void(0)" data-id="@item.Productid">Add to Cart</a>
+                                        </div>
+                                    </div>
+                                    <div class="item-content">
+                                        <div class="what-product-is">
+
+                                            <h6 class="item-title">
+                                                <a href="single-product.html">@item.Productname</a>
+                                            </h6>
+                                            <div class="item-description">
+                                                <p>
+                                                    @item.discription
+                                                </p>
+                                            </div>
+                                            <div class="item-stars">
+                                                <div class='star' title="4.5 out of 5 - based on 23 Reviews">
+                                                    <span style='width:67px'></span>
+                                                </div>
+                                                <span>(23)</span>
+                                            </div>
+                                        </div>
+                                        <div class="price-template">
+                                            @if (item.DiscountPercent > 0)
+                                            {
+                                                <div class="item-new-price">
+                                                    @item.DiscountedPrice
+                                                </div>
+                                                <div class="item-old-price">
+                                                    @item.price
+                                                </div>
+                                                <div class="tag new">
+                                                    <span>@item.DiscountPercent%</span>
+                                                </div>
+
+                                            }
+                                            else if (item.DiscountPercent == null)
+                                            {
+                                                if (item.is_hot == true)
+                                                {
+                                                    <div class="item-new-price">
+                                                        @item.price
+                                                    </div>
+                                                    <div class="tag new">
+                                                        <span>Hot</span>
+                                                    </div>
+
+                                                }
+                                                <div class="item-new-price">
+                                                    @item.price
+                                                </div>
+                                                <div class="tag new">
+                                                    <span>new</span>
+                                                </div>
+                                            }
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        }
+                    </div>
+
+                </div>
+                <!-- Shop-Right-Wrapper /- -->
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<noscript>
+    <div class="app-issue">
+        <div class="vertical-center">
+            <div class="text-center">
+                <h1>JavaScript is disabled in your browser.</h1>
+                <span>Please enable JavaScript in your browser or upgrade to a JavaScript-capable browser to register for Groover.</span>
+            </div>
+        </div>
+    </div>
+    <style>
+        #app {
+            display: none;
+        }
+    </style>
+</noscript>
+
+
+@*<script src="~/Scripts/jquery-3.4.1.min.js"></script>*@
+<script src="~/Scripts/jquery-3.6.0.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/14.6.3/nouislider.min.css">
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/14.6.3/nouislider.min.js"></script>
+
+
+<script>
+    $(document).ready(function () {
+        // Add a click event listener to the button element
+
+        $("#menu-dish button").click(function () {
+
+            var ProductID = $(this).attr("data-id");
+            /*alert(ProductID);*/
+            $.ajax({
+                url: '/ShoppingCart/AddToCart',
+                type: "GET",
+                data: { "id": ProductID },
+                success: function (result) {
+                    /*$('.menu-list-row').html(result);*/
+                    console.log('tim kiem');
+                    alert(result);
+                },
+                error: function (err) {
+                    /*alert(err.statusText);*/
+                }
+            });
+        });
+
+    });
+    function filterProducts(minPrice, maxPrice) {
+        // Get all product items
+        var productItems = $('.product-item');
+
+        productItems.each(function () {
+            var item = $(this);
+            var price = parseFloat(item.find('.item-new-price').text());
+
+            // Check if the product's price is within the selected range
+            if (price >= minPrice && price <= maxPrice) {
+                item.show(); // Display the product item
+            } else {
+                item.hide(); // Hide the product item
+            }
+        });
+    }
+
+    $(document).ready(function () {
+        // Initialize the price range slider
+        var priceSlider = document.getElementById('priceSlider');
+        var priceFrom = document.getElementById('priceFrom');
+        var priceTo = document.getElementById('priceTo');
+
+        noUiSlider.create(priceSlider, {
+            start: [0, 30000],
+            connect: true,
+            range: {
+                'min': 0,
+                'max': 1000000
+            },
+            step: 1,
+            format: {
+                to: function (value) {
+                    return Math.floor(value);
+                },
+                from: function (value) {
+                    return parseFloat(value);
+                }
+            }
+        });
+
+        priceSlider.noUiSlider.on('update', function (values, handle) {
+            if (handle === 0) {
+                priceFrom.innerHTML = values[0];
+            }
+            if (handle === 1) {
+                priceTo.innerHTML = values[1];
+            }
+        });
+
+        // Attach a click event listener to the "Search" button
+        $("#searchButton").click(function () {
+            var minPrice = parseFloat(priceFrom.textContent);
+            var maxPrice = parseFloat(priceTo.textContent);
+
+            // Call the filterProducts function with the selected price range
+            filterProducts(minPrice, maxPrice);
+        });
+
+        // Initially, display all products
+        filterProducts(0, 30000);
+    });
+</script>
+<style>
+    .col-lg-9.col-md-9.col-sm-12 {
+        margin-top: -10px;
+        padding-left: 36px;
+    }
+    .noUi-target {
+        background: #FAFAFA;
+        border-radius: 4px;
+        border: 1px solid #D3D3D3;
+        box-shadow: inset 0 1px 1px #F0F0F0, 0 3px 6px -5px #BBB;
+        width: 256px;
+    }
+</style>

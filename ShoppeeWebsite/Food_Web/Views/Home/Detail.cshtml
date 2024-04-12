@@ -1,0 +1,707 @@
+﻿@model Food_Web.Models.Product
+@{
+    ViewBag.Title = "Detail";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<link rel="stylesheet" href="~/Content/Theme/css/details_product.css">
+<!--<div class="page-style-a">
+    <div class="container">
+        <div class="page-intro">
+            <h2>Detail</h2>
+            <ul class="bread-crumb">
+                <li class="has-separator">
+                    <i class="ion ion-md-home"></i>
+                    <a href="home.html">Home</a>
+                </li>
+                <li class="is-marked">
+                    <a href="single-product.html">Detail</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>-->
+<!-- Page Introduction Wrapper /- -->
+<!-- Single-Product-Full-Width-Page -->
+<div class="page-detail u-s-p-t-80">
+    <div class="container">
+        <!-- Product-Detail -->
+        <div class="row white-background">
+            <div class="col-lg-6 col-md-6 col-sm-12">
+                <div class="zoom-area">
+                    <div id="gallery" class="u-s-m-t-10">
+                        <img id="zoom-pro" class="img-fluid" src="~/Content/products/@Model.image" data-zoom-image="images/product/product@4x.jpg" alt="Zoom Image">
+                        <div id="gallery" class="u-s-m-t-10">
+                            @if (ViewBag.ExtraFoods != null)
+                            {
+                                for (int i = 0; i < 3 && i < ViewBag.ExtraFoods.Count; i++)
+                                {
+                                    <a class="active" data-image="images/product/product@4x.jpg" data-zoom-image="images/product/product@4x.jpg">
+                                        <img src="~/Content/products/@ViewBag.ExtraFoods[i].image" alt="Product">
+                                    </a>
+
+                                }
+
+                                <a class="active" data-image="images/product/product@4x.jpg" data-zoom-image="images/product/product@4x.jpg">
+                                    <img src="~/Content/products/@Model.image" alt="Product" id="load-more">
+                                </a>
+                            }
+                        </div>
+
+
+                    </div>
+                </div>
+                <!-- Product-zoom-area /- -->
+                <!-- Product-zoom-area /- -->
+            </div>
+
+            <div class="col-lg-6 col-md-6 col-sm-12">
+                <!-- Product-details -->
+                <div class="all-information-wrapper">
+                    <div class="section-1-title-breadcrumb-rating">
+                        <div class="product-title">
+                            <h1>
+                                @*<a href="single-product.html">@Model.Productid</a>*@
+                                <input type="hidden" name="Productid" value="@ViewBag.Productid" />
+
+                                <a href="single-product.html">@Model.Productname</a>
+
+                            </h1>
+
+                            <div id="flassale" style="background: red; color: white; display: flex; margin-right: 10px; align-items: center; ">
+
+                                @if (Model.phantramgiamgia > 0)
+                                {
+                                    <span class="flash-deal-badge" style="margin-left: 7px ;font-weight: bold; font-size: 22px">Flash Deal</span>
+                                    <div id="countdown" style="margin-left: 275px; font-weight: bold;"></div>
+                                    <script>
+                            // JavaScript/jQuery code for countdown timer
+                                        var discountEndTime = new Date('@Model.DiscountEndTime.Value.ToString("yyyy-MM-ddTHH:mm:ss")').getTime();
+
+                                        var x = setInterval(function () {
+                                            var now = new Date().getTime();
+                                            var distance = discountEndTime - now;
+                                            var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+                                            var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                                            var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+                                            var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+                                            document.getElementById('countdown').innerHTML = days + 'd ' + hours + 'h ' + minutes + 'm ' + seconds + 's ';
+
+                                            if (distance < 0) {
+                                                clearInterval(x);
+                                                document.getElementById('countdown').innerHTML = 'Flash Deal Ended';
+                                            }
+                                        }, 1000);
+                                    </script>
+                                }
+                            </div>
+                        </div>
+
+                        <!--<div class="product-rating">
+                        <div-->
+                        @*class='star'*@
+                        <!--title="Number of Comments: @ViewBag.TotalComments">
+                                <span style='width: @(ViewBag.TotalStarRating * 20)px'></span>
+                                <span> @ViewBag.TotalStarRating</span>
+                            </div>
+                            <span> (@ViewBag.TotalComments)</span>
+                        </div>-->
+                        <div class="product-rating">
+                            <div title="Number of Comments: @ViewBag.TotalComments">
+                                @for (int i = 1; i <= 5; i++)
+                                {
+                                    <span class="star @(i <= ViewBag.TotalStarRating ? "filled" : "")">★</span>
+                                }
+                            </div>
+                            <span> (@ViewBag.TotalComments)</span>
+                        </div>
+
+
+
+                    </div>
+                    <div class="section-2-short-description u-s-p-y-14">
+                        @* <h6 class="information-heading u-s-m-b-8">Description:</h6>*@
+                        <p>
+                            @*@Model.discription*@
+                        </p>
+                    </div>
+                    <div class="section-3-price-original-discount u-s-p-y-14">
+                        @*<div class="price">
+                                <h4>@Model.price</h4>
+                            </div>*@
+                        <div class="original-price" style="font-size:18px;">
+                            <span>Original Price:</span>
+                            <span>@Model.price</span>
+                        </div>
+
+                        <div class="discount-price" style="font-size:18px;">
+                            <span>Discount:</span>
+                            <span>@Model.DiscountPercent %</span>
+                        </div>
+                        <div class="price">
+                            <span>Price discount :  </span>
+                            <span style="font-size:40px; color:orangered;">@ViewBag.priceprodut</span>
+
+                        </div>
+                        <div class="total-save" style="font-size:18px;">
+                            <span>Tiết kiệm:</span>
+                            <span>@(Model.price - Model.DiscountedPrice)</span>
+                        </div>
+                    </div>
+
+
+                    <div class="section-6-social-media-quantity-actions u-s-p-y-14">
+                        <form action="#" class="post-form">
+                            <div class="quick-social-media-wrapper u-s-m-b-22">
+                                <span style="font-size:18px;">Share:</span>
+                                <ul class="social-media-list">
+                                    <li>
+                                        <a href="#">
+                                            <i class="fab fa-facebook-f"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i class="fab fa-twitter"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i class="fab fa-google-plus-g"></i>
+                                        </a>
+                                    </li>
+
+
+                                </ul>
+                            </div>
+                            <div class="quantity-wrapper u-s-m-b-22">
+                                <span>Quantity:</span>
+                                <div class="quantity">
+                                    <input type="text" class="quantity-text-field" value="1">
+                                    <a class="plus-a" data-max="1000">&#43;</a>
+                                    <a class="minus-a" data-min="1">&#45;</a>
+                                </div>
+                            </div>
+                            <div>
+                                <button class="button button-outline-secondary" type="submit" data-id="@Model.Productid">Add to cart</button>
+                                <button class="button button-outline-secondary far fa-heart u-s-m-l-6" data-id="@Model.Productid"></button>
+
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <!-- Product-details /- -->
+            </div>
+        </div>
+        <div class="product_shop">
+            <div class="shop_image">
+                <img src="~/Content/Theme/jenisk/shop.png" alt="">
+            </div>
+            <div class="shop_info">
+                <h3>Tên Shop</h3>
+                <p>Online 14 phút trước</p>
+                <div class="shop_actions">
+                    <a href="#">
+                        <i class="fas fa-comments"></i> Chat
+                    </a>
+                    <a href="#">
+                        <i class="fas fa-store"></i> Xem Shop
+                    </a>
+                </div>
+            </div>
+            <div class="shop_details">
+                <div class="detail_item">Đánh giá <span class="orange-text">2,2k</span></div>
+                <div class="detail_item">Tỷ lệ phản hồi: <span class="orange-text">100%</span></div>
+                <div class="detail_item">Tham gia: <span class="orange-text">3 tháng trước</span></div>
+                <div class="detail_item">Sản phẩm: <span class="orange-text">342</span></div>
+                <div class="detail_item">Thời gian phản hồi: <span class="orange-text">trong vài giờ</span></div>
+                <div class="detail_item">Người theo dõi: <span class="orange-text">304</span></div>
+            </div>
+        </div>
+        <!-- Product-Detail /- -->
+        <!-- Detail-Tabs -->
+        <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12">
+                <div class="detail-tabs-wrapper u-s-p-t-80">
+                    <div class="detail-nav-wrapper u-s-m-b-30">
+                        <ul class="nav single-product-nav justify-content-center">
+                            <li class="nav-item">
+                                <a class="nav-link active" data-toggle="tab" href="#description">Description</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" data-toggle="tab" href="#specification">Specifications</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" data-toggle="tab" href="#review">Reviews (15)</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="tab-content">
+                        <!-- Description-Tab -->
+                        <div class="tab-pane fade active show" id="description">
+                            <div class="description-whole-container">
+                                <p class="desc-p u-s-m-b-26">
+                                    @Model.discription
+                                </p>
+                                <img class="desc-img img-fluid u-s-m-b-26" src="~/Content/products/@Model.image" alt="Product">
+
+                            </div>
+                        </div>
+                        <!-- Description-Tab /- -->
+                        <!-- Specifications-Tab -->
+                        <div class="tab-pane fade" id="specification">
+                            <div class="specification-whole-container">
+                                <div class="spec-table u-s-m-b-50">
+                                    <h4 class="spec-heading">Product Information</h4>
+
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Specifications-Tab /- -->
+                        <!-- Reviews-Tab -->
+                        <div class="tab-pane fade" id="review">
+                            <div class="review-whole-container">
+                                <div class="row r-1 u-s-m-b-26 u-s-p-b-22">
+                                    <div class="col-lg-6 col-md-6">
+                                        <div class="total-score-wrapper">
+                                            <h6 class="review-h6">Average Rating</h6>
+                                            <div class="circle-wrapper">
+                                                <h1>4.5</h1>
+                                            </div>
+                                            <h6 class="review-h6">Based on 23 Reviews</h6>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 col-md-6">
+                                        <div class="total-star-meter">
+                                            <div class="star-wrapper">
+                                                <span>5 Stars</span>
+                                                <div class="star">
+                                                    <span style='width:0'></span>
+                                                </div>
+                                                <span>(0)</span>
+                                            </div>
+                                            <div class="star-wrapper">
+                                                <span>4 Stars</span>
+                                                <div class="star">
+                                                    <span style='width:67px'></span>
+                                                </div>
+                                                <span>(23)</span>
+                                            </div>
+                                            <div class="star-wrapper">
+                                                <span>3 Stars</span>
+                                                <div class="star">
+                                                    <span style='width:0'></span>
+                                                </div>
+                                                <span>(0)</span>
+                                            </div>
+                                            <div class="star-wrapper">
+                                                <span>2 Stars</span>
+                                                <div class="star">
+                                                    <span style='width:0'></span>
+                                                </div>
+                                                <span>(0)</span>
+                                            </div>
+                                            <div class="star-wrapper">
+                                                <span>1 Star</span>
+                                                <div class="star">
+                                                    <span style='width:0'></span>
+                                                </div>
+                                                <span>(0)</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row r-2 u-s-m-b-26 u-s-p-b-22">
+                                    <form method="post" action="/Home/Create" enctype="multipart/form-data">
+                                        @Html.AntiForgeryToken()
+
+                                        <div class="form-group">
+                                            <label for="content">Comment</label>
+                                            <textarea id="content" name="content" class="form-control" placeholder="Enter your comment"></textarea>
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label for="rating">Rating</label>
+                                            <div class="rating">
+                                                <input type="radio" id="star5" name="rating" value="5" />
+                                                <label for="star5"></label>
+                                                <input type="radio" id="star4" name="rating" value="4" />
+                                                <label for="star4"></label>
+                                                <input type="radio" id="star3" name="rating" value="3" />
+                                                <label for="star3"></label>
+                                                <input type="radio" id="star2" name="rating" value="2" />
+                                                <label for="star2"></label>
+                                                <input type="radio" id="star1" name="rating" value="1" />
+                                                <label for="star1"></label>
+                                            </div>
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label for="image">Upload Image</label>
+                                            <input type="file" id="image" name="image" accept=".png, .jpg, .jpeg" />
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label for="clip">Upload Video Clip</label>
+                                            <input type="file" id="clip" name="clip" accept=".mp4, .avi, .mkv" />
+                                        </div>
+
+                                        <div class="form-group" style="display: none;">
+                                            <label for="storeId">Store ID</label>
+                                            <input type="text" id="storeId" name="storeId" class="form-control" value="@ViewBag.userId" />
+                                        </div>
+
+                                        <button type="submit" class="btn btn-primary">Submit Comment</button>
+                                    </form>
+
+                                </div>
+
+                            </div>
+                            @Html.Action("ShowCommentproduct", "Home")
+                            <!-- Get-Reviews -->
+                            @*<div class="get-reviews u-s-p-b-22">
+                                    <!-- Review-Options -->
+                                    <div class="review-options u-s-m-b-16">
+                                        <div class="review-option-heading">
+                                            <h6>
+                                                Reviews
+                                                <span> (15) </span>
+                                            </h6>
+                                        </div>
+
+                                    </div>
+                                    <!-- Review-Options /- -->
+                                    <!-- All-Reviews -->
+                                    <div class="reviewers">
+                                        @Html.Action("ShowComment", "Stores")
+                                    </div>
+                                    <!-- All-Reviews /- -->
+                                    <!-- Pagination-Review -->
+                                    <!-- Pagination-Review /- -->
+                                </div>*@
+                            <!-- Get-Reviews /- -->
+                        </div>
+                    </div>
+                    <!-- Reviews-Tab /- -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Detail-Tabs /- -->
+    <!-- Different-Product-Section -->
+    <div class="detail-different-product-section u-s-p-t-80">
+        <!-- Similar-Products -->
+        <section class="section-maker">
+            <div class="container">
+                <div class="sec-maker-header text-center">
+                    <h3 class="sec-maker-h3">Các Sản Phẩm Khác </h3>
+                </div>
+                <div>@Html.Action("Index", "Home")</div>
+            </div>
+        </section>
+        <!-- Similar-Products /- -->
+
+    </div>
+    <!-- Different-Product-Section /- -->
+</div>
+
+<style>
+    .star {
+        display: inline-block;
+        width: 20px; /* Adjust as needed */
+        height: 20px; /* Adjust as needed */
+        color: grey; /* Default star color */
+    }
+
+    .filled {
+        color: yellow; /* Filled star color */
+    }
+
+
+    .rating {
+        display: inline-block;
+        font-size: 0;
+    }
+
+        .rating input {
+            display: none;
+        }
+
+        .rating label {
+            position: relative;
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            margin: 0;
+            padding: 0;
+            cursor: pointer;
+        }
+
+            .rating label:before {
+                content: "\2605";
+                position: absolute;
+                top: 0;
+                left: 0;
+                font-size: 20px;
+                line-height: 20px;
+                color: #ddd;
+            }
+
+            .rating label:hover:before,
+            .rating label:hover ~ label:before,
+            .rating input:checked ~ label:before {
+                color: #ffba00;
+            }
+    /*  .extra-image {
+                display: none;
+            }
+    */
+    .page-detail {
+        background-color: #f8f8ff;
+    }
+
+    .white-background {
+        background-color: white;
+        margin-bottom: 30px;
+        padding: 15px;
+    }
+
+    .fa-facebook-f,
+    .fa-twitter,
+    .fa-google-plus-g {
+        font-size: 20px;
+    }
+</style>
+
+@section scripts{
+    <script>
+        var i = 0;
+        $(document).on('click', '.button-outline-secondary', function () {
+            var ProductID = $(this).data("id");
+            alert(ProductID);
+            $.ajax({
+                url: '/ShoppingCart/AddToCart',
+                type: 'POST',
+                data: { "id": ProductID },
+                success: function (result) {
+                    console.log('main' + i++)
+                    swal({
+                        title: "Good job!",
+                        text: "You clicked the button!",
+                        icon: "success",
+                    });
+                },
+                error: function (err) {
+                    alert(err.statusText);
+                }
+            });
+        });
+
+
+        $(document).ready(function () {
+            // Hide the quick-view modal initially
+            $('#quick-view').modal({ show: false });
+
+            // Add a click event to the "Load More" button to show the quick-view modal
+            $('#load-more').click(function () {
+                $('#quick-view').modal('show');
+            });
+
+            // You can also add code to load additional content or data when the "Load More" button is clicked.
+        });
+
+        document.addEventListener("DOMContentLoaded", function () {
+            var closeModalButton = document.getElementById("close-modal-button");
+            closeModalButton.addEventListener("click", function () {
+                var modal = document.getElementById("quick-view");
+                modal.style.display = "none";
+            });
+        });
+
+        const mainImage = document.getElementById('zoom-pro');
+        const extraImages = document.querySelectorAll('#gallery a');
+
+        // Lặp qua từng ảnh phụ và thêm sự kiện "mouseover"
+        extraImages.forEach((image, index) => {
+            image.addEventListener('mouseover', function () {
+                // Thay đổi ảnh chính thành ảnh phụ tương ứng
+                mainImage.src = image.querySelector('img').src;
+                mainImage.setAttribute('data-zoom-image', image.querySelector('img').getAttribute('src'));
+            });
+        });
+
+    </script>
+}
+
+
+<div id="quick-view" class="modal fade">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <button type="button" class="button dismiss-button ion ion-ios-close" id="close-modal-button"></button>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-lg-6 col-md-6 col-sm-12">
+                        Product-zoom-area
+                        <div class="zoom-area">
+                            <img id="zoom-pro" class="img-fluid" src="~/Content/products/@Model.image" data-zoom-image="images/product/product@4x.jpg" alt="Zoom Image">
+                            <div id="gallery-quick-view" class="u-s-m-t-10">
+
+                                @if (ViewBag.ExtraFoods != null)
+                                {
+                                    foreach (var extraFood in ViewBag.ExtraFoods)
+                                    {
+                                        <a class="active" data-image="images/product/product@4x.jpg" data-zoom-image="images/product/product@4x.jpg">
+                                            <img src="~/Content/products/@extraFood.image" alt="Product">
+                                        </a>
+
+                                    }
+                                }
+                            </div>
+                        </div>
+                        Product-zoom-area /-
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-12">
+                        Product-details
+                        <div class="all-information-wrapper">
+                            <div class="section-1-title-breadcrumb-rating">
+                                <div class="product-title">
+                                    <h1>
+                                        <a href="single-product.html">@Model.Productname</a>
+                                    </h1>
+                                </div>
+                                <ul class="bread-crumb">
+                                    <li class="has-separator">
+                                        <a href="home.html">Home</a>
+                                    </li>
+                                    <li class="has-separator">
+                                        <a href="shop-v1-root-category.html">Men's Clothing</a>
+                                    </li>
+                                    <li class="has-separator">
+                                        <a href="shop-v2-sub-category.html">Tops</a>
+                                    </li>
+                                    <li class="is-marked">
+                                        <a href="shop-v3-sub-sub-category.html">Hoodies</a>
+                                    </li>
+                                </ul>
+                                <div class="product-rating">
+                                    <div class='star' title="4.5 out of 5 - based on 23 Reviews">
+                                        <span style='width:67px'></span>
+                                    </div>
+                                    <span>(23)</span>
+                                </div>
+                            </div>
+                            <div class="section-2-short-description u-s-p-y-14">
+                                <h6 class="information-heading u-s-m-b-8">Description:</h6>
+                                <p>
+                                    This hoodie is full cotton. It includes a muff sewn onto the lower front, and (usually) a drawstring to adjust the hood opening. Throughout the U.S., it is common for middle-school, high-school, and college students to wear this sweatshirts—with or without hoods—that display their respective school names or mascots across the chest, either as part of a uniform or personal preference.
+                                </p>
+                            </div>
+                            <div class="section-3-price-original-discount u-s-p-y-14">
+                                <div class="price">
+                                    <h4>@Model.price</h4>
+                                </div>
+                                <div class="original-price">
+                                    <span>Original Price:</span>
+                                    <span>$60.00</span>
+                                </div>
+                                <div class="discount-price">
+                                    <span>Discount:</span>
+                                    <span>@Model.DiscountPercent</span>
+                                </div>
+                                <div class="total-save">
+                                    <span>Save:</span>
+                                    <span>$@Model.DiscountedPrice</span>
+                                </div>
+                            </div>
+
+                            <div class="section-5-product-variants u-s-p-y-14">
+                                <h6 class="information-heading u-s-m-b-8">Product Variants:</h6>
+                                <div class="color u-s-m-b-11">
+                                    <span>Available Color:</span>
+                                    <div class="color-variant select-box-wrapper">
+                                        <select class="select-box product-color">
+                                            <option value="1">Heather Grey</option>
+                                            <option value="3">Black</option>
+                                            <option value="5">White</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="sizes u-s-m-b-11">
+                                    <span>Available Size:</span>
+                                    <div class="size-variant select-box-wrapper">
+                                        <select class="select-box product-size">
+                                            <option value="">Male 2XL</option>
+                                            <option value="">Male 3XL</option>
+                                            <option value="">Kids 4</option>
+                                            <option value="">Kids 6</option>
+                                            <option value="">Kids 8</option>
+                                            <option value="">Kids 10</option>
+                                            <option value="">Kids 12</option>
+                                            <option value="">Female Small</option>
+                                            <option value="">Male Small</option>
+                                            <option value="">Female Medium</option>
+                                            <option value="">Male Medium</option>
+                                            <option value="">Female Large</option>
+                                            <option value="">Male Large</option>
+                                            <option value="">Female XL</option>
+                                            <option value="">Male XL</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="section-6-social-media-quantity-actions u-s-p-y-14">
+                                <form action="#" class="post-form">
+                                    <div class="quick-social-media-wrapper u-s-m-b-22">
+                                        <span>Share:</span>
+                                        <ul class="social-media-list">
+                                            <li>
+                                                <a href="#">
+                                                    <i class="fab fa-facebook-f"></i>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <i class="fab fa-twitter"></i>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <i class="fab fa-google-plus-g"></i>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <i class="fas fa-rss"></i>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <i class="fab fa-pinterest"></i>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="quantity-wrapper u-s-m-b-22">
+                                        <span style="font-size:18px;">Quantity :</span>
+                                        <div class="quantity">
+                                            <input type="text" class="quantity-text-field" value="1">
+                                            <a class="plus-a" data-max="1000">&#43;</a>
+                                            <a class="minus-a" data-min="1">&#45;</a>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <button class="button button-outline-secondary" type="submit" data-id="@Model.Productid">Add to cart</button>
+                                        <button class="button button-outline-secondary far fa-heart u-s-m-l-6" data-id="@Model.Productid"></button>
+                                        <button class="button button-outline-secondary far fa-envelope u-s-m-l-6"></button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        Product-details /-
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

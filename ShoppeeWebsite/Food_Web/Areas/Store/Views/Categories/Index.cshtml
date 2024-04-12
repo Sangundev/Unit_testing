@@ -1,0 +1,161 @@
+﻿﻿@model IPagedList<Food_Web.Models.Category>
+@using PagedList
+@using PagedList.Mvc
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_LayoutStore.cshtml";
+}
+
+<div class="card shadow mb-4">
+    <div class="card-header py-3">
+        <h6 class="m-0 font-weight-bold text-primary">@Html.ActionLink("Trang Chủ", "Index", "Homes") / @Html.ActionLink("Sản Phẩm", "Index", "Productss")</h6>
+    </div>
+    <div class="card-body">
+        <form id="searchForm" action="@Url.Action("Index", "Categories")" method="get" class="form-inline mb-3">
+            <div class="form-group mr-2">
+                @Html.Label("Tìm kiếm:", new { @class = "mr-2" })
+                @Html.TextBox("searchString", ViewBag.searchString as string, new { @class = "form-control" })
+            </div>
+            <button type="submit" class="btn btn-primary">Lọc</button>
+        </form>
+
+        <table class="table">
+            <tr>
+                <td class="border">
+                    <div style="display: flex; justify-content: center; align-items: center; height: 100%;">
+                        <span style="font-weight: bold; text-shadow: 0px 0px 2px rgba(0, 0, 0, 0.5);">
+                            Tên
+                        </span>
+                    </div>
+                </td>
+                <td class="border">
+                    <div style="display: flex; justify-content: center; align-items: center; height: 100%;">
+                        <span style="font-weight: bold; text-shadow: 0px 0px 2px rgba(0, 0, 0, 0.5);">
+                            Ảnh
+                        </span>
+                    </div>
+                </td>
+                <td class="border">
+                    <div style="display: flex; justify-content: center; align-items: center; height: 100%;">
+                        <span style="font-weight: bold; text-shadow: 0px 0px 2px rgba(0, 0, 0, 0.5);">
+                            Hành Động
+                        </span>
+                    </div>
+                </td>
+            </tr>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td class="border">
+                        @Html.DisplayFor(modelItem => item.Categoryname)
+                    </td>
+                    <td class="border">
+                        <img src="~/Content/products/@item.image" style="width:80px" />
+                    </td>
+                    <td class="border">
+                        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet" />
+                        <a href="@Url.Action("Details", new { id = item.Categoryid })" class="btn btn-info btn-sm" title="Details">
+                            <i class="fas fa-info-circle"></i>
+                        </a>
+                    </td>
+                </tr>
+            }
+        </table>
+
+        <div class="pagination-container d-flex justify-content-center">
+            <ul class="pagination">
+
+                <li class="page-item @(Model.HasPreviousPage ? "" : "disabled")">
+                    @if (Model.HasPreviousPage)
+                    {
+                        <a class="page-link" href="@Url.Action("Index", new { page = Model.PageNumber - 1 })">Trước</a>
+                    }
+                    else
+                    {
+                        <span class="page-link">Trước</span>
+                    }
+                </li>
+
+                @for (int i = 1; i <= Model.PageCount; i++)
+                {
+                    <li class="page-item @(i == Model.PageNumber ? "active" : "")">
+                        <a class="page-link" href="@Url.Action("Index", new { page = i })">@i</a>
+                    </li>
+                }
+
+                <li class="page-item @(Model.HasNextPage ? "" : "disabled")">
+                    @if (Model.HasNextPage)
+                    {
+                        <a class="page-link" href="@Url.Action("Index", new { page = Model.PageNumber + 1 })">Tiếp</a>
+                    }
+                    else
+                    {
+                        <span class="page-link">Tiếp</span>
+                    }
+                </li>
+            </ul>
+        </div>
+
+    </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+
+<script>
+
+    function updateProductStatus(productId, status) {
+  $.ajax({
+    url: '@Url.Action("UpdateStatus", "Productss")',
+    type: 'POST',
+    data: { id: productId, status: status },
+    success: function(result) {
+      if (result.success) {
+        // Update the button text and color
+        var button = $('button[data-id="' + productId + '"]');
+        if (status) {
+          button.removeClass('btn-danger').addClass('btn-success').text('Còn');
+        } else {
+          button.removeClass('btn-success').addClass('btn-danger').text('Hết');
+        }
+      } else {
+        alert('Có lỗi xảy ra khi cập nhật trạng thái sản phẩm.');
+      }
+    },
+    error: function() {
+      alert('Có lỗi xảy ra khi gửi yêu cầu cập nhật trạng thái sản phẩm.');
+    }
+  });
+}
+
+
+    var getID = null
+    var getParent = null
+    $(document).on('click', '.btnRemove', function () {
+        getID = $(this).data('id')
+        getParent = $(this).closest('tr')
+    })
+    $(document).on('click', '#confirmRemove', function () {
+        $.ajax({
+            type: 'POST',
+            url: '/Store/Productss/RemoveProduct',
+            data: { id: getID },
+            success: function (result) {
+                if (result.success) {
+                    console.log('success')
+                    getParent.remove()
+                }
+            }
+        })
+    })
+</script>
+
+<style>
+    .border {
+        border: 1px solid black;
+        padding: 5px;
+        text-align: center;
+        vertical-align: middle;
+    }
+</style>

@@ -1,0 +1,150 @@
+﻿﻿@model Food_Web.Models.Product
+
+@{
+    ViewBag.Title = "Create";
+    Layout = "~/Views/Shared/_LayoutStore.cshtml";
+}
+
+<script src="https://cdn.tiny.cloud/1/YOUR_API_KEY/tinymce/5/tinymce.min.js" referrerpolicy="origin"></script>
+<form action="@Url.Action("Import", "Productss")" method="post" enctype="multipart/form-data">
+    <label for="file">Import Excel:</label>
+    <input type="file" name="file" id="file" accept=".xlsx, .xls" />
+    <button type="submit" class="btn btn-success">Import</button>
+</form>
+@using (Html.BeginForm("Create", "Productss", FormMethod.Post, new { enctype = "multipart/form-data", @class = "container mt-4" }))
+{
+    @Html.AntiForgeryToken()
+
+    <h1 class="text-center h3 mb-2 text-gray-800">Thêm Sản Phẩm</h1>
+
+    <div class="card shadow mb-4">
+        <div class="card-header py-3 d-flex justify-content-between">
+            <h6 class="m-0 font-weight-bold text-primary" style="user-select:none">
+                <a href="~/Store/Productss/Index" class="text-decoration-none">← Quay lại</a>
+            </h6>
+            <button type="submit" value="Create" class="btn btn-primary">Thêm</button>
+        </div>
+        <div class="card-body">
+            @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+
+            <div class="row">
+                <div class="col-md-4 box-upload">
+                    <label for="mainImage" class="form-label">
+                        Main Product Image
+                        <img src="~/Content/erro.jpg" class="img-fluid mt-3" id="preview" />
+                        @Html.ValidationMessageFor(m => m.image, "", new { @class = "text-danger", style = "display: block; margin: 5px;" })
+                        <input type="file" name="MainImage" class="form-control mt-3" id="mainImage" accept=".png, .jpg, .jpeg" required onchange="showImage(this, document.getElementById('preview'))" />
+                    </label>
+                </div>
+
+                <div class="col-md-4 box-upload">
+                    <label for="extraImages" class="form-label">
+                        Extra Product Images
+                        <div id="extraImagesPreview" class="d-flex flex-wrap"></div>
+                        <input type="file" name="ExtraImages" class="form-control mt-3" id="extraImages" accept=".png, .jpg, .jpeg" multiple required onchange="showImages(this, document.getElementById('extraImagesPreview'))" />
+                    </label>
+                </div>
+
+                <div class="col-md-8">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="Productname">Tên Sản Phẩm</label>
+                                @Html.TextBoxFor(m => m.Productname, new { @class = "form-control", style = "width: 100%" })
+                                @Html.ValidationMessageFor(m => m.Productname, "", new { @class = "text-danger" })
+                            </div>
+                        </div>
+
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="price">Giá Nhập</label>
+                                @Html.TextBoxFor(m => m.price, new { @class = "form-control", style = "width: 100%" })
+                                @Html.ValidationMessageFor(m => m.price, "", new { @class = "text-danger" })
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="Categoryid">Thể Loại</label>
+                                @Html.DropDownList("Categoryid", null, htmlAttributes: new { @class = "form-control", style = "width: 100%" })
+                                @Html.ValidationMessageFor(model => model.Categoryid, "", new { @class = "text-danger" })
+                            </div>
+                        </div>
+
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="sortdiscription">Mô tả ngắn</label>
+                                @Html.TextBoxFor(m => m.sortdiscription, new { @class = "form-control", style = "width: 100%" })
+                                @Html.ValidationMessageFor(m => m.sortdiscription, "", new { @class = "text-danger" })
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="Soluong">Số Lượng</label>
+                        @Html.TextBoxFor(m => m.Soluong, new { @class = "form-control", style = "width: 100%", type = "number", min = "1" })
+                        @Html.ValidationMessageFor(m => m.Soluong, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+
+                <div class="col-md-12">
+                    <div class="form-group">
+                        <label for="discription-editor">Mô tả</label>
+                        <textarea id="discription-editor" name="discription" class="form-control"></textarea>
+                        @Html.ValidationMessageFor(model => model.discription, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+}
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+    <script type="text/javascript">
+        function showImages(upload, extraPreview) {
+            extraPreview.innerHTML = "";
+            var selectedImages = [];
+
+            if (upload.files && upload.files.length > 0) {
+                for (var i = 0; i < upload.files.length; i++) {
+                    var reader = new FileReader();
+                    reader.onload = function (e) {
+                        var img = document.createElement("img");
+                        img.src = e.target.result;
+                        img.style.height = "100px";
+                        img.style.margin = "5px";
+                        img.style.cursor = "pointer";
+                        img.onclick = function () {
+                            if (selectedImages.includes(this.src)) {
+                                selectedImages = selectedImages.filter(item => item !== this.src);
+                            } else {
+                                selectedImages.push(this.src);
+                            }
+                            document.getElementById("selectedExtraImages").value = JSON.stringify(selectedImages);
+                        };
+                        extraPreview.appendChild(img);
+                    };
+                    reader.readAsDataURL(upload.files[i]);
+                }
+            }
+        }
+
+
+        tinymce.init({
+            selector: '#discription-editor',
+            height: 250,
+            plugins: 'advlist autolink lists link image imagetools charmap print preview',
+            toolbar: 'undo redo | bold italic underline | formatselect | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent | link image',
+        });
+    </script>
+}
+<style>
+    element.style {
+        margin-left: 816px;
+        margin-top: -231px;
+        width: 1101px;
+    }
+</style>

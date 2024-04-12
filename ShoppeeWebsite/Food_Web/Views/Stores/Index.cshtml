@@ -1,0 +1,254 @@
+﻿﻿
+@model IEnumerable<Food_Web.Models.ApplicationUser>
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+<!-- Page Introduction Wrapper /- -->
+<!-- Custom-Deal-Page -->
+<div class="page-deal u-s-p-t-80">
+    <div class="container">
+        @*<div class="deal-page-wrapper">
+                <h1 class="deal-heading">New Arrivals</h1>
+                <h6 class="deal-has-total-items">27 Items</h6>
+            </div>*@
+        <!-- Page-Bar -->
+        <div class="page-bar clearfix">
+            <div class="shop-settings">
+                <a id="list-anchor">
+                    <i class="fas fa-th-list"></i>
+                </a>
+                <a id="grid-anchor" class="active">
+                    <i class="fas fa-th"></i>
+                </a>
+            </div>
+            <!-- Toolbar Sorter 1  -->
+            <div class="toolbar-sorter">
+                <div class="select-box-wrapper">
+                    <label class="sr-only" for="sort-by">Sort By</label>
+                    <select class="select-box" id="sort-by">
+                        <option selected="selected" value="">Sort By: Best Selling</option>
+                        <option value="">Sort By: Latest</option>
+                        <option value="">Sort By: Lowest Price</option>
+                        <option value="">Sort By: Highest Price</option>
+                        <option value="">Sort By: Best Rating</option>
+                    </select>
+                </div>
+            </div>
+            <!-- //end Toolbar Sorter 1  -->
+            <!-- Toolbar Sorter 2  -->
+            <div class="toolbar-sorter-2">
+                <div class="select-box-wrapper">
+                    <label class="sr-only" for="show-records">Show Records Per Page</label>
+                    <select class="select-box" id="show-records">
+                        <option selected="selected" value="">Show: 8</option>
+                        <option value="">Show: 16</option>
+                        <option value="">Show: 28</option>
+                    </select>
+                </div>
+            </div>
+            <!-- //end Toolbar Sorter 2  -->
+        </div>
+        <!-- Page-Bar /- -->
+        <!-- Row-of-Product-Container -->
+        <div class="row product-container grid-style">
+            @foreach (var item in Model)
+            {
+                if (item.status == "Open")
+                {
+                    <div class="product-item col-lg-3 col-md-6 col-sm-6">
+                        <div class="item">
+                            <div class="image-container">
+                                <a href="@Url.Action("StoreProducts", "Stores", new { id = item.Id })">
+
+                                    <img class="img-fluid product-image" src="~/Content/products/@item.image">
+
+                                    <div src="~/Content/products/@item.image" class="team-img back-img">
+                                        <div class="overlay">
+                                            <p class="closed-text">Đóng cửa</p>
+                                        </div>
+                                    </div>
+                                </a>
+
+                            </div>
+                            <div class="item-content">
+                                <div class="what-product-is">
+
+                                    <h6 class="item-title">
+                                        <a @Url.Action("StoreProducts", "Stores", new { id = item.Id })> </a>
+                                    </h6>
+                                    <div class="item-stars">
+                                        <div class='star' title="0 out of 5 - based on 0 Reviews">
+                                            <span style='width:0'></span>
+                                        </div>
+                                        <span>(0)</span>
+                                    </div>
+                                    <div class="section-2-short-description u-s-p-y-14">
+                                        <p>
+                                            @Html.ActionLink(item.UserName, "StoreProducts", "Stores", new { id = item.Id }, null)
+                                            <input type="hidden" name="storeId" value="@ViewBag.userId" />
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="price-template">
+
+                                    <div class="item-new-price">
+                                        <p>@item.Opentime - @item.Closetime</p>
+
+                                    </div>
+                                </div>
+                                <div class="item-new-price">
+                                    <p>@item.status</p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                }
+                else
+                {
+                    <div class="product-item col-lg-3 col-md-6 col-sm-6">
+                        <div class="item">
+                            <div class="image-container">
+                                <a href="@Url.Action("StoreProducts", "Stores", new { id = item.Id })" class="disabled-link">
+
+                                    <img class="img-fluid product-image" src="~/Content/products/@item.image">
+
+                                    <div src="~/Content/products/@item.image" class="team-img back-img">
+                                        <div class="overlay">
+                                            <p class="closed-text">Đóng cửa</p>
+                                        </div>
+                                    </div>
+                                </a>
+
+                            </div>
+                            <div class="item-content">
+                                <div class="what-product-is">
+                                    @*<h6 class="item-title">
+                                            <a @Url.Action("StoreProducts", "Stores", new { id = item.Id }) class="disabled-link" a>
+                                        </h6>*@
+                                    <div class="item-stars">
+                                        <div class='star' title="0 out of 5 - based on 0 Reviews">
+                                            <span style='width:0'></span>
+                                        </div>
+                                        <span>(0)</span>
+                                    </div>
+
+                                    <div class="section-2-short-description u-s-p-y-14">
+                                        <p>
+                                            @Html.ActionLink(item.UserName, "StoreProducts", "Stores", new { id = item.Id }, new { @class = "disabled-link" })
+                                            <input type="hidden" name="storeId" value="@ViewBag.userId" />
+                                        </p>
+                                    </div>
+
+
+
+                                </div>
+                                <div class="price-template">
+
+                                    <div class="item-new-price">
+                                        <p>@item.Opentime - @item.Closetime</p>
+
+                                    </div>
+
+                                </div>
+                                <div class="item-new-price">
+                                    <p>@item.status</p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                }
+            }
+        </div>
+        <!-- Row-of-Product-Container /- -->
+        <!-- Shop-Pagination -->
+        <div class="pagination-area">
+            <div class="pagination-number">
+                <ul>
+                    <li style="display: none">
+                        <a href="shop-v1-root-category.html" title="Previous">
+                            <i class="fa fa-angle-left"></i>
+                        </a>
+                    </li>
+                    <li class="active">
+                        <a href="shop-v1-root-category.html">1</a>
+                    </li>
+                    <li>
+                        <a href="shop-v1-root-category.html">2</a>
+                    </li>
+                    <li>
+                        <a href="shop-v1-root-category.html">3</a>
+                    </li>
+                    <li>
+                        <a href="shop-v1-root-category.html">...</a>
+                    </li>
+                    <li>
+                        <a href="shop-v1-root-category.html">10</a>
+                    </li>
+                    <li>
+                        <a href="shop-v1-root-category.html" title="Next">
+                            <i class="fa fa-angle-right"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- Shop-Pagination /- -->
+    </div>
+</div>
+<style>
+    .product-image {
+        width: 253px;
+        height: 253px;
+        object-fit: cover;
+    }
+
+    .disabled-link {
+        pointer-events: none;
+        opacity: 0.5;
+    }
+
+    .team-img {
+        position: relative;
+    }
+
+    .team-img {
+        position: relative;
+        overflow: hidden; /* Ensure the image does not exceed the container */
+    }
+
+    .overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5); /* Gray color with transparency */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .closed-text {
+        color: red;
+        text-align: center;
+        font-size: 50px; /* Adjust the font size as needed */
+        font-weight: bold; /* Make the text bold */
+    }
+
+    .no-link-hover {
+        text-decoration: none;
+        color: inherit;
+    }
+
+    .disabled-link {
+        pointer-events: none;
+        cursor: default;
+        color: inherit;
+        text-decoration: none;
+    }
+</style>

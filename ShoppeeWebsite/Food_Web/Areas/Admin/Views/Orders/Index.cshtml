@@ -1,0 +1,70 @@
+﻿@model IEnumerable<Food_Web.Models.Order>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Od_name)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Od_email)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Od_phone_number)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Od_address)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Od_note)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Od_date)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Od_status)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Od_name)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Od_email)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Od_phone_number)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Od_address)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Od_note)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Od_date)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Od_status)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.Od_id }) |
+            @Html.ActionLink("Details", "Details", new { id=item.Od_id }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.Od_id })
+        </td>
+    </tr>
+}
+
+</table>

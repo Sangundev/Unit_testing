@@ -1,0 +1,353 @@
+*{
+    font-family: 'Poppins', sans-serif;
+    padding: 0;
+    margin: 0;
+    cursor: pointer;
+    text-decoration: none;
+    box-sizing: border-box;
+    list-style: none;
+}
+
+/* =========================  START-HEADER  ========================= */
+.top-header
+{
+    background: linear-gradient(91.24deg, #FA6400 0%, #FF8A00 100%);
+    display: flex;
+}
+.dropdown-choose
+{
+    display: none;
+}
+.fav
+{
+    display: none;
+}
+  .chooses-content
+  {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  .chooses-content a 
+  {
+    font-size: 15px;
+    color: black;
+    border-bottom: #FA6400 1px solid;
+    text-decoration: none;
+    display: block;
+  }
+  .chooses-content a:hover 
+  {
+    background-color: #f1f1f1
+  }
+  .dropdown:hover .chooses-content 
+  {
+    display: block;
+  }
+
+.logo
+{
+    padding: 10px 0px 0px 10px;
+    
+}
+.logo img
+{
+    width: 70%;
+    text-align: center;
+}
+.chooses ul
+{
+    display: flex;
+    padding: 15px 0px 10px 0px;
+}
+.chooses li a
+{
+    font-size: 20px;
+    margin-right: 20px;
+    color: white;
+    transition: 0.3s;
+}
+.chooses li a:hover
+{
+    color: brown;
+}
+
+.dropbtn {
+    background-color: white;
+    color: black;
+    padding: 5px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    width: 100px;
+  }
+  
+  .dropdown-1
+  {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content 
+  {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a 
+  {
+    color: black;
+    border-bottom: #FA6400 1px solid;
+    text-decoration: none;
+    display: block;
+  }
+  .dropdown-content img
+  {
+    width: 35px;
+    height: 20px;
+    padding: 0px 0px 0px 5px;
+    margin-right: 5px;
+  }
+  
+  .dropdown-content a:hover 
+{
+    background-color: #f1f1f1
+}
+  
+  .dropdown-1:hover .dropdown-content {
+    display: block;
+  }
+
+.others
+{
+    display: flex;
+    padding: 15px 0px 15px 20px ;
+    margin-left: auto;
+    margin-right: 20px;
+}
+
+.others a i
+{
+    font-size: 30px;
+    margin-left: 20px;
+    color: white;
+    transition: 0.3s;
+}
+.others a i:hover
+{
+    color: brown;
+}
+.user-content
+{
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  margin-left: 10px;
+}
+.user-content a 
+{
+  font-size: 15px;
+  color: black;
+  border-bottom: #FA6400 1px solid;
+  text-decoration: none;
+  display: block;
+}
+.user-content a:hover 
+{
+  background-color: #f1f1f1
+}
+.user:hover .user-content 
+{
+  display: block;
+}
+
+/* =========================  END-HEADER  ========================= */
+/* =========================  START-RECENT-BAR  ========================= */
+.recent-bar a
+{
+    color: black;
+}
+.recent-bar a:hover
+{
+    color: #FA6400;
+}
+.recent-bar
+{
+    border: gray 2px solid;
+    width: 100%;
+    height: 40px;
+}
+.recent-content
+{
+    margin: 8px 0px 0px 50px ;
+}
+/* =========================  END-RECENT-BAR  ========================= */
+.insert-info
+{
+    margin: 20px 0px 0px 300px;
+}
+.info-form-detail input
+{
+    margin: 10px;
+    width: 400px;
+    height: 40px;
+}
+.note input
+{
+    height: 60px;
+}
+.insert-info
+{
+    display: flex;
+}
+textarea {
+  width: 400px;
+  height: 150px;
+  padding: 12px 20px;
+  margin-left: 10px;
+  box-sizing: border-box;
+  font-size: 16px;
+  resize: none;
+}
+
+/* =========================  START-FOOTER  ========================= */
+footer
+{
+    border: #e5e5e5 solid 2px;
+    margin-top: 50px;
+}
+.top-footer
+{
+    background: #FAFAFA;
+    display: flex;
+    padding: 20px 0px 10px 10px
+}
+.top-footer h1
+{
+    font-size: 30px;
+    font-weight: 600;
+    color: #FA6400;
+    margin: 9px 0px 0px 10px;
+}
+.bottom-footer 
+{
+    height: 90px;
+    background-color: #FA6400;
+}
+/* =========================  END-FOOTER  ========================= */
+/* =========================  START-GRID  ========================= */
+.bill
+{
+  border: #FA6400 2px solid;
+  width: 358px;
+}
+
+.order-title
+{
+    height: 50px;
+    width: 300px;
+    background-color: #FA6400;
+    color: #FFFFFF;
+    border-radius: 0px 0px 50px 0px;
+    padding: 10px;
+    display: flex;
+}
+.item-title
+{
+  display: flex;
+}
+.item
+{
+  margin-left: 75px;
+}
+.price
+{
+  margin-left: 115px;
+}
+.order-items
+{
+    display: flex;
+    margin: 0px 0px 10px 20px ;
+}
+.quantity
+{
+    font-size: 30px;
+    margin-top: 30px;
+}
+.order-item-info
+{
+    width: 200px;
+    margin-top: 31px;
+    margin-left: 30px;
+    color: gray;
+}
+.order-item-price
+{
+    margin-top: 31px;
+}
+.order-total
+{
+    width: 355px;
+    height: 180px;
+    margin-top: 20px;
+    border-top: #FA6400 solid 2px;
+}
+.temporary
+{
+    display: flex;
+    margin: 10px;
+    justify-content: space-between;
+}
+.deliver
+{
+    display: flex;
+    margin: 10px;
+    justify-content: space-between;
+}
+.total
+{
+    display: flex;
+    margin: 10px;
+    justify-content: space-between;
+}
+/* =========================  END-GRID  ========================= */
+.option-title h3
+{
+    border-bottom: gray 2px solid;
+}
+.choice p
+{
+    color: gray;
+}
+.choose-option
+{
+  margin-left: 10px;
+}
+
+.order-btn
+{
+  background: #FA6400;
+  color: white;
+  width: 105px;
+  padding: 7px 10px 7px 15px;
+  border-radius: 20px;
+  margin:50px 0px 10px 240px;
+  transition: .3s;
+  border: white solid 1px;
+}
+.order-btn:hover
+{
+  background: white;
+  border: #FA6400 solid 1px;
+  color: #FA6400;
+}

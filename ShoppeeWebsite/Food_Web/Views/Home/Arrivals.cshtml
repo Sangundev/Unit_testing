@@ -1,0 +1,240 @@
+﻿﻿@model PagedList.IPagedList<Food_Web.Models.Product>
+@using PagedList.Mvc
+@{
+    ViewBag.Title = "Arrivals";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="page-style-a">
+    <div class="container">
+        <div class="page-intro">
+            <h2>Sản Phẩm Mới </h2>
+            <ul class="bread-crumb">
+                <li class="has-separator">
+                    <i class="ion ion-md-home"></i>
+                    <a href="home.html">Home</a>
+                </li>
+                <li class="is-marked">
+                    <a href="custom-deal-page.html">Sản Phẩm Mới</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+<!-- Page Introduction Wrapper /- -->
+<!-- Custom-Deal-Page -->
+<div class="page-deal u-s-p-t-80">
+    <div class="container">
+        <!--<div class="deal-page-wrapper">
+            <h1 class="deal-heading">New Arrivals</h1>-->
+        @*<h6 class="deal-has-total-items">27 Items</h6>*@
+        <!--</div>-->
+        <!-- Page-Bar -->
+        <div class="page-bar clearfix">
+            <div class="shop-settings">
+                <a id="list-anchor">
+                    <i class="fas fa-th-list"></i>
+                </a>
+                <a id="grid-anchor" class="active">
+                    <i class="fas fa-th"></i>
+                </a>
+            </div>
+            <!-- Toolbar Sorter 1  -->
+            <div class="toolbar-sorter">
+                <div class="select-box-wrapper">
+                    <label class="sr-only" for="sort-by">Sort By</label>
+                    <select class="select-box" id="sort-by">
+                        <option selected="selected" value="">Sort By: Best Selling</option>
+                        <option value="">Sort By: Latest</option>
+                        <option value="">Sort By: Lowest Price</option>
+                        <option value="">Sort By: Highest Price</option>
+                        <option value="">Sort By: Best Rating</option>
+                    </select>
+                </div>
+            </div>
+            <!-- //end Toolbar Sorter 1  -->
+            <!-- Toolbar Sorter 2  -->
+            <div class="toolbar-sorter-2">
+                <div class="select-box-wrapper">
+                    <label class="sr-only" for="show-records">Show Records Per Page</label>
+                    <select class="select-box" id="show-records">
+                        <option selected="selected" value="">Show: 8</option>
+                        <option value="">Show: 16</option>
+                        <option value="">Show: 28</option>
+                    </select>
+                </div>
+            </div>
+            <!-- //end Toolbar Sorter 2  -->
+        </div>
+        <!-- Page-Bar /- -->
+        <!-- Row-of-Product-Container -->
+        <div class="row product-container grid-style">
+            @foreach (var item in Model)
+            {
+                <div class="product-item col-lg-3 col-md-6 col-sm-6">
+                    <div class="item">
+                        <div class="image-container">
+                            <a class="item-img-wrapper-link" href="@Url.Action("Detail", "Home", new { id = item.Productid })">
+                                <img class="img-fluid product-image" src="~/Content/products/@item.image" alt="Product">
+                            </a>
+                            <div class="item-action-behaviors">
+                                <a class="item-quick-look" data-toggle="modal" href="#quick-view">Quick Look</a>
+                                @*<a class="item-mail" href="javascript:void(0)">Mail</a>*@
+                                <a class="item-addwishlist" href="javascript:void(0)" data-id="@item.Productid">Add to Wishlist</a>
+                                <a class="item-addCart" href="javascript:void(0)" data-id="@item.Productid">Add to Cart</a>
+                            </div>
+                        </div>
+                        <div class="item-content">
+                            <div class="what-product-is">
+                                <ul class="bread-crumb">
+                                    <li class="has-separator">
+                                        <a href="@Url.Action("Index", "Product")">home</a>
+                                    </li>
+                                    <li>
+                                        <a href="@Url.Action("Index", "Product")">@item.Category.Categoryname</a>
+                                    </li>
+                                </ul>
+                                <h6 class="item-title">
+                                    <a href="single-product.html">@item.Productname</a>
+                                </h6>
+                                <div class="item-stars">
+                                    <div class='star' title="0 out of 5 - based on 0 Reviews">
+                                        <span style='width:0'></span>
+                                    </div>
+                                    <span>(0)</span>
+                                </div>
+                                <div class="section-2-short-description u-s-p-y-14">
+                                    <h6 class="information-heading u-s-m-b-8">Description:</h6>
+                                    <p>
+                                        @item.discription
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="price-template">
+                                @if (item.DiscountPercent > 0)
+                                {
+                                    <div class="item-new-price">
+                                        @item.DiscountedPrice
+                                    </div>
+                                    <div class="item-old-price">
+                                        @item.price
+                                    </div>
+                                    <div class="tag new" style="background: #ffd507 ">
+                                        <span>-@item.DiscountPercent %</span>
+                                    </div>
+
+                                }
+                                else if (item.DiscountPercent == null)
+                                {
+                                    if (item.is_hot == true)
+                                    {
+                                        <div class="item-new-price">
+                                            @item.price
+                                        </div>
+                                        <div class="tag new" style="background: #FF4500">
+                                            <span>Hot</span>
+                                        </div>
+
+                                    }
+                                    <div class="item-new-price">
+                                        @item.price
+                                    </div>
+                                    <div class="tag new">
+                                        <span>new</span>
+                                    </div>
+                                }
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            }
+
+        </div>
+    </div>
+    <div class="pagination-container">
+        @Html.PagedListPager(Model, page => Url.Action("Arrivals", new { page, PageNumber = page }))
+    </div>
+    <style>
+
+        .pagination-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 20px;
+            padding: 10px;
+        }
+
+            .pagination-container a {
+                display: inline-block;
+                margin: 0 5px;
+                padding: 5px 10px;
+                text-decoration: none;
+                color: #333;
+                border: 1px solid #ccc;
+                border-radius: 5px;
+            }
+
+                .pagination-container a.active {
+                    background-color: #333;
+                    color: #fff;
+                }
+
+                .pagination-container a:first-child {
+                    border-top-left-radius: 5px;
+                    border-bottom-left-radius: 5px;
+                    border-left: none;
+                }
+
+                .pagination-container a:last-child {
+                    border-top-right-radius: 5px;
+                    border-bottom-right-radius: 5px;
+                    border-right: none;
+                }
+
+                .pagination-container a:first-child.active {
+                    border-top-left-radius: 5px;
+                    border-bottom-left-radius: 5px;
+                    border-left: none;
+                }
+
+                .pagination-container a:last-child.active {
+                    border-top-right-radius: 5px;
+                    border-bottom-right-radius: 5px;
+                    border-right: none;
+                }
+    </style>
+
+    <script src="~/Scripts/jquery-3.4.1.js"></script>
+    @section scripts{
+        <script>
+            $('.item-addwishlist').click(function () {
+                $.ajax({
+                    url: '/Heart/AddToHeart',
+                    method: 'POST',
+                    data: { id: $(this).data('id') },
+                    success: function (response) {
+                        // xử lý phản hồi từ máy chủ, chẳng hạn như cập nhật số lượng mục ưa thích
+                        $('#favorite-count').text(response.favoriteCount);
+                        swal({
+                            title: "Good job!",
+                            text: "You clicked the button!",
+                            icon: "success",
+                        });
+                    },
+                    error: function (jqXHR, textStatus, errorThrown) {
+                        // xử lý lỗi, nếu có
+                        console.log('Lỗi khi thêm vào mục ưa thích:', errorThrown);
+                    }
+                });
+            });
+        </script>
+    }
+
+    <style>
+        .product-image {
+            width: 253px;
+            height: 253px;
+            object-fit: cover;
+        }
+    </style>

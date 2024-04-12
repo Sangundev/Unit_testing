@@ -1,0 +1,57 @@
+﻿@model List<Food_Web.Models.RevenueData>
+
+<div>
+    <canvas id="revenueChart" width="400" height="200"></canvas>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script>
+    var data = @Html.Raw(Json.Encode(Model));
+
+    var monthLabels = data.map(function (item) {
+        var date = new Date(item.Date);
+        return date.toLocaleString('en-us', { month: 'long' });
+    });
+
+    var orderCounts = data.map(function (item) {
+        return item.OrderCount;
+    });
+
+    var totalRevenues = data.map(function (item) {
+        return item.TotalRevenue;
+    });
+
+    var ctx = document.getElementById('revenueChart').getContext('2d');
+    var chart = new Chart(ctx, {
+        type: 'bar',
+        data: {
+            labels: monthLabels,
+            datasets: [
+                {
+                    label: 'Order Count',
+                    data: orderCounts,
+                    backgroundColor: 'rgba(75, 192, 192, 0.2)',
+                    borderColor: 'rgba(75, 192, 192, 1)',
+                    borderWidth: 1
+                },
+                {
+                    label: 'Total Revenue',
+                    data: totalRevenues,
+                    backgroundColor: 'rgba(255, 99, 132, 0.2)',
+                    borderColor: 'rgba(255, 99, 132, 1)',
+                    borderWidth: 1
+                }
+            ]
+        },
+        options: {
+            scales: {
+                x: { // Chuyển sang trục ngang
+                    beginAtZero: true
+                },
+                y: {
+                    beginAtZero: true
+                }
+            }
+        }
+    });
+</script>

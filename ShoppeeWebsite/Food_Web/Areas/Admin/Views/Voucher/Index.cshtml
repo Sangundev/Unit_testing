@@ -1,0 +1,98 @@
+﻿@model IEnumerable<Food_Web.Models.Discount>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+<div class="card shadow mb-4">
+    <div class="card-header py-3">
+        <h6 class="m-0 font-weight-bold text-primary">@Html.ActionLink("Trang Chủ", "Index", "Homes") / @Html.ActionLink("Voucher Giảm giá", "Index", "Discounts")</h6>
+    </div>
+    <table class="table">
+        <tr>
+            <td class="border">
+                <div style="display: flex; justify-content: center; align-items: center; height: 100%;">
+                    <span style="font-weight: bold; text-shadow: 0px 0px 2px rgba(0, 0, 0, 0.5);">
+                        Mã Vocher
+                    </span>
+                </div>
+            </td>
+
+            <td class="border">
+                <div style="display: flex; justify-content: center; align-items: center; height: 100%;">
+                    <span style="font-weight: bold; text-shadow: 0px 0px 2px rgba(0, 0, 0, 0.5);">
+                        Phần Tram giảm giá
+                    </span>
+                </div>
+            </td>
+            <td class="border">
+                <div style="display: flex; justify-content: center; align-items: center; height: 100%;">
+                    <span style="font-weight: bold; text-shadow: 0px 0px 2px rgba(0, 0, 0, 0.5);">
+                        Ngày Tạo
+                    </span>
+                </div>
+            </td>
+
+            <td class="border">
+                <div style="display: flex; justify-content: center; align-items: center; height: 100%;">
+                    <span style="font-weight: bold; text-shadow: 0px 0px 2px rgba(0, 0, 0, 0.5);">
+                        Ngày Kết Thúc
+                    </span>
+                </div>
+            </td>
+            <td class="border">
+                <div style="display: flex; justify-content: center; align-items: center; height: 100%;">
+                    <span style="font-weight: bold; text-shadow: 0px 0px 2px rgba(0, 0, 0, 0.5);">
+                        Số Lượng
+                    </span>
+                </div>
+            </td>
+            <td class="border">
+                <div style="display: flex; justify-content: center; align-items: center; height: 100%;">
+                    <span style="font-weight: bold; text-shadow: 0px 0px 2px rgba(0, 0, 0, 0.5);">
+                        Hành Động
+                    </span>
+                </div>
+            </td>
+        </tr>
+
+
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td class="border">
+                    @Html.DisplayFor(modelItem => item.Code)
+                </td>
+                <td class="border">
+                    @Html.DisplayFor(modelItem => item.DiscountPercent)%
+                </td>
+                <td class="border">
+                    @Html.DisplayFor(modelItem => item.StartDate)
+                </td>
+
+                <td class="border">
+                    @Html.DisplayFor(modelItem => item.EndDate)
+                </td>
+
+                <td class="border">
+                    @Html.DisplayFor(modelItem => item.SoLuong)
+                </td>
+
+                <td class="border">
+                    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet" />
+                    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet" />
+                    <a href="@Url.Action("Detail", new { id = item.Id })" class="btn btn-primary btn-sm" title="Edit">
+                        <i class="fas fa-info-circle"></i>
+                    </a>
+</tr>
+        }
+    </table>
+</div>
+<style>
+    .border {
+        border: 1px solid black;
+        padding: 5px;
+        text-align: center;
+        vertical-align: middle;
+    }
+</style>

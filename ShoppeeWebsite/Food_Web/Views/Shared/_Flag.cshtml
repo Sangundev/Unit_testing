@@ -1,0 +1,85 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Blank Template for Bootstrap</title>
+    <!-- Bootstrap core CSS -->
+    <!-- Custom styles for this template -->
+    <link href="~/Content/NN/style.css" rel="stylesheet">
+    <link href="~/Content/NN/bootstrap/css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/css/flag-icon.min.css" rel="stylesheet" type="text/css">
+
+   <script>
+       function changeFlag(countryCode) {
+     
+        var flagElement = document.querySelector('.nav-link.dropdown-toggle .flag-icon');
+        flagElement.classList.remove('flag-icon-us');
+        flagElement.classList.remove('flag-icon-vn');
+        flagElement.classList.add('flag-icon-' + countryCode);
+    }
+</script>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <!-- <a class="navbar-brand" href="#">Brand</a>  -->
+        <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler77" aria-controls="" aria-expanded="false" aria-label="Toggle navigation">
+            <div class="dropdown" style="display: inline-block;">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink78" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Language</a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink78">
+                    <a class="dropdown-item" href="#"><span class="flag-icon flag-icon-us"></span> English</a>
+                    <a class="dropdown-item" href="#"><span class="flag-icon flag-icon-fr"></span> Français</a>
+                    <a class="dropdown-item" href="#"><span class="flag-icon flag-icon-de"></span> Deutsch</a>
+                </div>
+            </div>
+            <span class="navbar-toggler-icon"></span>
+        </button>              -->
+        <div class="collapse navbar-collapse" id="navbarToggler77">
+            <!-- <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Link</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link disabled" href="#">Disabled</a>
+                </li>
+            </ul>                  -->
+            <div class="d-lg-block d-none dropdown">
+                @*<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink78" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Language</a>*@
+
+
+                <style>
+                    .nav-link-flag {
+                     
+                        padding: 0px 10px;
+                        color: #000;
+                        border-radius: 10px;
+                    }
+                    nav.navbar.navbar-expand-lg.navbar-light.bg-light {
+                        padding: 10px 3px;
+                        border-radius: 13px;
+                        margin-left:20px;
+                    }
+
+                </style>
+                <a class="nav-link-flag dropdown-toggle" href="#" id="navbarDropdownMenuLink78" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="flag-icon flag-icon-vn"></span> Việt Nam</a>
+ 
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink78">
+                    <a href="@Url.Action("ChangeLanguage", "Product", new { lang = "en-US" })" onclick="changeFlag('us')"><span class="flag-icon flag-icon-us"></span> English</a>
+                    <a href="@Url.Action("ChangeLanguage", "Product", new { lang = "vi-VN" })" onclick="changeFlag('vn')"><span class="flag-icon flag-icon-vn"></span> Việt Nam</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <script src="~/Content/NN/assets/js/jquery.min.js"></script>
+    <script src="~/Content/NN/assets/js/popper.js"></script>
+    <script src="~/Content/NN/bootstrap/js/bootstrap.min.js"></script>
+</body>
+
+</html>

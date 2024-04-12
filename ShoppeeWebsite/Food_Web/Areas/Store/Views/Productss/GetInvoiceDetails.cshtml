@@ -1,0 +1,29 @@
+﻿﻿
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_LayoutStore.cshtml";
+}
+
+
+
+@model IEnumerable<Food_Web.Models.Order_detail>
+<table>
+    <tr>
+        <th>Invoice ID</th>
+        <th>Product Name</th>
+        <th>Quantity</th>
+        <th>Price</th>
+        <!-- Add any other desired columns -->
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>@item.Od_id</td>
+            <td>@item.Product.Productname</td>
+            <td>@item.num</td>
+            <td>@item.Product.price</td>
+            <!-- Add any other desired columns -->
+        </tr>
+    }
+</table>

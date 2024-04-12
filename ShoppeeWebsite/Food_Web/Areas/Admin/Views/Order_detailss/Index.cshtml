@@ -1,0 +1,214 @@
+﻿@model IEnumerable<Food_Web.Models.Order_detail>
+@using Microsoft.AspNet.Identity
+@using Microsoft.AspNet.Identity.EntityFramework
+@using Food_Web.Models
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+    //IdentityDbContext context = new IdentityDbContext();
+    //var listUser = context.Users.ToList();
+    var userManager = new UserManager<ApplicationUser>(new UserStore<ApplicationUser>(new ApplicationDbContext()));
+    var listUser = userManager.Users.ToList();
+}
+<div class="card shadow mb-4">
+    <div class="card-header py-3">
+        <h6 class="m-0 font-weight-bold text-primary">@Html.ActionLink("Trang Chủ", "Index", "Homes") / @Html.ActionLink("Voucher Giảm giá", "Index", "Discounts")</h6>
+    </div>
+    <table class="table">
+        <tr>
+            <td class="border">
+                <div style="display: flex; justify-content: center; align-items: center; height: 100%;">
+                    <span style="font-weight: bold; text-shadow: 0px 0px 2px rgba(0, 0, 0, 0.5);">
+                        STT
+                    </span>
+                </div>
+            </td>
+            <td class="border">
+                <div style="display: flex; justify-content: center; align-items: center; height: 100%;">
+                    <span style="font-weight: bold; text-shadow: 0px 0px 2px rgba(0, 0, 0, 0.5);">
+                        Tên
+                    </span>
+                </div>
+            </td>
+
+            <td class="border">
+                <div style="display: flex; justify-content: center; align-items: center; height: 100%;">
+                    <span style="font-weight: bold; text-shadow: 0px 0px 2px rgba(0, 0, 0, 0.5);">
+                        Ngày Đặt
+                    </span>
+                </div>
+            </td>
+            @*<td class="border">
+                    <div style="display: flex; justify-content: center; align-items: center; height: 100%;">
+                        <span style="font-weight: bold; text-shadow: 0px 0px 2px rgba(0, 0, 0, 0.5);">
+                            Tổng Giá
+                        </span>
+                    </div>
+                </td>*@
+            @*<td class="border">
+                    <div style="display: flex; justify-content: center; align-items: center; height: 100%;">
+                        <span style="font-weight: bold; text-shadow: 0px 0px 2px rgba(0, 0, 0, 0.5);">
+                            Trạng Thái
+                        </span>
+                    </div>
+                </td>*@
+            <td class="border">
+                <div style="display: flex; justify-content: center; align-items: center; height: 100%;">
+                    <span style="font-weight: bold; text-shadow: 0px 0px 2px rgba(0, 0, 0, 0.5);">
+                        Hành Động
+                    </span>
+                </div>
+            </td>
+        </tr>
+
+
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td class="border">
+                    @Html.DisplayFor(modelItem => item.Od_id)
+                </td>
+                <td class="border">
+                    @foreach (var u in listUser)
+                    {
+                        if (u.Id == item.Order.Od_name)
+                        {
+                            <span id="username">@u.Fullname</span>
+                            <span id="Sdt" style="display: none;">@u.PhoneNumber</span>
+                            <span id="adress" style="display: none;">@u.Adress</span>
+                            break;
+                        }
+                        else { continue; }
+                    }
+                </td>
+                <td class="border">
+                    @Html.DisplayFor(modelItem => item.Order.Od_date)
+                </td>
+
+                <td class="border">
+                    <button class="btn btn-primary btn-sm btn-view-details" data-id="@item.Od_id" data-bs-toggle="modal" data-bs-target="#detailsModal">
+                        <i class="fas fa-eye"></i>
+                    </button>
+                </td>
+
+            </tr>
+        }
+
+
+    </table>
+</div>
+
+</div>
+<div class="modal fade" id="detailsModal" tabindex="-1" aria-labelledby="detailsModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="detailsModalLabel">Chi Tiết Hóa Đơn</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div id="orderDetailsContainer"></div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+    $(document).ready(function () {
+        $(".btn-approve").on("click", function () {
+            var button = $(this);
+            var id = button.data("id");
+            var status = button.hasClass("btn-success");
+
+            $.ajax({
+                url: '@Url.Action("UpStatus", "Order_details")',
+                type: 'POST',
+                data: { id: id, status: status },
+                success: function (result) {
+                    if (result.success) {
+                        if (status) {
+                            button.removeClass('btn-success').addClass('btn-danger').text('Đã giao');
+                        } else {
+                            button.removeClass('btn-danger').addClass('btn-success').text('Chưa giao');
+                        }
+                    } else {
+                        alert(result.message);
+                    }
+                },
+                error: function () {
+                    alert('An error occurred while updating the order status.');
+                }
+            });
+        });
+    });
+
+$(document).ready(function () {
+  $(".btn-view-details").on("click", function () {
+    var button = $(this);
+    var orderId = button.data("id");
+    var username = button.closest("tr").find("#username").text();
+    var phone = button.closest("tr").find("#Sdt").text();
+    var Diachi = button.closest("tr").find("#adress").text();
+    $.ajax({
+      url: '@Url.Action("GetOrderDetails", "Order_detailss")',
+      type: 'POST',
+      data: { orderId: orderId },
+      success: function (result) {
+        if (result.success) {
+          var orderDetails = result.orderDetails;
+          var orderDetailsContainer = $("#orderDetailsContainer");
+          orderDetailsContainer.empty();
+          orderDetailsContainer.append("<p> Tên NGười mua: " + username + "</p>");
+          orderDetailsContainer.append("<p> Số Điện Thoại: " + phone + "</p>");
+          orderDetailsContainer.append("<p> Địa Chỉ: " + Diachi + "</p>");
+
+          if (orderDetails.length > 0) {
+            var totalCost = 0;
+            var orderList = $("<ul>").appendTo(orderDetailsContainer); // Create <ul> element
+
+            orderList.append(" ========== Sản Phẩm Mua =============== "); // Add heading
+
+            orderDetails.forEach(function (orderDetail) {
+              var listItem = "<li>" +
+                "Tên: " + orderDetail.productName + "<br/>" +
+                "Giá: " + orderDetail.Gia + "<br/>" +
+                  "Số lượng: " + orderDetail.soluong + "<br/>" +
+                  " Tổng Tiền của Sản Phẩm: " + orderDetail.quantity +
+                "</li>";
+              orderList.append(listItem); // Append the list item to the <ul>
+
+              totalCost += orderDetail.quantity;
+            });
+
+            orderDetailsContainer.append("<p> => Total Cost: " + totalCost + "</p>");
+          } else {
+            orderDetailsContainer.html("No order details found.");
+          }
+
+          $("#detailsModalLabel").html("Chi Tiết Hóa Đơn");
+        } else {
+          alert(result.message);
+        }
+      },
+      error: function () {
+        alert('An error occurred while fetching order details.');
+      }
+    });
+  });
+});
+
+
+</script>
+<style>
+    .border {
+        border: 1px solid black;
+        padding: 5px;
+        text-align: center;
+        vertical-align: middle;
+    }
+</style>

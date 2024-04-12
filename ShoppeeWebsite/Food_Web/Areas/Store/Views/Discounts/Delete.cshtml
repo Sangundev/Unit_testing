@@ -1,0 +1,126 @@
+﻿﻿@model Food_Web.Models.Discount
+
+@{
+    ViewBag.Title = "Delete";
+    Layout = "~/Views/Shared/_LayoutStore.cshtml";
+}
+
+@*h2>Delete</h2>
+
+    <h3>Are you sure you want to delete this?</h3>
+    <div>
+        <h4>Discount</h4>
+        <hr />
+        <dl class="dl-horizontal">
+            <td>
+                @Html.DisplayNameFor(model => model.Code)
+            </td>
+
+            <dd>
+                @Html.DisplayFor(model => model.Code)
+            </dd>
+
+            <td>
+                @Html.DisplayNameFor(model => model.StoreId)
+            </td>
+
+            <dd>
+                @Html.DisplayFor(model => model.StoreId)
+            </dd>
+
+            <td>
+                @Html.DisplayNameFor(model => model.DiscountPercent)
+            </td>
+
+            <dd>
+                @Html.DisplayFor(model => model.DiscountPercent)
+            </dd>
+
+            <td>
+                @Html.DisplayNameFor(model => model.StartDate)
+            </td>
+
+            <dd>
+                @Html.DisplayFor(model => model.StartDate)
+            </dd>
+
+            <td>
+                @Html.DisplayNameFor(model => model.EndDate)
+            </td>
+
+            <dd>
+                @Html.DisplayFor(model => model.EndDate)
+            </dd>
+
+        </dl>
+
+        @using (Html.BeginForm()) {
+            @Html.AntiForgeryToken()
+
+            <div class="form-actions no-color">
+                <input type="submit" value="Delete" class="btn btn-default" /> |
+                @Html.ActionLink("Back to List", "Index")
+            </div>
+        }
+    </div>*@
+<div class="card shadow mb-4">
+    <div class="card-header py-3">
+        <h6 class="m-0 font-weight-bold text-primary">@Html.ActionLink("Trang Chủ", "Index", "Homes") / @Html.ActionLink("Voucher Giảm giá", "Index", "Discounts")</h6>
+    </div>
+
+    <td class="border">
+        @Html.DisplayNameFor(model => model.Code)
+    </td>
+
+    <dd class="border">
+        @Html.DisplayFor(model => model.Code)
+    </dd>
+
+    <td class="border">
+        @Html.DisplayNameFor(model => model.StoreId)
+    </td>
+
+    <dd class="border">
+        @Html.DisplayFor(model => model.StoreId)
+    </dd>
+
+    <td class="border">
+        @Html.DisplayNameFor(model => model.DiscountPercent)
+    </td>
+
+    <dd class="border">
+        @Html.DisplayFor(model => model.DiscountPercent)
+    </dd>
+
+    <td class="border">
+        @Html.DisplayNameFor(model => model.StartDate)
+    </td>
+
+    <dd class="border">
+        @Html.DisplayFor(model => model.StartDate)
+    </dd>
+
+    <td class="border">
+        @Html.DisplayNameFor(model => model.EndDate)
+    </td>
+
+    <dd class="border">
+        @Html.DisplayFor(model => model.EndDate)
+    </dd>
+
+
+    <div class="form-actions no-color">
+        <input type="submit" value="Delete" class="btn btn-default" /> |
+        @Html.ActionLink("Back to List", "Index")
+    </div>
+
+    </table>
+</div>
+<style>
+    .border {
+        border: 1px solid black;
+        padding: 5px;
+        text-align: center;
+        vertical-align: middle;
+    }
+</style>

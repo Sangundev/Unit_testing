@@ -1,0 +1,107 @@
+﻿﻿
+@model Food_Web.Models.Product
+
+@{
+    ViewBag.Title = "Edit";
+    Layout = "~/Views/Shared/_LayoutStore.cshtml";
+}
+
+@using (Html.BeginForm("EditSale", "Productss", FormMethod.Post, new { enctype = "multipart/form-data" }))
+{
+    @Html.AntiForgeryToken()
+
+    <div class="card shadow mb-4">
+        <input type="hidden" name="Productid" value="@Model.Productid" />
+        <div class="card-header py-3" style="display:flex; align-items:center; justify-content:space-between">
+            <h6 class="m-0 font-weight-bold text-primary" style="user-select:none"><a href="~/Store/Productss/Index">← Quay lại</a></h6>
+            <button type="submit" value="Edit" class="btn btn-primary">Thêm</button>
+
+        </div>
+        <div class="card-body">
+            @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+            <!-- Search -->
+            <div class="row">
+                <div class="col-md-4 box-upload">
+                    <label>
+                        <img src="~/Content/products/@Model.image" style="height: 320px; padding: 5px 0; border-radius: 15px;" id="preview" />
+
+                    </label>
+                </div>
+
+                <div class="col-md-8">
+                    <div class="form-group" style="display: flex; justify-content:center">
+                        <div class="col-sm-4">
+                            <label>Tên Sản Phẩm: </label>
+                            @Html.TextBoxFor(m => m.Productname, new { @class = "form-control form-control-sm", style = "width: 250px; padding: 7px 5px;" })
+                            @Html.ValidationMessageFor(m => m.Productname, "", new { @class = "text-danger", style = "display: block; margin: 5px auto;" })
+                        </div>
+                        <div class="col-sm-4">
+                            <label>Ngày Tạo: </label>
+                            <input readonly name="DateCreated" value="@DateTime.Now.ToString("dd/MM/yyyy HH:ss")" class="form-control form-control-sm" style="width: 250px; padding: 7px 5px; " />
+                        </div>
+                    </div>
+                    <div class="form-group" style="display:none">
+                        @Html.LabelFor(model => model.Userid, htmlAttributes: new { @class = "control-label col-md-2" })
+                        <div class="col-md-10">
+                            @Html.EditorFor(model => model.Userid, new { htmlAttributes = new { @class = "form-control" } })
+                            @Html.ValidationMessageFor(model => model.Userid, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+                    <div class="form-group" style="display: flex; justify-content:center">
+                        <div class="col-sm-4">
+                            <label>Giá Nhập: </label>
+                            @Html.TextBoxFor(m => m.price, new { @class = "form-control form-control-sm", style = "width: 250px; padding: 7px 5px;" })
+                            @Html.ValidationMessageFor(m => m.price, "", new { @class = "text-danger", style = "display: block; margin: 5px auto;" })
+                        </div>
+                        <div class="col-sm-4">
+                            <label>Thể Loại: </label>
+                            @Html.DropDownList("Categoryid", null, htmlAttributes: new { @class = "form-control form-control-sm;  padding: 10px 5px; ", style = "width: 250px; padding: 7px 5px;" })
+                            @Html.ValidationMessageFor(model => model.Categoryid, "", new { @class = "text-danger", style = "display: block; margin: 5px auto;" })
+                        </div>
+                    </div>
+                    <div class="form-group" style="display: flex; justify-content:center">
+                        <div class="col-sm-4">
+                            <label>Mo ta ngan: </label>
+                            @Html.TextBoxFor(m => m.discription, new { @class = "form-control form-control-sm", style = "width: 250px; padding: 7px 5px;" })
+                            @Html.ValidationMessageFor(m => m.discription, "", new { @class = "text-danger", style = "display: block; margin: 5px auto;" })
+                        </div>
+                        <div class="col-sm-4">
+                            <label>Mo ta Dai: </label>
+                            @Html.TextBoxFor(m => m.DiscountPercent, new { @class = "form-control form-control-sm", style = "width: 250px; padding: 7px 5px;" })
+                            @Html.ValidationMessageFor(m => m.DiscountPercent, "", new { @class = "text-danger", style = "display: block; margin: 5px auto;" })
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+}
+
+@Scripts.Render("~/bundles/jqueryval")
+<script type="text/javascript">
+    function showImage(upload, preview) {
+        if (upload.files && upload.files[0]) {
+            var reader = new FileReader();
+            reader.onload = function (e) {
+                $(preview).attr('src', e.target.result);
+            }
+            reader.readAsDataURL(upload.files[0]);
+        }
+    }
+</script>
+}
+<style>
+    img#preview {
+        margin: 0px 24px 17px 174px
+    }
+
+    label.btnChoose {
+        margin: -60px 255px;
+    }
+
+    .btnChoose input {
+        display: none;
+    }
+</style>

@@ -1,0 +1,161 @@
+﻿﻿@model IEnumerable<Food_Web.Models.Comment>
+@using Microsoft.AspNet.Identity
+@using Microsoft.AspNet.Identity.EntityFramework
+@using Food_Web.Models
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_LayoutStore.cshtml";
+    var userManager = new UserManager<ApplicationUser>(new UserStore<ApplicationUser>(new ApplicationDbContext()));
+    var listUser = userManager.Users.ToList();
+}
+
+<div class="card shadow mb-4">
+    <div class="card-header py-3">
+        <h6 class="m-0 font-weight-bold text-primary">@Html.ActionLink("Trang Chủ", "Index", "Homes") / @Html.ActionLink("Đánh Giá", "Index", "Comments")</h6>
+    </div>
+    <table class="table">
+        <tr>
+            <td class="border">
+                <div style="display: flex; justify-content: center; align-items: center; height: 100%;">
+                    <span style="font-weight: bold; text-shadow: 0px 0px 2px rgba(0, 0, 0, 0.5);">
+                        STT
+                    </span>
+                </div>
+            </td>
+
+            <td class="border">
+                <div style="display: flex; justify-content: center; align-items: center; height: 100%;">
+                    <span style="font-weight: bold; text-shadow: 0px 0px 2px rgba(0, 0, 0, 0.5);">
+                        Tên Người Đánh Giá
+                    </span>
+                </div>
+            </td>
+            <td class="border">
+                <div style="display: flex; justify-content: center; align-items: center; height: 100%;">
+                    <span style="font-weight: bold; text-shadow: 0px 0px 2px rgba(0, 0, 0, 0.5);">
+                        Số Sao
+                    </span>
+                </div>
+            </td>
+            <td class="border">
+                <div style="display: flex; justify-content: center; align-items: center; height: 100%;">
+                    <span style="font-weight: bold; text-shadow: 0px 0px 2px rgba(0, 0, 0, 0.5);">
+                        Ngày đánh giá
+                    </span>
+                </div>
+            </td>
+            <td class="border">
+                <div style="display: flex; justify-content: center; align-items: center; height: 100%;">
+                    <span style="font-weight: bold; text-shadow: 0px 0px 2px rgba(0, 0, 0, 0.5);">
+                        Hành Động
+                    </span>
+                </div>
+            </td>
+        </tr>
+
+
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td class="border">
+                    @Html.DisplayFor(modelItem => item.comment_id)
+                </td>
+                <td class="border">
+                    @foreach (var u in listUser)
+                    {
+                        if (u.Id == item.user_id)
+                        {
+                            <span id="username">@u.Fullname</span>
+
+                            break;
+                        }
+                        else { continue; }
+                    }
+                </td>
+                <td class="border">
+                    @{
+                        int rating = (int)item.Rating;
+                        for (int i = 0; i < 5; i++)
+                        {
+                            if (i < rating)
+                            {
+                                <i class="fas fa-star"></i>
+                            }
+                            else
+                            {
+                                <i class="far fa-star"></i>
+                            }
+                        }
+                    }
+                </td>
+
+                <td class="border">
+                    @Html.DisplayFor(modelItem => item.created)
+                </td>
+
+                @*<td class="border">
+                        <a href="@Url.Action("Details", new { id = item.comment_id })" class="btn btn-info btn-sm" title="Details">
+                            <i class="fas fa-info-circle"></i>
+                        </a>
+                    </td>*@
+                <td class="border">
+                    <button id="idcomment" class="btn btn-info btn-sm btn-details" data-comment-id="@item.comment_id" title="Details">
+                        <i class="fas fa-info-circle"></i>
+                    </button>
+                    <div class="modal fade" id="detailsModal" tabindex="-1" role="dialog" aria-labelledby="detailsModalLabel" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="detailsModalLabel">Chi tiết</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body" id="detailsContent"></div>
+                            </div>
+                        </div>
+                    </div>
+                </td>
+
+
+
+            </tr>
+        }
+
+    </table>
+</div>
+<style>
+    .border {
+        border: 1px solid black;
+        padding: 5px;
+        text-align: center;
+        vertical-align: middle;
+    }
+</style>
+
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<script>
+    $(function () {
+           $('#idcomment').click(function () {
+            var commentId = $(this).data('comment-id');
+            var url = '@Url.Action("Details", "Comments")' + '/' + commentId;
+
+            // Make an AJAX request to retrieve the details content
+            $.ajax({
+                url: url,
+                type: 'GET',
+                success: function (data) {
+                    // Update the details content in the modal
+                    $('#detailsContent').html(data);
+                    // Show the modal
+                    $('#detailsModal').modal('show');
+                },
+                error: function (xhr, status, error) {
+                    console.error(xhr.responseText);
+                }
+            });
+        });
+    });
+</script>

@@ -1,0 +1,81 @@
+﻿@model Food_Web.Models.Order
+
+@{
+    ViewBag.Title = "Delete";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>Order</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Od_name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Od_name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Od_email)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Od_email)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Od_phone_number)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Od_phone_number)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Od_address)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Od_address)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Od_note)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Od_note)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Od_date)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Od_date)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Od_status)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Od_status)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Delete" class="btn btn-default" /> |
+            @Html.ActionLink("Back to List", "Index")
+        </div>
+    }
+</div>

@@ -1,0 +1,23 @@
+﻿﻿@model IEnumerable<Food_Web.Models.Order_detail>
+
+@{
+    ViewBag.Title = "Top Accounts";
+    Layout = "~/Views/Shared/_LayoutStore.cshtml";
+}
+
+<h2>Top Accounts</h2>
+
+<table class="table">
+    <tr>
+        <th>Order Name</th>
+        <th>Total Quantity</th>
+    </tr>
+
+    @foreach (var account in Model)
+    {
+        <tr>
+            <td>@account.Order.Od_name</td>
+            <td>@ViewBag.TotalQuantity</td>
+        </tr>
+    }
+</table>

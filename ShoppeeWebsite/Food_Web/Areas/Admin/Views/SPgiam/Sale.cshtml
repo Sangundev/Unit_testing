@@ -1,0 +1,109 @@
+﻿@model IEnumerable<Food_Web.Models.Product>
+@{
+    ViewBag.Title = "Sale";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<div class="card shadow mb-4">
+    <div class="card-header py-3">
+        <h6 class="m-0 font-weight-bold text-primary">@Html.ActionLink("Trang Chủ", "Index", "Homes") / @Html.ActionLink("Sản Phẩm nổi bật", "Index", "hot")</h6>
+    </div>
+    <table class="table">
+        <tr>
+            <td class="border">
+                <div style="display: flex; justify-content: center; align-items: center; height: 100%;">
+                    <span style="font-weight: bold; text-shadow: 0px 0px 2px rgba(0, 0, 0, 0.5);">
+                        Tên
+                    </span>
+                </div>
+            </td>
+
+            <td class="border">
+                <div style="display: flex; justify-content: center; align-items: center; height: 100%;">
+                    <span style="font-weight: bold; text-shadow: 0px 0px 2px rgba(0, 0, 0, 0.5);">
+                        Danh Mục
+                    </span>
+                </div>
+            </td>
+            <td class="border">
+                <div style="display: flex; justify-content: center; align-items: center; height: 100%;">
+                    <span style="font-weight: bold; text-shadow: 0px 0px 2px rgba(0, 0, 0, 0.5);">
+                        Hình Ảnh
+                    </span>
+                </div>
+            </td>
+            <td class="border">
+                <div style="display: flex; justify-content: center; align-items: center; height: 100%;">
+                    <span style="font-weight: bold; text-shadow: 0px 0px 2px rgba(0, 0, 0, 0.5);">
+                        Giá Ban Đầu
+                    </span>
+                </div>
+            </td>
+
+            <td class="border">
+                <div style="display: flex; justify-content: center; align-items: center; height: 100%;">
+                    <span style="font-weight: bold; text-shadow: 0px 0px 2px rgba(0, 0, 0, 0.5);">
+                        Giá Sau Khi Giảm
+                    </span>
+                </div>
+            </td>
+            <td class="border">
+                <div style="display: flex; justify-content: center; align-items: center; height: 100%;">
+                    <span style="font-weight: bold; text-shadow: 0px 0px 2px rgba(0, 0, 0, 0.5);">
+                        Phần Trăm Giảm Giá
+                    </span>
+                </div>
+            </td>
+            <td class="border">
+                <div style="display: flex; justify-content: center; align-items: center; height: 100%;">
+                    <span style="font-weight: bold; text-shadow: 0px 0px 2px rgba(0, 0, 0, 0.5);">
+                        Hành Động
+                    </span>
+                </div>
+            </td>
+        </tr>
+
+
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td class="border">
+                    @Html.DisplayFor(modelItem => item.Productname)
+                </td>
+                <td class="border">
+                    @Html.DisplayFor(modelItem => item.Category.Categoryname)
+                </td>
+                <td class="border">
+                    <img src="~/Content/products/@item.image" style="width:80px" />
+                </td>
+                <td class="border">
+                    @Html.DisplayFor(modelItem => item.price)
+                </td>
+                <td class="border">
+                    @Html.DisplayFor(modelItem => item.DiscountedPrice)
+                </td>
+                <td class="border">
+                    @Html.DisplayFor(modelItem => item.DiscountPercent)%
+                </td>
+
+                <td class="border">
+                    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet" />
+                    <a href="@Url.Action("Detail", new { id = item.Productid })" class="btn btn-info btn-sm" title="Detail">
+                        <i class="fas fa-info-circle"></i>
+                    </a>
+                    
+                   
+                </td>
+            </tr>
+        }
+    </table>
+</div>
+<style>
+    .border {
+        border: 1px solid black;
+        padding: 5px;
+        text-align: center;
+        vertical-align: middle;
+    }
+</style>
+

@@ -1,0 +1,14 @@
+﻿@model IEnumerable<Food_Web.Models.Category>
+@{
+    ViewBag.Title = "categoryindex";
+    Layout = null;
+}
+                @foreach (var item in Model)
+                {
+                    <div class="brand-pic">
+                        <a href="#">
+                            <img src="~/Content/products/@item.image"/>
+                        </a>
+                    </div>
+                }
+     

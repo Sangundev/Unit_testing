@@ -1,0 +1,75 @@
+﻿@model Food_Web.Models.Order
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Order</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Od_name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Od_name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Od_email)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Od_email)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Od_phone_number)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Od_phone_number)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Od_address)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Od_address)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Od_note)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Od_note)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Od_date)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Od_date)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Od_status)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Od_status)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Od_id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

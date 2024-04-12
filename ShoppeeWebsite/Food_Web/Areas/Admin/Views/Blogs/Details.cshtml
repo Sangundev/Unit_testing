@@ -1,0 +1,51 @@
+﻿@model Food_Web.Models.Blog
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Blog</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Bloglong)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Bloglong)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Blogday)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Blogday)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.image)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.image)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Blogshort)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Blogshort)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Blogid }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

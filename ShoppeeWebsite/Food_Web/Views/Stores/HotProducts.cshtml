@@ -1,0 +1,84 @@
+﻿
+@{
+    ViewBag.Title = "HotProducts";
+    Layout = null;
+}
+
+<!-- Page Introduction Wrapper /- -->
+<!-- Custom-Deal-Page -->
+<div class="page-deal u-s-p-t-80">
+    <div class="container">
+
+        <!-- //end Toolbar Sorter 1  -->
+        <!-- Toolbar Sorter 2  -->
+        <!-- Page-Bar /- -->
+        <!-- Row-of-Product-Container -->
+        <div class="row product-container grid-style">
+            @foreach (var item in Model)
+            {
+                <div class="product-item col-lg-3 col-md-6 col-sm-6">
+                    <div class="item">
+                        <div class="image-container">
+                            <a class="item-img-wrapper-link" href="@Url.Action("Detail", "Home", new { id = item.Productid })">
+                                <img class="img-fluid" src="~/Content/products/@item.image" alt="Product">
+                            </a>
+                            <div class="item-action-behaviors">
+                                <a class="item-quick-look" data-toggle="modal" href="#quick-view">Quick Look</a>
+                                <a class="item-mail" href="javascript:void(0)">Mail</a>
+                                <a class="item-addwishlist" href="javascript:void(0)" data-id="@item.Productid">Add to Wishlist</a>
+                                <a class="item-addCart" href="javascript:void(0)" data-id="@item.Productid">Add to Cart</a>
+                            </div>
+                        </div>
+                        <div class="item-content">
+                            <div class="what-product-is">
+                                <ul class="bread-crumb">
+                                    <li class="has-separator">
+                                        <a href="shop-v1-root-category.html">home</a>
+                                    </li>
+                                    <li class="has-separator">
+                                        <a href="shop-v2-sub-category.html">Ten shop</a>
+                                    </li>
+                                    <li>
+                                        <a href="shop-v3-sub-sub-category.html">the loai</a>
+                                    </li>
+                                </ul>
+                                <h6 class="item-title">
+                                    <a href="single-product.html">@item.Productname</a>
+                                </h6>
+                                <div class="item-stars">
+                                    <div class='star' title="0 out of 5 - based on 0 Reviews">
+                                        <span style='width:0'></span>
+                                    </div>
+                                    <span>(0)</span>
+                                </div>
+                                <div class="section-2-short-description u-s-p-y-14">
+                                    <h6 class="information-heading u-s-m-b-8">Description:</h6>
+                                    <p>
+                                        @item.discription
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="price-template">
+
+                                <div class="item-new-price">
+                                    @item.DiscountedPrice
+                                </div>
+
+                                <div class="item-new-price">
+                                    @item.price
+                                </div>
+                                <div class="tag new">
+                                    <span>Hot</span>
+                                </div>
+
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            }
+
+        </div>
+    </div>
+</div>

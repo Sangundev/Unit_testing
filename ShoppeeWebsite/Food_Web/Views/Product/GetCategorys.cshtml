@@ -1,0 +1,32 @@
+﻿﻿@model IEnumerable<Food_Web.Models.Category>
+
+<div class="col-lg-3">
+    <div class="v-menu">
+        <span class="v-title" id="categoryDropdown">
+            <i class="ion ion-md-menu"></i>
+            @Resources.RS_Categories
+            <i class="fas fa-angle-down"></i>
+        </span>
+        <ul class="v-list animated fadeIn" id="categoryList" style="display: none;">
+            @foreach (var item in Model)
+            {
+                <li class="js-backdrop">
+                    <a href="@Url.Action("GetProductByCategory", "Product", new { categoryid = item.Categoryid })">
+                        <i class="ion ion-md-restaurant"></i>
+                        @item.Categoryname
+                    </a>
+                </li>
+            }
+        </ul>
+    </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+
+<script>
+    $(document).ready(function () {
+        $('#categoryDropdown').click(function () {
+            $('#categoryList').slideToggle();
+        });
+    });
+</script>

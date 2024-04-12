@@ -1,0 +1,46 @@
+﻿@model IEnumerable<Food_Web.Models.chef>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.image)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.chitiet)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.chef_name)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            <img src="~/Content/images/chef/@item.image" , style="width:80px " />
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.chitiet)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.chef_name)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.chef_id }) |
+            @Html.ActionLink("Details", "Details", new { id=item.chef_id }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.chef_id })
+        </td>
+    </tr>
+}
+
+</table>

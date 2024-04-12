@@ -1,0 +1,160 @@
+﻿@using Food_Web.Models
+@model LoginViewModel
+@{
+    ViewBag.Title = "Log in";
+}
+
+
+<div id="app">
+    <!-- Header -->
+    <!-- Header /- -->
+    <!-- Page Introduction Wrapper -->
+    <!-- Page Introduction Wrapper /- -->
+    <!-- Account-Page -->
+    <div class="page-account u-s-p-t-80">
+        <div class="container">
+
+            <div class="row1">
+                <div class="backgound">
+                    <img src="~/Content/Theme/background.PNG" alt="">
+                </div>
+                <!-- Login -->
+                <div class="col-12">
+                    <div class="login-wrapper white-background">
+                        <h2 class="account-h2 u-s-m-b-20">Login</h2>
+                        <h6 class="account-h6 u-s-m-b-30">Welcome back! Sign in to your account.</h6>
+                        @using (Html.BeginForm("Login", "Account", new { ReturnUrl = ViewBag.ReturnUrl }, FormMethod.Post, new { @class = "form-horizontal", role = "form" }))
+                        {
+                            @Html.AntiForgeryToken()
+                            @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+                            <form>
+                                <div class="u-s-m-b-30">
+                                    <label for="user-name-email">
+                                        Username or Email
+                                        <span class="astk">*</span>
+                                    </label>
+                                    @*@Html.TextBoxFor(m => m.Email, new { @class = "form-control" })
+                                        @Html.ValidationMessageFor(m => m.Email, "", new { @class = "text-danger" })*@
+
+                                    @Html.LabelFor(m => m.EmailOrUsername, new { @class = "control-label" })
+                                    @Html.TextBoxFor(m => m.EmailOrUsername, new { @class = "form-control" })
+
+
+                                </div>
+                                <div class="u-s-m-b-30">
+                                    <label for="login-password">
+                                        Password
+                                        <span class="astk">*</span>
+                                    </label>
+                                    @Html.PasswordFor(m => m.Password, new { @class = "form-control", @Value = "2023 - My ASP" })
+                                    @Html.ValidationMessageFor(m => m.Password, "", new { @class = "text-danger" })
+                                </div>
+
+                                @*<br /><br />*@
+                                <div id="divcaptcha"></div>
+                                <input id="txtcaptcha" type="text" style="display:none;" required />
+                                <br /><br />
+                                <div class="group-inline u-s-m-b-30">
+                                    <div class="group-1">
+                                        <input type="checkbox" class="check-box" id="remember-me-token">
+                                        <label class="label-text" for="remember-me-token">Remember me</label>
+                                    </div>
+                                    <div class="group-2 text-right">
+                                        <div class="page-anchor">
+                                            <a href="~/Account/Register">
+                                                <i class="fas fa-circle-o-notch u-s-m-r-9"></i>New Account?
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="m-b-45">
+                                    <button class="button button-outline-secondary w-100">Login</button>
+                                </div>
+                            </form>
+                        }
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- Account-Page /- -->
+    <!-- Footer -->
+    <!-- Footer /- -->
+    <!-- Dummy Selectbox -->
+    <div class="select-dummy-wrapper">
+        <select id="compute-select">
+            <option id="compute-option">All</option>
+        </select>
+    </div>
+    <!-- Dummy Selectbox /- -->
+    <!-- Responsive-Search -->
+    <div class="responsive-search-wrapper">
+        <button type="button" class="button ion ion-md-close" id="responsive-search-close-button"></button>
+        <div class="responsive-search-container">
+            <div class="container">
+                <p>Start typing and press Enter to search</p>
+                <form class="responsive-search-form">
+                    <label class="sr-only" for="search-text">Search</label>
+                    <input id="search-text" type="text" class="responsive-search-field" placeholder="PLEASE SEARCH">
+                    <i class="fas fa-search"></i>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- Responsive-Search /- -->
+</div>
+@*<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <script type="text/javascript" src='https://www.google.com/recaptcha/api.js'</script>*@
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+<script type="text/javascript" src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit" async defer></script>
+<script>
+    function onloadCallback() {
+        // Render a reCAPTCHA widget
+        grecaptcha.render('divcaptcha', {
+            'sitekey': '6LfM7_8oAAAAAB4D1hMxNH6CdSBm3W6tUuIVIrWv',
+            'callback': function (response) {
+                // Set the value of the `txtcaptcha` input
+                $('#txtcaptcha').val(response);
+            }
+        });
+    }
+</script>
+
+<style>
+    .white-background {
+        position: relative;
+        z-index: 1;
+        background-color: white;
+        padding: 20px;
+        max-width: 50%;
+        margin: 0 auto;
+        left: 300px;
+    }
+
+    .backgound {
+        position: absolute;
+        overflow: hidden;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+        .backgound img {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+        }
+
+    .page-account {
+        position: relative;
+        z-index: 0;
+    }
+
+    .app {
+        margin-top: 40px;
+    }
+</style>
+
+

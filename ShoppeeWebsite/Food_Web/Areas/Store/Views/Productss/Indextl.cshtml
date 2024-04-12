@@ -1,0 +1,67 @@
+﻿﻿@model IEnumerable<Food_Web.Models.Product>
+
+@{
+    ViewBag.Title = "Indextl";
+    Layout = "~/Views/Shared/_LayoutStore.cshtml";
+}
+
+<div class="container-fluid mt-4">
+    <div class="text-center mb-4">
+        <h2>Danh sách sản phẩm</h2>
+    </div>
+    @using (Html.BeginForm("Indextl", "Productss", FormMethod.Get, new { @class = "form-inline mb-3" }))
+    {
+        <div class="form-group mr-2">
+            @Html.Label("Chọn danh mục:", new { @class = "mr-2" })
+            @Html.DropDownList("categoryId", ViewBag.CategoryId as SelectList, "All", new { @class = "form-control" })
+        </div>
+        <button type="submit" class="btn btn-primary mr-2">Lọc</button>
+        @Html.ActionLink("Xuất ra file Exel", "Exporttl", new { categoryId = ViewBag.CategoryId }, new { @class = "btn btn-primary" })
+    }
+
+
+    <table class="table mt-3" id="productTable">
+        <thead>
+            <tr>
+                <th>Danh mục</th>
+                <th>Tên danh mục</th>
+                <th>Số lượng</th>
+                <th>Giá</th>
+                <th>Ảnh</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>@Html.DisplayFor(modelItem => item.Category.Categoryname)</td>
+                    <td>@Html.DisplayFor(modelItem => item.Productname)</td>
+                    <td>@Html.DisplayFor(modelItem => item.Soluong)</td>
+                    <td>@Html.DisplayFor(modelItem => item.price)</td>
+                    <td><img src="@item.image" alt="Product Image" class="img-thumbnail" style="max-width: 100px; max-height: 100px;" /></td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+    $(document).ready(function () {
+        $("#CategoryDropdown").on("change", function () {
+            var selectedCategoryId = $(this).val();
+
+            $.ajax({
+                url: "@Url.Action("Indextl", "Productss")",
+                data: { categoryId: selectedCategoryId },
+                type: "GET",
+                success: function (data) {
+                    $("#productList").html(data);
+                },
+                error: function () {
+                    alert("An error occurred while filtering products.");
+                }
+            });
+        });
+    });
+</script>

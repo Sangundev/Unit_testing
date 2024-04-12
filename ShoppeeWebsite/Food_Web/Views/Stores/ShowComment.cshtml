@@ -1,0 +1,165 @@
+﻿@model IEnumerable<Food_Web.Models.Comment>
+@using Microsoft.AspNet.Identity
+@using Microsoft.AspNet.Identity.EntityFramework
+@using Food_Web.Models
+
+@{
+    ViewBag.Title = "ShowComment";
+    Layout = null;
+    var userManager = new UserManager<ApplicationUser>(new UserStore<ApplicationUser>(new ApplicationDbContext()));
+    var listUser = userManager.Users.ToList();
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Show Comments</title>
+    <style>
+        <style >
+        #comments-container {
+            margin-top: 20px;
+        }
+
+        .comment {
+            border: 1px solid #ddd;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+
+        .comment-header {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 5px;
+        }
+
+        .comment-author {
+            font-weight: bold;
+        }
+
+        .comment-date {
+            color: #888;
+        }
+
+        .comment-rating {
+            margin-bottom: 10px;
+        }
+
+            .comment-rating .star-icon {
+                color: gold;
+                font-size: 20px;
+            }
+
+        .comment-content {
+            margin-bottom: 10px;
+        }
+
+        .pagination-container {
+            margin-top: 20px;
+        }
+
+        .pagination-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 20px;
+        }
+
+            .pagination-container a {
+                display: inline-block;
+                width: 40px;
+                height: 40px;
+                line-height: 40px;
+                text-align: center;
+                background-color: #f0f0f0;
+                border: 1px solid #ccc;
+                border-radius: 50%;
+                margin: 5px;
+                text-decoration: none;
+                color: #333;
+            }
+
+        #view-more-btn {
+            margin-top: 10px;
+        }
+    </style>
+
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+    <div id="comments-container">
+        @foreach (var item in Model.Take(3))
+        {
+            <div class="comment">
+                <div class="comment-header">
+                    @foreach (var u in listUser)
+                    {
+                        if (u.Id == item.user_id)
+                        {
+                            <div class="comment-author">@u.Fullname</div>
+                            break;
+                        }
+                    }
+                    <div class="comment-date">@item.created</div>
+                </div>
+                <div class="comment-rating">
+                    @for (int i = 0; i < item.Rating; i++)
+                    {
+                        <span class="star-icon">&#9733;</span>
+                    }
+                </div>
+                <div class="comment-content">@item.content</div>
+                @if (!string.IsNullOrEmpty(item.img))
+                {
+                    <img src="@item.img" alt="Comment Image" />
+                }
+            </div>
+        }
+
+        <div id="more-comments" style="display: none;">
+            @foreach (var item in Model.Skip(3))
+            {
+                <div class="comment">
+                    <div class="comment-header">
+                        @foreach (var u in listUser)
+                        {
+                            if (u.Id == item.user_id)
+                            {
+                                <div class="comment-author">@u.Fullname</div>
+                                break;
+                            }
+                        }
+                        <div class="comment-date">@item.created</div>
+                    </div>
+                    <div class="comment-rating">
+                        @for (int i = 0; i < item.Rating; i++)
+                        {
+                            <span class="star-icon">&#9733;</span>
+                        }
+                    </div>
+                    <div class="comment-content">@item.content</div>
+                    @if (!string.IsNullOrEmpty(item.img))
+                    {
+                        <img src="@item.img" alt="Comment Image" />
+                    }
+                </div>
+            }
+        </div>
+
+        @if (Model.Count() > 3)
+        {
+            <button id="view-more-btn" class="btn btn-primary">View More</button>
+        }
+    </div>
+
+    <script>
+        $(document).ready(function () {
+            $("#view-more-btn").click(function () {
+                $("#more-comments").toggle();
+            });
+        });
+    </script>
+</body>
+</html>
+
+

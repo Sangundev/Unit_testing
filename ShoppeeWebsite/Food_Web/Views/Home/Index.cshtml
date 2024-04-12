@@ -1,0 +1,95 @@
+﻿﻿@model IEnumerable<Food_Web.Models.Product>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = null;
+}
+
+<div class="products-slider owl-carousel owl-loaded owl-drag" data-item="4">
+    @foreach (var item in Model)
+    {
+        <div class="item">
+            <div class="image-container">
+                <a class="item-img-wrapper-link" href="@Url.Action("Detail", "Home", new { id = item.Productid })">
+                    <img class="img-fluid product-image" src="~/Content/products/@item.image" alt="@item.Productname">
+                </a>
+
+                <div class="item-action-behaviors">
+                    <a class="item-addwishlist" href="javascript:void(0)" data-id="@item.Productid">Add to Wishlist</a>
+                    <a class="item-addCart" href="javascript:void(0)" data-id="@item.Productid">Add to Cart</a>
+                </div>
+            </div>
+            <div class="item-content">
+                <div class="what-product-is">
+                    <ul class="bread-crumb">
+                        <li class="has-separator">
+                            <a href="@Url.Action("Index", "Product")">Home</a>
+                        </li>
+                        <li>
+                            <a href="@Url.Action("Index", "Product")">@item.Category.Categoryname</a>
+                        </li>
+                    </ul>
+
+                    <h6 class="item-title">
+                        <a href="@Url.Action("Detail", "Home", new { id = item.Productid })">@item.Productname</a>
+                    </h6>
+                    <div class="item-stars">
+                        <div class="star" title="0 out of 5 - based on 0 Reviews">
+                            <span style="width: 0;"></span>
+                        </div>
+                        <span>(0)</span>
+                    </div>
+                </div>
+                <div class="price-template">
+                    @if (item.DiscountPercent > 0)
+                    {
+                        <div class="item-new-price">
+                            @item.DiscountedPrice
+                        </div>
+                        <div class="item-old-price">
+                            @item.price
+                        </div>
+                        <div class="tag discount" style="background: #ffd507;">
+                            <span>-@item.DiscountPercent %</span>
+                        </div>
+                    }
+                    else
+                    {
+                        <div class="item-new-price">
+                            @item.price
+                        </div>
+                        if (item.is_hot == true)
+                        {
+                            <div class="tag hot" style="background: #FF4500;">
+                                <span>Hot</span>
+                            </div>
+                        }
+                        else
+                        {
+                            <div class="tag new">
+                                <span>New</span>
+                            </div>
+                        }
+                    }
+                </div>
+            </div>
+        </div>
+    }
+</div>
+
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+<script src="~/Scripts/jquery-3.4.1.js"></script>
+
+@section scripts{
+    <script>
+                // Your scripts here...
+    </script>
+}
+
+<style>
+    .product-image {
+        width: 100%;
+        height: 100%;
+        object-fit: cover; /* Choose "cover", "contain", "fill", or "scale-down" based on your preference */
+    }
+</style>

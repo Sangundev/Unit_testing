@@ -1,0 +1,76 @@
+﻿﻿@model IEnumerable<Food_Web.Models.Product>
+
+
+@{
+    ViewBag.Title = "bestsell";
+    Layout = null;
+}
+
+@foreach (var item in Model)
+{
+    <div class="item">
+        <div class="image-container">
+            <a class="item-img-wrapper-link" href="@Url.Action("Detail", "Home", new { id = item.Productid })">
+                <img class="img-fluid product-image" src="~/Content/products/@item.image" alt="Product">
+            </a>
+            <div class="item-action-behaviors">
+                <a class="item-quick-look" data-toggle="modal" href="#quick-view">
+                    Quick Look
+                </a>
+                @*<a class="item-mail" href="javascript:void(0)">Mail</a>*@
+                <a class="item-addwishlist" href="javascript:void(0)" data-id="@item.Productid">Add to Wishlist</a>
+                <a class="item-addCart" data-id="@item.Productid">Add to Cart</a>
+            </div>
+        </div>
+        <div class="item-content">
+            <div class="what-product-is">
+                <ul class="bread-crumb">
+                    <li class="has-separator">
+                        <a href="@Url.Action("Index", "Product")">home</a>
+                    </li>
+                    <li>
+                        <a href="@Url.Action("Index", "Product")">@item.Category.Categoryname</a>
+                    </li>
+                </ul>
+                <h6 class="item-title">
+                    <a href="single-product.html">@item.Productname</a>
+                </h6>
+                <div class="item-stars">
+                    <div class='star' title="0 out of 5 - based on 0 Reviews">
+                        <span style='width:0'></span>
+                    </div>
+                    <span>(0)</span>
+                </div>
+            </div>
+            <div class="price-template">
+                @if (item.phantramgiamgia > 0)
+                {
+                    <div class="item-new-price">
+                        @item.GiaGiamTheoKhungGio
+                    </div>
+                    <div class="item-old-price">
+                        @item.price
+                    </div>
+
+                }
+                else if (item.phantramgiamgia == null)
+                {
+                    <div class="item-new-price">
+                        @item.price
+                    </div>
+
+                }
+            </div>
+        </div>
+        <div class="tag hot" id="giam" style="background-color: red; border-radius: 10px; ">
+            <span>@item.phantramgiamgia</span>%
+        </div>
+    </div>
+}
+<style>
+    .product-image {
+        width: 100%;
+        height: 100%;
+        object-fit: cover; /* Choose "cover", "contain", "fill", or "scale-down" based on your preference */
+    }
+</style>

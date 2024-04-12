@@ -1,0 +1,317 @@
+*{
+    font-family: 'Poppins', sans-serif;
+    padding: 0;
+    margin: 0;
+    cursor: pointer;
+    text-decoration: none;
+    box-sizing: border-box;
+    list-style: none;
+}
+
+/* =========================  START-HEADER  ========================= */
+.top-header
+{
+    background: linear-gradient(91.24deg, #FA6400 0%, #FF8A00 100%);
+    display: flex;
+}
+.dropdown-choose
+{
+    display: none;
+}
+.fav
+{
+    display: none;
+}
+  .chooses-content
+  {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  .chooses-content a 
+  {
+    font-size: 15px;
+    color: black;
+    border-bottom: #FA6400 1px solid;
+    text-decoration: none;
+    display: block;
+  }
+  .chooses-content a:hover 
+  {
+    background-color: #f1f1f1
+  }
+  .dropdown:hover .chooses-content 
+  {
+    display: block;
+  }
+
+.logo
+{
+    padding: 10px 0px 0px 10px;
+    
+}
+.logo img
+{
+    width: 70%;
+    text-align: center;
+}
+.chooses ul
+{
+    display: flex;
+    padding: 15px 0px 10px 0px;
+}
+.chooses li a
+{
+    font-size: 20px;
+    margin-right: 20px;
+    color: white;
+    transition: 0.3s;
+}
+.chooses li a:hover
+{
+    color: brown;
+}
+
+.dropbtn {
+    background-color: white;
+    color: black;
+    padding: 5px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    width: 100px;
+  }
+  
+  .dropdown-1
+  {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content 
+  {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a 
+  {
+    color: black;
+    border-bottom: white 1px solid;
+    text-decoration: none;
+    display: block;
+  }
+  .dropdown-content img
+  {
+    width: 35px;
+    height: 20px;
+    padding: 0px 0px 0px 5px;
+    margin-right: 5px;
+  }
+  
+  .dropdown-content a:hover 
+{
+    background-color: #f1f1f1
+}
+  
+  .dropdown-1:hover .dropdown-content {
+    display: block;
+  }
+
+.others
+{
+    display: flex;
+    padding: 15px 0px 15px 20px ;
+    margin-left: auto;
+    margin-right: 20px;
+}
+
+.others a i
+{
+    font-size: 30px;
+    margin-left: 20px;
+    color: white;
+    transition: 0.3s;
+}
+.others a i:hover
+{
+    color: brown;
+}
+.user-content
+{
+  display: none;
+  position: absolute;
+  background-color: #FA6400;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  margin-left: 10px;
+}
+.user-content a 
+{
+  font-size: 15px;
+  color: black;
+  border-bottom: white 1px solid;
+  text-decoration: none;
+  display: block;
+}
+.user-content a:hover 
+{
+  background-color: #f1f1f1
+}
+.user:hover .user-content 
+{
+  display: block;
+}
+
+/* =========================  END-HEADER  ========================= */
+/* =========================  START-RECENT-BAR  ========================= */
+.recent-bar a
+{
+    color: black;
+}
+.recent-bar a:hover
+{
+    color: #FA6400;
+}
+.recent-bar
+{
+    border: gray 2px solid;
+    width: 100%;
+    height: 40px;
+}
+.recent-content
+{
+    margin: 8px 0px 0px 50px ;
+}
+/* =========================  END-RECENT-BAR  ========================= */
+.all
+{
+    margin-left: 100px;
+    margin-top: 20px;
+}
+/* =========================  START-TITLE  ========================= */
+.title
+{
+    margin-top: 30px;
+    width: 1200px;
+    display: flex;
+    border-bottom: gray 2px solid;
+}
+.number
+{
+    width: 50px;
+}
+.name
+{
+    margin-left: 10px;
+    width: 150px;
+}
+.email
+{
+    width: 150px;
+}
+.total
+{
+    width: 100px;
+}
+.pay
+{
+    margin-left: 20px;
+    width: 150px;
+}
+.status
+{
+    width: 150px;
+}
+.expected
+{
+    width: 200px;
+}
+.date
+{
+    width: 150px;
+}
+/* =========================  END-TITLE  ========================= */
+.bill-list-title
+{
+    border-bottom: #FA6400 3px solid;
+    width: 280px;
+    border-radius: 2px;
+}
+/* =========================  START-ITEM  ========================= */
+.item
+{
+    display: flex;
+    margin-top: 20px;
+    width: 1200px;
+    border-bottom: gray 2px solid;
+}
+.number-info
+{
+    text-align: center;
+    width: 25px;
+}
+.name-info
+{
+    margin-left: 35px;
+    width: 150px;
+}
+.email-info
+{
+    width: 150px;
+}
+.total-info
+{
+    width: 100px;
+}
+.pay-info
+{
+    margin-left: 20px;
+    width: 150px;
+}
+.status-info
+{
+    width: 150px;
+}
+.expected-info
+{
+    width: 200px;
+}
+.date-info
+{
+    width: 150px;
+}
+/* =========================  END-ITEM  ========================= */
+/* =========================  START-FOOTER  ========================= */
+footer
+{
+    border: #e5e5e5 solid 2px;
+    margin-top: 400px;
+}
+.top-footer
+{
+    background: #FAFAFA;
+    display: flex;
+    padding: 20px 0px 10px 10px
+}
+.top-footer h1
+{
+    font-size: 30px;
+    font-weight: 600;
+    color: #FA6400;
+    margin: 9px 0px 0px 10px;
+}
+.bottom-footer 
+{
+    height: 90px;
+    background-color: #FA6400;
+}
+/* =========================  END-FOOTER  ========================= */

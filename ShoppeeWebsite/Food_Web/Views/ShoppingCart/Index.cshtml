@@ -1,0 +1,562 @@
+﻿
+
+@using Microsoft.AspNet.Identity
+@using Microsoft.AspNet.Identity
+@using Microsoft.AspNet.Identity.EntityFramework
+@using Food_Web.Models
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    var userManager = new UserManager<ApplicationUser>(new UserStore<ApplicationUser>(new ApplicationDbContext()));
+    var listUser = userManager.Users.ToList();
+}
+@model PagedList.IPagedList<Food_Web.Models.CartItem>
+@using PagedList.Mvc
+
+<h2 style="text-align: center; margin-top: 36px">THÔNG TIN GIỎ HÀNG</h2>
+<div class="page-cart u-s-p-t-80">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+
+                <div class="table-wrapper u-s-m-b-60">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Check Product</th>
+                                <th> Tên Sản Phẩm</th>
+                                <th>Số Lượng</th>
+                                <th>Giá</th>
+                                <th>Thành Tiền </th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        @foreach (var item in Model)
+                        {
+                            <tr style="text-align:center; font-weight:bold" data-id="@item.Id">
+
+                                <td><input type="checkbox" /><!--<span id="ProductName">-->@*@item.ProductName*@<!--</span>--></td>
+
+
+                                <td>
+                                    <div class="cart-anchor-image">
+                                        <a href="single-product.html">
+                                            <img src="~/Content/products/@item.Image" id="ProductImage" alt="Product">
+                                            <h6 id="ProductName">@item.ProductName</h6>
+                                        </a>
+                                    </div>
+                                </td>
+                                @using (Html.BeginForm("UpdateCart", "ShoppingCart", new { id = item.Id }))
+                                {
+                                    <td>
+                                        <div class="cart-quantity">
+                                            <div class="quantity">
+                                                <input type="number" min="1" name="txtQuantity" value="@item.Quantity" id="Quantity" />
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td id="productprice">
+                                        @if (item.Product.DiscountedPrice != null && (item.Product.DiscountedPrice < item.Price || item.Product.phantramgiamgia == null))
+                                        {
+                                            <span class="original-price strikethrough">@item.Price.ToString("N0")</span>
+                                        }
+                                        else if (item.Product.DiscountedPrice != null && (item.Product.phantramgiamgia != null || item.Product.GiaGiamTheoKhungGio > item.Price))
+                                        {
+                                            <span class="discounted-price">@item.Product.GiaGiamTheoKhungGio</span>
+                                        }
+                                        else
+                                        {
+                                            <span class="price">@item.Price.ToString("N0")</span>
+                                        }
+                                    </td>
+
+
+
+                                    <td class="totalItem" id="thanhtien"> @String.Format("{0:0,0}", item.Money) </td>
+
+                                    <td>
+                                        @Html.ActionLink("Xóa", "RemoveCartItem", new { id = item.Id }, new { @class = "delete-cart-item button button-outline-secondary" })
+                                    </td>
+
+                                }
+                            </tr>
+                        }
+                        <tr style="font-weight:bold; color:blue; text-align:right">
+                            <td colspan="9" align="center" ;
+                              </td>
+                            <td>
+                                @Html.ActionLink("Xóa Giỏ Hàng", "Delete", new { @class = "delete-cart-item button button-outline-secondary" })
+
+                            </td>
+                            </td>
+                        </tr>
+
+
+                    </table>
+                    <div class="calculation u-s-m-b-60">
+                        <div class="table-wrapper-2">
+                            <table style="float:left">
+                                <thead>
+                                    <tr>
+                                        <th colspan="2">Cart Totals</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <h3 class="calc-h3 u-s-m-b-0">Total :</h3>
+                                        </td>
+                                        <td>
+                                            <span class="count">@ViewBag.Tongsoluong</span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <h3 class="calc-h3 u-s-m-b-0" id="tax-heading">Tổng tiền :</h3>
+
+                                        </td>
+                                        <td>
+                                            <span class="totalPrice">@String.Format("{0:0,0}", ViewBag.Tongtien)</span> VNĐ
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                     <tr style="font-weight:bold; color:blue; text-align:right">
+                                        <td colspan="9">
+                                            <button id="checkout-btn" data-toggle="modal" data-target="#orderItemsModal">Đặt hàng</button>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+<div class="pagination-wrapper">
+    <div class="pagination-container">
+        @Html.PagedListPager(Model, page => Url.Action("Index", new { page, PageNumber = page }))
+    </div>
+</div>
+
+
+@{
+    List<SelectListItem> GetPaymentMethods()
+    {
+        List<SelectListItem> paymentMethods = new List<SelectListItem>();
+        paymentMethods.Add(new SelectListItem { Text = "Thanh toán trực tiếp", Value = "1" });
+        paymentMethods.Add(new SelectListItem { Text = "Thanh toán bằng Momo", Value = "2" });
+         paymentMethods.Add(new SelectListItem { Text = "Thanh toán bằng PayMent", Value = "3" });
+        return paymentMethods;
+    }
+
+}
+
+@section scripts{
+    <script>
+
+
+
+        $(document).ready(function () {
+
+            $('#checkout-btn').click(function () {
+                // Make an AJAX request to fetch the data
+                $.ajax({
+                    url: '/ShoppingCart/OrderItems', // Update the URL to the correct endpoint
+                    type: 'POST',
+                    success: function (data) {
+                        // Update the content of the orderItemsContent div
+                        /*  $('#orderItemsContent').html(data);*/
+
+                        // Show the modal
+                        //$('#orderItemsModal').modal('show');
+                    },
+                    error: function () {
+                        // Handle error case
+                        alert('An error occurred while loading the order items.');
+                    }
+                });
+            });
+
+            // Handle the "Đặt hàng" button click inside the modal
+            $('#orderItemsModal').on('click', '#placeOrderBtn', function () {
+                // Perform the order placement action
+                // You can use another AJAX request here or any other logic
+
+                // Get the selected payment type value
+                var value = $('#ddlPaymentType').val();
+
+                if (value === '1') {
+                    //$.ajax({
+                    //    url: '/ShoppingCart/Orders',
+                    //    type: 'POST',
+                    //    data: { listID: saveID },
+                    //    success: function (data) { }
+                    //})
+                    window.location.href = '/ShoppingCart/Order'; // Update the URL to the correct action
+                } else if (value === '2') {
+                    window.location.href = '/ShoppingCart/Payment'; // Update the URL to the correct action
+                } else if (value === '3') {
+                    window.location.href = '/ShoppingCart/PaymentVNPay';
+                }
+                // Close the modal
+                $('#orderItemsModal').modal('hide');
+                console.log(saveID);
+
+                // Show a success message or perform any other actions
+            });
+        });
+
+
+
+        $(document).ready(function () {
+            updateQuantity();
+        });
+
+        function updateQuantity() {
+            $(document).on('change', '#Quantity', function () {
+                var parent = $(this).closest('tr');
+                var ID = parent.data('id');
+                var num = $(this).val();
+
+                var originalTotal = parent.find('.totalItem').text();
+
+                $.ajax({
+                    url: '/ShoppingCart/updateQuantity',
+                    type: 'POST',
+                    data: { ID: ID, num: num },
+                    success: function (result) {
+                        if (result.success) {
+                            console.log('up');
+
+                            var updatedTotal = parent.find('.totalItem').html(result.item.TotalPrice);
+
+                            if (originalTotal !== updatedTotal) {
+                                $('.totalPrice').html(result.totalPrice);
+                                $('.count').html(result.count);
+                            }
+                        }
+                    }
+                });
+            });
+        }
+
+
+
+        $(document).on('click', '.pagination-container a', function (e) {
+            e.preventDefault();
+            var url = $(this).attr('href');
+            $.ajax({
+                url: url,
+                type: 'GET',
+                dataType: 'html',
+                success: function (result) {
+                    // Thay thế nội dung trang hiện tại bằng nội dung trang mới
+                    $('html').html(result);
+                },
+                error: function (xhr, status, error) {
+                    console.log(error);
+                }
+            });
+        });
+
+        var listID = []
+        var stt = 0;
+        $(document).on('click', '#checkout-btn', function () {
+            $('.modal-backdrop').remove();
+            listID = []
+            var content = $('.showBodyContent');
+            $.ajax({
+                url: '/ShoppingCart/ClearSession',
+                type: 'POST',
+                success: function (data) { }
+            });
+
+            var promises = []; // Array to store the AJAX promises
+            var tongtien = 0;
+
+            $('input[type="checkbox"]:checked').map(function () {
+                var parent = $(this).closest('tr');
+                var id = parent.data('id');
+                var name = parent.find('#ProductName').text();
+  /*              var pic = parent.find('#ProductImage').attr('src');*/
+                var gia = parent.find('#productprice').text();
+                var quantity = parent.find('#Quantity').val();
+                  var thanhtien = parseFloat(parent.find('#thanhtien').html());
+                //var gia = parseFloat(parent.find('#productprice').text());
+                //var quantity = parseInt(parent.find('#Quantity').val());
+                //var thanhtien = parseFloat(gia) * parseInt(quantity);
+
+                listID.push(id)
+                var promise = $.ajax({
+                    url: '/ShoppingCart/CheckOrder',
+                    type: 'POST',
+                    data: { id: id },
+                    success: function (data) {
+                        if (data.success) {
+                            var row = '<tr style="text-align:center">' +
+                                '<td>' + stt + '</td>' +
+                                    '<td>' + name + '</td>' +
+                              /*      '<td><img src="' + pic + '" style="width:30px" /></td>' +*/
+                                    '<td>' + gia + '</td>' +
+                                    '<td>' + quantity + '</td>' +
+                                '<td>' + formatCurrency(thanhtien) + '</td>' +
+                                    '</tr>';
+                                content.append(row);
+                                tongtien += thanhtien;
+                            
+                        }
+                    }
+                });
+
+                promises.push(promise);
+            });
+
+            // Wait for all AJAX requests to complete
+            $.when.apply($, promises).then(function () {
+                    $('#totalPrice').append(tongtien + '');
+                
+            });
+        });
+
+        $(document).on('click', '#ApplyDiscount', function () {
+            $('#totalPrice').empty();
+            //console.log(listFood)
+            code = $('#CodeDiscount').val()
+            $.ajax({
+                url: '/ShoppingCart/CheckDiscout',
+                type: 'POST',
+                data: { listID: listID, code: code },
+                success: function (data) {
+                    if (data.success) {
+                        $('#totalPrice').append(data.totalPrice + 'Vnd');
+                    }
+                },
+            })
+        })
+
+        function formatCurrency(number) {
+            var formattedNumber = number.toFixed(3);
+            formattedNumber = formattedNumber.replace(/\B(?=(\d{3})+(?!\d))/g, '.');
+            formattedNumber = formattedNumber.replace(/[.,]000$/g, '');
+            return formattedNumber;
+        }
+    </script>
+}
+
+<div class="modal fade" id="orderItemsModal" tabindex="-1" role="dialog" aria-labelledby="orderItemsModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+
+                <h5 class="modal-title" id="orderItemsModalLabel" style="text-align: center;">Hóa Đơn</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close" id="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+
+                @{
+                    var currentUserId = User.Identity.GetUserId();
+                    var currentUser = listUser.FirstOrDefault(u => u.Id == currentUserId);
+
+                    if (currentUser != null)
+                    {
+                        <td>
+
+                            <span id="username" style="display: block;"><label for="username">Họ và tên: </label> @currentUser.Fullname</span>
+                        </td>
+                        <td>
+
+                            <span id="Sdt" style="display: block;"> <label for="Sdt">Số điện thoại:</label> @currentUser.PhoneNumber</span>
+                        </td>
+                        <td>
+
+                            <span id="address" style="display: block; white-space: pre-wrap;"><label for="address">Địa chỉ:</label> @currentUser.Adress</span>
+                        </td>
+
+
+                    }
+                }
+
+
+                <div id="orderItemsContent">
+                    <table id="hoadon">
+                        <thead>
+                            <tr>
+                                <th style="padding-right: 15px; ">| #</th>
+                                <th style="padding-right: 15px; ">| Tên</th>
+                                @*<th style="padding-right: 15px; ">| Hình</th>*@
+                                <th style="padding-right: 15px; ">| Số Lượng</th>
+                                <th style="padding-right: 15px; ">| Giá</th>
+                                <th style="padding-right: 15px; ">| Tong tien</th>
+                            </tr>
+                        </thead>
+                        <tbody class="showBodyContent">
+                        </tbody>
+                    </table>
+
+                    <div class="col-12 col-sm-6">
+                        <label for="ddlPaymentType">Hình thức thanh toán:</label>
+                        @Html.DropDownList("ddlPaymentType", GetPaymentMethods(), "Chọn Hình Thức Thanh Toán", new { @class = "form-control" })
+                    </div>
+                    <div class="col-12 col-sm-6">
+                        <label for="ddlPaymentType">Ma Giam Gia:</label>
+                        <input type="text" id="CodeDiscount" class="form-control" />
+                        <button type="button" class="btn btn-info" id="ApplyDiscount">Ap Dung</button>
+                    </div>
+                    <div class="col-12 col-sm-6">
+                        <p>Tong tien: <strong id="totalPrice"></strong></p>
+                    </div>
+                </div>
+
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary" id="placeOrderBtn">Đặt hàng</button>
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Đóng</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<style>
+
+    #hoadon {
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 20px;
+}
+
+#hoadon th, #hoadon td {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+#hoadon th {
+    background-color: #f2f2f2;
+}
+
+/* Optional: Add some styling to the table header */
+#hoadon thead th {
+    font-weight: bold;
+    text-align: center;
+}
+
+/* Optional: Add some styling to alternate rows */
+        #hoadon tbody tr:nth-child(even) {
+            background-color: #f9
+        }
+
+    .pagination-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px;
+        padding: 10px;
+    }
+
+        .pagination-container a {
+            display: inline-block;
+            margin: 0 5px;
+            padding: 5px 10px;
+            text-decoration: none;
+            color: #333;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+            .pagination-container a.active {
+                background-color: #333;
+                color: #fff;
+            }
+
+            .pagination-container a:first-child {
+                border-top-left-radius: 5px;
+                border-bottom-left-radius: 5px;
+                border-left: none;
+            }
+
+            .pagination-container a:last-child {
+                border-top-right-radius: 5px;
+                border-bottom-right-radius: 5px;
+                border-right: none;
+            }
+
+            .pagination-container a:first-child.active {
+                border-top-left-radius: 5px;
+                border-bottom-left-radius: 5px;
+                border-left: none;
+            }
+
+            .pagination-container a:last-child.active {
+                border-top-right-radius: 5px;
+                border-bottom-right-radius: 5px;
+                border-right: none;
+            }
+
+    h5#orderItemsModalLabel {
+        text-align: center;
+        padding-left: 152px;
+        font-size: 35px;
+        color: #645858;
+    }
+
+    .modal-content {
+        position: relative;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        width: 100%;
+        pointer-events: auto;
+        background-color: #fff;
+        background-clip: padding-box;
+        border: 1px solid rgba(0, 0, 0, 0.2);
+        border-radius: 0.3rem;
+        outline: 0;
+        padding: 20px; /* Add padding to the modal content */
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow */
+    }
+
+        .modal-content h5 {
+            text-align: center;
+            font-size: 1.5rem; /* Adjust the font size as needed */
+            margin-bottom: 20px; /* Add some bottom margin to the heading */
+        }
+
+        .modal-content .row {
+            margin-bottom: 10px; /* Add some bottom margin to each row */
+        }
+
+            .modal-content .row label {
+                font-weight: bold; /* Make the labels bold */
+            }
+
+            .modal-content .row input {
+                width: 100%; /* Make the inputs take up the full width */
+                padding: 5px; /* Add some padding to the inputs */
+                border: 1px solid #ccc; /* Add a border to the inputs */
+                border-radius: 3px; /* Add border radius to the inputs */
+            }
+
+    input#Quantity {
+        width: 32px;
+    }
+
+    button#checkout-btn:hover {
+        background-color: darkblue;
+    }
+
+    button#checkout-btn {
+        background-color: #d95359;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 4px;
+        font-size: 16px;
+    }
+</style>

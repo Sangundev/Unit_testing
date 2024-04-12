@@ -1,0 +1,163 @@
+﻿﻿@model IEnumerable<Food_Web.Models.Product>
+
+@{
+    ViewBag.Title = "hot";
+    Layout = null;
+}
+
+<div class="slider-fouc">
+    <div class="products-slider owl-carousel" data-item="4">
+        @foreach (var item in Model)
+        {
+            <div class="item">
+                <div class="image-container">
+                    <a class="item-img-wrapper-link" href="@Url.Action("Detail", "Home", new { id = item.Productid })">
+                        <img class="img-fluid product-image" src="~/Content/products/@item.image" alt="Product">
+                    </a>
+                    <div class="item-action-behaviors">
+                        <a class="item-quick-look" data-toggle="modal" href="#quick-view">
+                            Quick Look
+                        </a>
+                        @*<a class="item-mail" href="javascript:void(0)">Mail</a>*@
+                        <a class="item-addwishlist" href="javascript:void(0)" data-id="@item.Productid">Add to Wishlist</a>
+                        <a class="item-addCart" data-id="@item.Productid">Add to Cart</a>
+                    </div>
+                </div>
+                <div class="item-content">
+                    <div class="what-product-is">
+                        <ul class="bread-crumb">
+                            <li class="has-separator">
+                                <a href="@Url.Action("Index", "Product")">home</a>
+                            </li>
+                            <li>
+                                <a href="@Url.Action("Index", "Product")">@item.Category.Categoryname</a>
+                            </li>
+                        </ul>
+                        <h6 class="item-title">
+                            <a href="single-product.html">@item.Productname</a>
+                        </h6>
+                        <div class="item-stars">
+                            <div class='star' title="0 out of 5 - based on 0 Reviews">
+                                <span style='width:0'></span>
+                            </div>
+                            <span>(0)</span>
+                        </div>
+                    </div>
+                    <div class="price-template">
+                        @if (item.DiscountPercent > 0)
+                        {
+                            <div class="item-new-price">
+                                @item.DiscountedPrice
+                            </div>
+                            <div class="item-old-price">
+                                @item.price
+                            </div>
+
+                        }
+                        else if (item.DiscountPercent == null)
+                        {
+                            <div class="item-new-price">
+                                @item.price
+                            </div>
+
+                        }
+                    </div>
+                </div>
+                <div class="tag top" style="background: #FF4500">
+                    <span>Top</span>
+                </div>
+            </div>
+        }
+    </div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+@section scripts{
+    <script>
+        $(document).ready(function () { });
+        $(".menu-tab-wp li").click(function () {
+            var categoryID = $(this).attr("data-filter");
+            $.ajax({
+                url: '/Product/GetProductByCategory',
+                type: "GET",
+                data: { "categoryid": categoryID },
+                success: function (result) {
+                    $('.menu-list-row').html(result);
+                },
+                error: function (err) {
+                    alert(err.statusText);
+                }
+            });
+        });
+
+        $(".menu-tab-wp li").click(function () {
+            var categoryID = $(this).attr("data-filter");
+            $.ajax({
+                url: '/Product/GetProductByCategory',
+                type: "GET",
+                data: { "categoryid": categoryID },
+                success: function (result) {
+                    $('.menu-list-row').html(result);
+                },
+                error: function (err) {
+                    alert(err.statusText);
+                }
+            });
+        });
+
+
+
+        $(document).ready(function () {
+            $(".item-addCart").click(function () {
+                var ProductID = $(this).data("id");
+                $.ajax({
+                    url: '/ShoppingCart/AddToCart',
+                    type: 'POST',
+                    data: { "id": ProductID },
+                    success: function (result) {
+                        swal({
+                            title: "Good job!",
+                            text: "You clicked the button!",
+                            icon: "success",
+                        });
+                    },
+                    error: function (err) {
+                        alert(err.statusText);
+                    }
+                });
+            });
+
+            //$('.add-to-favorites').click(function () {
+            //    /* alert('them thanh cong');*/
+            //    var productId = $(this).closest('.dish-box-wp').find('.dish-add-btn').data('id');
+            //    $.ajax({
+            //        url: '/Heart/AddToHeart',
+            //        method: 'POST',
+            //        data: { id: productId },
+            //        success: function (response) {
+            //            // xử lý phản hồi từ máy chủ, chẳng hạn như cập nhật số lượng mục ưa thích
+            //            $('#favorite-count').text(response.favoriteCount);
+            //            swal({
+            //                title: "Good job!",
+            //                text: "You clicked the button!",
+            //                icon: "success",
+            //            });
+            //        },
+            //        error: function (jqXHR, textStatus, errorThrown) {
+            //            // xử lý lỗi, nếu có
+            //            console.log('Lỗi khi thêm vào mục ưa thích:', errorThrown);
+            //        }
+            //    });
+            //});
+
+
+
+    </script>
+}
+<style>
+    .product-image {
+        width: 100%;
+        height: 100%;
+        object-fit: cover; /* Choose "cover", "contain", "fill", or "scale-down" based on your preference */
+    }
+</style>

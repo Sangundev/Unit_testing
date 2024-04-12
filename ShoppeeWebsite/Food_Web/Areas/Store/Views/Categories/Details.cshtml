@@ -1,0 +1,62 @@
+﻿﻿@model Food_Web.Models.Category
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_LayoutStore.cshtml";
+}
+
+<div class="card shadow mb-4">
+    <div class="card-header py-3" style="display:flex; align-items:center; justify-content:space-between">
+        <h6 class="m-0 font-weight-bold text-primary" style="user-select:none"><a href="~/Store/Categories/Index">← Quay lại</a></h6>
+        <a href="@Url.Action("Edit", "Categories", new { id = Model.Categoryid })" class="btn btn-primary">Sửa</a>
+    </div>
+    <div class="card-body">
+        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+        <!-- Search -->
+        <div class="row">
+            <div class="col-md-4 box-upload">
+                <label>
+                    <img src="~/Content/products/@Model.image" style="height: 320px; padding: 5px 0; border-radius: 15px;" id="preview" />
+
+                </label>
+            </div>
+
+            <div class="col-md-8">
+                <div class="form-group" style="display: flex; justify-content:center">
+                    <div class="col-sm-4">
+                        <label>Tên Sản Phẩm: </label>
+                        @Html.TextBoxFor(m => m.Categoryname, new { @class = "form-control form-control-sm", style = "width: 250px; padding: 7px 5px;" })
+                        @Html.ValidationMessageFor(m => m.Categoryname, "", new { @class = "text-danger", style = "display: block; margin: 5px auto;" })
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        @section Scripts {
+            @Scripts.Render("~/bundles/jqueryval")
+            <script type="text/javascript">
+                function showImage(upload, preview) {
+                    if (upload.files && upload.files[0]) {
+                        var reader = new FileReader();
+                        reader.onload = function (e) {
+                            $(preview).attr('src', e.target.result);
+                        }
+                        reader.readAsDataURL(upload.files[0]);
+                    }
+                }
+            </script>
+        }
+        <style>
+            img#preview {
+                margin: 0px 24px 17px 174px
+            }
+
+            label.btnChoose {
+                margin: -60px 255px;
+            }
+
+            .btnChoose input {
+                display: none;
+            }
+        </style>

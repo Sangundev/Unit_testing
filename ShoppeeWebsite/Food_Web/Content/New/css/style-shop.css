@@ -1,0 +1,706 @@
+*{
+    font-family: 'Poppins', sans-serif;
+    padding: 0;
+    margin: 0;
+    cursor: pointer;
+    text-decoration: none;
+    box-sizing: border-box;
+    list-style: none;
+}
+/* =========================  START-HEADER  ========================= */
+.top-header
+{
+    background: linear-gradient(91.24deg, #FA6400 0%, #FF8A00 100%);
+    display: flex;
+}
+.dropdown-choose
+{
+    display: none;
+}
+.fav
+{
+    display: none;
+}
+  .chooses-content
+  {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  .chooses-content a 
+  {
+    font-size: 15px;
+    color: black;
+    border-bottom: #FA6400 1px solid;
+    text-decoration: none;
+    display: block;
+  }
+  .chooses-content a:hover 
+  {
+    background-color: #f1f1f1
+  }
+  .dropdown:hover .chooses-content 
+  {
+    display: block;
+  }
+
+.logo
+{
+    padding: 10px 0px 0px 10px;
+    
+}
+.logo img
+{
+    width: 70%;
+    text-align: center;
+}
+.chooses ul
+{
+    display: flex;
+    padding: 15px 0px 10px 0px;
+}
+.chooses li a
+{
+    font-size: 20px;
+    margin-right: 20px;
+    color: white;
+    transition: 0.3s;
+}
+.chooses li a:hover
+{
+    color: brown;
+}
+
+.dropbtn {
+    background-color: white;
+    color: black;
+    padding: 5px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    width: 100px;
+  }
+  
+  .dropdown-1
+  {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content 
+  {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a 
+  {
+    color: black;
+    border-bottom: white 1px solid;
+    text-decoration: none;
+    display: block;
+  }
+  .dropdown-content img
+  {
+    width: 35px;
+    height: 20px;
+    padding: 0px 0px 0px 5px;
+    margin-right: 5px;
+  }
+  
+  .dropdown-content a:hover 
+{
+    background-color: #f1f1f1
+}
+  
+  .dropdown-1:hover .dropdown-content {
+    display: block;
+  }
+
+.others
+{
+    display: flex;
+    padding: 15px 0px 15px 20px ;
+    margin-left: auto;
+    margin-right: 20px;
+}
+
+.others a i
+{
+    font-size: 30px;
+    margin-left: 20px;
+    color: white;
+    transition: 0.3s;
+}
+.others a i:hover
+{
+    color: brown;
+}
+.user-content
+{
+  display: none;
+  position: absolute;
+  background-color: #FA6400;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  margin-left: 10px;
+}
+.user-content a 
+{
+  font-size: 15px;
+  color: black;
+  border-bottom: white 1px solid;
+  text-decoration: none;
+  display: block;
+}
+.user-content a:hover 
+{
+  background-color: #f1f1f1
+}
+.user:hover .user-content 
+{
+  display: block;
+}
+
+/* =========================  END-HEADER  ========================= */
+
+/* =========================  START-SHOP-INFO  ========================= */
+.bottom-header
+{
+    margin-left: 20px;
+}
+.store-info 
+{
+    margin-left: 40px;
+    padding-top: 30px;
+    padding-left: 20px;
+}
+.store-name{
+    font-size: 30px;
+}
+.store-address{
+    font-size: 20px;
+}
+.store-time{
+    width: 100%;
+    font-size: 20px;
+    display: flex;
+}
+.store-info a
+{
+    color: black;
+}
+.fav-btn
+{
+    background: #FA6400;
+    font-size: 30px;
+    color: white;
+    width: 40px;
+    height: 40px;
+    margin: 30px 0px 30px 60px;
+    border-radius: 20px;
+    transition: .3s;
+    text-align: center;
+}
+.fav-btn:hover
+{
+    background: white;
+    border: #FA6400 solid 2px;
+    color: #FA6400;
+}
+/* =========================  END-SHOP-INFO  ========================= */
+.coupons-head-title
+{
+    width: 230px;
+    margin: 20px 0px 0px 100px;
+    padding: 15px 15px 15px 35px;
+    background: #FA6400;
+    color: #FFFFFF;
+    border-radius: 50px 0px 0px 50px;
+}
+/* =========================  START-CHOOSES-INFO  ========================= */
+.chooses-info
+{
+    align-items: center;
+    margin-left: 105px;
+}
+.chooses-info a
+{
+    margin-left: 40px;
+    font-size: 22px;
+    color: #FA6400;
+    transition: 0.3s;
+}
+.chooses-info i
+{
+    width: 30px;
+    text-align: center;
+}
+.chooses-info a:hover
+{
+    color: brown;
+}
+.divide
+{
+    width: 88%;
+    height: 3px;
+    background: #FA6400;
+    margin-left: 85px;
+    border-radius: 2px;
+}
+/* =========================  END-CHOOSES-INFO  ========================= */
+/* =========================  START-GRID  ========================= */
+.container-2
+{
+    margin-top: 20px;
+}
+.list-2
+{
+    margin-left: 100px;
+    margin-right: 100px;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+.item
+{
+    width: 200px;
+    height: auto;
+    text-align: center;
+    position: relative;
+    background-color: #eaeaea;
+    padding: 0px;
+    margin: 10px 5px 10px 5px;
+    transition: 0.3s;
+}
+.item-add
+{
+    margin-left: 160px;
+    transition: 0.3s;
+}
+.item-add i
+{
+    color: #FA6400;
+    font-size: 20px;
+    transition: .3s;
+}
+.item-add:hover i
+{
+    color: #3866C0;
+}
+.pizza-img img
+{
+    height: 150px;
+    width: 200px;
+}
+.item-info-coupon
+{
+    display: flex;
+    margin: 5px 0px 0px 25px;
+}
+.item-info-coupon h5
+{
+    padding: 7px 0px 0px 10px;
+}
+/* =========================  START-COMMENTS  ========================= */  
+.total-review
+{
+    width: 1400px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+  .heading {
+    font-size: 25px;
+    margin-right: 25px;
+  }
+  
+  .fa {
+    font-size: 25px;
+  }
+  
+  .checked {
+    color: orange;
+  }
+  
+  /* Three column layout */
+  .side {
+    float: left;
+    width: 15%;
+    margin-top:10px;
+  }
+  
+  .middle {
+    margin-top:10px;
+    float: left;
+    width: 70%;
+  }
+  
+  /* Place text to the right */
+  .right {
+    text-align: right;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* The bar container */
+  .bar-container {
+    width: 100%;
+    background-color: #f1f1f1;
+    text-align: center;
+    color: white;
+    border-radius: 20px;
+  }
+  
+  /* Individual bars */
+  .bar-5 {width: 60%; height: 18px; border-top-left-radius: 20px; border-bottom-left-radius: 20px; background-color: orange;}
+  .bar-4 {width: 30%; height: 18px; border-top-left-radius: 20px; border-bottom-left-radius: 20px;background-color: orange;}
+  .bar-3 {width: 10%; height: 18px; border-top-left-radius: 20px; border-bottom-left-radius: 20px;background-color: orange;}
+  .bar-2 {width: 4%; height: 18px; border-top-left-radius: 20px; border-bottom-left-radius: 20px;background-color: orange;}
+  .bar-1 {width: 15%; height: 18px; border-top-left-radius: 20px; border-bottom-left-radius: 20px;background-color: orange;}
+  
+.comments
+{
+    background-color: #EAEAEA;
+}
+.comment-title
+{
+    height: 50px;
+    width: 270px;
+    background-color: #FA6400;
+    color: #FFFFFF;
+    border-radius: 0px 0px 50px 0px;
+    padding: 10px;
+    border: white 3px solid;
+}
+.name
+{
+    color: #FA6400;
+    margin-left: 20px;
+}
+.star
+{
+    margin-left: 20px;
+}
+.comment
+{
+    border-bottom: lightgray 1px solid;
+}
+.content
+{
+    margin-left: 20px;
+}
+
+.see-all-btn p
+{
+    margin-top: 2px;
+    text-align: center;
+}
+.see-all-btn
+{
+    background: white;
+    color: #FA6400;
+    width: 200px;
+    height: 30px;
+    text-align: center;
+    border-radius: 20px;
+    transition: .3s;
+    border: #FA6400 solid 1px;
+    margin: 30px auto 30px auto;
+}
+.see-all-btn:hover
+{
+    background: #FA6400;
+    color: white;
+}
+/* =========================  END-COMMENTS  ========================= */
+/* =========================  START-FOOTER  ========================= */
+footer
+{
+    border: #e5e5e5 solid 2px;
+    margin-top: 50px;
+}
+.top-footer
+{
+    background: #FAFAFA;
+    display: flex;
+    padding: 20px 0px 10px 10px
+}
+.top-footer h1
+{
+    font-size: 30px;
+    font-weight: 600;
+    color: #FA6400;
+    margin: 9px 0px 0px 10px;
+}
+.bottom-footer 
+{
+    height: 90px;
+    background-color: #FA6400;
+}
+
+@media screen and (max-width: 700px)
+{
+/* =========================  START-HEADER  ========================= */
+.logo img
+{
+    width: 40%;
+    margin-top: 3px;
+    margin-left: 170px;
+}
+.chooses
+{
+    display: none;
+}
+.dropdown-choose
+{
+    display: block;
+    font-size: 30px;
+    width: 20px;
+    height: 20px;
+    margin-top: 10px;
+    margin-left: 10px;
+    color: white;
+}
+  .chooses-content
+  {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 200px;
+  }
+  .chooses-content ul li
+  {
+    border-left: #FA6400 1px solid;
+    border-right: #FA6400 1px solid;
+    border-bottom: #FA6400 1px solid;
+  }
+  .chooses-content a 
+  {
+    font-size: 15px;
+    color: black;
+    border: #FA6400 1px solid;
+    display: contents;
+  }
+  .chooses-content a:hover 
+  {
+    background-color: #f1f1f1;
+    color: #FA6400;
+  }
+  .dropdown-choose:hover .chooses-content 
+  {
+    display: block;
+  }
+
+  
+  .dropbtn {
+    background-color: white;
+    color: black;
+    padding: 5px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    width: 100px;
+  }
+  
+  .dropdown 
+  {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content 
+  {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 150px;
+    height: 48px;
+    z-index: 1;
+  }
+  .dropdown-content a 
+  {
+    color: black;
+    border-bottom: #FA6400 1px solid;
+    text-decoration: none;
+    display: block;
+  }
+  .chooses-content a:hover 
+  {
+    background-color: #f1f1f1;
+    color: #FA6400;
+  }
+  .dropdown:hover .dropdown-content 
+  {
+    display: block;
+  }
+ 
+  .others
+{
+    margin-left: 50px;
+}
+.others a i
+{
+    font-size: 30px;
+    margin-left: 15px;
+    color: white;
+    transition: 0.3s;
+}
+.dropdown-1
+{
+    display: none;
+}
+/* =========================  END-HEADER  ========================= */
+.chooses-info
+{
+    display: none;
+}
+/* =========================  START-SHOP-INFO  ========================= */
+.store-info 
+{
+    margin-left: 0px;
+    padding-top: 12px;
+    padding-left: 10px;
+}
+.store-info img
+{
+    width: 20px;
+    height: 20px;
+}
+.store-name
+{
+    font-size: 20px;
+}
+.store-address
+{
+    font-size: 15px;
+}
+.store-time
+{
+    font-size: 15px;
+}
+.store-info a
+{
+    font-size: 15px;
+}
+.fav-btn
+{
+    width: 30px;
+    height: 30px;
+    margin-top: 0px;
+    font-size: 23px;
+    margin-left: auto;
+    margin-right: 20px;
+}
+/* =========================  END-SHOP-INFO  ========================= */
+/* =========================  START-COUPON  ========================= */
+.coupons-head-title
+{
+    width: 160px;
+    height: 30px;
+    margin: 20px 0px 0px 50px;
+    padding: 15px 15px 15px 35px;
+    background: #FA6400;
+    color: #FFFFFF;
+    border-radius: 50px 0px 0px 50px;
+    font-size: 10px;
+}
+
+.container
+{
+    width: 1000px;
+    height: 400px;
+    margin: 20px 80px;
+}
+.list
+{
+    display: grid;
+    grid-template-columns: 200px 200px ;
+}
+.shop-coupons
+{
+    text-align: center;
+    position: relative;
+    background-color: #FAFAFA;
+    border: #FA6400 solid 2px;
+    padding: 20px;
+    margin: 10px 5px 10px 5px;
+    transition: 0.3s;
+}
+.shop-coupons-img img{
+    width: 150px;
+    height: 150px;
+}
+.shop-coupons:hover
+{
+    transform: translateY(-10px);
+}
+/* =========================  END-COUPON  ========================= */
+/* =========================  START-CHOOSES-INFO  ========================= */
+.chooses-info
+{
+    align-items: center;
+    margin-left: 105px;
+}
+.chooses-info a
+{
+    margin-left: 40px;
+    font-size: 22px;
+    color: #FA6400;
+    transition: 0.3s;
+}
+.chooses-info i
+{
+    width: 30px;
+    text-align: center;
+}
+.chooses-info a:hover
+{
+    color: brown;
+}
+.divide
+{ 
+    width: 60%;
+    margin: auto;
+}
+/* =========================  END-CHOOSES-INFO  ========================= */
+/* =========================  START-FOOTER  ========================= */
+footer
+{
+    margin-top: 20px;
+}
+.top-footer
+{
+    padding: 5px 0px 5px 20px
+}
+.top-footer img
+{
+    width: 200px;
+    height: 50px;
+}
+.top-footer h1
+{
+    font-size: 20px;
+    font-weight: 600;
+    margin: 7px 0px 0px 3px;
+}
+.bottom-footer 
+{
+    height: 40px;
+}
+/* =========================  END-FOOTER  ========================= */
+
+
+}

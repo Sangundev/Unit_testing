@@ -1,0 +1,114 @@
+﻿@using Microsoft.AspNet.Identity
+@using Microsoft.AspNet.Identity.EntityFramework
+@using Food_Web.Models
+
+@model ApplicationUser
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+@using (Html.BeginForm("Save", "Acoounts", FormMethod.Post))
+{
+    @Html.AntiForgeryToken()
+
+    <div class="card shadow mb-4">
+        <div class="card-header py-3" style="display:flex; align-items:center; justify-content:space-between">
+            <h6 class="m-0 font-weight-bold text-primary" style="user-select:none"><a href="~/Store/Productss/Index">← Quay lại</a></h6>
+            <input type="submit" value="Save" class="btn btn-primary" />
+
+        </div>
+        <div class="card-body">
+            @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+            <!-- Search -->
+            <div class="row">
+                @*<div class="col-md-4 box-upload">
+                        <label>
+                            <img src="~/Content/products/@Model.Image" style="height: 320px; padding: 5px 0; border-radius: 15px;" id="preview" />
+                            <div class="col-md-10" style=" display: none;">
+                                <input type="file" name="Picture" required calss="form-control" id="images" accept=".png, .jpg, .jpeg" required onchange="showImage(this, document.getElementById('preview'))" />
+                            </div>
+                        </label>
+                    </div>*@
+
+                <div class="col-md-8">
+                    <div class="form-group" style="display: flex; justify-content:center">
+                        <div class="col-sm-4">
+                            <label>Tên Sản Phẩm: </label>
+                            @Html.TextBoxFor(m => m.Email, new { @class = "form-control form-control-sm", style = "width: 250px; padding: 7px 5px;" })
+                            @Html.ValidationMessageFor(m => m.Email, "", new { @class = "text-danger", style = "display: block; margin: 5px auto;" })
+                        </div>
+                        <div class="col-sm-4">
+                            <label>Tên Sản Phẩm: </label>
+                            @Html.TextBoxFor(m => m.UserName, new { @class = "form-control form-control-sm", style = "width: 250px; padding: 7px 5px;" })
+                            @Html.ValidationMessageFor(m => m.UserName, "", new { @class = "text-danger", style = "display: block; margin: 5px auto;" })
+                        </div>
+                    </div>
+                    <div class="form-group" style="display: flex; justify-content:center">
+                        <div class="col-sm-4">
+                            <label>Giá Nhập: </label>
+                            @Html.TextBoxFor(m => m.Fullname, new { @class = "form-control form-control-sm", style = "width: 250px; padding: 7px 5px;" })
+                            @Html.ValidationMessageFor(m => m.Fullname, "", new { @class = "text-danger", style = "display: block; margin: 5px auto;" })
+                        </div>
+                        <div class="col-sm-4">
+                            <label>Giá Nhập: </label>
+                            @Html.TextBoxFor(m => m.PhoneNumber, new { @class = "form-control form-control-sm", style = "width: 250px; padding: 7px 5px;" })
+                            @Html.ValidationMessageFor(m => m.PhoneNumber, "", new { @class = "text-danger", style = "display: block; margin: 5px auto;" })
+                        </div>
+                    </div>
+
+                    <div class="form-group" style="display: flex; justify-content:center">
+
+                        <div class="col-sm-4">
+                            <label>Mo ta Dai: </label>
+                            @Html.TextBoxFor(m => m.Opentime, new { @class = "form-control form-control-sm", style = "width: 250px; padding: 7px 5px;" })
+                            @Html.ValidationMessageFor(m => m.Opentime, "", new { @class = "text-danger", style = "display: block; margin: 5px auto;" })
+                        </div>
+                        <div class="col-sm-4">
+                            <label>Mo ta ngan: </label>
+                            @Html.TextBoxFor(m => m.Closetime, new { @class = "form-control form-control-sm", style = "width: 250px; padding: 7px 5px;" })
+                            @Html.ValidationMessageFor(m => m.Closetime, "", new { @class = "text-danger", style = "display: block; margin: 5px auto;" })
+                        </div>
+                    </div>
+                    <div class="form-group" style="display: flex; justify-content:center">
+                        <div class="col-sm-4">
+                            <label>Mo ta ngan: </label>
+                            @Html.TextBoxFor(m => m.Adress, new { @class = "form-control form-control-sm", style = "width: 250px; padding: 7px 5px;" })
+                            @Html.ValidationMessageFor(m => m.Adress, "", new { @class = "text-danger", style = "display: block; margin: 5px auto;" })
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+}
+
+@Scripts.Render("~/bundles/jqueryval")
+<script type="text/javascript">
+function showImage(upload, preview) {
+        if (upload.files && upload.files[0]) {
+            var reader = new FileReader();
+            reader.onload = function (e) {
+                $(preview).attr('src', e.target.result);
+            }
+            reader.readAsDataURL(upload.files[0]);
+        }
+}
+</script>
+}
+<style>
+    img#preview {
+        margin: 0px 24px 17px 174px
+    }
+
+    label.btnChoose {
+        margin: -60px 255px;
+    }
+
+    .btnChoose input {
+        display: none;
+    }
+</style>

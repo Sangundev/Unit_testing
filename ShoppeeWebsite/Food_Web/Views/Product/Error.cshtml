@@ -1,0 +1,33 @@
+﻿
+@{
+    ViewBag.Title = "Error";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div id="error">
+    <h1 id="404">404!</h1>
+    <h5>We can't seem to find the page you're looking for.</h5>
+    <div class="redirect-link-wrapper u-s-p-t-25">
+        <!-- This is an example of how to create a link to your home page (replace "home.html" with the actual URL of your home page) -->
+        <a id="home" class="redirect-link" href="~/Product/Index">
+            <span>Home</span>
+        </a>
+    </div>
+</div>
+
+<style>
+    #error {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: #f0f0f0; /* Màu nền của phần tử error */
+    }
+    h1#\34 04 {
+        font-size: 18pc;
+    }
+    a#home {
+        font-size: 38px;
+        padding: -2pc 10px 0px 10px;
+    }
+</style>

@@ -1,0 +1,52 @@
+﻿﻿@model Food_Web.Models.Product
+
+@{
+    ViewBag.Title = "Creategiamgiah";
+    Layout = "~/Views/Shared/_LayoutStore.cshtml";
+}
+
+<h2 class="text-center">Thêm giảm giá theo giờ</h2>
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+
+    <div class="form-horizontal">
+        <div class="form-group">
+            <label for="product">Sản phẩm:</label>
+            @Html.DropDownList("Productid", ViewBag.Product as SelectList, new { @class = "form-control" })
+        </div>
+        <div class="form-group">
+            <div class="form-group">
+                @Html.LabelFor(model => model.phantramgiamgia, "Phần trăm giảm giá", htmlAttributes: new { @class = "control-label col-md-2" })
+                <div class="col-md-10">
+                    @Html.EditorFor(model => model.phantramgiamgia, new { htmlAttributes = new { @class = "form-control" } })
+                    @Html.ValidationMessageFor(model => model.phantramgiamgia, "", new { @class = "text-danger" })
+                </div>
+            </div>
+            <label for="DiscountStartTime">Thời gian bắt đầu giảm giá:</label>
+            @Html.TextBoxFor(model => model.DiscountStartTime, new { @class = "form-control", type = "datetime-local" })
+        </div>
+        <div class="form-group">
+            <label for="DiscountEndTime">Thời gian kết thúc giảm giá:</label>
+            @Html.TextBoxFor(model => model.DiscountEndTime, new { @class = "form-control", type = "datetime-local" })
+        </div>
+        @*<div class="form-group">
+                @Html.LabelFor(model => model.phantramgiamgia, htmlAttributes: new { @class = "control-label col-md-2" })
+                <div class="col-md-10">
+                    @Html.EditorFor(model => model.phantramgiamgia, new { htmlAttributes = new { @class = "form-control" } })
+                    @Html.ValidationMessageFor(model => model.phantramgiamgia, "", new { @class = "text-danger" })
+                </div>
+            </div>*@
+
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <input type="submit" value="Thêm" class="btn btn-default" />
+            </div>
+        </div>
+    </div>
+}
+
+<div>
+    @Html.ActionLink("Quay lại trang trước", "Index")
+</div>

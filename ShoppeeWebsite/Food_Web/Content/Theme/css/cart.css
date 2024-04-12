@@ -1,0 +1,152 @@
+.content{
+    padding-top: 30px;
+}
+
+.product {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    font-size: 12px;
+    
+}
+.product ul{
+   list-style: none;
+}
+.orange-bg {
+    padding: 5px 10px;
+    color: black;
+    text-decoration: none; 
+}
+.product ul li{
+    list-style: none;
+ }
+ ul.shop-list {
+    padding: 0;
+}
+
+ul.shop-list li {
+    margin-bottom: 10px; 
+    padding-bottom: 30px; 
+}
+
+.shop-order-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid black;
+    margin-bottom: 10px;
+}
+
+.shop-info {
+    display: flex;
+    align-items: center;
+    color: black;
+}
+
+.shop-info h3 {
+    margin-right: 10px;
+}
+
+.shop-info a {
+    margin-right: 10px;
+    text-decoration: none;
+    color: #007bff;
+}
+
+.order-info {
+    display: flex;
+    align-items: center;
+}
+
+.order-info p {
+    margin-right: 10px;
+}
+
+.product-details {
+    display: flex; 
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    width: 100%;
+    align-items: center; 
+    
+}
+.product-list {
+    width: 100%;
+    padding: 0;
+    list-style: none; 
+}
+.product-list .product-1 {
+    display: flex;
+    align-items: center;
+    padding: 50px;
+}
+
+.product-list .product-1 img {
+    max-width: 120px;
+    max-height: 120px;
+    margin-right: 10px;
+    padding: 10px;
+}
+
+.product-list .product-1 .details {
+    flex: 1;
+    display: flex;
+    justify-content: center; 
+}
+
+.product-details img {
+    max-width: 120px;
+    max-height: 120px;
+    margin-right: 10px;
+    padding: 10px;
+}
+.details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 85%;
+    font-size: 16px;
+}
+.details > * {
+    flex: 1;
+}
+
+.quantity-input {
+    transform: scale(1);
+    transform-origin: left;
+    width: 20%;
+}
+
+
+.details h4,
+.details p {
+    margin: 5px 0; 
+}
+.order-total {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-left: auto;
+    border-top: 1px solid #ccc;
+}
+.order-total .total-amount {
+    font-size: 24px; 
+    color: orangered;
+}
+
+.action-buttons {
+    margin-top: 10px;
+}
+
+.order-total button {
+    margin-right: 10px;
+    padding: 8px 16px;
+    border: none;
+    background-color: orangered;
+    color: #fff;
+    cursor: pointer;
+}
+

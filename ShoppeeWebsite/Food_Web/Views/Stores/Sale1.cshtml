@@ -1,0 +1,78 @@
+﻿
+@{
+    ViewBag.Title = "Sale";
+    Layout = null;
+}
+
+
+<div class="slider-fouc">
+    <div class="products-slider owl-carousel" data-item="4">
+        @foreach (var item in Model)
+        {
+            <div class="item">
+                <div class="image-container">
+                    <a class="item-img-wrapper-link" href="@Url.Action("Detail", "Home", new { id = item.Productid })">
+                        <img class="img-fluid" src="~/Content/products/@item.image" alt="Product">
+                    </a>
+                    <div class="item-action-behaviors">
+                        <a class="item-quick-look" data-toggle="modal" href="#quick-view">
+                            Quick Look
+                        </a>
+                        @*<a class="item-mail" href="javascript:void(0)">Mail</a>*@
+                        <a class="item-addwishlist" href="javascript:void(0)" data-id="@item.Productid">Add to Wishlist</a>
+                        <a class="item-addCart" data-id="@item.Productid">Add to Cart</a>
+                    </div>
+                </div>
+                <div class="item-content">
+                    <div class="what-product-is">
+                        <ul class="bread-crumb">
+                            <li class="has-separator">
+                                <a href="shop-v1-root-category.html">home</a>
+                            </li>
+                            <li class="has-separator">
+                                <a href="shop-v2-sub-category.html">Ten shop</a>
+                            </li>
+                            <li>
+                                <a href="shop-v3-sub-sub-category.html">the loai</a>
+                            </li>
+                        </ul>
+                        <h6 class="item-title">
+                            <a href="single-product.html">@item.Productname</a>
+                        </h6>
+                        <div class="item-stars">
+                            <div class='star' title="0 out of 5 - based on 0 Reviews">
+                                <span style='width:0'></span>
+                            </div>
+                            <span>(0)</span>
+                        </div>
+                    </div>
+                    <div class="price-template">
+                        @if (item.DiscountPercent > 0)
+                        {
+                            <div class="item-new-price">
+                                @item.DiscountedPrice
+                            </div>
+                            <div class="item-old-price">
+                                @item.price
+                            </div>
+
+                        }
+                        else if (item.DiscountPercent == null)
+                        {
+                            <div class="item-new-price">
+                                @item.price
+                            </div>
+
+                        }
+                    </div>
+                </div>
+                <div class="tag new">
+                    <span>sale @item.DiscountPercent %</span>
+                </div>
+            </div>
+        }
+    </div>
+</div>
+
+
+

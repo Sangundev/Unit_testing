@@ -1,0 +1,217 @@
+﻿@model IEnumerable<Food_Web.Models.Message>
+@using Microsoft.AspNet.Identity
+@using Microsoft.AspNet.Identity.EntityFramework
+@using Food_Web.Models
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_LayoutStore.cshtml";
+    var userManager = new UserManager<ApplicationUser>(new UserStore<ApplicationUser>(new ApplicationDbContext()));
+    var listUser = userManager.Users.ToList();
+}
+<div class="chat-container">
+    <div class="store-list">
+        <h3>Store List</h3>
+        @*<ul>
+            @foreach (var item in Model.Select(m => m.Userid).Distinct())
+            {
+                <li>
+                    <a href="javascript:void(0);" onclick="loadMessages('@item')">
+                        @item
+                    </a>
+                </li>
+            }
+        </ul>*@
+
+        <ul>
+            @foreach (var item in Model.Select(m => m.Userid).Distinct())
+            {
+                <li>
+                    <a href="javascript:void(0);" onclick="loadMessages('@item')">
+                        @item
+                    </a>
+                </li>
+            }
+        </ul>
+
+    </div>
+
+    <div class="chat-box">
+        <ul id="chat-messages" class="chat-messages">
+       
+     
+        </ul>
+    </div>
+
+
+
+    @*<form id="sendMessageForm" class="chat-input" action=""> </form>*@
+    @*/Stores/Createmessage*@
+    @Html.AntiForgeryToken()
+    <div class="form-group">
+        <textarea id="content1" name="content" class="form-control" placeholder="Enter your message"></textarea>
+    </div>
+    <div class="form-group">
+        <input type="file" id="image" name="image" accept=".png, .jpg, .jpeg" />
+    </div>
+    <div class="form-group" style="display: none;">
+        @*<input type="text" id="storeid" name="storeid" class="form-control" value="@ViewBag.storeId" />*@
+        <input type="text" id="storeid" name="storeid" class="form-control" value="@User.Identity.GetUserId()" />
+    </div>
+    <button id="sendMessageBtn" class="btn btn-primary">Send</button>
+    @*type="submit"*@
+
+
+</div>
+@section scripts {
+    <script>
+        var currentStoreId = '@User.Identity.GetUserId()';
+        function loadMessages(userid) {
+            $('#storeid').val(userid);  // Set the storeId in the form
+
+            // Update the URL to reflect the selected store ID
+            var newUrl = window.location.origin + '/Indexchat?storeid=' + encodeURIComponent(userid);
+            window.history.replaceState(null, null, newUrl);
+
+            $.ajax({
+                url: '/Messagestore/Indexchat',
+                type: 'GET',
+                data: { userid: userid },
+                success: function (data) {
+                    $('#chat-messages').empty();
+                    let listMessage = data.listMessage;
+                    for (let i = 0; i < listMessage.length; i++) {
+                        let message = listMessage[i];
+                        $('#chat-messages').append(chatMessage(message.Content));
+                    }
+
+                },
+                error: function (error) {
+                    console.error('Error loading messages:', error);
+                }
+            });
+        }
+
+
+        $(document).ready(function () {
+        });
+        $('#sendMessageBtn').click(function () {
+            let message = $('#content1').val();
+            postMessage(message);
+        });
+
+        function postMessage(message) {
+            var storeId = $('#storeid').val();  // Retrieve the storeId from an HTML element
+
+            $.ajax({
+                url: '/Messagestore/postMessage',
+                type: 'POST',
+                data: { message: message, storeId: storeId },  // Pass the storeId in the POST data
+                success: function (response) {
+                    if (response.success) {
+
+
+                        console.log('Message posted successfully:', message, currentStoreId);
+                        // Clear the message input field
+                        $('#content1').val('');
+                        $('#content1').focus();
+                    } else {
+                        console.error('Failed to post message:', response.error);
+                    }
+                },
+                error: function (error) {
+                    console.error('Error:', error);
+                }
+            });
+        }
+
+
+
+
+    </script>
+
+}
+
+
+<style>
+    .chat-container {
+        display: flex;
+    }
+
+    .store-list {
+        flex: 1;
+        padding: 10px;
+        border-right: 1px solid #ccc;
+    }
+
+        .store-list ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .store-list li {
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+
+    .chat-box {
+        flex: 4;
+        padding: 10px;
+    }
+
+    .chat-container {
+        display: flex;
+        flex-direction: column;
+        max-width: 500px;
+        margin: 0 auto;
+    }
+
+    .chat-box {
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        padding: 10px;
+        max-height: 400px;
+        overflow-y: auto;
+    }
+
+    ul.chat-messages1 {
+        list-style-type: none;
+        padding: 0;
+    }
+
+    li.chat-message {
+        margin-bottom: 10px;
+    }
+
+    .message-content {
+        background-color: #f0f0f0;
+        padding: 5px 10px;
+        border-radius: 5px;
+        display: inline-block;
+    }
+
+    .message-user {
+        font-weight: bold;
+        margin-right: 10px;
+    }
+
+    .message-time {
+        font-size: 0.8em;
+        color: #666;
+    }
+
+    .chat-input {
+        display: flex;
+        margin-top: 10px;
+    }
+
+        .chat-input textarea {
+            flex: 1;
+            padding: 5px;
+            border-radius: 5px;
+            resize: none;
+        }
+
+        .chat-input button {
+            margin-left: 10px;
+        }
+</style>

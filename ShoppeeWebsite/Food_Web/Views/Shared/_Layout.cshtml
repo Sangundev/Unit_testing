@@ -1,0 +1,1479 @@
+﻿@using Microsoft.AspNet.Identity
+
+@using Microsoft.AspNet.Identity.EntityFramework
+@using Food_Web.Models
+@{
+    var userManager = new UserManager<ApplicationUser>(new UserStore<ApplicationUser>(new ApplicationDbContext()));
+    var listUser = userManager.Users.ToList();
+
+}
+<!DOCTYPE html>
+<html class="no-js" lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <!--[if IE]>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <![endif]-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Groover - Online Shopping for Electronics, Apparel, Computers, Books, DVDs & more</title>
+    <!-- Standard Favicon -->
+    <link href="favicon.ico" rel="shortcut icon">
+    <!-- Base Google Font for Web-app -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
+    <!-- Google Fonts for Banners only -->
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,800" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <!-- Bootstrap 4 -->
+    <link rel="stylesheet" href="~/Content/NewLayout/~/Content/NewLayout/css/bootstrap.min.css">
+    <link rel="stylesheet" href="~/Content/NewLayout/css/bootstrap.min.css">
+    <!-- Font Awesome 5 -->
+    <link rel="stylesheet" href="~/Content/NewLayout/css/fontawesome.min.css">
+    <!-- Ion-Icons 4 -->
+    <link rel="stylesheet" href="~/Content/NewLayout/css/ionicons.min.css">
+    <!-- Animate CSS -->
+    <link rel="stylesheet" href="~/Content/NewLayout/css/animate.min.css">
+    <!-- Owl-Carousel -->
+    <link rel="stylesheet" href="~/Content/NewLayout/css/owl.carousel.min.css">
+    <!-- Jquery-Ui-Range-Slider -->
+    <link rel="stylesheet" href="~/Content/NewLayout/css/jquery-ui-range-slider.min.css">
+    <!-- Utility -->
+    <link rel="stylesheet" href="~/Content/NewLayout/css/utility.css">
+    <!-- Main -->
+    <link rel="stylesheet" href="~/Content/NewLayout/css/bundle.css">
+</head>
+
+<body>
+
+    <!-- app -->
+    <div id="app">
+        <!-- Header -->
+        <header>
+            <!-- Top-Header -->
+            <div class="full-layer-outer-header">
+                @if (Request.IsAuthenticated)
+                {
+                    using (Html.BeginForm("LogOff", "Account", FormMethod.Post, new { id = "logoutForm", @class = "navbar-right" }))
+                    {
+                        @Html.AntiForgeryToken()
+                        <div class="container clearfix">
+                            <nav>
+                                @{
+                                    var currentUserId = User.Identity.GetUserId();
+                                    var currentUser = listUser.FirstOrDefault(u => u.Id == currentUserId);
+                                    if (currentUser != null)
+                                    {
+                                        <ul class="primary-nav g-nav">
+                                            <li>
+                                                <a href="tel:+111444989" class="white-text">
+                                                    <i class="fas fa-phone u-c-brand u-s-m-r-9 white-icon"></i>
+                                                    Telephone: @currentUser.PhoneNumber
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="mailto:contact@domain.com" class="white-text">
+                                                    <i class="fas fa-envelope u-c-brand u-s-m-r-9 white-icon"></i>
+                                                    E-mail: @currentUser.Fullname
+                                                </a>
+                                            </li>
+                                        </ul>
+
+                                    }
+
+                                }
+                            </nav>
+                            <nav>
+                                <ul class="secondary-nav g-nav">
+
+
+                                    @Html.Action("NewDiscounts", "Discountss")
+                                    <li>
+                                        <a class="white-text" href="#">
+                                            My Account
+                                            <i class="fas fa-chevron-down u-s-m-l-9"></i>
+                                        </a>
+                                        <ul class="g-dropdown" style="width:200px">
+                                            <li>
+                                                <a href="~/ShoppingCart/Index">
+                                                    <i class="fas fa-cog u-s-m-r-9"></i>
+                                                    My Cart
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="~/Heart/Index">
+                                                    <i class="far fa-heart u-s-m-r-9"></i>
+                                                    My Wishlist
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="~/Stores/Indexchat">
+                                                    <i class="far fa-heart u-s-m-r-9"></i>
+                                                    Chat
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="~/Order_detail/Index">
+                                                    <i class="far fa-check-circle u-s-m-r-9"></i>
+                                                    Thông Tin đơn Hàng
+                                                </a>
+                                            </li>
+                                            <li style="color:black">
+                                                <ul class="nav navbar-nav navbar-right nav-user">
+                                                    <li>
+                                                        <a href="@Url.Action("Index", "Manage")" title="Manage" style="font-size:13px">
+                                                            <i class="fas fa-user" style="margin-right:11.5px"></i> Thông Tin Tài Khoản
+                                                        </a>
+                                                    </li>
+                                                    <a href="javascript:document.getElementById('logoutForm').submit()" class="header-btn" style="font-size:13px">
+                                                        <i class="fas fa-user-md" style="margin-right:11.5px"></i> Log off
+                                                    </a>
+                                                </ul>
+
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a>
+                                            <span id="languageText" class="white-text">ENG</span>
+                                            <i id="languageIcon" class="fas fa-chevron-down u-s-m-l-9"></i>
+                                        </a>
+                                        <ul class="g-dropdown" style="width: 70px">
+                                            <li>
+                                                <a href="@Url.Action("ChangeLanguage", "Product", new { lang = "en-US" })" onclick="changeLanguage('us')">
+                                                    <span class="flag-icon flag-icon-us"></span> ENG
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="@Url.Action("ChangeLanguage", "Product", new { lang = "vi-VN" })" onclick="changeLanguage('vn')">
+                                                    <span class="flag-icon flag-icon-vn"></span> VI
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+
+                            </nav>
+                        </div>
+                    }
+                }
+                else
+                {
+                    <div class="container clearfix">
+                        <nav>
+                            <ul class="primary-nav g-nav">
+                                <li>
+                                    <a href="tel:+111444989" class="white-text">
+                                        <i class="fas fa-phone u-c-brand u-s-m-r-9 white-icon"></i>
+                                        Telephone: @(ViewBag.PhoneNumber ?? "N/A")
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="mailto:contact@domain.com" class="white-text">
+                                        <i class="fas fa-envelope u-c-brand u-s-m-r-9 white-icon"></i>
+                                        E-mail: @(ViewBag.Email ?? "N/A")
+                                    </a>
+                                </li>
+                            </ul>
+
+                        </nav>
+                        <nav>
+                            <ul class="secondary-nav g-nav">
+                                <li>
+                                    <a class="white-text" href="#">
+                                        My Account
+                                        <i class="fas fa-chevron-down u-s-m-l-9"></i>
+                                    </a>
+                                    <ul class="g-dropdown" style="width:200px">
+                                        <li>
+                                            <a href="~/ShoppingCart/Index">
+                                                <i class="fas fa-cog u-s-m-r-9"></i>
+                                                My Cart
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="~/Heart/Index">
+                                                <i class="far fa-heart u-s-m-r-9"></i>
+                                                My Wishlist
+                                            </a>
+                                        </li>
+
+                                        <li>
+                                            <a href="~/Order_detail/Index">
+                                                <i class="far fa-check-circle u-s-m-r-9"></i>
+                                                Thông Tin đơn Hàng
+                                            </a>
+                                        </li>
+                                        <li style="color:black">
+                                            <a href="~/Account/Login" class="header-btn">
+                                                <i class="fas fa-user-md fa-lg" style="font-size:13px"></i>
+                                                <span style="margin-right:11.5px"> Login </span>
+                                            </a>
+
+                                        </li>
+                                    </ul>
+                                </li>
+
+                                <li>
+                                    <a>
+                                        <span id="languageText" class="white-text">ENG</span>
+                                        <i id="languageIcon" class="fas fa-chevron-down u-s-m-l-9"></i>
+                                    </a>
+                                    <ul class="g-dropdown" style="width: 70px">
+                                        <li>
+                                            <a href="@Url.Action("ChangeLanguage", "Product", new { lang = "en-US" })" onclick="changeLanguage('us')">
+                                                <span class="flag-icon flag-icon-us"></span> ENG
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="@Url.Action("ChangeLanguage", "Product", new { lang = "vi-VN" })" onclick="changeLanguage('vn')">
+                                                <span class="flag-icon flag-icon-vn"></span> VI
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+
+
+                            </ul>
+
+
+                        </nav>
+                    </div>
+
+                }
+            </div>
+
+            <!-- Top-Header /- -->
+            <!-- Mid-Header -->
+            <div class="full-layer-mid-header">
+                <div class="container">
+                    <div class="row clearfix align-items-center">
+                        <div class="col-lg-3 col-md-9 col-sm-6">
+                            <div class="brand-logo text-lg-center">
+                                <a href="~/Product/Index">
+                                    <img href="~/Product/Index" src="~/Content/logo-full-white.png" alt="Groover Brand Logo" class="app-brand-logo" style="width: 200px; height: auto; filter: red;">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 u-d-none-lg">
+                            @* @Url.Action("Seach", "Product") *@
+                            <form class="form-searchbox" action="~/Product/Search" method="post">
+                                <label class="sr-only" for="search-landscape">Search</label>
+                                <input id="search-landscape" type="text" class="text-field" placeholder="@Resources.RS_seach" name="searchString">
+                                <div class="select-box-position">
+                                    <div class="select-box-wrapper select-hide">
+                                        <label class="sr-only" for="select-category">Choose category for search</label>
+                                    </div>
+                                    <button id="btnGiveCommand" type="button" class="button button-primary speak-button">
+                                        <i class="fas fa-microphone black-icon"></i>
+                                    </button>
+                                </div>
+                                <button id="btn-search" type="submit" class="button btn-orange button-primary fas fa-search"></button>
+                            </form>
+                            <style>
+                                .speak-button {
+                                    border: 0px solid white; /* Màu viền đỏ */
+                                    background: none;
+                                }
+
+                                .black-icon {
+                                    color: orangered;
+                                }
+                            </style>
+                            @*<button id="btnGiveCommand" type="button" class="button button-primary speak-button">Speak <i class="fas fa-microphone"></i></button>*@
+                            @*<button id="btnGiveCommand" type="button" class="button button-primary">
+                                    Speak <i class="fas fa-microphone"></i>
+                                </button>*@
+                            @*<input id="txtMessage" type="text" style="width: 400px;" />*@
+                            @*<input id="btnGiveCommand" type="button" value="Speak" />*@
+                            <div id="divError" style="color: red;"></div>
+                        </div>
+                        <div class="col-lg-3 col-md-3 col-sm-6">
+                            <nav>
+                                <ul class="mid-nav g-nav">
+                                    <li class="u-d-none-lg">
+                                        <a href="~/Product/Index">
+                                            <i class="ion ion-md-home u-c-brand white-icon"></i>
+                                        </a>
+                                    </li>
+                                    <li class="u-d-none-lg">
+                                        <a href="~/Heart/Index">
+                                            <i class="far fa-heart white-icon"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a id="mini-cart-trigger">
+                                            <i class="ion ion-md-basket white-icon"></i>
+                                            <span id="Cart-status" class="item-counter">@ViewBag.CartCount</span>
+                                            <span class="item-price white-text">$220.00</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Mid-Header /- -->
+            <!-- Responsive-Buttons -->
+            <div class="fixed-responsive-container">
+                <div class="fixed-responsive-wrapper">
+                    <button type="button" class="button fas fa-search" id="responsive-search"></button>
+                </div>
+                <div class="fixed-responsive-wrapper">
+                    <a href="~/ShoppingCart/Index">
+                        <i class="far fa-heart"></i>
+                        @*<span id="Cart-status" class="fixed-item-counter">@ViewBag.CartCount</span>*@
+                        @*<span id="Cart-status" class="cart-number">@ViewBag.CartCount</span>*@
+                    </a>
+                </div>
+            </div>
+            <!-- Responsive-Buttons /- -->
+            <!-- Mini Cart -->
+            <div class="mini-cart-wrapper">
+                <div class="mini-cart">
+                    <div class="mini-cart-header">
+                        YOUR CART
+                        <button type="button" class="button ion ion-md-close" id="mini-cart-close"></button>
+                    </div>
+                    <ul class="mini-cart-list">
+
+
+                        <li class="clearfix" id="Shoppingcarmini">
+                            @*<a href="~/ShoppingCart/shoppingcartmini">*@
+                            @*@Html.Action("shoppingcartmini", "ShoppingCart")*@
+
+                            @*</a>*@
+                        </li>
+
+
+                    </ul>
+                    <div class="mini-shop-total clearfix">
+                        <span class="mini-total-heading float-left">Total:</span>
+                        <span class="mini-total-price float-right">$220.00</span>
+                    </div>
+                    <div class="mini-action-anchors">
+                        <a href="~/ShoppingCart/Index" class="cart-anchor">View Cart</a>
+                    </div>
+                </div>
+
+
+            </div>
+            <!-- Mini Cart /- -->
+            <!-- Bottom-Header -->
+            <!-- Bottom-Header /- -->
+        </header>
+
+
+
+        @RenderBody();
+
+    </div>
+    <footer class="footer">
+        <div class="main-footer">
+            <div class="grid wide">
+                <div class="row sm-gutter main-footer-info">
+                    <div class="col l-2-4 m-4 c-6">
+                        <h3 class="footer__heading">CHĂM SÓC KHÁCH HÀNG</h3>
+                        <ul class="footer-list">
+                            <li>
+                                <a href="#" class="footer-item-link">Trung Tâm Trợ Giúp</a>
+                            </li>
+                            <li>
+                                <a href="#" class="footer-item-link">Shopee Blog</a>
+                            </li>
+                            <li>
+                                <a href="#" class="footer-item-link">Shopee Mall</a>
+                            </li>
+                            <li>
+                                <a href="#" class="footer-item-link">Hướng Dẫn Mua Hàng</a>
+                            </li>
+                            <li>
+                                <a href="#" class="footer-item-link">Hướng Dẫn Bán Hàng</a>
+                            </li>
+                            <li>
+                                <a href="#" class="footer-item-link">Thanh Toán</a>
+                            </li>
+                            <li>
+                                <a href="#" class="footer-item-link">Shopee Xu</a>
+                            </li>
+                            <li>
+                                <a href="#" class="footer-item-link">Vận Chuyển</a>
+                            </li>
+                            <li>
+                                <a href="#" class="footer-item-link">Trả Hàng & Hoàn Tiền</a>
+                            </li>
+                            <li>
+                                <a href="#" class="footer-item-link">Chăm Sóc Khách Hàng</a>
+                            </li>
+                            <li>
+                                <a href="#" class="footer-item-link">Chính Sách Bảo Hành</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col l-2-4 m-4 c-6">
+                        <h3 class="footer__heading">VỀ SHOPEE</h3>
+                        <ul class="footer-list">
+                            <li>
+                                <a href="#" class="footer-item-link">Giới Thiệu Về Shopee Việt Nam</a>
+                            </li>
+                            <li>
+                                <a href="#" class="footer-item-link">Tuyển Dụng</a>
+                            </li>
+                            <li>
+                                <a href="#" class="footer-item-link">Điều Khoản Shopee</a>
+                            </li>
+                            <li>
+                                <a href="#" class="footer-item-link">Chính Sách Bảo Mật</a>
+                            </li>
+                            <li>
+                                <a href="#" class="footer-item-link">Chính Hãng</a>
+                            </li>
+                            <li>
+                                <a href="#" class="footer-item-link">Kênh Người Bán</a>
+                            </li>
+                            <li>
+                                <a href="#" class="footer-item-link">Flash Sales</a>
+                            </li>
+                            <li>
+                                <a href="#" class="footer-item-link">Chương Trình Tiếp Thị Liên Kết Shopee</a>
+                            </li>
+                            <li>
+                                <a href="#" class="footer-item-link">Liên Hệ Với Truyền Thông</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col l-2-4 m-4 c-12 pay-and-ship">
+                        <div>
+
+                            <h3 class="footer__heading">THANH TOÁN</h3>
+                            <div class="footer-sale-ship">
+                                <img src="~/Content/Theme/img/pay/1.PNG" class="footer-item-sale-ship">
+                                <img src="~/Content/Theme/img/pay/2.PNG" class="footer-item-sale-ship">
+                                <img src="~/Content/Theme/img/pay/3.PNG" class="footer-item-sale-ship">
+                                <img src="~/Content/Theme/img/pay/4.PNG" class="footer-item-sale-ship">
+                                <img src="~/Content/Theme/img/pay/5.PNG" class="footer-item-sale-ship">
+                            </div>
+                        </div>
+                        <div>
+                            <h3 class="footer__heading">ĐƠN VỊ VẬN CHUYỂN</h3>
+                            <div class="footer-sale-ship">
+                                <img src="~/Content/Theme/img/ship/1.PNG" class="footer-item-sale-ship">
+                                <img src="~/Content/Theme/img/ship/2.PNG" class="footer-item-sale-ship">
+                                <img src="~/Content/Theme/img/ship/3.PNG" class="footer-item-sale-ship">
+                                <img src="~/Content/Theme/img/ship/4.PNG" class="footer-item-sale-ship">
+                                <img src="~/Content/Theme/img/ship/5.PNG" class="footer-item-sale-ship">
+                                <img src="~/Content/Theme/img/ship/6.PNG" class="footer-item-sale-ship">
+                                <img src="~/Content/Theme/img/ship/7.PNG" class="footer-item-sale-ship">
+                                <img src="~/Content/Theme/img/ship/8.PNG" class="footer-item-sale-ship">
+                                <img src="~/Content/Theme/img/ship/9.PNG" class="footer-item-sale-ship">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col l-2-4 m-4 c-6">
+                        <h3 class="footer__heading">THEO DÕI CHÚNG TÔI</h3>
+                        <ul class="footer-list">
+                            <li>
+                                <a href="#" class="footer-item-link footer-item-link-fb">
+                                    <i class="footer-item-icon fab fa-facebook-square"></i>
+                                    Facebook
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="footer-item-link footer-item-link-is">
+                                    <i class="footer-item-icon fab fa-instagram-square"></i>
+                                    Instagram
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="footer-item-link footer-item-link-li">
+                                    <i class="footer-item-icon fab fa-linkedin"></i>
+                                    LinkedIn
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col l-2-4 m-8 c-6">
+                        <h3 class="footer__heading">TẢI ỨNG DỤNG SHOPEE</h3>
+                        <div class="footer-download">
+                            <a href="#" class="footer-download-link">
+                                <img src="~/Content/Theme/img/qr/qr-code.png" class="footer-download-qr">
+                            </a>
+                            <div class="footer-download-app">
+                                <a href="#" class="footer-download-link">
+                                    <img src="~/Content/Theme/img/qr/gg-play.png" class="footer-download-app-img">
+                                </a>
+                                <a href="#" class="footer-download-link">
+                                    <img src="~/Content/Theme/img/qr/app-store.png" class="footer-download-app-img">
+                                </a>
+                                <a href="#" class="footer-download-link">
+                                    <img src="~/Content/Theme/img/qr/app-gallery.png" class="footer-download-app-img">
+                                </a>
+                                <a href="#" class="footer-download-link">
+                                    <img src="~/Content/Theme/img/qr/ltp-img.png" class="footer-download-app-img">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="grid">
+                        <p class="copyright-title">
+                            © 2021 Shopee copyright - Công ty TNHH CRF - Product by LTP
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="other-footer">
+            <div class="grid wide">
+                <div class="row other-footer-heading">
+                    <div class="col l-2">
+                        <a href="#" class="other-footer-link">
+                            CHÍNH SÁCH BẢO MẬT
+                        </a>
+                    </div>
+                    <div class="col l-2">
+                        <a href="#" class="other-footer-link">
+                            QUY CHẾ HOẠT ĐỘNG
+                        </a>
+                    </div>
+                    <div class="col l-2">
+                        <a href="#" class="other-footer-link">
+                            CHÍNH SÁCH VẬN CHUYỂN
+                        </a>
+                    </div>
+                    <div class="col l-2">
+                        <a href="#" class="other-footer-link">
+                            TRẢ HÀNG VÀ HOÀN TIỀN
+                        </a>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="grid other-footer-info">
+                        <p class="other-footer-title">Thông tin về Shoppee</p>
+                        <p class="other-footer-more">
+                            Địa chỉ: Tầng 4-5-6, Tòa nhà Capital Place, số 29 đường Liễu Giai,
+                            Phường Ngọc Khánh, Quận Ba Đình, Thành phố Hà Nội, Việt Nam.
+                            <br />Tổng đài hỗ trợ: 19001221 - Email: cskh@hotro.shopee.vn
+                        </p>
+                        <p class="other-footer-more">
+                            Chịu Trách Nhiệm Quản Lý Nội Dung: Nguyễn Đức Trí -
+                            Điện thoại liên hệ: 024 73081221 (ext 4678)
+                        </p>
+                        <p class="other-footer-more">
+                            Mã số doanh nghiệp: 0106773786 do Sở Kế hoạch & Đầu tư
+                            TP Hà Nội cấp lần đầu ngày 10/02/2015
+                        </p>
+                        <p class="other-footer-more">
+                            Ngày sản xuất 2015 -
+                            Bản quyền gốc thuộc về Công ty TNHH Shopee
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer /- -->
+    <!-- Dummy Selectbox -->
+    <div class="select-dummy-wrapper">
+        <select id="compute-select">
+            <option id="compute-option">All</option>
+        </select>
+    </div>
+    <!-- Dummy Selectbox /- -->
+    <!-- Responsive-Search -->
+    <div class="responsive-search-wrapper">
+        <button type="button" class="button ion ion-md-close" id="responsive-search-close-button"></button>
+        <div class="responsive-search-container">
+            <div class="container">
+                <p>Start typing and press Enter to search</p>
+                <form class="responsive-search-form">
+                    <label class="sr-only" for="search-text">Search</label>
+                    <input id="search-text" type="text" class="responsive-search-field" placeholder="PLEASE SEARCH">
+                    <i class="fas fa-search"></i>
+                </form>
+            </div>
+        </div>
+    </div>
+    <noscript>
+        <div class="app-issue">
+            <div class="vertical-center">
+                <div class="text-center">
+                    <h1>JavaScript is disabled in your browser.</h1>
+                    <span>Please enable JavaScript in your browser or upgrade to a JavaScript-capable browser to register for Groover.</span>
+                </div>
+            </div>
+        </div>
+        <style>
+            #app {
+                display: none;
+            }
+        </style>
+    </noscript>
+    <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+    <script>
+        window.ga = function () {
+            ga.q.push(arguments)
+        };
+        ga.q = [];
+        ga.l = +new Date;
+        ga('create', 'UA-XXXXX-Y', 'auto');
+        ga('send', 'pageview')
+    </script>
+    <script src="https://www.google-analytics.com/analytics.js" async defer></script>
+    <!-- Modernizr-JS -->
+    <script type="text/javascript" src="~/Content/NewLayout/js/vendor/modernizr-custom.min.js"></script>
+    <!-- NProgress -->
+    <script type="text/javascript" src="~/Content/NewLayout/js/nprogress.min.js"></script>
+    <!-- jQuery -->
+    <script type="text/javascript" src="~/Content/NewLayout/js/jquery.min.js"></script>
+    <!-- Bootstrap JS -->
+    <script type="text/javascript" src="~/Content/NewLayout/js/bootstrap.min.js"></script>
+    <!-- Popper -->
+    <script type="text/javascript" src="~/Content/NewLayout/js/popper.min.js"></script>
+    <!-- ScrollUp -->
+    <script type="text/javascript" src="~/Content/NewLayout/js/jquery.scrollUp.min.js"></script>
+    <!-- Elevate Zoom -->
+    <script type="text/javascript" src="~/Content/NewLayout/js/jquery.elevatezoom.min.js"></script>
+    <!-- jquery-ui-range-slider -->
+    <script type="text/javascript" src="~/Content/NewLayout/js/jquery-ui.range-slider.min.js"></script>
+    <!-- jQuery Slim-Scroll -->
+    <script type="text/javascript" src="~/Content/NewLayout/js/jquery.slimscroll.min.js"></script>
+    <!-- jQuery Resize-Select -->
+    <script type="text/javascript" src="~/Content/NewLayout/js/jquery.resize-select.min.js"></script>
+    <!-- jQuery Custom Mega Menu -->
+    <script type="text/javascript" src="~/Content/NewLayout/js/jquery.custom-megamenu.min.js"></script>
+    <!-- jQuery Countdown -->
+    <script type="text/javascript" src="~/Content/NewLayout/js/jquery.custom-countdown.min.js"></script>
+    <!-- Owl Carousel -->
+    <script type="text/javascript" src="~/Content/NewLayout/js/owl.carousel.min.js"></script>
+    <!-- Main -->
+    <script type="text/javascript" src="~/Content/NewLayout/js/app.js"></script>
+
+
+    <!-- jquery  -->
+    <script src="~/Content/Layout/assets/js/jquery-3.5.1.min.js"></script>
+    <!-- bootstrap -->
+    <!--<script src="~/Content/Layout/assets/js/bootstrap.min.js"></script>
+    <script src="~/Content/Layout/assets/js/popper.min.js"></script>-->
+    <!-- fontawesome  -->
+    <!--<script src="~/Content/Layout/assets/js/font-awesome.min.js"></script>-->
+    <!-- swiper slider  -->
+    <!--<script src="~/Content/Layout/assets/js/swiper-bundle.min.js"></script>-->
+    <!-- mixitup -- filter  -->
+    <!--<script src="~/Content/Layout/assets/js/jquery.mixitup.min.js"></script>-->
+    <!-- fancy box  -->
+    <!--<script src="~/Content/Layout/assets/js/jquery.fancybox.min.js"></script>-->
+    <!-- parallax  -->
+    <!--<script src="~/Content/Layout/assets/js/parallax.min.js"></script>-->
+    <!-- gsap  -->
+    <!--<script src="~/Content/Layout/assets/js/gsap.min.js"></script>-->
+    <!-- scroll trigger  -->
+    <!--<script src="~/Content/Layout/assets/js/ScrollTrigger.min.js"></script>-->
+    <!-- scroll to plugin  -->
+    <!--<script src="~/Content/Layout/assets/js/ScrollToPlugin.min.js"></script>-->
+    <!-- rellax  -->
+    <!--<script src="assets/js/rellax.min.js"></script>
+    <script src="assets/js/rellax-custom.js"></script>-->
+    <!-- smooth scroll  -->
+    <!--<script src="~/Content/Layout/assets/main.js"></script>
+    <script src="~/Content/Layout/assets/js/smooth-scroll.js"></script>-->
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/lib/easing/easing.min.js"></script>
+    <script src="~/lib/waypoints/waypoints.min.js"></script>
+    <script src="~/lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="~/lib/tempusdominus/js/moment.min.js"></script>
+    <script src="~/lib/tempusdominus/js/moment-timezone.min.js"></script>
+    <script src="~/lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
+    <!-- Template Javascript -->
+    <button class="nut-mo-chatbox" onclick="moForm()">Chat</button>
+    <div class="Chatbox" id="myForm">
+        <form action="" class="form-container">
+            <h1>HỖ TRỢ</h1>
+            <label for="msg"><b>Lời Nhắn</b></label>
+            <textarea placeholder="Bạn hãy nhập lời nhắn.." name="msg" id="message" required></textarea>
+            <ul id="discussion">
+            </ul>
+            <div style="display:flex">
+                <input type="button" class="btn " id="sendmessage" value="Gửi" />
+                <input type="hidden" id="displayname" value="@Session["Email"]" />
+                <button type="button" class="btn nut-dong-chatbox " onclick="dongForm()">Đóng</button>
+            </div>
+        </form>
+    </div>
+    <style>
+
+        /* Nút Để Mở Chatbox */
+        .nut-mo-chatbox {
+            z-index: 1;
+            background-color: #FF6B6B;
+            color: white;
+            padding: 16px 20px;
+            border: none;
+            cursor: pointer;
+            opacity: 0.8;
+            position: fixed;
+            bottom: 23px;
+            right: 28px;
+            width: 100px;
+            border-radius: 20px;
+            font-size: 18px;
+        }
+
+        /* Ẩn chatbox mặc định */
+        .Chatbox {
+            display: none;
+            position: fixed;
+            bottom: 0;
+            right: 15px;
+            border: 3px solid #f1f1f1;
+            z-index: 9;
+            width: 300px;
+            max-height: 400px;
+            overflow-y: scroll;
+            border-radius: 10px;
+            background-color: #FFFFFF;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Thêm style cho form */
+        .form-container {
+            max-width: 100%;
+            padding: 10px;
+            background-color: #F8F8F8;
+        }
+
+            /* thiết lập style textarea */
+            .form-container textarea {
+                width: 100%;
+                padding: 10px;
+                margin: 10px 0 20px 0;
+                border: none;
+                background: #f1f1f1;
+                resize: none;
+                min-height: 100px;
+                border-radius: 10px;
+                font-size: 16px;
+                font-family: 'Roboto', sans-serif;
+            }
+
+                /*thiết lập style cho textarea khi được focus */
+                .form-container textarea:focus {
+                    background-color: #ddd;
+                    outline: none;
+                }
+
+            /* Sthiết lập style cho nút trong form*/
+            .form-container .btn {
+                background-color: #4CAF50;
+                color: white;
+                padding: 12px 16px;
+                border: none;
+                cursor: pointer;
+                width: 100%;
+                margin-bottom: 10px;
+                opacity: 0.8;
+                border-radius: 20px;
+                font-size: 18px;
+                font-family: 'Roboto', sans-serif;
+            }
+
+            /* Thiết lập màu nền cho nút đóng chatbox */
+            .form-container .nut-dong-chatbox {
+                background-color: red;
+            }
+
+            /* Thêm hiệu ứng hover cho nút*/
+            .form-container .btn:hover, .nut-mo-chatbox:hover {
+                opacity: 1;
+            }
+    </style>
+    <script src="~/Scripts/jquery.signalR-2.4.3.min.js"></script>
+    <!-- SignalR hub script. -->
+    <script src="~/signalr/hubs"></script>
+    <!-- SignalR script to update the chat page and send messages.-->
+    <script>
+        var chat = $.connection.chatHub;
+
+        chat.client.addNewMessageToPage = function (name, message) {
+            if (message.trim() === '' || message.trim() === ':') {
+                return;
+            }
+
+            // Append the new message to the chat window
+            $('#chat-messages').append(chatMessage(name, message));
+            $('#message').val('');  // Clear the message input field
+            $('#message').focus();  // Focus on the message input field
+        };
+
+        $('#message').focus();
+
+        $.connection.hub.start().done(function () {
+            $('#sendMessageBtn1').click(function () {
+                var name = $('#displayname').val();
+                var message = $('#message').val();
+
+                chat.server.send(name, message);
+
+                // Prevent the form from submitting
+                return false;
+            });
+        });
+
+        function chatMessage(name, message) {
+            return `
+                            <li class="chat-message">
+                                <div class="message-content">
+                                    <strong>${name}:</strong> ${message}
+                                </div>
+                            </li>
+                        `;
+        }
+    </script>
+</body>
+</html>
+<script src="Scripts/jquery-3.3.1.min.js"></script>
+<script src="Scripts/jquery.signalR-2.2.2.min.js"></script>
+<script src="signalr/hubs"></script>
+<script>
+    /*Hàm Mở Form*/
+    $(function () {
+        let txtMessage = document.querySelector('#search-landscape');
+        let divError = document.querySelector('#divError');
+
+        var SpeechRecognition = SpeechRecognition || webkitSpeechRecognition;
+        var recognition = new SpeechRecognition();
+
+        recognition.lang = ['vi-VN', 'en-US'];
+
+        recognition.interimResults = true;
+
+        recognition.onresult = function (event) {
+            let command = event.results[0][0].transcript;
+            let isFinal = event.results[0].isFinal;
+            txtMessage.value = command;
+
+            if (isFinal) {
+                divMessages.textContent = command;
+            }
+        }
+
+        document.querySelector('#btnGiveCommand').onclick = function () {
+            recognition.start();
+        };
+
+        recognition.onspeechend = function () {
+            recognition.stop();
+        };
+
+        recognition.onerror = function (event) {
+            divError.textContent = 'Error occurred in recognition: ' + event.error;
+        }
+    });
+
+    $(document).ready(function () {
+        $("#Search").on("keyup", function () {
+            /*  alert("ttttt");*/
+            var value = $(this).val().toLowerCase();
+
+            console.log(value);
+            $.ajax({
+                url: '/Product/Search',
+                type: "GET",
+                data: { searchString: value },
+
+                success: function (data) {
+                    console.log(data);
+                    $('#menu-dish').html(data);
+                },
+                error: function (xhr) {
+                    console.log('error');
+                }
+            });
+        });
+    });
+
+    function updateCartSummary() {
+        $.ajax({
+            url: '/ShoppingCart/CartSummary',
+            type: 'GET',
+            success: function (data) {
+                $('#Cart-status').html(data);
+            }
+        });
+    }
+    // Gọi function updateCartSummary khi trang web được load
+    $(document).ready(function () {
+        updateCartSummary();
+    });
+    function updateWishlistCount() {
+        $.ajax({
+            url: "/Heart/HeartSummary",
+            type: "GET",
+            success: function (data) {
+                $("#Heart-status").html(data);
+            },
+            error: function (xhr, status, error) {
+                console.log(error);
+            }
+        });
+    }
+    $(document).ready(function () {
+        updateWishlistCount();
+    });
+
+
+
+    $(document).ready(function () {
+        $('a[href="~/Product/Index"]').click(function (event) {
+            event.preventDefault(); // Ngăn chặn trình duyệt chuyển hướng tới trang mới
+
+            $.ajax({
+                url: '/Product/Index', // URL của máy chủ của bạn
+                type: 'POST', // Loại phương thức HTTP mà bạn muốn sử dụng (GET, POST, PUT, DELETE, ...)
+                data: { key1: 'value1', key2: 'value2' }, // Dữ liệu mà bạn muốn gửi đến máy chủ
+                dataType: 'json', // Kiểu dữ liệu mà bạn muốn nhận lại từ máy chủ (json, xml, html, text, ...)
+                success: function (data) { // Hàm được gọi khi máy chủ trả về dữ liệu thành công
+                    // Xử lý dữ liệu ở đây
+                    console.log(data);
+                },
+                error: function (xhr, status, error) { // Hàm được gọi khi có lỗi xảy ra trong quá trình gọi máy chủ
+                    console.log('Có lỗi xảy ra: ' + error);
+                }
+            });
+        });
+    });
+    var i = 0;
+    $(document).on('click', '.item-addCart', function () {
+        var ProductID = $(this).data("id");
+        alert(ProductID);
+        $.ajax({
+            url: '/ShoppingCart/AddToCart',
+            type: 'POST',
+            data: { "id": ProductID },
+            success: function (result) {
+                console.log('main' + i++)
+                swal({
+                    title: "Good job!",
+                    text: "You clicked the button!",
+                    icon: "success",
+                });
+            },
+            error: function (err) {
+                alert(err.statusText);
+            }
+        });
+    });
+    $('.item-addwishlist').click(function () {
+        alert('them thanh cong');
+        var productId = $(this).closest('.dish-box-wp').find('.dish-add-btn').data('id');
+        $.ajax({
+            url: '/Heart/AddToHeart',
+            method: 'POST',
+            data: { id: $(this).data('id') },
+            success: function (response) {
+                // xử lý phản hồi từ máy chủ, chẳng hạn như cập nhật số lượng mục ưa thích
+                $('#favorite-count').text(response.favoriteCount);
+                swal({
+                    title: "Good job!",
+                    text: "You clicked the button!",
+                    icon: "success",
+                });
+            },
+            error: function (jqXHR, textStatus, errorThrown) {
+                // xử lý lỗi, nếu có
+                console.log('Lỗi khi thêm vào mục ưa thích:', errorThrown);
+            }
+        });
+    });
+
+    // Lấy phần tử chứa tên người dùng và số điện thoại
+    var usernameElement = document.querySelector('.username');
+    var phoneNumberElement = document.querySelector('.phone-number');
+
+    // Lấy giá trị tên người dùng và số điện thoại
+    var username = usernameElement.textContent;
+    var phoneNumber = phoneNumberElement.textContent;
+
+    // Sử dụng giá trị tên người dùng và số điện thoại
+    console.log('Tên người dùng: ' + username);
+    console.log('Số điện thoại: ' + phoneNumber);
+
+
+
+
+    function changeLanguage(language) {
+        var languageText = document.getElementById("languageText");
+        var languageIcon = document.getElementById("languageIcon");
+
+        if (language === "us") {
+            languageText.textContent = "ENG";
+            languageIcon.classList.remove("fa-chevron-up");
+            languageIcon.classList.add("fa-chevron-down");
+        } else if (language === "vn") {
+            languageText.textContent = "VI";
+            languageIcon.classList.remove("fa-chevron-down");
+            languageIcon.classList.add("fa-chevron-up");
+        }
+    }
+
+    // Đoạn mã này sẽ được thực thi khi trang web được tải
+    document.addEventListener("DOMContentLoaded", function () {
+        // Kiểm tra giá trị mặc định của ngôn ngữ
+        var defaultLanguage = ""; // Thay đổi giá trị mặc định ở đây (us hoặc vn)
+        changeLanguage(defaultLanguage);
+    });
+    function updateCartSummary() {
+        $.ajax({
+            url: '/ShoppingCart/CartSummary',
+            type: 'GET',
+            success: function (data) {
+                $('#Cart-status').html(data);
+            }
+        });
+    }
+    // Gọi function updateCartSummary khi trang web được load
+    $(document).ready(function () {
+        updateCartSummary();
+    });
+
+    $(document).ready(function () {
+        var priceSlider = document.getElementById('priceSlider');
+        var priceFrom = document.getElementById('priceFrom');
+        var priceTo = document.getElementById('priceTo');
+
+        noUiSlider.create(priceSlider, {
+            start: [0, 30000],
+            connect: true,
+            range: {
+                'min': 0,
+                'max': 1000000
+            },
+            step: 1,
+            format: {
+                to: function (value) {
+                    return Math.floor(value);
+                },
+                from: function (value) {
+                    return parseFloat(value);
+                }
+            }
+        });
+
+        priceSlider.noUiSlider.on('update', function (values, handle) {
+            if (handle === 0) {
+                priceFrom.innerHTML = values[0];
+            }
+            if (handle === 1) {
+                priceTo.innerHTML = values[1];
+            }
+        });
+    });
+    $(document).ready(function () {
+        $("#searchButton").click(function () {
+            var priceFrom = document.getElementById("priceFrom").textContent;
+            var priceTo = document.getElementById("priceTo").textContent;
+
+            // Redirect to the /Product/Filter page with query parameters
+            window.location.href = '/Product/Filter?priceFrom=' + priceFrom + '&priceTo=' + priceTo;
+        });
+    });
+
+
+</script>
+
+
+
+<!--<button class="nut-mo-chatbox" onclick="moForm()">Chat</button>
+<div class="Chatbox" id="myForm">
+    <form action="" class="form-container">
+        <h1>HỖ TRỢ</h1>
+        <label for="msg"><b>Lời Nhắn</b></label>
+        <textarea placeholder="Bạn hãy nhập lời nhắn.." name="msg" id="message" required></textarea>
+        <ul id="discussion">
+        </ul>
+        <div style="display:flex">
+            <input type="button" class="btn " id="sendmessage" value="Gửi" />
+            <input type="hidden" id="displayname" value="@Session["Email"]" />
+            <button type="button" class="btn nut-dong-chatbox " onclick="dongForm()">Đóng</button>
+        </div>
+    </form>
+</div>
+<style>
+
+    /* Nút Để Mở Chatbox */
+    .nut-mo-chatbox {
+        z-index: 1;
+        background-color: #FF6B6B;
+        color: white;
+        padding: 16px 20px;
+        border: none;
+        cursor: pointer;
+        opacity: 0.8;
+        position: fixed;
+        bottom: 23px;
+        right: 28px;
+        width: 100px;
+        border-radius: 20px;
+        font-size: 18px;
+    }
+
+    /* Ẩn chatbox mặc định */
+    .Chatbox {
+        display: none;
+        position: fixed;
+        bottom: 0;
+        right: 15px;
+        border: 3px solid #f1f1f1;
+        z-index: 9;
+        width: 300px;
+        max-height: 400px;
+        overflow-y: scroll;
+        border-radius: 10px;
+        background-color: #FFFFFF;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Thêm style cho form */
+    .form-container {
+        max-width: 100%;
+        padding: 10px;
+        background-color: #F8F8F8;
+    }
+
+        /* thiết lập style textarea */
+        .form-container textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0 20px 0;
+            border: none;
+            background: #f1f1f1;
+            resize: none;
+            min-height: 100px;
+            border-radius: 10px;
+            font-size: 16px;
+            font-family: 'Roboto', sans-serif;
+        }
+
+            /*thiết lập style cho textarea khi được focus */
+            .form-container textarea:focus {
+                background-color: #ddd;
+                outline: none;
+            }
+
+        /* Sthiết lập style cho nút trong form*/
+        .form-container .btn {
+            background-color: #4CAF50;
+            color: white;
+            padding: 12px 16px;
+            border: none;
+            cursor: pointer;
+            width: 100%;
+            margin-bottom: 10px;
+            opacity: 0.8;
+            border-radius: 20px;
+            font-size: 18px;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        /* Thiết lập màu nền cho nút đóng chatbox */
+        .form-container .nut-dong-chatbox {
+            background-color: red;
+        }
+
+        /* Thêm hiệu ứng hover cho nút*/
+        .form-container .btn:hover, .nut-mo-chatbox:hover {
+            opacity: 1;
+        }
+</style>
+<script src="~/Scripts/jquery.signalR-2.4.3.min.js"></script>-->
+<!-- SignalR hub script. -->
+<!--<script src="~/signalr/hubs"></script>-->
+<!-- SignalR script to update the chat page and send messages.-->
+<!--<script>
+    /*Hàm Mở Form*/
+    function moForm() {
+        document.getElementById("myForm").style.display = "block";
+    }
+    /*Hàm Đóng Form*/
+    function dongForm() {
+        document.getElementById("myForm").style.display = "none";
+    }
+</script>
+<script>
+    $(function () {
+        var chat = $.connection.chatHub;
+        // Tạo một chức năng mà trung tâm có thể gọi lại để hiển thị thông báo.
+        chat.client.addNewMessageToPage = function (name, message) {
+            // Thêm tin nhắn vào trang.
+            $('#discussion').append('<li><strong>' + htmlEncode(name)
+                + '</strong>: ' + htmlEncode(message) + '</li>');
+        };
+        // Lấy tên người dùng và lưu trữ nó để thêm vào tin nhắn.
+        // Đặt tiêu điểm ban đầu cho hộp nhập tin nhắn.
+        $('#message').focus();
+        // Bắt đầu kết nối.
+        $.connection.hub.start().done(function () {
+            $('#sendmessage').click(function () {
+                // Gọi phương thức Gửi trên trung tâm.
+                chat.server.send($('#displayname').val(), $('#message').val());
+                // Xóa hộp văn bản và đặt lại tiêu điểm cho nhận xét tiếp theo.
+                $('#message').val('').focus();
+            });
+        });
+    });
+    // Chức năng tùy chọn này mã hóa html thông báo để hiển thị trong trang.
+    function htmlEncode(value) {
+        var encodedValue = $('<div />').text(value).html();
+        return encodedValue;
+    }
+</script>-->
+
+@RenderSection("scripts", required: false)
+
+<style>
+
+    .nut-mo-chatbox {
+        z-index: 1;
+        background-color: #FF6B6B;
+        color: white;
+        padding: 16px 20px;
+        border: none;
+        cursor: pointer;
+        opacity: 0.8;
+        position: fixed;
+        bottom: 23px;
+        right: 28px;
+        width: 100px;
+        border-radius: 20px;
+        font-size: 18px;
+    }
+
+    /* Default hidden state of the chatbox */
+    .Chatbox {
+        display: none;
+        position: fixed;
+        bottom: 0;
+        right: 15px;
+        border: 3px solid #f1f1f1;
+        z-index: 9;
+        width: 300px;
+        max-height: 400px;
+        overflow-y: scroll;
+        border-radius: 10px;
+        background-color: #FFFFFF;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Styling for the form */
+    .form-container {
+        max-width: 100%;
+        padding: 10px;
+        background-color: #F8F8F8;
+    }
+
+        /* Styling for the textarea */
+        .form-container textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0 20px 0;
+            border: none;
+            background: #f1f1f1;
+            resize: none;
+            min-height: 100px;
+            border-radius: 10px;
+            font-size: 16px;
+            font-family: 'Roboto', sans-serif;
+        }
+
+            /* Styling for the textarea when focused */
+            .form-container textarea:focus {
+                background-color: #ddd;
+                outline: none;
+            }
+
+        /* Styling for the button in the form */
+        .form-container .btn {
+            background-color: #4CAF50;
+            color: white;
+            padding: 12px 16px;
+            border: none;
+            cursor: pointer;
+            width: 100%;
+            margin-bottom: 10px;
+            opacity: 0.8;
+            border-radius: 20px;
+            font-size: 18px;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        /* Styling the close chatbox button */
+        .form-container .nut-dong-chatbox {
+            background-color: deepskyblue;
+        }
+
+        /* Adding hover effect to the button */
+        .form-container .btn:hover,
+        .nut-mo-chatbox:hover {
+            opacity: 1;
+        }
+
+    .full-layer-outer-header {
+        background-color: orangered;
+        border-bottom: none;
+    }
+
+    .full-layer-mid-header {
+        background-color: orangered;
+    }
+
+    .white-text {
+        color: white;
+    }
+
+    .white-icon {
+        color: white !important;
+    }
+
+    .footer {
+        padding-top: 150px;
+    }
+
+    .main-footer {
+        background-color: #f9f9f9;
+    }
+
+    .main-footer-info {
+        border-top: 4px solid orangered;
+        border-bottom: 1px solid #ccc;
+        padding-bottom: 20px;
+        padding-top: 10px;
+    }
+
+    .footer__heading {
+        font-size: 1.2rem;
+        color: var(--text-color);
+        font-weight: bold;
+        margin-top: 40px;
+        margin-bottom: 20px;
+    }
+
+    .footer-list {
+        padding: 0;
+        list-style: none;
+    }
+
+    .footer-item-link {
+        text-decoration: none;
+        font-size: 1.2rem;
+        color: var(--footer-color);
+        display: block;
+        padding: 5px 0;
+    }
+
+        .footer-item-link:hover {
+            color: var(--primary-color);
+        }
+
+    .footer-item-icon {
+        font-size: 1.6rem;
+        margin-right: 8px;
+    }
+
+    .footer-sale-ship {
+        display: flex;
+        flex-wrap: wrap;
+        width: 190px;
+    }
+
+    .footer-item-sale-ship {
+        width: 55px;
+        height: 29px;
+        margin: 4px;
+    }
+
+    .footer-item-link-fb:hover {
+        color: dodgerblue;
+    }
+
+    .footer-item-link-is:hover {
+        color: orangered;
+    }
+
+    .footer-item-link-li:hover {
+        color: royalblue;
+    }
+
+    .footer-download {
+        display: flex;
+    }
+
+    .footer-download-qr {
+        width: 80px;
+        height: 80px;
+        border: 1px solid #ccc;
+        border-radius: 3px;
+    }
+
+    .footer-download-app {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-left: 16px;
+    }
+
+    .footer-download-app-img {
+        height: 16px;
+    }
+
+    .footer-download-link {
+        text-decoration: none;
+        color: transparent;
+    }
+
+    .copyright-title {
+        padding: 30px 10px;
+        padding-left: 500px;
+        font-size: 1.4rem;
+    }
+
+    .grid.other-footer-info {
+        padding-left: 150px;
+    }
+
+    .other-footer {
+        background-color: #eee;
+        padding: 40px 0;
+    }
+
+    .other-footer-heading {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .other-footer-link {
+        text-decoration: none;
+        font-size: 1.2rem;
+        color: var(--footer-color);
+    }
+
+    .other-footer-info {
+        font-size: 1.2rem;
+        color: var(--text-color);
+        text-align: center;
+    }
+
+    .other-footer-title {
+        margin: 25px 0;
+    }
+
+    .other-footer-more {
+        margin: 8px 10px 0;
+    }
+</style>

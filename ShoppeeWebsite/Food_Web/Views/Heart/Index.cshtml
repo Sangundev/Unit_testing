@@ -1,0 +1,185 @@
+﻿
+@model PagedList.IPagedList<Food_Web.Models.Heartitem>
+@using PagedList.Mvc
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+
+<div class="page-style-a">
+    <div class="container">
+        <div class="page-intro">
+            <h2>Wishlist</h2>
+            <ul class="bread-crumb">
+                <li class="has-separator">
+                    <i class="ion ion-md-home"></i>
+                    <a href="home.html">Home</a>
+                </li>
+                <li class="is-marked">
+                    <a href="wishlist.html">Wishlist</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="page-wishlist u-s-p-t-80">
+    <div class="container">
+
+        <div class="row">
+            <div class="col-lg-12">
+                <!-- Products-List-Wrapper -->
+                <div class="table-wrapper u-s-m-b-60">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Product</th>
+                                <th>Unit Price</th>
+                                <th>Stock Status</th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        @foreach (var item in Model)
+                        {
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <div class="cart-anchor-image">
+                                            <a href="single-product.html">
+                                                <img src="/Content/products/@item.Image" alt="Product">
+                                                <h6>@item.ProductName</h6>
+                                            </a>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="cart-price">
+                                            @item.Price
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="cart-stock">
+                                            @item.ProductName
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="action-wrapper">
+                                            <button id="addtocart" class="button button-outline-secondary" data-id="@item.Productid">Add to Cart</button>
+                                            <button class="button button-outline-secondary fas fa-trash" id="Removeheart" data-id="@item.ID"></button>
+                                            @*<button class="dish-add-btn" data-id="@item.ID">+GH</button>
+                                                <button class="delete-item" data-id="@item.ID">Xóa</button>*@
+                                        </div>
+                                    </td>
+                                </tr>
+
+                            </tbody>
+                        }
+                    </table>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+<div class="pagination-container">
+    @Html.PagedListPager(Model, page => Url.Action("Arrivals", new { page, PageNumber = page }))
+</div>
+
+<script src="~/Scripts/jquery-3.4.1.js"></script>
+@section scripts{
+    <script>
+    var i = 0;
+    $(document).on('click', '#addtocart', function () {
+        var ProductID = $(this).data("id");
+        alert($(this).data("id"));
+      /*  alert(ProductID);*/
+        $.ajax({
+            url: '/ShoppingCart/AddToCart',
+            type: 'POST',
+            data: { id: ProductID },
+            success: function (result) {
+                console.log('main' + i++);
+                  alert(ProductID);
+                    swal({
+                        title: "Good job!",
+                        text: "You clicked the button!",
+                        icon: "success",
+                    });
+            },
+            error: function (err) {
+                alert(err.statusText);
+            }
+        });
+    });
+
+
+   $(document).ready(function () {
+       $('#Removeheart').on('click', function () {
+            var itemId = $(this).data('id');
+            $.ajax({
+                url: '@Url.Action("Delete", "Heart")/' + itemId,
+                type: 'POST',
+                success: function () {
+                    location.reload();
+                    swal({
+                        title: "Good job!",
+                        text: "You clicked the button!",
+                        icon: "success",
+                    });
+                }
+            });
+        });
+    });
+    </script>
+}
+<style>
+
+    .pagination-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px;
+        padding: 10px;
+    }
+
+        .pagination-container a {
+            display: inline-block;
+            margin: 0 5px;
+            padding: 5px 10px;
+            text-decoration: none;
+            color: #333;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+            .pagination-container a.active {
+                background-color: #333;
+                color: #fff;
+            }
+
+            .pagination-container a:first-child {
+                border-top-left-radius: 5px;
+                border-bottom-left-radius: 5px;
+                border-left: none;
+            }
+
+            .pagination-container a:last-child {
+                border-top-right-radius: 5px;
+                border-bottom-right-radius: 5px;
+                border-right: none;
+            }
+
+            .pagination-container a:first-child.active {
+                border-top-left-radius: 5px;
+                border-bottom-left-radius: 5px;
+                border-left: none;
+            }
+
+            .pagination-container a:last-child.active {
+                border-top-right-radius: 5px;
+                border-bottom-right-radius: 5px;
+                border-right: none;
+            }
+</style>
+
+

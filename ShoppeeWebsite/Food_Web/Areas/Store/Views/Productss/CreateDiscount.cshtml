@@ -1,0 +1,23 @@
+﻿﻿@model List<Food_Web.Models.Product>
+
+@{
+    ViewBag.Title = "Create Discount";
+    Layout = "~/Views/Shared/_LayoutStore.cshtml";
+}
+<div class="card shadow mb-4">
+    <div class="card-header py-3">
+        <h6 class="m-0 font-weight-bold text-primary">@Html.ActionLink("Trang Chủ", "Index", "Homes") / @Html.ActionLink("Sản Phẩm", "Index", "Productss")</h6>
+    </div>
+    @using (Html.BeginForm("CreateDiscount", "Productss"))
+    {
+        <div class="form-group">
+            <label for="product">Sản phẩm:</label>
+            @Html.DropDownList("Productid", ViewBag.Products as SelectList, new { @class = "form-control" })
+        </div>
+        <div class="form-group">
+            <label for="discountPercent">Phần trăm giảm giá:</label>
+            @Html.TextBox("discountPercent", null, new { @class = "form-control", type = "number", min = 0, max = 100 })
+        </div>
+        <button type="submit" class="btn btn-primary">Lưu</button>
+    }
+</div>

@@ -1,0 +1,128 @@
+﻿@model IEnumerable<Food_Web.Models.FeedBack>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = null;
+}
+
+<div class=" comment-list" style="align-items: center; display: flex;">
+    <div class="testimonials-img" style="width:40%;">
+        <img style="position: unset; max-width: 471px; width:100%;" src="~/Content/images/testimonial-img.png" />
+    </div>
+    <div class="" style="width:60%;">
+        <div class="row">
+
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+
+                    @foreach (var item in Model)
+                    {
+                        <div class="swiper-slide">
+                            <div class="">
+                                <div class="testimonials-box" style="padding: 32px 15px; width: 193px; margin: 0 auto;">
+
+                                    <div class="testimonials-box-text">
+                                        <h3 class="h3-title">
+                                            @item.fistname
+                                        </h3>
+                                        <p>
+                                            @item.subject_name
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    }
+
+
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+            <script>
+                var swiper = new Swiper(".mySwiper", {
+                    slidesPerView: 3 ,
+                    pagination: {
+                        el: ".swiper-pagination",
+                    },
+                });
+            </script>
+        </div>
+    </div>
+
+</div>
+
+@section scripts{
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 2,
+            spaceBetween: 30,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+        });
+    </script>
+
+}
+
+
+@*<style>
+    .testimonials-img img {
+        position: unset;
+    }
+
+    .pagination-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px;
+        padding: 10px;
+    }
+
+        .pagination-container a {
+            display: inline-block;
+            margin: 0 5px;
+            padding: 5px 10px;
+            text-decoration: none;
+            color: #333;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+            .pagination-container a.active {
+                background-color: #333;
+                color: #fff;
+            }
+
+            .pagination-container a:first-child {
+                border-top-left-radius: 5px;
+                border-bottom-left-radius: 5px;
+                border-left: none;
+            }
+
+            .pagination-container a:last-child {
+                border-top-right-radius: 5px;
+                border-bottom-right-radius: 5px;
+                border-right: none;
+            }
+
+            .pagination-container a:first-child.active {
+                border-top-left-radius: 5px;
+                border-bottom-left-radius: 5px;
+                border-left: none;
+            }
+
+            .pagination-container a:last-child.active {
+                border-top-right-radius: 5px;
+                border-bottom-right-radius: 5px;
+                border-right: none;
+            }
+
+    /*.col-sm-12 {
+            margin: -82px;
+            padding-left: -9px;*/
+    /* margin-right: 2px; */
+    /*padding-left: 110px;
+        }*/
+</style>*@
